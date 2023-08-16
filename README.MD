@@ -18,12 +18,14 @@ The folder also contains a Python script (`extractData.py`) which was used to ex
 
 Each subject from the original dataset has their own folder, which contains the original experimental data alongside the processed outputs from the present work. Specifically, each subject folder contains:
 
+- **addBiomechanics:** The original generic `.osim`, and `.trc` and `.mot` files from the experimental data which were uploaded to the [AddBiomechanics server](https://addbiomechanics.org/) for processing. The processed results were then downloaded and added to this folder.
 - **expData:** The original `.trc` and `.mot` files from the experimental data, alongside a Python dictionary object (in `.pkl` format) containing the timings of the gait cycles analysed.
 - **ik:** The results from the original inverse kinematics procedures run on the data.
 - **moco:** The outputs from the Moco tracking processes run on the experimental data. This contains the residual forces and moments that were generated from the Moco tracking approach.
 - **model:** The scaled model based on the original experimental approaches used. This model was used in the Moco and RRA procedures. 
 - **results:** Contains subfolders of `figures` which contains some summary figures of the subjects results, and `outputs` which contains the compiled and mean results from the various approaches tested.
-- **rra:** The outputs from the residual reduction algorithm (RRA) processes run on the experimental data. This contains the residual forces and moments that were generated from the RRA approach.
+- **rra:** The outputs from the residual reduction algorithm (RRA) processes run on the experimental data. This contains the residual forces and moments that were generated from a single iteration of the RRA approach.
+- **rra3:** The outputs from the residual reduction algorithm (RRA) processes run on the experimental data. This contains the residual forces and moments that were generated from three iterations of the RRA approach.
 
 ## code
 
