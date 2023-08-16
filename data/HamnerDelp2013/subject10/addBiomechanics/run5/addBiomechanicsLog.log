@@ -1,0 +1,8 @@
+[2023-08-15 22:24:33.293] [info] Updating Model file from 20200 to latest format...
+[2023-08-15 22:24:33.294] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-08-15 22:24:33.294] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-08-15 22:24:33.358] [info] Loaded model 3DGaitModelwithSimpleArms from file ..\..\model\genericModel.osim
+[2023-08-16 10:05:25.132] [info] Updating Model file from 20200 to latest format...
+[2023-08-16 10:05:25.133] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-08-16 10:05:25.133] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-08-16 10:05:25.191] [info] Loaded model 3DGaitModelwithSimpleArms from file ..\..\model\genericModel.osim

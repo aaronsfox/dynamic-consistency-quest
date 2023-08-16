@@ -136,3 +136,9 @@
 [2023-02-27 16:34:30.960] [info] Frame at (t = 0.0):	 total squared error = 0.0195653, marker error: RMS = 0.0233127, max = 0.0520796 (RMFC)
 [2023-02-27 16:34:30.960] [info] Moved markers in model subject02_scaled to match locations in marker file 'static.trc'.
 [2023-02-27 16:34:31.000] [info] Wrote model file 'subject02_adjusted_scaled.osim' from model subject02_scaled.
+[2023-08-15 15:51:24.053] [info] Updating Model file from 20001 to latest format...
+[2023-08-15 15:51:24.055] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-08-15 15:51:24.055] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-08-15 15:51:24.105] [info] Loaded model 3DGaitModelwithSimpleArms from file C:\+GitRepos+\dynamic-consistency-quest\data\HamnerDelp2013\subject01\model\genericModel.osim
+[2023-08-15 16:25:16.536] [info] Loaded model subject01_scaled from file C:\+GitRepos+\dynamic-consistency-quest\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-08-15 16:25:31.522] [info] Storage: read data file = C:\+GitRepos+\dynamic-consistency-quest\data\HamnerDelp2013\subject01\model\subject01_static_output.mot (nr=1 nc=259)

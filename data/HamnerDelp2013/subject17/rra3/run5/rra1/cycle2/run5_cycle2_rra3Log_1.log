@@ -1,0 +1,969 @@
+[2023-08-15 22:32:09.483] [info] AbstractTool subject17_run5_cycle2_iter1 loading model ..\..\..\model\subject17_adjusted_scaled.osim
+[2023-08-15 22:32:09.544] [info] Loaded model subject17_scaled from file ..\..\..\model\subject17_adjusted_scaled.osim
+[2023-08-15 22:32:09.593] [info] Adding force object set from ..\subject17_run5_RRA_Actuators.xml
+[2023-08-15 22:32:09.597] [info] Running tool subject17_run5_cycle2_iter1.
+[2023-08-15 22:32:09.615] [warning] ExternalLoads 'externalloads' has subcomponents with duplicate name 'externalforce'. The duplicate is being renamed to 'externalforce_0'.
+[2023-08-15 22:32:09.634] [info] 	taskSet size = 29.
+[2023-08-15 22:32:09.732] [info] ExternalForce::externalforce Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:09.732] [info] ExternalForce::externalforce_0 Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:09.739] [warning] A desired points file was not specified.
+[2023-08-15 22:32:09.739] [info] Loading desired kinematics from file '..\..\..\ik\Run_5.mot'...
+[2023-08-15 22:32:09.739] [info] Old version storage/motion file encountered
+[2023-08-15 22:32:09.739] [info] Storage: read data file = ..\..\..\ik\Run_5.mot (nr=565 nc=164)
+[2023-08-15 22:32:09.739] [info] .. assuming rotations in Degrees..
+[2023-08-15 22:32:09.803] [info] Low-pass filtering desired kinematics with a cutoff frequency of 15.0...
+[2023-08-15 22:32:11.639] [cout] [info] MODEL: subject17_scaled
+
+numStates = 74
+numCoordinates = 37
+numSpeeds = 37
+numActuators = 29
+numBodies = 20
+numConstraints = 0
+numProbes = 0
+
+ANALYSES (total: 0)
+
+BODIES (total: 20)
+body[0] = pelvis. mass: 10.7245
+              moments of inertia:  ~[0.0849368,0.0719649,0.0478389]
+              products of inertia: ~[0,0,0]
+body[1] = femur_r. mass: 8.47013
+              moments of inertia:  ~[0.121748,0.0319145,0.128385]
+              products of inertia: ~[0,0,0]
+body[2] = tibia_r. mass: 3.37616
+              moments of inertia:  ~[0.0479256,0.00484962,0.0485912]
+              products of inertia: ~[0,0,0]
+body[3] = talus_r. mass: 0.0910629
+              moments of inertia:  ~[0.000951746,0.000951746,0.000951746]
+              products of inertia: ~[0,0,0]
+body[4] = calcn_r. mass: 1.13829
+              moments of inertia:  ~[0.00133244,0.00371181,0.00390216]
+              products of inertia: ~[0,0,0]
+body[5] = toes_r. mass: 0.197242
+              moments of inertia:  ~[9.51746e-05,0.000190349,0.000951746]
+              products of inertia: ~[0,0,0]
+body[6] = femur_l. mass: 8.47013
+              moments of inertia:  ~[0.121748,0.0319145,0.128385]
+              products of inertia: ~[0,0,0]
+body[7] = tibia_l. mass: 3.37616
+              moments of inertia:  ~[0.0476422,0.00428282,0.0476422]
+              products of inertia: ~[0,0,0]
+body[8] = talus_l. mass: 0.0910629
+              moments of inertia:  ~[0.000951746,0.000951746,0.000951746]
+              products of inertia: ~[0,0,0]
+body[9] = calcn_l. mass: 1.13829
+              moments of inertia:  ~[0.00133244,0.00371181,0.00390216]
+              products of inertia: ~[0,0,0]
+body[10] = toes_l. mass: 0.197242
+              moments of inertia:  ~[9.51746e-05,0.000190349,0.000951746]
+              products of inertia: ~[0,0,0]
+body[11] = torso. mass: 24.4291
+              moments of inertia:  ~[1.22035,0.625277,1.18467]
+              products of inertia: ~[0,0,0]
+body[12] = humerus_r. mass: 1.85085
+              moments of inertia:  ~[0.00976019,0.00336696,0.0109555]
+              products of inertia: ~[0,0,0]
+body[13] = ulna_r. mass: 0.553207
+              moments of inertia:  ~[0.00260446,0.000543402,0.00282516]
+              products of inertia: ~[0,0,0]
+body[14] = radius_r. mass: 0.553207
+              moments of inertia:  ~[0.00260446,0.000543402,0.00282516]
+              products of inertia: ~[0,0,0]
+body[15] = hand_r. mass: 0.416613
+              moments of inertia:  ~[0.000784328,0.000480972,0.00117825]
+              products of inertia: ~[0,0,0]
+body[16] = humerus_l. mass: 1.85085
+              moments of inertia:  ~[0.00976019,0.00336696,0.0109555]
+              products of inertia: ~[0,0,0]
+body[17] = ulna_l. mass: 0.553207
+              moments of inertia:  ~[0.00260446,0.000543402,0.00282516]
+              products of inertia: ~[0,0,0]
+body[18] = radius_l. mass: 0.553207
+              moments of inertia:  ~[0.00260446,0.000543402,0.00282516]
+              products of inertia: ~[0,0,0]
+body[19] = hand_l. mass: 0.416613
+              moments of inertia:  ~[0.000784328,0.000480972,0.00117825]
+              products of inertia: ~[0,0,0]
+
+JOINTS (total: 20)
+joint[0] = ground_pelvis. parent: ground_offset, child: pelvis_offset
+joint[1] = hip_r. parent: pelvis_offset, child: femur_r_offset
+joint[2] = knee_r. parent: femur_r_offset, child: tibia_r_offset
+joint[3] = ankle_r. parent: tibia_r_offset, child: talus_r_offset
+joint[4] = subtalar_r. parent: talus_r_offset, child: calcn_r_offset
+joint[5] = mtp_r. parent: calcn_r_offset, child: toes_r_offset
+joint[6] = hip_l. parent: pelvis_offset, child: femur_l_offset
+joint[7] = knee_l. parent: femur_l_offset, child: tibia_l_offset
+joint[8] = ankle_l. parent: tibia_l_offset, child: talus_l_offset
+joint[9] = subtalar_l. parent: talus_l_offset, child: calcn_l_offset
+joint[10] = mtp_l. parent: calcn_l_offset, child: toes_l_offset
+joint[11] = back. parent: pelvis_offset, child: torso_offset
+joint[12] = acromial_r. parent: torso_offset, child: humerus_r_offset
+joint[13] = elbow_r. parent: humerus_r_offset, child: ulna_r_offset
+joint[14] = radioulnar_r. parent: ulna_r_offset, child: radius_r_offset
+joint[15] = radius_hand_r. parent: radius_r_offset, child: hand_r_offset
+joint[16] = acromial_l. parent: torso_offset, child: humerus_l_offset
+joint[17] = elbow_l. parent: humerus_l_offset, child: ulna_l_offset
+joint[18] = radioulnar_l. parent: ulna_l_offset, child: radius_l_offset
+joint[19] = radius_hand_l. parent: radius_l_offset, child: hand_l_offset
+
+ACTUATORS (total: 29)
+actuator[0] = FX
+actuator[1] = FY
+actuator[2] = FZ
+actuator[3] = MZ
+actuator[4] = MX
+actuator[5] = MY
+actuator[6] = hip_flexion_r
+actuator[7] = hip_adduction_r
+actuator[8] = hip_rotation_r
+actuator[9] = knee_angle_r
+actuator[10] = ankle_angle_r
+actuator[11] = hip_flexion_l
+actuator[12] = hip_adduction_l
+actuator[13] = hip_rotation_l
+actuator[14] = knee_angle_l
+actuator[15] = ankle_angle_l
+actuator[16] = lumbar_extension
+actuator[17] = lumbar_bending
+actuator[18] = lumbar_rotation
+actuator[19] = arm_flex_r
+actuator[20] = arm_add_r
+actuator[21] = arm_rot_r
+actuator[22] = elbow_flex_r
+actuator[23] = pro_sup_r
+actuator[24] = arm_flex_l
+actuator[25] = arm_add_l
+actuator[26] = arm_rot_l
+actuator[27] = elbow_flex_l
+actuator[28] = pro_sup_l
+
+STATES (total: 74)
+y[0] = /jointset/ground_pelvis/pelvis_tilt/value
+y[1] = /jointset/ground_pelvis/pelvis_tilt/speed
+y[2] = /jointset/ground_pelvis/pelvis_list/value
+y[3] = /jointset/ground_pelvis/pelvis_list/speed
+y[4] = /jointset/ground_pelvis/pelvis_rotation/value
+y[5] = /jointset/ground_pelvis/pelvis_rotation/speed
+y[6] = /jointset/ground_pelvis/pelvis_tx/value
+y[7] = /jointset/ground_pelvis/pelvis_tx/speed
+y[8] = /jointset/ground_pelvis/pelvis_ty/value
+y[9] = /jointset/ground_pelvis/pelvis_ty/speed
+y[10] = /jointset/ground_pelvis/pelvis_tz/value
+y[11] = /jointset/ground_pelvis/pelvis_tz/speed
+y[12] = /jointset/hip_r/hip_flexion_r/value
+y[13] = /jointset/hip_r/hip_flexion_r/speed
+y[14] = /jointset/hip_r/hip_adduction_r/value
+y[15] = /jointset/hip_r/hip_adduction_r/speed
+y[16] = /jointset/hip_r/hip_rotation_r/value
+y[17] = /jointset/hip_r/hip_rotation_r/speed
+y[18] = /jointset/knee_r/knee_angle_r/value
+y[19] = /jointset/knee_r/knee_angle_r/speed
+y[20] = /jointset/ankle_r/ankle_angle_r/value
+y[21] = /jointset/ankle_r/ankle_angle_r/speed
+y[22] = /jointset/subtalar_r/subtalar_angle_r/value
+y[23] = /jointset/subtalar_r/subtalar_angle_r/speed
+y[24] = /jointset/mtp_r/mtp_angle_r/value
+y[25] = /jointset/mtp_r/mtp_angle_r/speed
+y[26] = /jointset/hip_l/hip_flexion_l/value
+y[27] = /jointset/hip_l/hip_flexion_l/speed
+y[28] = /jointset/hip_l/hip_adduction_l/value
+y[29] = /jointset/hip_l/hip_adduction_l/speed
+y[30] = /jointset/hip_l/hip_rotation_l/value
+y[31] = /jointset/hip_l/hip_rotation_l/speed
+y[32] = /jointset/knee_l/knee_angle_l/value
+y[33] = /jointset/knee_l/knee_angle_l/speed
+y[34] = /jointset/ankle_l/ankle_angle_l/value
+y[35] = /jointset/ankle_l/ankle_angle_l/speed
+y[36] = /jointset/subtalar_l/subtalar_angle_l/value
+y[37] = /jointset/subtalar_l/subtalar_angle_l/speed
+y[38] = /jointset/mtp_l/mtp_angle_l/value
+y[39] = /jointset/mtp_l/mtp_angle_l/speed
+y[40] = /jointset/back/lumbar_extension/value
+y[41] = /jointset/back/lumbar_extension/speed
+y[42] = /jointset/back/lumbar_bending/value
+y[43] = /jointset/back/lumbar_bending/speed
+y[44] = /jointset/back/lumbar_rotation/value
+y[45] = /jointset/back/lumbar_rotation/speed
+y[46] = /jointset/acromial_r/arm_flex_r/value
+y[47] = /jointset/acromial_r/arm_flex_r/speed
+y[48] = /jointset/acromial_r/arm_add_r/value
+y[49] = /jointset/acromial_r/arm_add_r/speed
+y[50] = /jointset/acromial_r/arm_rot_r/value
+y[51] = /jointset/acromial_r/arm_rot_r/speed
+y[52] = /jointset/elbow_r/elbow_flex_r/value
+y[53] = /jointset/elbow_r/elbow_flex_r/speed
+y[54] = /jointset/radioulnar_r/pro_sup_r/value
+y[55] = /jointset/radioulnar_r/pro_sup_r/speed
+y[56] = /jointset/radius_hand_r/wrist_flex_r/value
+y[57] = /jointset/radius_hand_r/wrist_flex_r/speed
+y[58] = /jointset/radius_hand_r/wrist_dev_r/value
+y[59] = /jointset/radius_hand_r/wrist_dev_r/speed
+y[60] = /jointset/acromial_l/arm_flex_l/value
+y[61] = /jointset/acromial_l/arm_flex_l/speed
+y[62] = /jointset/acromial_l/arm_add_l/value
+y[63] = /jointset/acromial_l/arm_add_l/speed
+y[64] = /jointset/acromial_l/arm_rot_l/value
+y[65] = /jointset/acromial_l/arm_rot_l/speed
+y[66] = /jointset/elbow_l/elbow_flex_l/value
+y[67] = /jointset/elbow_l/elbow_flex_l/speed
+y[68] = /jointset/radioulnar_l/pro_sup_l/value
+y[69] = /jointset/radioulnar_l/pro_sup_l/speed
+y[70] = /jointset/radius_hand_l/wrist_flex_l/value
+y[71] = /jointset/radius_hand_l/wrist_flex_l/speed
+y[72] = /jointset/radius_hand_l/wrist_dev_l/value
+y[73] = /jointset/radius_hand_l/wrist_dev_l/speed
+
+[2023-08-15 22:32:12.110] [info] Requested COM adjustment time range 0.92188 to 1.57080, clamped to nearest available data times: 0.916611 to 1.56658.
+[2023-08-15 22:32:12.111] [info] Computing average residuals between 0.916611 and 1.56658...
+[2023-08-15 22:32:12.193] [info] ExternalForce::externalforce Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:12.193] [info] ExternalForce::externalforce_0 Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:12.268] [info] ExternalForce::externalforce Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:12.269] [info] ExternalForce::externalforce_0 Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:13.550] [info] ExternalForce::externalforce Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:13.551] [info] ExternalForce::externalforce_0 Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:13.559] [info] Computing average residuals between 0.916611 and 1.56658...
+[2023-08-15 22:32:13.619] [info] ExternalForce::externalforce Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:13.619] [info] ExternalForce::externalforce_0 Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:13.692] [info] ExternalForce::externalforce Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:13.692] [info] ExternalForce::externalforce_0 Data source being set to Run_500 01_newCOP3_v24.mot
+[2023-08-15 22:32:14.870] [info] Constructing function set for tracking desired kinematics...
+[2023-08-15 22:32:15.615] [warning] No Actuation analysis found in analysis set, adding one...
+[2023-08-15 22:32:15.616] [warning] No Kinematics analysis found in analysis set, adding one...
+[2023-08-15 22:32:15.620] [info] Using the generalized coordinates specified in '..\..\..\ik\Run_5.mot' to set the initial configuration.
+[2023-08-15 22:32:15.794] [info] Using IPOPT optimizer algorithm.
+[2023-08-15 22:32:15.795] [info] Setting optimizer print level to 0.
+[2023-08-15 22:32:15.795] [info] Setting optimizer convergence tolerance to 1.0e-05.
+[2023-08-15 22:32:15.795] [info] Setting optimizer maximum iterations to 2000.
+[2023-08-15 22:32:15.795] [info] Setting cmc controller to not use verbose printing.
+
+[2023-08-15 22:32:15.796] [info] CMC::computeControls, t = 0.92188
+[2023-08-15 22:32:16.625] [info] --------------------------------------------
+[2023-08-15 22:32:16.625] [info] Using CMC to track the specified kinematics:
+[2023-08-15 22:32:16.626] [info] --------------------------------------------
+[2023-08-15 22:32:16.626] [info]  -- Integrating from 0.92188 to 1.57080
+[2023-08-15 22:32:16.626] [info]  -- Start time = Tue Aug 15 22:32:16 2023
+[2023-08-15 22:32:16.626] [info] --------------------------------------------
+[2023-08-15 22:32:16.626] [info] 
+[2023-08-15 22:32:16.629] [info] CMC::computeControls, t = 0.92188
+[2023-08-15 22:32:16.656] [info] CMC::computeControls, t = 0.92288
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate subtalar_angle_r is locked. Unable to change its value.
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate mtp_angle_r is locked. Unable to change its value.
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate subtalar_angle_l is locked. Unable to change its value.
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate mtp_angle_l is locked. Unable to change its value.
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate wrist_flex_r is locked. Unable to change its value.
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate wrist_dev_r is locked. Unable to change its value.
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate wrist_flex_l is locked. Unable to change its value.
+[2023-08-15 22:32:16.657] [warning] Coordinate.setValue:  coordinate wrist_dev_l is locked. Unable to change its value.
+[2023-08-15 22:32:16.691] [info] CMC::computeControls, t = 0.92388
+[2023-08-15 22:32:16.710] [info] CMC::computeControls, t = 0.92488
+[2023-08-15 22:32:16.739] [info] CMC::computeControls, t = 0.92588
+[2023-08-15 22:32:16.769] [info] CMC::computeControls, t = 0.92688
+[2023-08-15 22:32:16.795] [info] CMC::computeControls, t = 0.92788
+[2023-08-15 22:32:16.822] [info] CMC::computeControls, t = 0.92888
+[2023-08-15 22:32:16.841] [info] CMC::computeControls, t = 0.92988
+[2023-08-15 22:32:16.859] [info] CMC::computeControls, t = 0.930880
+[2023-08-15 22:32:16.880] [info] CMC::computeControls, t = 0.93188
+[2023-08-15 22:32:16.902] [info] CMC::computeControls, t = 0.93288
+[2023-08-15 22:32:16.919] [info] CMC::computeControls, t = 0.93388
+[2023-08-15 22:32:16.937] [info] CMC::computeControls, t = 0.93488
+[2023-08-15 22:32:16.954] [info] CMC::computeControls, t = 0.93588
+[2023-08-15 22:32:16.972] [info] CMC::computeControls, t = 0.93688
+[2023-08-15 22:32:16.997] [info] CMC::computeControls, t = 0.93788
+[2023-08-15 22:32:17.021] [info] CMC::computeControls, t = 0.93888
+[2023-08-15 22:32:17.039] [info] CMC::computeControls, t = 0.93988
+[2023-08-15 22:32:17.055] [info] CMC::computeControls, t = 0.940880
+[2023-08-15 22:32:17.072] [info] CMC::computeControls, t = 0.94188
+[2023-08-15 22:32:17.092] [info] CMC::computeControls, t = 0.94288
+[2023-08-15 22:32:17.108] [info] CMC::computeControls, t = 0.94388
+[2023-08-15 22:32:17.132] [info] CMC::computeControls, t = 0.94488
+[2023-08-15 22:32:17.152] [info] CMC::computeControls, t = 0.94588
+[2023-08-15 22:32:17.181] [info] CMC::computeControls, t = 0.94688
+[2023-08-15 22:32:17.217] [info] CMC::computeControls, t = 0.94788
+[2023-08-15 22:32:17.240] [info] CMC::computeControls, t = 0.94888
+[2023-08-15 22:32:17.263] [info] CMC::computeControls, t = 0.94988
+[2023-08-15 22:32:17.292] [info] CMC::computeControls, t = 0.950880
+[2023-08-15 22:32:17.314] [info] CMC::computeControls, t = 0.95188
+[2023-08-15 22:32:17.331] [info] CMC::computeControls, t = 0.95288
+[2023-08-15 22:32:17.348] [info] CMC::computeControls, t = 0.95388
+[2023-08-15 22:32:17.371] [info] CMC::computeControls, t = 0.95488
+[2023-08-15 22:32:17.403] [info] CMC::computeControls, t = 0.95588
+[2023-08-15 22:32:17.430] [info] CMC::computeControls, t = 0.95688
+[2023-08-15 22:32:17.459] [info] CMC::computeControls, t = 0.95788
+[2023-08-15 22:32:17.486] [info] CMC::computeControls, t = 0.95888
+[2023-08-15 22:32:17.506] [info] CMC::computeControls, t = 0.95988
+[2023-08-15 22:32:17.528] [info] CMC::computeControls, t = 0.960880
+[2023-08-15 22:32:17.556] [info] CMC::computeControls, t = 0.96188
+[2023-08-15 22:32:17.586] [info] CMC::computeControls, t = 0.96288
+[2023-08-15 22:32:17.604] [info] CMC::computeControls, t = 0.96388
+[2023-08-15 22:32:17.631] [info] CMC::computeControls, t = 0.96488
+[2023-08-15 22:32:17.650] [info] CMC::computeControls, t = 0.96588
+[2023-08-15 22:32:17.667] [info] CMC::computeControls, t = 0.96688
+[2023-08-15 22:32:17.684] [info] CMC::computeControls, t = 0.96788
+[2023-08-15 22:32:17.703] [info] CMC::computeControls, t = 0.96888
+[2023-08-15 22:32:17.719] [info] CMC::computeControls, t = 0.96988
+[2023-08-15 22:32:17.738] [info] CMC::computeControls, t = 0.970880
+[2023-08-15 22:32:17.760] [info] CMC::computeControls, t = 0.97188
+[2023-08-15 22:32:17.776] [info] CMC::computeControls, t = 0.97288
+[2023-08-15 22:32:17.793] [info] CMC::computeControls, t = 0.97388
+[2023-08-15 22:32:17.809] [info] CMC::computeControls, t = 0.97488
+[2023-08-15 22:32:17.825] [info] CMC::computeControls, t = 0.97588
+[2023-08-15 22:32:17.842] [info] CMC::computeControls, t = 0.97688
+[2023-08-15 22:32:17.859] [info] CMC::computeControls, t = 0.97788
+[2023-08-15 22:32:17.887] [info] CMC::computeControls, t = 0.97888
+[2023-08-15 22:32:17.911] [info] CMC::computeControls, t = 0.97988
+[2023-08-15 22:32:17.932] [info] CMC::computeControls, t = 0.980880
+[2023-08-15 22:32:17.958] [info] CMC::computeControls, t = 0.98188
+[2023-08-15 22:32:17.984] [info] CMC::computeControls, t = 0.98288
+[2023-08-15 22:32:18.009] [info] CMC::computeControls, t = 0.98388
+[2023-08-15 22:32:18.033] [info] CMC::computeControls, t = 0.98488
+[2023-08-15 22:32:18.057] [info] CMC::computeControls, t = 0.98588
+[2023-08-15 22:32:18.075] [info] CMC::computeControls, t = 0.98688
+[2023-08-15 22:32:18.096] [info] CMC::computeControls, t = 0.98788
+[2023-08-15 22:32:18.116] [info] CMC::computeControls, t = 0.98888
+[2023-08-15 22:32:18.136] [info] CMC::computeControls, t = 0.98988
+[2023-08-15 22:32:18.158] [info] CMC::computeControls, t = 0.990880
+[2023-08-15 22:32:18.175] [info] CMC::computeControls, t = 0.99188
+[2023-08-15 22:32:18.195] [info] CMC::computeControls, t = 0.99288
+[2023-08-15 22:32:18.220] [info] CMC::computeControls, t = 0.99388
+[2023-08-15 22:32:18.244] [info] CMC::computeControls, t = 0.99488
+[2023-08-15 22:32:18.264] [info] CMC::computeControls, t = 0.99588
+[2023-08-15 22:32:18.289] [info] CMC::computeControls, t = 0.99688
+[2023-08-15 22:32:18.313] [info] CMC::computeControls, t = 0.99788
+[2023-08-15 22:32:18.343] [info] CMC::computeControls, t = 0.99888
+[2023-08-15 22:32:18.362] [info] CMC::computeControls, t = 0.99988
+[2023-08-15 22:32:18.385] [info] CMC::computeControls, t = 1.00088
+[2023-08-15 22:32:18.404] [info] CMC::computeControls, t = 1.00188
+[2023-08-15 22:32:18.423] [info] CMC::computeControls, t = 1.00288
+[2023-08-15 22:32:18.443] [info] CMC::computeControls, t = 1.00388
+[2023-08-15 22:32:18.460] [info] CMC::computeControls, t = 1.00488
+[2023-08-15 22:32:18.477] [info] CMC::computeControls, t = 1.00588
+[2023-08-15 22:32:18.495] [info] CMC::computeControls, t = 1.00688
+[2023-08-15 22:32:18.514] [info] CMC::computeControls, t = 1.00788
+[2023-08-15 22:32:18.533] [info] CMC::computeControls, t = 1.00888
+[2023-08-15 22:32:18.558] [info] CMC::computeControls, t = 1.00988
+[2023-08-15 22:32:18.585] [info] CMC::computeControls, t = 1.01088
+[2023-08-15 22:32:18.611] [info] CMC::computeControls, t = 1.01188
+[2023-08-15 22:32:18.655] [info] CMC::computeControls, t = 1.01288
+[2023-08-15 22:32:18.679] [info] CMC::computeControls, t = 1.01388
+[2023-08-15 22:32:18.704] [info] CMC::computeControls, t = 1.01488
+[2023-08-15 22:32:18.732] [info] CMC::computeControls, t = 1.01588
+[2023-08-15 22:32:18.759] [info] CMC::computeControls, t = 1.01688
+[2023-08-15 22:32:18.778] [info] CMC::computeControls, t = 1.01788
+[2023-08-15 22:32:18.805] [info] CMC::computeControls, t = 1.01888
+[2023-08-15 22:32:18.828] [info] CMC::computeControls, t = 1.01988
+[2023-08-15 22:32:18.858] [info] CMC::computeControls, t = 1.02088
+[2023-08-15 22:32:18.891] [info] CMC::computeControls, t = 1.02188
+[2023-08-15 22:32:18.924] [info] CMC::computeControls, t = 1.02288
+[2023-08-15 22:32:18.939] [info] CMC::computeControls, t = 1.02388
+[2023-08-15 22:32:18.959] [info] CMC::computeControls, t = 1.02488
+[2023-08-15 22:32:18.990] [info] CMC::computeControls, t = 1.02588
+[2023-08-15 22:32:19.031] [info] CMC::computeControls, t = 1.02688
+[2023-08-15 22:32:19.062] [info] CMC::computeControls, t = 1.02788
+[2023-08-15 22:32:19.084] [info] CMC::computeControls, t = 1.02888
+[2023-08-15 22:32:19.117] [info] CMC::computeControls, t = 1.02988
+[2023-08-15 22:32:19.142] [info] CMC::computeControls, t = 1.03088
+[2023-08-15 22:32:19.159] [info] CMC::computeControls, t = 1.03188
+[2023-08-15 22:32:19.184] [info] CMC::computeControls, t = 1.03288
+[2023-08-15 22:32:19.218] [info] CMC::computeControls, t = 1.03388
+[2023-08-15 22:32:19.257] [info] CMC::computeControls, t = 1.03488
+[2023-08-15 22:32:19.272] [info] CMC::computeControls, t = 1.03588
+[2023-08-15 22:32:19.293] [info] CMC::computeControls, t = 1.03688
+[2023-08-15 22:32:19.314] [info] CMC::computeControls, t = 1.03788
+[2023-08-15 22:32:19.345] [info] CMC::computeControls, t = 1.03888
+[2023-08-15 22:32:19.371] [info] CMC::computeControls, t = 1.03988
+[2023-08-15 22:32:19.393] [info] CMC::computeControls, t = 1.04088
+[2023-08-15 22:32:19.424] [info] CMC::computeControls, t = 1.04188
+[2023-08-15 22:32:19.452] [info] CMC::computeControls, t = 1.04288
+[2023-08-15 22:32:19.480] [info] CMC::computeControls, t = 1.04388
+[2023-08-15 22:32:19.496] [info] CMC::computeControls, t = 1.04488
+[2023-08-15 22:32:19.511] [info] CMC::computeControls, t = 1.04588
+[2023-08-15 22:32:19.530] [info] CMC::computeControls, t = 1.04688
+[2023-08-15 22:32:19.562] [info] CMC::computeControls, t = 1.04788
+[2023-08-15 22:32:19.596] [info] CMC::computeControls, t = 1.04888
+[2023-08-15 22:32:19.621] [info] CMC::computeControls, t = 1.04988
+[2023-08-15 22:32:19.642] [info] CMC::computeControls, t = 1.05088
+[2023-08-15 22:32:19.671] [info] CMC::computeControls, t = 1.05188
+[2023-08-15 22:32:19.709] [info] CMC::computeControls, t = 1.05288
+[2023-08-15 22:32:19.725] [info] CMC::computeControls, t = 1.05388
+[2023-08-15 22:32:19.752] [info] CMC::computeControls, t = 1.05488
+[2023-08-15 22:32:19.783] [info] CMC::computeControls, t = 1.05588
+[2023-08-15 22:32:19.808] [info] CMC::computeControls, t = 1.05688
+[2023-08-15 22:32:19.841] [info] CMC::computeControls, t = 1.05788
+[2023-08-15 22:32:19.879] [info] CMC::computeControls, t = 1.05888
+[2023-08-15 22:32:19.915] [info] CMC::computeControls, t = 1.05988
+[2023-08-15 22:32:19.958] [info] CMC::computeControls, t = 1.06088
+[2023-08-15 22:32:19.992] [info] CMC::computeControls, t = 1.06188
+[2023-08-15 22:32:20.011] [info] CMC::computeControls, t = 1.06288
+[2023-08-15 22:32:20.049] [info] CMC::computeControls, t = 1.06388
+[2023-08-15 22:32:20.068] [info] CMC::computeControls, t = 1.06488
+[2023-08-15 22:32:20.101] [info] CMC::computeControls, t = 1.06588
+[2023-08-15 22:32:20.120] [info] CMC::computeControls, t = 1.06688
+[2023-08-15 22:32:20.141] [info] CMC::computeControls, t = 1.06788
+[2023-08-15 22:32:20.161] [info] CMC::computeControls, t = 1.06888
+[2023-08-15 22:32:20.187] [info] CMC::computeControls, t = 1.06988
+[2023-08-15 22:32:20.224] [info] CMC::computeControls, t = 1.07088
+[2023-08-15 22:32:20.244] [info] CMC::computeControls, t = 1.07188
+[2023-08-15 22:32:20.265] [info] CMC::computeControls, t = 1.07288
+[2023-08-15 22:32:20.294] [info] CMC::computeControls, t = 1.07388
+[2023-08-15 22:32:20.324] [info] CMC::computeControls, t = 1.07488
+[2023-08-15 22:32:20.339] [info] CMC::computeControls, t = 1.07588
+[2023-08-15 22:32:20.360] [info] CMC::computeControls, t = 1.07688
+[2023-08-15 22:32:20.377] [info] CMC::computeControls, t = 1.07788
+[2023-08-15 22:32:20.403] [info] CMC::computeControls, t = 1.07888
+[2023-08-15 22:32:20.422] [info] CMC::computeControls, t = 1.07988
+[2023-08-15 22:32:20.446] [info] CMC::computeControls, t = 1.08088
+[2023-08-15 22:32:20.476] [info] CMC::computeControls, t = 1.08188
+[2023-08-15 22:32:20.504] [info] CMC::computeControls, t = 1.08288
+[2023-08-15 22:32:20.530] [info] CMC::computeControls, t = 1.08388
+[2023-08-15 22:32:20.566] [info] CMC::computeControls, t = 1.08488
+[2023-08-15 22:32:20.586] [info] CMC::computeControls, t = 1.08588
+[2023-08-15 22:32:20.615] [info] CMC::computeControls, t = 1.08688
+[2023-08-15 22:32:20.654] [info] CMC::computeControls, t = 1.08788
+[2023-08-15 22:32:20.688] [info] CMC::computeControls, t = 1.08888
+[2023-08-15 22:32:20.707] [info] CMC::computeControls, t = 1.08988
+[2023-08-15 22:32:20.725] [info] CMC::computeControls, t = 1.09088
+[2023-08-15 22:32:20.740] [info] CMC::computeControls, t = 1.09188
+[2023-08-15 22:32:20.756] [info] CMC::computeControls, t = 1.09288
+[2023-08-15 22:32:20.776] [info] CMC::computeControls, t = 1.09388
+[2023-08-15 22:32:20.795] [info] CMC::computeControls, t = 1.09488
+[2023-08-15 22:32:20.832] [info] CMC::computeControls, t = 1.09588
+[2023-08-15 22:32:20.867] [info] CMC::computeControls, t = 1.09688
+[2023-08-15 22:32:20.892] [info] CMC::computeControls, t = 1.09788
+[2023-08-15 22:32:20.912] [info] CMC::computeControls, t = 1.09888
+[2023-08-15 22:32:20.952] [info] CMC::computeControls, t = 1.09988
+[2023-08-15 22:32:20.984] [info] CMC::computeControls, t = 1.10088
+[2023-08-15 22:32:21.007] [info] CMC::computeControls, t = 1.10188
+[2023-08-15 22:32:21.040] [info] CMC::computeControls, t = 1.10288
+[2023-08-15 22:32:21.063] [info] CMC::computeControls, t = 1.10388
+[2023-08-15 22:32:21.096] [info] CMC::computeControls, t = 1.10488
+[2023-08-15 22:32:21.125] [info] CMC::computeControls, t = 1.10588
+[2023-08-15 22:32:21.151] [info] CMC::computeControls, t = 1.10688
+[2023-08-15 22:32:21.175] [info] CMC::computeControls, t = 1.10788
+[2023-08-15 22:32:21.190] [info] CMC::computeControls, t = 1.10888
+[2023-08-15 22:32:21.208] [info] CMC::computeControls, t = 1.10988
+[2023-08-15 22:32:21.224] [info] CMC::computeControls, t = 1.11088
+[2023-08-15 22:32:21.253] [info] CMC::computeControls, t = 1.11188
+[2023-08-15 22:32:21.268] [info] CMC::computeControls, t = 1.11288
+[2023-08-15 22:32:21.302] [info] CMC::computeControls, t = 1.11388
+[2023-08-15 22:32:21.322] [info] CMC::computeControls, t = 1.11488
+[2023-08-15 22:32:21.359] [info] CMC::computeControls, t = 1.11588
+[2023-08-15 22:32:21.407] [info] CMC::computeControls, t = 1.11688
+[2023-08-15 22:32:21.432] [info] CMC::computeControls, t = 1.11788
+[2023-08-15 22:32:21.458] [info] CMC::computeControls, t = 1.11888
+[2023-08-15 22:32:21.488] [info] CMC::computeControls, t = 1.11988
+[2023-08-15 22:32:21.524] [info] CMC::computeControls, t = 1.12088
+[2023-08-15 22:32:21.563] [info] CMC::computeControls, t = 1.12188
+[2023-08-15 22:32:21.590] [info] CMC::computeControls, t = 1.12288
+[2023-08-15 22:32:21.627] [info] CMC::computeControls, t = 1.12388
+[2023-08-15 22:32:21.667] [info] CMC::computeControls, t = 1.12488
+[2023-08-15 22:32:21.687] [info] CMC::computeControls, t = 1.12588
+[2023-08-15 22:32:21.703] [info] CMC::computeControls, t = 1.12688
+[2023-08-15 22:32:21.739] [info] CMC::computeControls, t = 1.12788
+[2023-08-15 22:32:21.760] [info] CMC::computeControls, t = 1.12888
+[2023-08-15 22:32:21.800] [info] CMC::computeControls, t = 1.12988
+[2023-08-15 22:32:21.819] [info] CMC::computeControls, t = 1.13088
+[2023-08-15 22:32:21.844] [info] CMC::computeControls, t = 1.13188
+[2023-08-15 22:32:21.870] [info] CMC::computeControls, t = 1.13288
+[2023-08-15 22:32:21.903] [info] CMC::computeControls, t = 1.13388
+[2023-08-15 22:32:21.928] [info] CMC::computeControls, t = 1.13488
+[2023-08-15 22:32:21.946] [info] CMC::computeControls, t = 1.13588
+[2023-08-15 22:32:21.981] [info] CMC::computeControls, t = 1.13688
+[2023-08-15 22:32:22.013] [info] CMC::computeControls, t = 1.13788
+[2023-08-15 22:32:22.038] [info] CMC::computeControls, t = 1.13888
+[2023-08-15 22:32:22.054] [info] CMC::computeControls, t = 1.13988
+[2023-08-15 22:32:22.073] [info] CMC::computeControls, t = 1.14088
+[2023-08-15 22:32:22.097] [info] CMC::computeControls, t = 1.14188
+[2023-08-15 22:32:22.122] [info] CMC::computeControls, t = 1.14288
+[2023-08-15 22:32:22.150] [info] CMC::computeControls, t = 1.14388
+[2023-08-15 22:32:22.166] [info] CMC::computeControls, t = 1.14488
+[2023-08-15 22:32:22.187] [info] CMC::computeControls, t = 1.14588
+[2023-08-15 22:32:22.214] [info] CMC::computeControls, t = 1.14688
+[2023-08-15 22:32:22.233] [info] CMC::computeControls, t = 1.14788
+[2023-08-15 22:32:22.249] [info] CMC::computeControls, t = 1.14888
+[2023-08-15 22:32:22.271] [info] CMC::computeControls, t = 1.14988
+[2023-08-15 22:32:22.287] [info] CMC::computeControls, t = 1.15088
+[2023-08-15 22:32:22.311] [info] CMC::computeControls, t = 1.15188
+[2023-08-15 22:32:22.329] [info] CMC::computeControls, t = 1.15288
+[2023-08-15 22:32:22.345] [info] CMC::computeControls, t = 1.15388
+[2023-08-15 22:32:22.365] [info] CMC::computeControls, t = 1.15488
+[2023-08-15 22:32:22.389] [info] CMC::computeControls, t = 1.15588
+[2023-08-15 22:32:22.406] [info] CMC::computeControls, t = 1.15688
+[2023-08-15 22:32:22.432] [info] CMC::computeControls, t = 1.15788
+[2023-08-15 22:32:22.449] [info] CMC::computeControls, t = 1.15888
+[2023-08-15 22:32:22.466] [info] CMC::computeControls, t = 1.15988
+[2023-08-15 22:32:22.483] [info] CMC::computeControls, t = 1.16088
+[2023-08-15 22:32:22.513] [info] CMC::computeControls, t = 1.16188
+[2023-08-15 22:32:22.539] [info] CMC::computeControls, t = 1.16288
+[2023-08-15 22:32:22.565] [info] CMC::computeControls, t = 1.16388
+[2023-08-15 22:32:22.590] [info] CMC::computeControls, t = 1.16488
+[2023-08-15 22:32:22.611] [info] CMC::computeControls, t = 1.16588
+[2023-08-15 22:32:22.641] [info] CMC::computeControls, t = 1.16688
+[2023-08-15 22:32:22.663] [info] CMC::computeControls, t = 1.16788
+[2023-08-15 22:32:22.684] [info] CMC::computeControls, t = 1.16888
+[2023-08-15 22:32:22.716] [info] CMC::computeControls, t = 1.16988
+[2023-08-15 22:32:22.745] [info] CMC::computeControls, t = 1.17088
+[2023-08-15 22:32:22.778] [info] CMC::computeControls, t = 1.17188
+[2023-08-15 22:32:22.798] [info] CMC::computeControls, t = 1.17288
+[2023-08-15 22:32:22.837] [info] CMC::computeControls, t = 1.17388
+[2023-08-15 22:32:22.856] [info] CMC::computeControls, t = 1.17488
+[2023-08-15 22:32:22.882] [info] CMC::computeControls, t = 1.17588
+[2023-08-15 22:32:22.898] [info] CMC::computeControls, t = 1.17688
+[2023-08-15 22:32:22.926] [info] CMC::computeControls, t = 1.17788
+[2023-08-15 22:32:22.951] [info] CMC::computeControls, t = 1.17888
+[2023-08-15 22:32:22.978] [info] CMC::computeControls, t = 1.17988
+[2023-08-15 22:32:22.997] [info] CMC::computeControls, t = 1.18088
+[2023-08-15 22:32:23.016] [info] CMC::computeControls, t = 1.18188
+[2023-08-15 22:32:23.036] [info] CMC::computeControls, t = 1.18288
+[2023-08-15 22:32:23.056] [info] CMC::computeControls, t = 1.18388
+[2023-08-15 22:32:23.084] [info] CMC::computeControls, t = 1.18488
+[2023-08-15 22:32:23.101] [info] CMC::computeControls, t = 1.18588
+[2023-08-15 22:32:23.127] [info] CMC::computeControls, t = 1.18688
+[2023-08-15 22:32:23.148] [info] CMC::computeControls, t = 1.18788
+[2023-08-15 22:32:23.163] [info] CMC::computeControls, t = 1.18888
+[2023-08-15 22:32:23.178] [info] CMC::computeControls, t = 1.18988
+[2023-08-15 22:32:23.212] [info] CMC::computeControls, t = 1.19088
+[2023-08-15 22:32:23.239] [info] CMC::computeControls, t = 1.19188
+[2023-08-15 22:32:23.257] [info] CMC::computeControls, t = 1.19288
+[2023-08-15 22:32:23.285] [info] CMC::computeControls, t = 1.19388
+[2023-08-15 22:32:23.304] [info] CMC::computeControls, t = 1.19488
+[2023-08-15 22:32:23.339] [info] CMC::computeControls, t = 1.19588
+[2023-08-15 22:32:23.367] [info] CMC::computeControls, t = 1.19688
+[2023-08-15 22:32:23.402] [info] CMC::computeControls, t = 1.19788
+[2023-08-15 22:32:23.435] [info] CMC::computeControls, t = 1.19888
+[2023-08-15 22:32:23.462] [info] CMC::computeControls, t = 1.19988
+[2023-08-15 22:32:23.486] [info] CMC::computeControls, t = 1.20088
+[2023-08-15 22:32:23.513] [info] CMC::computeControls, t = 1.20188
+[2023-08-15 22:32:23.543] [info] CMC::computeControls, t = 1.20288
+[2023-08-15 22:32:23.564] [info] CMC::computeControls, t = 1.20388
+[2023-08-15 22:32:23.598] [info] CMC::computeControls, t = 1.20488
+[2023-08-15 22:32:23.613] [info] CMC::computeControls, t = 1.20588
+[2023-08-15 22:32:23.633] [info] CMC::computeControls, t = 1.20688
+[2023-08-15 22:32:23.658] [info] CMC::computeControls, t = 1.20788
+[2023-08-15 22:32:23.695] [info] CMC::computeControls, t = 1.20888
+[2023-08-15 22:32:23.729] [info] CMC::computeControls, t = 1.20988
+[2023-08-15 22:32:23.752] [info] CMC::computeControls, t = 1.21088
+[2023-08-15 22:32:23.790] [info] CMC::computeControls, t = 1.21188
+[2023-08-15 22:32:23.810] [info] CMC::computeControls, t = 1.21288
+[2023-08-15 22:32:23.836] [info] CMC::computeControls, t = 1.21388
+[2023-08-15 22:32:23.854] [info] CMC::computeControls, t = 1.21488
+[2023-08-15 22:32:23.875] [info] CMC::computeControls, t = 1.21588
+[2023-08-15 22:32:23.891] [info] CMC::computeControls, t = 1.21688
+[2023-08-15 22:32:23.915] [info] CMC::computeControls, t = 1.21788
+[2023-08-15 22:32:23.938] [info] CMC::computeControls, t = 1.21888
+[2023-08-15 22:32:23.973] [info] CMC::computeControls, t = 1.21988
+[2023-08-15 22:32:24.005] [info] CMC::computeControls, t = 1.22088
+[2023-08-15 22:32:24.044] [info] CMC::computeControls, t = 1.22188
+[2023-08-15 22:32:24.068] [info] CMC::computeControls, t = 1.22288
+[2023-08-15 22:32:24.094] [info] CMC::computeControls, t = 1.22388
+[2023-08-15 22:32:24.137] [info] CMC::computeControls, t = 1.22488
+[2023-08-15 22:32:24.164] [info] CMC::computeControls, t = 1.22588
+[2023-08-15 22:32:24.195] [info] CMC::computeControls, t = 1.22688
+[2023-08-15 22:32:24.226] [info] CMC::computeControls, t = 1.22788
+[2023-08-15 22:32:24.243] [info] CMC::computeControls, t = 1.22888
+[2023-08-15 22:32:24.259] [info] CMC::computeControls, t = 1.22988
+[2023-08-15 22:32:24.274] [info] CMC::computeControls, t = 1.23088
+[2023-08-15 22:32:24.301] [info] CMC::computeControls, t = 1.23188
+[2023-08-15 22:32:24.325] [info] CMC::computeControls, t = 1.23288
+[2023-08-15 22:32:24.357] [info] CMC::computeControls, t = 1.23388
+[2023-08-15 22:32:24.391] [info] CMC::computeControls, t = 1.23488
+[2023-08-15 22:32:24.424] [info] CMC::computeControls, t = 1.23588
+[2023-08-15 22:32:24.456] [info] CMC::computeControls, t = 1.23688
+[2023-08-15 22:32:24.475] [info] CMC::computeControls, t = 1.23788
+[2023-08-15 22:32:24.493] [info] CMC::computeControls, t = 1.23888
+[2023-08-15 22:32:24.527] [info] CMC::computeControls, t = 1.23988
+[2023-08-15 22:32:24.546] [info] CMC::computeControls, t = 1.24088
+[2023-08-15 22:32:24.563] [info] CMC::computeControls, t = 1.24188
+[2023-08-15 22:32:24.607] [info] CMC::computeControls, t = 1.24288
+[2023-08-15 22:32:24.654] [info] CMC::computeControls, t = 1.24388
+[2023-08-15 22:32:24.676] [info] CMC::computeControls, t = 1.24488
+[2023-08-15 22:32:24.706] [info] CMC::computeControls, t = 1.24588
+[2023-08-15 22:32:24.732] [info] CMC::computeControls, t = 1.24688
+[2023-08-15 22:32:24.762] [info] CMC::computeControls, t = 1.24788
+[2023-08-15 22:32:24.788] [info] CMC::computeControls, t = 1.24888
+[2023-08-15 22:32:24.814] [info] CMC::computeControls, t = 1.24988
+[2023-08-15 22:32:24.838] [info] CMC::computeControls, t = 1.25088
+[2023-08-15 22:32:24.855] [info] CMC::computeControls, t = 1.25188
+[2023-08-15 22:32:24.880] [info] CMC::computeControls, t = 1.25288
+[2023-08-15 22:32:24.896] [info] CMC::computeControls, t = 1.25388
+[2023-08-15 22:32:24.911] [info] CMC::computeControls, t = 1.25488
+[2023-08-15 22:32:24.927] [info] CMC::computeControls, t = 1.25588
+[2023-08-15 22:32:24.953] [info] CMC::computeControls, t = 1.25688
+[2023-08-15 22:32:24.975] [info] CMC::computeControls, t = 1.25788
+[2023-08-15 22:32:25.000] [info] CMC::computeControls, t = 1.25888
+[2023-08-15 22:32:25.036] [info] CMC::computeControls, t = 1.25988
+[2023-08-15 22:32:25.054] [info] CMC::computeControls, t = 1.26088
+[2023-08-15 22:32:25.080] [info] CMC::computeControls, t = 1.26188
+[2023-08-15 22:32:25.104] [info] CMC::computeControls, t = 1.26288
+[2023-08-15 22:32:25.122] [info] CMC::computeControls, t = 1.26388
+[2023-08-15 22:32:25.144] [info] CMC::computeControls, t = 1.26488
+[2023-08-15 22:32:25.160] [info] CMC::computeControls, t = 1.26588
+[2023-08-15 22:32:25.176] [info] CMC::computeControls, t = 1.26688
+[2023-08-15 22:32:25.201] [info] CMC::computeControls, t = 1.26788
+[2023-08-15 22:32:25.229] [info] CMC::computeControls, t = 1.26888
+[2023-08-15 22:32:25.255] [info] CMC::computeControls, t = 1.26988
+[2023-08-15 22:32:25.281] [info] CMC::computeControls, t = 1.27088
+[2023-08-15 22:32:25.320] [info] CMC::computeControls, t = 1.27188
+[2023-08-15 22:32:25.350] [info] CMC::computeControls, t = 1.27288
+[2023-08-15 22:32:25.379] [info] CMC::computeControls, t = 1.27388
+[2023-08-15 22:32:25.407] [info] CMC::computeControls, t = 1.27488
+[2023-08-15 22:32:25.424] [info] CMC::computeControls, t = 1.27588
+[2023-08-15 22:32:25.451] [info] CMC::computeControls, t = 1.27688
+[2023-08-15 22:32:25.485] [info] CMC::computeControls, t = 1.27788
+[2023-08-15 22:32:25.510] [info] CMC::computeControls, t = 1.27888
+[2023-08-15 22:32:25.550] [info] CMC::computeControls, t = 1.27988
+[2023-08-15 22:32:25.578] [info] CMC::computeControls, t = 1.28088
+[2023-08-15 22:32:25.620] [info] CMC::computeControls, t = 1.28188
+[2023-08-15 22:32:25.647] [info] CMC::computeControls, t = 1.28288
+[2023-08-15 22:32:25.667] [info] CMC::computeControls, t = 1.28388
+[2023-08-15 22:32:25.684] [info] CMC::computeControls, t = 1.28488
+[2023-08-15 22:32:25.703] [info] CMC::computeControls, t = 1.28588
+[2023-08-15 22:32:25.725] [info] CMC::computeControls, t = 1.28688
+[2023-08-15 22:32:25.749] [info] CMC::computeControls, t = 1.28788
+[2023-08-15 22:32:25.773] [info] CMC::computeControls, t = 1.28888
+[2023-08-15 22:32:25.789] [info] CMC::computeControls, t = 1.28988
+[2023-08-15 22:32:25.828] [info] CMC::computeControls, t = 1.29088
+[2023-08-15 22:32:25.850] [info] CMC::computeControls, t = 1.29188
+[2023-08-15 22:32:25.870] [info] CMC::computeControls, t = 1.29288
+[2023-08-15 22:32:25.900] [info] CMC::computeControls, t = 1.29388
+[2023-08-15 22:32:25.929] [info] CMC::computeControls, t = 1.29488
+[2023-08-15 22:32:25.971] [info] CMC::computeControls, t = 1.29588
+[2023-08-15 22:32:26.005] [info] CMC::computeControls, t = 1.29688
+[2023-08-15 22:32:26.020] [info] CMC::computeControls, t = 1.29788
+[2023-08-15 22:32:26.054] [info] CMC::computeControls, t = 1.29888
+[2023-08-15 22:32:26.080] [info] CMC::computeControls, t = 1.29988
+[2023-08-15 22:32:26.102] [info] CMC::computeControls, t = 1.30088
+[2023-08-15 22:32:26.129] [info] CMC::computeControls, t = 1.30188
+[2023-08-15 22:32:26.159] [info] CMC::computeControls, t = 1.30288
+[2023-08-15 22:32:26.189] [info] CMC::computeControls, t = 1.30388
+[2023-08-15 22:32:26.212] [info] CMC::computeControls, t = 1.30488
+[2023-08-15 22:32:26.238] [info] CMC::computeControls, t = 1.30588
+[2023-08-15 22:32:26.259] [info] CMC::computeControls, t = 1.30688
+[2023-08-15 22:32:26.285] [info] CMC::computeControls, t = 1.30788
+[2023-08-15 22:32:26.308] [info] CMC::computeControls, t = 1.30888
+[2023-08-15 22:32:26.334] [info] CMC::computeControls, t = 1.30988
+[2023-08-15 22:32:26.359] [info] CMC::computeControls, t = 1.31088
+[2023-08-15 22:32:26.378] [info] CMC::computeControls, t = 1.31188
+[2023-08-15 22:32:26.408] [info] CMC::computeControls, t = 1.31288
+[2023-08-15 22:32:26.443] [info] CMC::computeControls, t = 1.31388
+[2023-08-15 22:32:26.462] [info] CMC::computeControls, t = 1.31488
+[2023-08-15 22:32:26.494] [info] CMC::computeControls, t = 1.31588
+[2023-08-15 22:32:26.518] [info] CMC::computeControls, t = 1.31688
+[2023-08-15 22:32:26.538] [info] CMC::computeControls, t = 1.31788
+[2023-08-15 22:32:26.553] [info] CMC::computeControls, t = 1.31888
+[2023-08-15 22:32:26.579] [info] CMC::computeControls, t = 1.31988
+[2023-08-15 22:32:26.594] [info] CMC::computeControls, t = 1.32088
+[2023-08-15 22:32:26.613] [info] CMC::computeControls, t = 1.32188
+[2023-08-15 22:32:26.646] [info] CMC::computeControls, t = 1.32288
+[2023-08-15 22:32:26.672] [info] CMC::computeControls, t = 1.32388
+[2023-08-15 22:32:26.688] [info] CMC::computeControls, t = 1.32488
+[2023-08-15 22:32:26.711] [info] CMC::computeControls, t = 1.32588
+[2023-08-15 22:32:26.745] [info] CMC::computeControls, t = 1.32688
+[2023-08-15 22:32:26.765] [info] CMC::computeControls, t = 1.32788
+[2023-08-15 22:32:26.785] [info] CMC::computeControls, t = 1.32888
+[2023-08-15 22:32:26.822] [info] CMC::computeControls, t = 1.32988
+[2023-08-15 22:32:26.854] [info] CMC::computeControls, t = 1.33088
+[2023-08-15 22:32:26.882] [info] CMC::computeControls, t = 1.33188
+[2023-08-15 22:32:26.908] [info] CMC::computeControls, t = 1.33288
+[2023-08-15 22:32:26.933] [info] CMC::computeControls, t = 1.33388
+[2023-08-15 22:32:26.952] [info] CMC::computeControls, t = 1.33488
+[2023-08-15 22:32:26.969] [info] CMC::computeControls, t = 1.33588
+[2023-08-15 22:32:26.985] [info] CMC::computeControls, t = 1.33688
+[2023-08-15 22:32:27.001] [info] CMC::computeControls, t = 1.33788
+[2023-08-15 22:32:27.017] [info] CMC::computeControls, t = 1.33888
+[2023-08-15 22:32:27.044] [info] CMC::computeControls, t = 1.33988
+[2023-08-15 22:32:27.074] [info] CMC::computeControls, t = 1.34088
+[2023-08-15 22:32:27.090] [info] CMC::computeControls, t = 1.34188
+[2023-08-15 22:32:27.107] [info] CMC::computeControls, t = 1.34288
+[2023-08-15 22:32:27.122] [info] CMC::computeControls, t = 1.34388
+[2023-08-15 22:32:27.137] [info] CMC::computeControls, t = 1.34488
+[2023-08-15 22:32:27.165] [info] CMC::computeControls, t = 1.34588
+[2023-08-15 22:32:27.189] [info] CMC::computeControls, t = 1.34688
+[2023-08-15 22:32:27.211] [info] CMC::computeControls, t = 1.34788
+[2023-08-15 22:32:27.233] [info] CMC::computeControls, t = 1.34888
+[2023-08-15 22:32:27.270] [info] CMC::computeControls, t = 1.34988
+[2023-08-15 22:32:27.298] [info] CMC::computeControls, t = 1.35088
+[2023-08-15 22:32:27.325] [info] CMC::computeControls, t = 1.35188
+[2023-08-15 22:32:27.348] [info] CMC::computeControls, t = 1.35288
+[2023-08-15 22:32:27.370] [info] CMC::computeControls, t = 1.35388
+[2023-08-15 22:32:27.395] [info] CMC::computeControls, t = 1.35488
+[2023-08-15 22:32:27.411] [info] CMC::computeControls, t = 1.35588
+[2023-08-15 22:32:27.427] [info] CMC::computeControls, t = 1.35688
+[2023-08-15 22:32:27.442] [info] CMC::computeControls, t = 1.35788
+[2023-08-15 22:32:27.468] [info] CMC::computeControls, t = 1.35888
+[2023-08-15 22:32:27.485] [info] CMC::computeControls, t = 1.35988
+[2023-08-15 22:32:27.509] [info] CMC::computeControls, t = 1.36088
+[2023-08-15 22:32:27.536] [info] CMC::computeControls, t = 1.36188
+[2023-08-15 22:32:27.557] [info] CMC::computeControls, t = 1.36288
+[2023-08-15 22:32:27.581] [info] CMC::computeControls, t = 1.36388
+[2023-08-15 22:32:27.613] [info] CMC::computeControls, t = 1.36488
+[2023-08-15 22:32:27.646] [info] CMC::computeControls, t = 1.36588
+[2023-08-15 22:32:27.672] [info] CMC::computeControls, t = 1.36688
+[2023-08-15 22:32:27.699] [info] CMC::computeControls, t = 1.36788
+[2023-08-15 22:32:27.734] [info] CMC::computeControls, t = 1.36888
+[2023-08-15 22:32:27.772] [info] CMC::computeControls, t = 1.36988
+[2023-08-15 22:32:27.799] [info] CMC::computeControls, t = 1.37088
+[2023-08-15 22:32:27.816] [info] CMC::computeControls, t = 1.37188
+[2023-08-15 22:32:27.854] [info] CMC::computeControls, t = 1.37288
+[2023-08-15 22:32:27.887] [info] CMC::computeControls, t = 1.37388
+[2023-08-15 22:32:27.902] [info] CMC::computeControls, t = 1.37488
+[2023-08-15 22:32:27.934] [info] CMC::computeControls, t = 1.37588
+[2023-08-15 22:32:27.955] [info] CMC::computeControls, t = 1.37688
+[2023-08-15 22:32:27.984] [info] CMC::computeControls, t = 1.37788
+[2023-08-15 22:32:28.023] [info] CMC::computeControls, t = 1.37888
+[2023-08-15 22:32:28.042] [info] CMC::computeControls, t = 1.37988
+[2023-08-15 22:32:28.061] [info] CMC::computeControls, t = 1.38088
+[2023-08-15 22:32:28.077] [info] CMC::computeControls, t = 1.38188
+[2023-08-15 22:32:28.098] [info] CMC::computeControls, t = 1.38288
+[2023-08-15 22:32:28.140] [info] CMC::computeControls, t = 1.38388
+[2023-08-15 22:32:28.178] [info] CMC::computeControls, t = 1.38488
+[2023-08-15 22:32:28.204] [info] CMC::computeControls, t = 1.38588
+[2023-08-15 22:32:28.230] [info] CMC::computeControls, t = 1.38688
+[2023-08-15 22:32:28.269] [info] CMC::computeControls, t = 1.38788
+[2023-08-15 22:32:28.303] [info] CMC::computeControls, t = 1.38888
+[2023-08-15 22:32:28.332] [info] CMC::computeControls, t = 1.38988
+[2023-08-15 22:32:28.352] [info] CMC::computeControls, t = 1.39088
+[2023-08-15 22:32:28.374] [info] CMC::computeControls, t = 1.39188
+[2023-08-15 22:32:28.391] [info] CMC::computeControls, t = 1.39288
+[2023-08-15 22:32:28.417] [info] CMC::computeControls, t = 1.39388
+[2023-08-15 22:32:28.454] [info] CMC::computeControls, t = 1.39488
+[2023-08-15 22:32:28.489] [info] CMC::computeControls, t = 1.39588
+[2023-08-15 22:32:28.519] [info] CMC::computeControls, t = 1.39688
+[2023-08-15 22:32:28.539] [info] CMC::computeControls, t = 1.39788
+[2023-08-15 22:32:28.563] [info] CMC::computeControls, t = 1.39888
+[2023-08-15 22:32:28.603] [info] CMC::computeControls, t = 1.39988
+[2023-08-15 22:32:28.628] [info] CMC::computeControls, t = 1.40088
+[2023-08-15 22:32:28.647] [info] CMC::computeControls, t = 1.40188
+[2023-08-15 22:32:28.669] [info] CMC::computeControls, t = 1.40288
+[2023-08-15 22:32:28.704] [info] CMC::computeControls, t = 1.40388
+[2023-08-15 22:32:28.728] [info] CMC::computeControls, t = 1.40488
+[2023-08-15 22:32:28.759] [info] CMC::computeControls, t = 1.40588
+[2023-08-15 22:32:28.775] [info] CMC::computeControls, t = 1.40688
+[2023-08-15 22:32:28.804] [info] CMC::computeControls, t = 1.40788
+[2023-08-15 22:32:28.829] [info] CMC::computeControls, t = 1.40888
+[2023-08-15 22:32:28.853] [info] CMC::computeControls, t = 1.40988
+[2023-08-15 22:32:28.876] [info] CMC::computeControls, t = 1.41088
+[2023-08-15 22:32:28.899] [info] CMC::computeControls, t = 1.41188
+[2023-08-15 22:32:28.916] [info] CMC::computeControls, t = 1.41288
+[2023-08-15 22:32:28.949] [info] CMC::computeControls, t = 1.41388
+[2023-08-15 22:32:28.974] [info] CMC::computeControls, t = 1.41488
+[2023-08-15 22:32:29.006] [info] CMC::computeControls, t = 1.41588
+[2023-08-15 22:32:29.049] [info] CMC::computeControls, t = 1.41688
+[2023-08-15 22:32:29.089] [info] CMC::computeControls, t = 1.41788
+[2023-08-15 22:32:29.125] [info] CMC::computeControls, t = 1.41888
+[2023-08-15 22:32:29.159] [info] CMC::computeControls, t = 1.41988
+[2023-08-15 22:32:29.182] [info] CMC::computeControls, t = 1.42088
+[2023-08-15 22:32:29.207] [info] CMC::computeControls, t = 1.42188
+[2023-08-15 22:32:29.231] [info] CMC::computeControls, t = 1.42288
+[2023-08-15 22:32:29.259] [info] CMC::computeControls, t = 1.42388
+[2023-08-15 22:32:29.276] [info] CMC::computeControls, t = 1.42488
+[2023-08-15 22:32:29.291] [info] CMC::computeControls, t = 1.42588
+[2023-08-15 22:32:29.317] [info] CMC::computeControls, t = 1.42688
+[2023-08-15 22:32:29.338] [info] CMC::computeControls, t = 1.42788
+[2023-08-15 22:32:29.367] [info] CMC::computeControls, t = 1.42888
+[2023-08-15 22:32:29.395] [info] CMC::computeControls, t = 1.42988
+[2023-08-15 22:32:29.424] [info] CMC::computeControls, t = 1.43088
+[2023-08-15 22:32:29.461] [info] CMC::computeControls, t = 1.43188
+[2023-08-15 22:32:29.488] [info] CMC::computeControls, t = 1.43288
+[2023-08-15 22:32:29.518] [info] CMC::computeControls, t = 1.43388
+[2023-08-15 22:32:29.539] [info] CMC::computeControls, t = 1.43488
+[2023-08-15 22:32:29.563] [info] CMC::computeControls, t = 1.43588
+[2023-08-15 22:32:29.586] [info] CMC::computeControls, t = 1.43688
+[2023-08-15 22:32:29.616] [info] CMC::computeControls, t = 1.43788
+[2023-08-15 22:32:29.652] [info] CMC::computeControls, t = 1.43888
+[2023-08-15 22:32:29.670] [info] CMC::computeControls, t = 1.43988
+[2023-08-15 22:32:29.695] [info] CMC::computeControls, t = 1.44088
+[2023-08-15 22:32:29.711] [info] CMC::computeControls, t = 1.44188
+[2023-08-15 22:32:29.740] [info] CMC::computeControls, t = 1.44288
+[2023-08-15 22:32:29.766] [info] CMC::computeControls, t = 1.44388
+[2023-08-15 22:32:29.797] [info] CMC::computeControls, t = 1.44488
+[2023-08-15 22:32:29.817] [info] CMC::computeControls, t = 1.44588
+[2023-08-15 22:32:29.837] [info] CMC::computeControls, t = 1.44688
+[2023-08-15 22:32:29.859] [info] CMC::computeControls, t = 1.44788
+[2023-08-15 22:32:29.893] [info] CMC::computeControls, t = 1.44888
+[2023-08-15 22:32:29.932] [info] CMC::computeControls, t = 1.44988
+[2023-08-15 22:32:29.958] [info] CMC::computeControls, t = 1.45088
+[2023-08-15 22:32:29.983] [info] CMC::computeControls, t = 1.45188
+[2023-08-15 22:32:30.013] [info] CMC::computeControls, t = 1.45288
+[2023-08-15 22:32:30.033] [info] CMC::computeControls, t = 1.45388
+[2023-08-15 22:32:30.050] [info] CMC::computeControls, t = 1.45488
+[2023-08-15 22:32:30.071] [info] CMC::computeControls, t = 1.45588
+[2023-08-15 22:32:30.088] [info] CMC::computeControls, t = 1.45688
+[2023-08-15 22:32:30.107] [info] CMC::computeControls, t = 1.45788
+[2023-08-15 22:32:30.143] [info] CMC::computeControls, t = 1.45888
+[2023-08-15 22:32:30.174] [info] CMC::computeControls, t = 1.45988
+[2023-08-15 22:32:30.202] [info] CMC::computeControls, t = 1.46088
+[2023-08-15 22:32:30.226] [info] CMC::computeControls, t = 1.46188
+[2023-08-15 22:32:30.250] [info] CMC::computeControls, t = 1.46288
+[2023-08-15 22:32:30.268] [info] CMC::computeControls, t = 1.46388
+[2023-08-15 22:32:30.284] [info] CMC::computeControls, t = 1.46488
+[2023-08-15 22:32:30.302] [info] CMC::computeControls, t = 1.46588
+[2023-08-15 22:32:30.325] [info] CMC::computeControls, t = 1.46688
+[2023-08-15 22:32:30.345] [info] CMC::computeControls, t = 1.46788
+[2023-08-15 22:32:30.360] [info] CMC::computeControls, t = 1.46888
+[2023-08-15 22:32:30.383] [info] CMC::computeControls, t = 1.46988
+[2023-08-15 22:32:30.401] [info] CMC::computeControls, t = 1.47088
+[2023-08-15 22:32:30.438] [info] CMC::computeControls, t = 1.47188
+[2023-08-15 22:32:30.459] [info] CMC::computeControls, t = 1.47288
+[2023-08-15 22:32:30.479] [info] CMC::computeControls, t = 1.47388
+[2023-08-15 22:32:30.495] [info] CMC::computeControls, t = 1.47488
+[2023-08-15 22:32:30.520] [info] CMC::computeControls, t = 1.47588
+[2023-08-15 22:32:30.539] [info] CMC::computeControls, t = 1.47688
+[2023-08-15 22:32:30.556] [info] CMC::computeControls, t = 1.47788
+[2023-08-15 22:32:30.593] [info] CMC::computeControls, t = 1.47888
+[2023-08-15 22:32:30.617] [info] CMC::computeControls, t = 1.47988
+[2023-08-15 22:32:30.653] [info] CMC::computeControls, t = 1.48088
+[2023-08-15 22:32:30.671] [info] CMC::computeControls, t = 1.48188
+[2023-08-15 22:32:30.699] [info] CMC::computeControls, t = 1.48288
+[2023-08-15 22:32:30.715] [info] CMC::computeControls, t = 1.48388
+[2023-08-15 22:32:30.732] [info] CMC::computeControls, t = 1.48488
+[2023-08-15 22:32:30.757] [info] CMC::computeControls, t = 1.48588
+[2023-08-15 22:32:30.780] [info] CMC::computeControls, t = 1.48688
+[2023-08-15 22:32:30.806] [info] CMC::computeControls, t = 1.48788
+[2023-08-15 22:32:30.828] [info] CMC::computeControls, t = 1.48888
+[2023-08-15 22:32:30.845] [info] CMC::computeControls, t = 1.48988
+[2023-08-15 22:32:30.872] [info] CMC::computeControls, t = 1.49088
+[2023-08-15 22:32:30.900] [info] CMC::computeControls, t = 1.49188
+[2023-08-15 22:32:30.920] [info] CMC::computeControls, t = 1.49288
+[2023-08-15 22:32:30.937] [info] CMC::computeControls, t = 1.49388
+[2023-08-15 22:32:30.953] [info] CMC::computeControls, t = 1.49488
+[2023-08-15 22:32:30.980] [info] CMC::computeControls, t = 1.49588
+[2023-08-15 22:32:30.996] [info] CMC::computeControls, t = 1.49688
+[2023-08-15 22:32:31.015] [info] CMC::computeControls, t = 1.49788
+[2023-08-15 22:32:31.036] [info] CMC::computeControls, t = 1.49888
+[2023-08-15 22:32:31.053] [info] CMC::computeControls, t = 1.49988
+[2023-08-15 22:32:31.074] [info] CMC::computeControls, t = 1.50088
+[2023-08-15 22:32:31.090] [info] CMC::computeControls, t = 1.50188
+[2023-08-15 22:32:31.109] [info] CMC::computeControls, t = 1.50288
+[2023-08-15 22:32:31.135] [info] CMC::computeControls, t = 1.50388
+[2023-08-15 22:32:31.160] [info] CMC::computeControls, t = 1.50488
+[2023-08-15 22:32:31.196] [info] CMC::computeControls, t = 1.50588
+[2023-08-15 22:32:31.233] [info] CMC::computeControls, t = 1.50688
+[2023-08-15 22:32:31.251] [info] CMC::computeControls, t = 1.50788
+[2023-08-15 22:32:31.267] [info] CMC::computeControls, t = 1.50888
+[2023-08-15 22:32:31.290] [info] CMC::computeControls, t = 1.50988
+[2023-08-15 22:32:31.311] [info] CMC::computeControls, t = 1.51088
+[2023-08-15 22:32:31.344] [info] CMC::computeControls, t = 1.51188
+[2023-08-15 22:32:31.382] [info] CMC::computeControls, t = 1.51288
+[2023-08-15 22:32:31.399] [info] CMC::computeControls, t = 1.51388
+[2023-08-15 22:32:31.415] [info] CMC::computeControls, t = 1.51488
+[2023-08-15 22:32:31.430] [info] CMC::computeControls, t = 1.51588
+[2023-08-15 22:32:31.445] [info] CMC::computeControls, t = 1.51688
+[2023-08-15 22:32:31.464] [info] CMC::computeControls, t = 1.51788
+[2023-08-15 22:32:31.480] [info] CMC::computeControls, t = 1.51888
+[2023-08-15 22:32:31.505] [info] CMC::computeControls, t = 1.51988
+[2023-08-15 22:32:31.532] [info] CMC::computeControls, t = 1.52088
+[2023-08-15 22:32:31.549] [info] CMC::computeControls, t = 1.52188
+[2023-08-15 22:32:31.585] [info] CMC::computeControls, t = 1.52288
+[2023-08-15 22:32:31.623] [info] CMC::computeControls, t = 1.52388
+[2023-08-15 22:32:31.650] [info] CMC::computeControls, t = 1.52488
+[2023-08-15 22:32:31.674] [info] CMC::computeControls, t = 1.52588
+[2023-08-15 22:32:31.710] [info] CMC::computeControls, t = 1.52688
+[2023-08-15 22:32:31.746] [info] CMC::computeControls, t = 1.52788
+[2023-08-15 22:32:31.766] [info] CMC::computeControls, t = 1.52888
+[2023-08-15 22:32:31.797] [info] CMC::computeControls, t = 1.52988
+[2023-08-15 22:32:31.829] [info] CMC::computeControls, t = 1.53088
+[2023-08-15 22:32:31.854] [info] CMC::computeControls, t = 1.53188
+[2023-08-15 22:32:31.880] [info] CMC::computeControls, t = 1.53288
+[2023-08-15 22:32:31.923] [info] CMC::computeControls, t = 1.53388
+[2023-08-15 22:32:31.955] [info] CMC::computeControls, t = 1.53488
+[2023-08-15 22:32:31.978] [info] CMC::computeControls, t = 1.53588
+[2023-08-15 22:32:32.001] [info] CMC::computeControls, t = 1.53688
+[2023-08-15 22:32:32.025] [info] CMC::computeControls, t = 1.53788
+[2023-08-15 22:32:32.050] [info] CMC::computeControls, t = 1.53888
+[2023-08-15 22:32:32.072] [info] CMC::computeControls, t = 1.53988
+[2023-08-15 22:32:32.106] [info] CMC::computeControls, t = 1.54088
+[2023-08-15 22:32:32.145] [info] CMC::computeControls, t = 1.54188
+[2023-08-15 22:32:32.185] [info] CMC::computeControls, t = 1.54288
+[2023-08-15 22:32:32.221] [info] CMC::computeControls, t = 1.54388
+[2023-08-15 22:32:32.255] [info] CMC::computeControls, t = 1.54488
+[2023-08-15 22:32:32.289] [info] CMC::computeControls, t = 1.54588
+[2023-08-15 22:32:32.310] [info] CMC::computeControls, t = 1.54688
+[2023-08-15 22:32:32.343] [info] CMC::computeControls, t = 1.54788
+[2023-08-15 22:32:32.376] [info] CMC::computeControls, t = 1.54888
+[2023-08-15 22:32:32.397] [info] CMC::computeControls, t = 1.54988
+[2023-08-15 22:32:32.423] [info] CMC::computeControls, t = 1.55088
+[2023-08-15 22:32:32.447] [info] CMC::computeControls, t = 1.55188
+[2023-08-15 22:32:32.471] [info] CMC::computeControls, t = 1.55288
+[2023-08-15 22:32:32.499] [info] CMC::computeControls, t = 1.55388
+[2023-08-15 22:32:32.526] [info] CMC::computeControls, t = 1.55488
+[2023-08-15 22:32:32.550] [info] CMC::computeControls, t = 1.55588
+[2023-08-15 22:32:32.568] [info] CMC::computeControls, t = 1.55688
+[2023-08-15 22:32:32.587] [info] CMC::computeControls, t = 1.55788
+[2023-08-15 22:32:32.605] [info] CMC::computeControls, t = 1.55888
+[2023-08-15 22:32:32.633] [info] CMC::computeControls, t = 1.55988
+[2023-08-15 22:32:32.650] [info] CMC::computeControls, t = 1.56088
+[2023-08-15 22:32:32.677] [info] CMC::computeControls, t = 1.56188
+[2023-08-15 22:32:32.693] [info] CMC::computeControls, t = 1.56288
+[2023-08-15 22:32:32.723] [info] CMC::computeControls, t = 1.56388
+[2023-08-15 22:32:32.766] [info] CMC::computeControls, t = 1.56488
+[2023-08-15 22:32:32.793] [info] CMC::computeControls, t = 1.56588
+[2023-08-15 22:32:32.819] [info] CMC::computeControls, t = 1.56688
+[2023-08-15 22:32:32.838] [info] CMC::computeControls, t = 1.56788
+[2023-08-15 22:32:32.854] [info] CMC::computeControls, t = 1.56888
+[2023-08-15 22:32:32.873] [info] -------------------------------------------
+[2023-08-15 22:32:32.873] [info] Finished tracking the specified kinematics:
+[2023-08-15 22:32:32.873] [info] -------------------------------------------
+[2023-08-15 22:32:32.873] [info]  -- Start time = Tue Aug 15 22:32:16 2023
+[2023-08-15 22:32:32.873] [info]  -- Finish time = Tue Aug 15 22:32:32 2023
+[2023-08-15 22:32:32.873] [info]  -- Elapsed time = 16.0 seconds.
+[2023-08-15 22:32:32.873] [info] -------------------------------------------
+[2023-08-15 22:32:32.873] [info] 
+[2023-08-15 22:32:32.873] [info] Printing results of investigation subject17_run5_cycle2_iter1 to cycle2/
+[2023-08-15 22:32:33.522] [info] 
+
+************************************************************
+*      Summary of Mass Adjustments to Reduce Residuals     *
+************************************************************
+* Body adjusted: torso
+* Mass Center (COM) adjustment: dx =-0.1, dz =1.63849e-05
+* New COM location: ~[0.0713998,0.305069,-1.63849e-05]
+************************************************************
+* Recommended mass adjustments:                             
+*  Total mass change: 2.02327
+*  pelvis: orig mass = 10.7245, new mass = 11.0415
+*  femur_r: orig mass = 8.47013, new mass = 8.7205
+*  tibia_r: orig mass = 3.37616, new mass = 3.47596
+*  talus_r: orig mass = 0.0910629, new mass = 0.0937547
+*  calcn_r: orig mass = 1.13829, new mass = 1.17193
+*  toes_r: orig mass = 0.197242, new mass = 0.203073
+*  femur_l: orig mass = 8.47013, new mass = 8.7205
+*  tibia_l: orig mass = 3.37616, new mass = 3.47596
+*  talus_l: orig mass = 0.0910629, new mass = 0.0937547
+*  calcn_l: orig mass = 1.13829, new mass = 1.17193
+*  toes_l: orig mass = 0.197242, new mass = 0.203073
+*  torso: orig mass = 24.4291, new mass = 25.1512
+*  humerus_r: orig mass = 1.85085, new mass = 1.90556
+*  ulna_r: orig mass = 0.553207, new mass = 0.56956
+*  radius_r: orig mass = 0.553207, new mass = 0.56956
+*  hand_r: orig mass = 0.416613, new mass = 0.428928
+*  humerus_l: orig mass = 1.85085, new mass = 1.90556
+*  ulna_l: orig mass = 0.553207, new mass = 0.56956
+*  radius_l: orig mass = 0.553207, new mass = 0.56956
+*  hand_l: orig mass = 0.416613, new mass = 0.428928
+************************************************************
+* Note: Edit the model to make recommended adjustments to  *
+*       mass properties.                                   *
+************************************************************
+
+* Average residuals before adjusting torso COM:
+*  FX=-0.0216892 FY=-19.8415 FZ=-0.629748
+*  MX=-0.00392528 MY=0.939294 MZ=-32.1521
+************************************************************
+* Average residuals after adjusting torso COM:
+*  FX=0.195088 FY=-19.6306 FZ=-0.954249
+*  MX=-2.90263 MY=1.21397 MZ=-9.25118
+************************************************************
+
+
+[2023-08-15 22:32:33.522] [info] 
+************************************************************
+*                   Final Average Residuals                *
+************************************************************
+* After torso COM and Kinematics adjustments:
+*  FX=6.83815 FY=-7.70746 FZ=0.736729
+*  MX=-4.539 MY=-3.08972 MZ=9.69046
+************************************************************
+
+
