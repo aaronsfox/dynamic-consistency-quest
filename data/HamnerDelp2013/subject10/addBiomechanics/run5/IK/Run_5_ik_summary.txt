@@ -1,0 +1,85 @@
+---------------------------------------------
+Trial 'Run_5': Inverse Kinematics Summary
+---------------------------------------------
+
+Automatic processing achieved the following marker errors, averaged
+over all frames of this trial:
+
+  - Avg. Marker RMSE      = 6.15 cm
+  - Avg. Marker Max Error = 8.53 cm
+
+Markers with large root-mean-square error:
+
+  - WARNING: Marker LMT5 has RMSE = 7.55 cm!
+  - WARNING: Marker LTOE has RMSE = 7.55 cm!
+  - WARNING: Marker RTOE has RMSE = 7.53 cm!
+  - WARNING: Marker RMT5 has RMSE = 7.50 cm!
+  - WARNING: Marker CLAV has RMSE = 7.15 cm!
+  - WARNING: Marker RACR has RMSE = 7.12 cm!
+  - WARNING: Marker RMEL has RMSE = 7.08 cm!
+  - WARNING: Marker LACR has RMSE = 7.07 cm!
+  - WARNING: Marker LCAL has RMSE = 7.04 cm!
+  - WARNING: Marker RLEL has RMSE = 7.02 cm!
+  - WARNING: Marker RCAL has RMSE = 6.98 cm!
+  - WARNING: Marker LMEL has RMSE = 6.98 cm!
+  - WARNING: Marker C7 has RMSE = 6.97 cm!
+  - WARNING: Marker LUA2 has RMSE = 6.92 cm!
+  - WARNING: Marker RUA2 has RMSE = 6.87 cm!
+  - WARNING: Marker LPSI has RMSE = 6.87 cm!
+  - WARNING: Marker LUA1 has RMSE = 6.86 cm!
+  - WARNING: Marker LTH2 has RMSE = 6.86 cm!
+  - WARNING: Marker LLEL has RMSE = 6.85 cm!
+  - WARNING: Marker LASI has RMSE = 6.84 cm!
+  - WARNING: Marker LTB2 has RMSE = 6.84 cm!
+  - WARNING: Marker RUA1 has RMSE = 6.83 cm!
+  - WARNING: Marker RUA3 has RMSE = 6.82 cm!
+  - WARNING: Marker LTB1 has RMSE = 6.82 cm!
+  - WARNING: Marker LFAradius has RMSE = 6.80 cm!
+  - WARNING: Marker LTH3 has RMSE = 6.80 cm!
+  - WARNING: Marker LTH1 has RMSE = 6.80 cm!
+  - WARNING: Marker RTH2 has RMSE = 6.80 cm!
+  - WARNING: Marker LTB3 has RMSE = 6.79 cm!
+  - WARNING: Marker LUA3 has RMSE = 6.78 cm!
+  - WARNING: Marker RTB2 has RMSE = 6.77 cm!
+  - WARNING: Marker RTH1 has RMSE = 6.77 cm!
+  - WARNING: Marker RPSI has RMSE = 6.76 cm!
+  - WARNING: Marker LFAulna has RMSE = 6.75 cm!
+  - WARNING: Marker RTB3 has RMSE = 6.74 cm!
+  - WARNING: Marker RTB1 has RMSE = 6.74 cm!
+  - WARNING: Marker LFAsuperior has RMSE = 6.73 cm!
+  - WARNING: Marker RFAsuperior has RMSE = 6.72 cm!
+  - WARNING: Marker RTH3 has RMSE = 6.71 cm!
+  - WARNING: Marker RFAradius has RMSE = 6.70 cm!
+  - WARNING: Marker RASI has RMSE = 6.68 cm!
+  - WARNING: Marker RFAulna has RMSE = 6.67 cm!
+
+The input data for the following markers were modified to enable
+automatic processing:
+
+  - WARNING: Trial segmentation was not enabled, but the time range of trial "Run_5" where markers are present and force was non-zero is not equal to the full time range of the trial. We recommend enabling trial segmentation, which will trim this trial to the time range [0.03, 5.46]..
+  - WARNING: Trial Run_5 was trimmed to the intersection of the marker and force plate data, ([0.03, 5.46]), since the time ranges in the uploaded files did not match..
+
+Additional information:
+
+  - INFO: The marker "LAJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LASH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LEJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LHJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LKJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LLFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LLMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LMFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LMMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LPSH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LSJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RAJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RASH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "REJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RHJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RKJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RLFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RLMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RMFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RMMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RPSH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RSJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..

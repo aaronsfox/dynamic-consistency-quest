@@ -1,0 +1,67 @@
+---------------------------------------------
+Trial 'Run_5': Inverse Kinematics Summary
+---------------------------------------------
+
+Automatic processing achieved the following marker errors, averaged
+over all frames of this trial:
+
+  - Avg. Marker RMSE      = 1.19 cm
+  - Avg. Marker Max Error = 2.64 cm
+
+The input data for the following markers were modified to enable
+automatic processing:
+
+  - WARNING: Trial segmentation was not enabled, but the time range of trial "Run_5" where markers are present and force was non-zero is not equal to the full time range of the trial. We recommend enabling trial segmentation, which will trim this trial to the time range [0.08, 5.46]..
+  - WARNING: Trial Run_5 was trimmed to the intersection of the marker and force plate data, ([0.08, 5.46]), since the time ranges in the uploaded files did not match..
+
+The following model coordinates that hit joint limits during inverse
+kinematics:
+
+  - WARNING: subtalar_angle_r hit upper bound on frame 0.
+  - WARNING: subtalar_angle_r hit upper bound on frames 8-61.
+  - WARNING: subtalar_angle_r hit upper bound on frames 70-126.
+  - WARNING: subtalar_angle_r hit upper bound on frames 132-184.
+  - WARNING: subtalar_angle_r hit upper bound on frames 195-251.
+  - WARNING: subtalar_angle_r hit upper bound on frames 257-299.
+  - WARNING: subtalar_angle_r hit upper bound on frames 308-313.
+  - WARNING: subtalar_angle_r hit upper bound on frames 321-364.
+  - WARNING: subtalar_angle_r hit upper bound on frames 382-437.
+  - WARNING: subtalar_angle_r hit upper bound on frames 445-502.
+  - WARNING: subtalar_angle_l hit upper bound on frames 0-18.
+  - WARNING: subtalar_angle_l hit upper bound on frames 39-93.
+  - WARNING: subtalar_angle_l hit upper bound on frames 103-147.
+  - WARNING: subtalar_angle_l hit upper bound on frames 153-155.
+  - WARNING: subtalar_angle_l hit upper bound on frames 164-208.
+  - WARNING: subtalar_angle_l hit upper bound on frames 213-217.
+  - WARNING: subtalar_angle_l hit upper bound on frames 227-282.
+  - WARNING: subtalar_angle_l hit upper bound on frames 289-343.
+  - WARNING: subtalar_angle_l hit upper bound on frames 353-393.
+  - WARNING: subtalar_angle_l hit upper bound on frames 401-404.
+  - WARNING: subtalar_angle_l hit upper bound on frames 414-469.
+  - WARNING: subtalar_angle_l hit upper bound on frames 477-523.
+
+Additional information:
+
+  - INFO: The marker "LAJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LASH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LEJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LHJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LKJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LLFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LLMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LMFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LMMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LMT5" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LPSH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LSJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RAJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RASH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "REJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RHJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RKJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RLFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RLMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RMFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RMMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RPSH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RSJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..

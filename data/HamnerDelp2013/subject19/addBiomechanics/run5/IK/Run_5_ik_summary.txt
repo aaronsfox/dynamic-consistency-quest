@@ -1,0 +1,126 @@
+---------------------------------------------
+Trial 'Run_5': Inverse Kinematics Summary
+---------------------------------------------
+
+Automatic processing achieved the following marker errors, averaged
+over all frames of this trial:
+
+  - Avg. Marker RMSE      = 1.37 cm
+  - Avg. Marker Max Error = 2.64 cm
+
+The input data for the following markers were modified to enable
+automatic processing:
+
+  - WARNING: Trial segmentation was not enabled, but the time range of trial "Run_5" where markers are present and force was non-zero is not equal to the full time range of the trial. We recommend enabling trial segmentation, which will trim this trial to the time range [0.025, 5.483333]..
+  - WARNING: Trial Run_5 was trimmed to the intersection of the marker and force plate data, ([0.025, 5.483333]), since the time ranges in the uploaded files did not match..
+
+The following model coordinates that hit joint limits during inverse
+kinematics:
+
+  - WARNING: subtalar_angle_l hit upper bound on frames 0-113.
+  - WARNING: subtalar_angle_l hit upper bound on frames 118-256.
+  - WARNING: subtalar_angle_l hit upper bound on frames 263-342.
+  - WARNING: subtalar_angle_l hit upper bound on frames 352-407.
+  - WARNING: subtalar_angle_l hit upper bound on frames 420-485.
+  - WARNING: subtalar_angle_l hit upper bound on frames 497-565.
+  - WARNING: subtalar_angle_l hit upper bound on frames 568-640.
+  - WARNING: subtalar_angle_r hit upper bound on frames 5-54.
+  - WARNING: subtalar_angle_r hit upper bound on frame 59.
+  - WARNING: subtalar_angle_r hit upper bound on frame 60.
+  - WARNING: subtalar_angle_r hit upper bound on frame 61.
+  - WARNING: subtalar_angle_r hit upper bound on frame 62.
+  - WARNING: subtalar_angle_r hit upper bound on frame 63.
+  - WARNING: subtalar_angle_r hit upper bound on frame 64.
+  - WARNING: subtalar_angle_r hit upper bound on frame 65.
+  - WARNING: subtalar_angle_r hit upper bound on frame 66.
+  - WARNING: subtalar_angle_r hit upper bound on frame 67.
+  - WARNING: subtalar_angle_r hit upper bound on frame 68.
+  - WARNING: subtalar_angle_r hit upper bound on frame 69.
+  - WARNING: subtalar_angle_r hit upper bound on frames 82-133.
+  - WARNING: subtalar_angle_r hit upper bound on frame 138.
+  - WARNING: subtalar_angle_r hit upper bound on frame 139.
+  - WARNING: subtalar_angle_r hit upper bound on frame 140.
+  - WARNING: subtalar_angle_r hit upper bound on frame 141.
+  - WARNING: subtalar_angle_r hit upper bound on frame 142.
+  - WARNING: subtalar_angle_r hit upper bound on frame 143.
+  - WARNING: subtalar_angle_r hit upper bound on frame 144.
+  - WARNING: subtalar_angle_r hit upper bound on frame 145.
+  - WARNING: subtalar_angle_r hit upper bound on frame 146.
+  - WARNING: subtalar_angle_r hit upper bound on frame 147.
+  - WARNING: subtalar_angle_r hit upper bound on frame 148.
+  - WARNING: subtalar_angle_r hit upper bound on frames 160-211.
+  - WARNING: subtalar_angle_r hit upper bound on frame 215.
+  - WARNING: subtalar_angle_r hit upper bound on frame 216.
+  - WARNING: subtalar_angle_r hit upper bound on frame 217.
+  - WARNING: subtalar_angle_r hit upper bound on frame 218.
+  - WARNING: subtalar_angle_r hit upper bound on frame 219.
+  - WARNING: subtalar_angle_r hit upper bound on frame 220.
+  - WARNING: subtalar_angle_r hit upper bound on frame 221.
+  - WARNING: subtalar_angle_r hit upper bound on frame 222.
+  - WARNING: subtalar_angle_r hit upper bound on frame 223.
+  - WARNING: subtalar_angle_r hit upper bound on frame 224.
+  - WARNING: subtalar_angle_r hit upper bound on frames 237-287.
+  - WARNING: subtalar_angle_r hit upper bound on frame 293.
+  - WARNING: subtalar_angle_r hit upper bound on frame 294.
+  - WARNING: subtalar_angle_r hit upper bound on frame 295.
+  - WARNING: subtalar_angle_r hit upper bound on frame 296.
+  - WARNING: subtalar_angle_r hit upper bound on frame 297.
+  - WARNING: subtalar_angle_r hit upper bound on frame 298.
+  - WARNING: subtalar_angle_r hit upper bound on frame 299.
+  - WARNING: subtalar_angle_r hit upper bound on frames 313-361.
+  - WARNING: subtalar_angle_r hit upper bound on frame 367.
+  - WARNING: subtalar_angle_r hit upper bound on frame 368.
+  - WARNING: subtalar_angle_r hit upper bound on frame 369.
+  - WARNING: subtalar_angle_r hit upper bound on frame 370.
+  - WARNING: subtalar_angle_r hit upper bound on frame 371.
+  - WARNING: subtalar_angle_r hit upper bound on frame 372.
+  - WARNING: subtalar_angle_r hit upper bound on frame 373.
+  - WARNING: subtalar_angle_r hit upper bound on frames 389-441.
+  - WARNING: subtalar_angle_r hit upper bound on frame 447.
+  - WARNING: subtalar_angle_r hit upper bound on frame 448.
+  - WARNING: subtalar_angle_r hit upper bound on frame 449.
+  - WARNING: subtalar_angle_r hit upper bound on frame 450.
+  - WARNING: subtalar_angle_r hit upper bound on frame 451.
+  - WARNING: subtalar_angle_r hit upper bound on frame 452.
+  - WARNING: subtalar_angle_r hit upper bound on frames 467-519.
+  - WARNING: subtalar_angle_r hit upper bound on frame 524.
+  - WARNING: subtalar_angle_r hit upper bound on frame 525.
+  - WARNING: subtalar_angle_r hit upper bound on frame 526.
+  - WARNING: subtalar_angle_r hit upper bound on frame 527.
+  - WARNING: subtalar_angle_r hit upper bound on frame 528.
+  - WARNING: subtalar_angle_r hit upper bound on frame 529.
+  - WARNING: subtalar_angle_r hit upper bound on frames 545-596.
+  - WARNING: subtalar_angle_r hit upper bound on frame 600.
+  - WARNING: subtalar_angle_r hit upper bound on frame 601.
+  - WARNING: subtalar_angle_r hit upper bound on frame 602.
+  - WARNING: subtalar_angle_r hit upper bound on frame 603.
+  - WARNING: subtalar_angle_r hit upper bound on frame 604.
+  - WARNING: subtalar_angle_r hit upper bound on frame 605.
+  - WARNING: subtalar_angle_r hit upper bound on frame 606.
+  - WARNING: subtalar_angle_r hit upper bound on frame 607.
+  - WARNING: subtalar_angle_r hit upper bound on frame 608.
+
+Additional information:
+
+  - INFO: The marker "LAJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LASH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LEJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LHJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LKJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LLFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LLMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LMFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LMMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LPSH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "LSJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RAJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RASH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "REJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RHJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RKJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RLFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RLMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RMFC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RMMAL" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RPSH" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..
+  - INFO: The marker "RSJC" appears in the model, but not in the mocap data. This generally happens because the marker is a virtual marker. We ignore virtual markers, so this is not a problem, just a heads up..

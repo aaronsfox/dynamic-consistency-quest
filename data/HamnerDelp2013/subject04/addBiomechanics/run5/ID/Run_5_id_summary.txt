@@ -1,0 +1,47 @@
+---------------------------------------
+Trial 'Run_5': Inverse Dynamics Summary
+---------------------------------------
+
+Automatic processing reduced the residual loads needed for dynamic
+consistency to the following magnitudes, averaged over all frames of
+this trial:
+
+  - Avg. Residual Force   = 182.60 N
+  - Avg. Residual Torque  = 75.11 N-m
+
+
+Ground reaction force inconsistencies
+=====================================
+Ground reaction force inconsistencies were detected in 398 out of 539
+frames in this trial. See below for a breakdown of why these "bad"
+frames were detected.
+
+1. "Foot not over a force plate."
+   ------------------------------
+   After optimizing the center-of-mass kinematics to match the observed
+   ground reaction data, an unmeasured external force was still detected
+   in the following frames:
+     - frames 11-12 (times = 0.190-0.200 s)
+     - frame 73 (time = 0.810 s)
+     - frames 135-137 (times = 1.430-1.450 s)
+     - frames 198-199 (times = 2.060-2.070 s)
+     - frames 260-261 (times = 2.680-2.690 s)
+     - frames 323-324 (times = 3.310-3.320 s)
+     - frames 385-386 (times = 3.930-3.940 s)
+     - frames 448-449 (times = 4.560-4.570 s)
+     - frames 512-513 (times = 5.200-5.210 s)
+
+2. "Missing ground reaction force 'blip' detected."
+   ------------------------------------------------
+   Ground reaction forces were detected the following frames were
+   preceded and followed by several frames of zero force data. Therefore,
+   these 'blips' in the data were removed:
+     - frames 13-72 (times = 0.210-0.800 s)
+     - frames 74-113 (times = 0.820-1.210 s)
+     - frames 138-177 (times = 1.460-1.850 s)
+     - frames 200-239 (times = 2.080-2.470 s)
+     - frames 262-301 (times = 2.700-3.090 s)
+     - frames 325-384 (times = 3.330-3.920 s)
+     - frames 387-426 (times = 3.950-4.340 s)
+     - frames 450-489 (times = 4.580-4.970 s)
+     - frames 514-533 (times = 5.220-5.410 s)

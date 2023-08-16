@@ -1,0 +1,2298 @@
+['/app/../engine/engine.py', '/tmp/tmppcz0f35q/', 'subject03', 'https://app.addbiomechanics.org/data/be4510d6-7872-4a4f-9479-3e7530b49139/Dynamic Consistency Paper/subject03/']
+Locking dof subtalar_angle_r
+Locking dof mtp_angle_r
+Locking dof subtalar_angle_l
+Locking dof mtp_angle_l
+Locking dof wrist_flex_r
+Locking dof wrist_dev_r
+Locking dof wrist_flex_l
+Locking dof wrist_dev_l
+Locking dof subtalar_angle_r
+Locking dof mtp_angle_r
+Locking dof subtalar_angle_l
+Locking dof mtp_angle_l
+Locking dof wrist_flex_r
+Locking dof wrist_dev_r
+Locking dof wrist_flex_l
+Locking dof wrist_dev_l
+Reading new GRF column prefixSuffix: R_ground_
+Reading new GRF column prefixSuffix: L_ground_
+Checking trial "Run_5" for non-zero segments...
+Fitting trials ['Run_5']
+Checking and repairing marker data quality on trial Run_5. This can take a while, depending on trial length...
+All trial markers have been cleaned up!
+Coniditioning Multivariate Gaussion on:
+stature (mu=1.71441): 1.81
+weightkg (mu=0.797094): 0.64
+Unobserved Joint: mtp_r
+Unobserved Joint: mtp_l
+Unobserved Joint: radius_hand_r
+Unobserved Joint: radius_hand_l
+Size of observed joints: 16
+Size of unobserved joints: 4
+ joints: 0
+Discovered leaf body "hand_l" with fewer than 3 markers.
+ -> As a result merging bodies "hand_l" into "radius_l"
+Discovered leaf body "radius_l" with fewer than 3 markers.
+ -> As a result merging bodies "radius_l" into "ulna_l"
+Discovered leaf body "hand_r" with fewer than 3 markers.
+ -> As a result merging bodies "hand_r" into "radius_r"
+Discovered leaf body "radius_r" with fewer than 3 markers.
+ -> As a result merging bodies "radius_r" into "ulna_r"
+Discovered leaf body "toes_l" with fewer than 3 markers.
+ -> As a result merging bodies "toes_l" into "calcn_l"
+Discovered leaf body "toes_r" with fewer than 3 markers.
+ -> As a result merging bodies "toes_r" into "calcn_r"
+Discovered locked joint "subtalar_l"
+ -> As a result merging bodies "calcn_l" into "talus_l"
+Discovered locked joint "subtalar_r"
+ -> As a result merging bodies "calcn_r" into "talus_r"
+IKInitializer solved IK 100/364
+IKInitializer solved IK 200/364
+IKInitializer solved IK 300/364
+IKInitializer solved IK 364/364
+Computing joint center for 0/13: "hip_r"
+Computing joint center for 1/13: "knee_r"
+Computing joint center for 2/13: "ankle_r"
+Computing joint center for 3/13: "hip_l"
+Computing joint center for 4/13: "knee_l"
+Computing joint center for 5/13: "ankle_l"
+Computing joint center for 6/13: "back"
+Computing joint center for 7/13: "acromial_r"
+Computing joint center for 8/13: "elbow_r"
+Computing joint center for 9/13: "radioulnar_r"
+Computing joint center for 10/13: "acromial_l"
+Computing joint center for 11/13: "elbow_l"
+Computing joint center for 12/13: "radioulnar_l"
+Sphere-fitting "ankle_l": initial loss=0.000184039, final loss=0.000123535
+Sphere-fitting "radioulnar_r": initial loss=2.62241e-05, final loss=1.25609e-05
+Sphere-fitting "radioulnar_l": initial loss=2.33442e-05, final loss=1.32927e-05
+Sphere-fitting "acromial_r": initial loss=4.08719e-05, final loss=1.42506e-05
+Sphere-fitting "back": initial loss=5.51064e-05, final loss=2.88366e-05
+Sphere-fitting "hip_r": initial loss=4.97584e-05, final loss=1.01981e-05
+Finished computing joint center for 0/13: "hip_r"
+Sphere-fitting "elbow_r": initial loss=1.92736e-05, final loss=1.40246e-05
+Sphere-fitting "knee_l": initial loss=0.000140568, final loss=4.76041e-05
+Sphere-fitting "hip_l": initial loss=3.34762e-05, final loss=1.18371e-05
+Sphere-fitting "knee_r": initial loss=0.000139789, final loss=6.01688e-05
+Sphere-fitting "elbow_l": initial loss=2.27098e-05, final loss=1.63366e-05
+Finished computing joint center for 1/13: "knee_r"
+Sphere-fitting "ankle_r": initial loss=0.000165049, final loss=0.000130695
+Finished computing joint center for 2/13: "ankle_r"
+Finished computing joint center for 3/13: "hip_l"
+Finished computing joint center for 4/13: "knee_l"
+Finished computing joint center for 5/13: "ankle_l"
+Finished computing joint center for 6/13: "back"
+Finished computing joint center for 7/13: "acromial_r"
+Finished computing joint center for 8/13: "elbow_r"
+Finished computing joint center for 9/13: "radioulnar_r"
+Sphere-fitting "acromial_l": initial loss=3.76924e-05, final loss=9.93497e-06
+Finished computing joint center for 10/13: "acromial_l"
+Finished computing joint center for 11/13: "elbow_l"
+Finished computing joint center for 12/13: "radioulnar_l"
+Finished computing all joint centers!
+Computing joint axis for 0/13: "hip_r"
+Computing joint axis for 1/13: "knee_r"
+Computing joint axis for 2/13: "ankle_r"
+Computing joint axis for 3/13: "hip_l"
+Computing joint axis for 4/13: "knee_l"
+Computing joint axis for 5/13: "ankle_l"
+Computing joint axis for 6/13: "back"
+Computing joint axis for 7/13: "acromial_r"
+Computing joint axis for 8/13: "elbow_r"
+Computing joint axis for 9/13: "radioulnar_r"
+Computing joint axis for 10/13: "acromial_l"
+Computing joint axis for 11/13: "elbow_l"
+Computing joint axis for 12/13: "radioulnar_l"
+Cylinder fitting "radioulnar_r": initial loss=0.000460062, final loss=8.37519e-05
+Cylinder fitting "elbow_r": initial loss=1.35762e-05, final loss=7.52054e-06
+Cylinder fitting "radioulnar_l": initial loss=0.000244948, final loss=6.95272e-05
+Cylinder fitting "acromial_r": initial loss=0.00434299, final loss=0.000254997
+Cylinder fitting "elbow_l": initial loss=2.01155e-05, final loss=7.66284e-06
+Cylinder fitting "ankle_l": initial loss=9.88323e-05, final loss=2.42102e-05
+Cylinder fitting "knee_l": initial loss=0.000103513, final loss=1.05067e-05
+Cylinder fitting "hip_l": initial loss=0.0410561, final loss=0.0134563
+Cylinder fitting "ankle_r": initial loss=6.80722e-05, final loss=2.33928e-05
+Cylinder fitting "back": initial loss=0.0361888, final loss=0.00268207
+Cylinder fitting "hip_r": initial loss=0.0285639, final loss=0.00363137
+Finished computing joint axis for 0/13: "hip_r"
+Cylinder fitting "acromial_l": initial loss=0.00293884, final loss=0.000281797
+Cylinder fitting "knee_r": initial loss=0.00010354, final loss=2.17292e-05
+Finished computing joint axis for 1/13: "knee_r"
+Finished computing joint axis for 2/13: "ankle_r"
+Finished computing joint axis for 3/13: "hip_l"
+Finished computing joint axis for 4/13: "knee_l"
+Finished computing joint axis for 5/13: "ankle_l"
+Finished computing joint axis for 6/13: "back"
+Finished computing joint axis for 7/13: "acromial_r"
+Finished computing joint axis for 8/13: "elbow_r"
+Finished computing joint axis for 9/13: "radioulnar_r"
+Finished computing joint axis for 10/13: "acromial_l"
+Finished computing joint axis for 11/13: "elbow_l"
+Finished computing joint axis for 12/13: "radioulnar_l"
+Finished computing all joint axis!
+Joint hip_r variability 17.1104
+	joint loss: 1.01981e-05
+	joint weight: 0
+	axis loss: 0.00363137
+	axis weight: 0.275378
+Joint knee_r variability 44.281
+	joint loss: 6.01688e-05
+	joint weight: 0
+	axis loss: 2.17292e-05
+	axis weight: 0.5
+Joint ankle_r variability 2.00756 -> Too low, we won't include joint axis restrictions on this joint
+	joint loss: 0.000130695
+	joint weight: 0.1
+	axis loss: 2.33928e-05
+	axis weight: 0
+Joint hip_l variability 16.9904
+	joint loss: 1.18371e-05
+	joint weight: 1
+	axis loss: 0.0134563
+	axis weight: 0
+Joint knee_l variability 27.3899
+	joint loss: 4.76041e-05
+	joint weight: 0
+	axis loss: 1.05067e-05
+	axis weight: 0.5
+Joint ankle_l variability 0.562353 -> Too low, we won't include joint axis restrictions on this joint
+	joint loss: 0.000123535
+	joint weight: 0.1
+	axis loss: 2.42102e-05
+	axis weight: 0
+Joint back variability 13.0815
+	joint loss: 2.88366e-05
+	joint weight: 0
+	axis loss: 0.00268207
+	axis weight: 0.372847
+Joint acromial_r variability 20.8074
+	joint loss: 1.42506e-05
+	joint weight: 0
+	axis loss: 0.000254997
+	axis weight: 0.5
+Joint elbow_r variability 7.05621
+	joint loss: 1.40246e-05
+	joint weight: 0
+	axis loss: 7.52054e-06
+	axis weight: 0.5
+Joint radioulnar_r variability 0.584669 -> Too low, we won't include joint axis restrictions on this joint
+	joint loss: 1.25609e-05
+	joint weight: 0.1
+	axis loss: 8.37519e-05
+	axis weight: 0
+Joint acromial_l variability 26.8203
+	joint loss: 9.93497e-06
+	joint weight: 0
+	axis loss: 0.000281797
+	axis weight: 0.5
+Joint elbow_l variability 6.82847
+	joint loss: 1.63366e-05
+	joint weight: 0
+	axis loss: 7.66284e-06
+	axis weight: 0.5
+Joint radioulnar_l variability 0.444906 -> Too low, we won't include joint axis restrictions on this joint
+	joint loss: 1.32927e-05
+	joint weight: 0.1
+	axis loss: 6.95272e-05
+	axis weight: 0
+Unobserved Joint: mtp_r
+Unobserved Joint: mtp_l
+Unobserved Joint: radius_hand_r
+Unobserved Joint: radius_hand_l
+Size of observed joints: 16
+Size of unobserved joints: 4
+ joints: 13
+Starting initial scale+fit for first timestep of block 0/13
+Starting initial scale+fit for first timestep of block 1/13
+Starting initial scale+fit for first timestep of block 2/13
+Starting initial scale+fit for first timestep of block 3/13
+Starting initial scale+fit for first timestep of block 4/13
+Starting initial scale+fit for first timestep of block 5/13
+Starting initial scale+fit for first timestep of block 6/13
+Starting initial scale+fit for first timestep of block 7/13
+Starting initial scale+fit for first timestep of block 8/13
+Starting initial scale+fit for first timestep of block 9/13
+Starting initial scale+fit for first timestep of block 10/13
+Starting initial scale+fit for first timestep of block 11/13
+Starting initial scale+fit for first timestep of block 12/13
+Best result: 0.744283
+Best result: 0.742166
+Best result: 0.743076
+Best result: 0.740827
+Best result: 0.741768
+Best result: 0.741534
+Best result: 0.742666
+Best result: 0.740321
+Finished initial scale+fit for first timestep of block 0/13
+Finished initial scale+fit for first timestep of block 1/13
+Finished initial scale+fit for first timestep of block 2/13
+Best result: 0.741907
+Best result: 0.742511
+Finished initial scale+fit for first timestep of block 3/13
+Finished initial scale+fit for first timestep of block 4/13
+Best result: 0.743683
+Best result: 0.742768
+Finished initial scale+fit for first timestep of block 5/13
+Finished initial scale+fit for first timestep of block 6/13
+Finished initial scale+fit for first timestep of block 7/13
+Finished initial scale+fit for first timestep of block 8/13
+Finished initial scale+fit for first timestep of block 9/13
+Finished initial scale+fit for first timestep of block 10/13
+Best result: 0.744178
+Finished initial scale+fit for first timestep of block 11/13
+Finished initial scale+fit for first timestep of block 12/13
+Starting fit for whole block 0/13
+Starting fit for whole block 1/13
+Starting fit for whole block 2/13
+Starting fit for whole block 3/13
+Starting fit for whole block 4/13
+Starting fit for whole block 5/13
+Starting fit for whole block 6/13
+Starting fit for whole block 7/13
+Starting fit for whole block 8/13
+Starting fit for whole block 9/13
+Starting fit for whole block 10/13
+Starting fit for whole block 11/13
+Starting fit for whole block 12/13
+Finished fit for whole block 0/13
+Finished fit for whole block 1/13
+Finished fit for whole block 2/13
+Finished fit for whole block 3/13
+Finished fit for whole block 4/13
+Finished fit for whole block 5/13
+Finished fit for whole block 6/13
+Finished fit for whole block 7/13
+Finished fit for whole block 8/13
+Finished fit for whole block 9/13
+Finished fit for whole block 10/13
+Finished fit for whole block 11/13
+Finished fit for whole block 12/13
+Fixing jitters by running a round of single-threaded IK
+Starting fit for whole trial 0/1
+Finished fit for whole trial 0/1
+Picked 150 evenly spaced in [0,364]: 
+[1,4,6,8,11,13,16,18,21,23,25,28,30,33,35,38,40,42,45,47,50,52,55,57,59,62,64,67,69,72,74,76,79,81,84,86,89,91,93,96,98,101,103,106,108,110,113,115,118,120,123,125,127,130,132,135,137,140,142,144,147,149,152,154,157,159,161,164,166,169,171,174,176,178,181,183,186,188,190,193,195,198,200,203,205,207,210,212,215,217,220,222,224,227,229,232,234,237,239,241,244,246,249,251,254,256,258,261,263,266,268,271,273,275,278,280,283,285,288,290,292,295,297,300,302,305,307,309,312,314,317,319,322,324,326,329,331,334,336,339,341,343,346,348,351,353,356,358,360,363,]
+
+******************************************************************************
+This program contains Ipopt, a library for large-scale nonlinear optimization.
+ Ipopt is released as open source code under the Eclipse Public License (EPL).
+         For more information visit https://github.com/coin-or/Ipopt
+******************************************************************************
+
+This is Ipopt version 3.14.5, running with linear solver MUMPS 5.4.1.
+
+Number of nonzeros in equality constraint Jacobian...:   213712
+Number of nonzeros in inequality constraint Jacobian.:        0
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:     5776
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:     5776
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:       37
+Total number of inequality constraints...............:        0
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  7.0752450e+00 5.70e+00 1.21e+01   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  1.2110087e+01 3.47e+00 5.85e+01   1.0 5.43e+00    -  9.90e-01 1.73e-02f  3
+   2  3.2519714e+01 4.61e+00 6.30e+02   2.9 8.73e+00    -  9.98e-01 2.74e-02f  3
+   3  2.2561560e+01 4.09e+00 6.87e+01   2.9 9.89e-02    -  1.00e+00 1.00e+00f  1
+   4  1.7184673e+01 1.20e-01 1.89e+01   1.2 5.50e-02    -  9.99e-01 1.00e+00f  1
+   5  1.0237734e+01 7.21e-01 6.17e+01  -0.1 4.92e-02    -  9.28e-01 1.00e+00f  1
+   6  2.1675639e+01 3.29e-01 1.19e+02  -0.6 1.58e-01    -  8.91e-01 1.00e+00H  1
+   7  3.6633809e+01 3.61e-02 1.73e+02  -0.5 6.46e-02    -  1.00e+00 1.00e+00H  1
+   8  4.6278631e+00 1.41e+00 4.23e+01  -0.6 5.60e-02    -  9.96e-01 1.00e+00f  1
+   9  3.7837901e+00 7.56e-01 4.40e+01  -1.5 3.83e-02    -  9.99e-01 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  3.6658877e+00 9.99e-02 3.71e+01  -2.3 1.50e-02    -  1.00e+00 1.00e+00f  1
+  11  2.4001114e+00 6.21e-02 2.93e+01  -3.3 1.42e-02    -  1.00e+00 1.00e+00f  1
+  12  2.1439569e+00 2.83e-02 1.09e+01  -4.3 1.04e-02    -  1.00e+00 1.00e+00f  1
+  13  1.8530855e+00 7.07e-03 3.56e+00  -5.7 6.35e-03    -  1.00e+00 1.00e+00f  1
+  14  1.7752664e+00 6.14e-03 1.02e+01  -7.2 7.88e-03    -  1.00e+00 1.00e+00f  1
+  15  1.8841105e+00 4.53e-03 1.61e+01  -8.5 3.06e-02    -  1.00e+00 1.00e+00H  1
+  16  6.2254071e+00 1.96e-04 6.53e+01  -8.6 4.82e-02    -  1.00e+00 1.00e+00H  1
+  17  1.5431764e+00 1.26e-01 1.38e+01  -9.5 4.37e-02    -  1.00e+00 1.00e+00f  1
+  18  2.9704414e+00 1.74e-01 5.64e+01 -10.5 1.92e-02    -  1.00e+00 1.00e+00h  1
+  19  1.3312350e+00 1.26e-01 5.26e+00 -10.6 1.57e-02    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  1.3442631e+00 2.38e-03 7.83e+00 -11.0 3.79e-03    -  1.00e+00 1.00e+00h  1
+  21  1.2900219e+00 5.34e-04 2.29e+00 -11.0 2.22e-03    -  1.00e+00 1.00e+00f  1
+  22  1.2736912e+00 4.00e-04 9.17e-01 -11.0 1.32e-03    -  1.00e+00 1.00e+00h  1
+  23  1.2399692e+00 2.97e-02 7.45e+00 -11.0 2.39e-02    -  1.00e+00 5.00e-01f  2
+  24  6.0736768e+00 3.19e-03 4.99e+01 -11.0 1.08e-01    -  1.00e+00 1.00e+00H  1
+  25  2.4872318e+00 9.98e-01 3.26e+01 -11.0 7.05e-02    -  1.00e+00 1.00e+00f  1
+  26  4.7335895e+01 4.45e-01 1.71e+02 -11.0 2.09e-01    -  1.00e+00 1.00e+00H  1
+  27  6.4142176e+00 1.78e-01 7.70e+01 -11.0 1.65e-01    -  1.00e+00 1.00e+00F  1
+  28  1.3347904e+02 6.19e-02 4.66e+02 -11.0 2.31e-01    -  1.00e+00 1.00e+00H  1
+  29  2.5025631e+00 2.74e-02 3.14e+01 -11.0 2.00e-01    -  8.32e-01 1.00e+00F  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  30  2.2732177e+01 5.39e-03 1.35e+02 -11.0 5.17e-02    -  1.00e+00 1.00e+00H  1
+  31  1.1093840e+00 9.38e-01 3.19e+00 -11.0 4.15e-02    -  1.00e+00 1.00e+00f  1
+  32  1.0960964e+00 2.72e-04 1.06e+00 -11.0 7.54e-04    -  1.00e+00 1.00e+00h  1
+  33  1.0882715e+00 4.21e-04 1.10e+00 -11.0 9.42e-04    -  1.00e+00 1.00e+00h  1
+  34  1.0795765e+00 1.01e-03 2.11e+00 -11.0 2.27e-03    -  1.00e+00 1.00e+00h  1
+  35  1.1483629e+00 2.86e-05 1.25e+01 -11.0 6.70e-03    -  1.00e+00 1.00e+00H  1
+  36  1.0773383e+00 1.32e-03 3.80e+00 -11.0 4.80e-03    -  1.00e+00 1.00e+00f  1
+  37  1.0583428e+00 3.14e-04 2.34e+00 -11.0 1.51e-03    -  1.00e+00 1.00e+00h  1
+  38  1.0533225e+00 1.29e-04 1.00e+00 -11.0 8.41e-04    -  1.00e+00 1.00e+00h  1
+  39  1.0515211e+00 1.68e-03 2.69e+00 -11.0 3.24e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  40  1.1807853e+00 1.29e-04 1.10e+01 -11.0 1.29e-02    -  1.00e+00 1.00e+00H  1
+  41  1.0861132e+00 1.63e-02 1.36e+01 -11.0 1.01e-02    -  1.00e+00 5.00e-01f  2
+  42  1.5758031e+00 1.54e-04 2.53e+01 -11.0 1.17e-02    -  1.00e+00 1.00e+00H  1
+  43  1.0013167e+00 2.79e-02 5.96e+00 -11.0 8.50e-03    -  1.00e+00 1.00e+00f  1
+  44  9.9710164e-01 1.43e-03 4.51e+00 -11.0 2.50e-03    -  1.00e+00 1.00e+00h  1
+  45  9.8799366e-01 9.70e-04 2.04e+00 -11.0 1.19e-03    -  1.00e+00 1.00e+00h  1
+  46  9.9435337e-01 2.88e-06 5.80e+00 -11.0 2.46e-03    -  1.00e+00 1.00e+00H  1
+  47  9.8455477e-01 3.84e-04 3.47e+00 -11.0 1.48e-03    -  1.00e+00 1.00e+00f  1
+  48  9.7782276e-01 1.20e-03 2.58e+00 -11.0 2.15e-03    -  1.00e+00 1.00e+00h  1
+  49  9.7314574e-01 2.66e-03 2.92e+00 -11.0 2.57e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  50  1.0169349e+00 5.14e-05 7.85e+00 -11.0 8.96e-03    -  1.00e+00 1.00e+00H  1
+  51  1.0089403e+00 1.27e-03 1.09e+01 -11.0 9.65e-03    -  1.00e+00 2.50e-01f  3
+  52  9.4467122e-01 3.74e-03 1.44e+00 -11.0 3.50e-03    -  1.00e+00 1.00e+00f  1
+  53  9.5326139e-01 2.25e-03 4.25e+00 -11.0 3.38e-03    -  1.00e+00 1.00e+00h  1
+  54  9.6285734e-01 5.72e-05 5.16e+00 -11.0 1.31e-02    -  1.00e+00 1.00e+00H  1
+  55  9.4657757e-01 5.26e-03 4.91e+00 -11.0 1.48e-01    -  1.00e+00 6.25e-02f  5
+  56  2.6919968e+01 2.14e-03 1.41e+02 -11.0 1.68e-01    -  1.00e+00 1.00e+00H  1
+  57  1.6383530e+00 7.50e-04 2.12e+01 -11.0 1.60e-01    -  1.00e+00 1.00e+00F  1
+  58  9.3631495e-01 4.06e-02 6.54e+00 -11.0 3.63e-01    -  1.00e+00 3.12e-02f  6
+  59  1.5696122e+00 3.99e-02 3.34e+01 -11.0 1.20e-02    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  60  8.8455264e-01 9.47e-03 3.36e+00 -11.0 1.01e-02    -  1.00e+00 1.00e+00f  1
+  61  8.7542543e-01 7.32e-04 2.33e+00 -11.0 1.47e-03    -  1.00e+00 1.00e+00h  1
+  62  8.7714077e-01 9.88e-07 2.20e+00 -11.0 2.46e-03    -  1.00e+00 1.00e+00H  1
+  63  8.7604669e-01 3.71e-04 1.66e+00 -11.0 1.71e-02    -  1.00e+00 1.25e-01f  4
+  64  8.7545528e-01 1.41e-03 1.96e+00 -11.0 4.98e-02    -  1.00e+00 6.25e-02f  5
+  65  1.7270371e+00 6.23e-04 2.08e+01 -11.0 3.20e-02    -  1.00e+00 1.00e+00H  1
+  66  1.0160857e+00 1.81e-04 9.53e+00 -11.0 1.51e-02    -  1.00e+00 1.00e+00F  1
+  67  4.4251902e+00 1.59e-04 4.80e+01 -11.0 3.42e-02    -  1.00e+00 1.00e+00H  1
+  68  1.3990014e+00 5.30e-05 2.22e+01 -11.0 2.32e-02    -  1.00e+00 1.00e+00F  1
+  69  1.2838336e+00 2.23e-04 1.88e+01 -11.0 3.98e-02    -  1.00e+00 3.12e-02f  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  70  1.1976275e+00 2.84e-04 1.91e+01 -11.0 1.04e-02    -  1.00e+00 1.00e+00F  1
+  71  1.0735460e+00 4.52e-04 1.54e+01 -11.0 8.29e-03    -  1.00e+00 1.25e-01f  4
+  72  9.0048609e-01 5.34e-06 5.80e+00 -11.0 5.50e-03    -  1.00e+00 1.00e+00F  1
+  73  8.5907194e-01 1.51e-03 3.60e+00 -11.0 2.76e-03    -  1.00e+00 1.00e+00f  1
+  74  8.4993140e-01 4.97e-05 5.12e-01 -11.0 9.16e-04    -  1.00e+00 1.00e+00h  1
+  75  8.4974153e-01 4.62e-06 1.70e-01 -11.0 9.40e-05    -  1.00e+00 1.00e+00h  1
+  76  8.4887404e-01 1.77e-05 2.12e-01 -11.0 2.50e-04    -  1.00e+00 1.00e+00h  1
+  77  8.4766811e-01 9.71e-04 3.19e+00 -11.0 3.49e-03    -  1.00e+00 5.00e-01f  2
+  78  8.4749755e-01 4.78e-04 3.06e+00 -11.0 2.22e-03    -  1.00e+00 1.00e+00h  1
+  79  8.7976293e-01 1.19e-06 5.45e+00 -11.0 2.77e-03    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  80  8.4974794e-01 2.17e-03 4.07e+00 -11.0 1.93e-03    -  1.00e+00 1.00e+00f  1
+  81  8.5912633e-01 8.59e-04 3.91e+00 -11.0 2.40e-03    -  1.00e+00 1.00e+00h  1
+  82  8.3335814e-01 1.08e-03 4.63e-01 -11.0 1.30e-03    -  1.00e+00 1.00e+00f  1
+  83  8.3325987e-01 9.45e-05 9.27e-01 -11.0 4.86e-04    -  1.00e+00 1.00e+00h  1
+  84  8.2944434e-01 1.45e-03 1.12e+00 -11.0 2.06e-03    -  1.00e+00 1.00e+00h  1
+  85  1.8569529e+01 6.66e-04 1.11e+02 -11.0 1.39e-01    -  1.00e+00 1.00e+00H  1
+  86  5.4238255e+00 3.47e+00 5.65e+01 -11.0 9.34e-02    -  1.00e+00 1.00e+00f  1
+  87  4.9540616e+00 4.12e+00 5.79e+01 -11.0 1.01e+00    -  4.11e-01 6.00e-02f  4
+  88  2.8238678e+02 4.80e-01 5.39e+02 -11.0 2.15e-01    -  1.00e+00 1.00e+00H  1
+  89  1.3224560e+01 6.67e-01 9.35e+01 -11.0 2.02e-01    -  3.79e-01 1.00e+00F  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  90  1.3112179e+01 1.86e+00 1.09e+02 -11.0 4.42e-01    -  3.85e-01 1.26e-01f  3
+  91  2.0577440e+01 1.45e-01 1.39e+02 -11.0 5.53e-02    -  1.00e+00 1.00e+00h  1
+  92  1.1379964e+00 4.40e-01 1.98e+01 -11.0 5.53e-02    -  1.00e+00 1.00e+00f  1
+  93  2.5085386e+00 4.61e-02 4.33e+01 -11.0 1.62e-02    -  1.00e+00 1.00e+00h  1
+  94  8.3790054e-01 2.43e-02 3.09e+00 -11.0 1.26e-02    -  1.00e+00 1.00e+00f  1
+  95  8.3432578e-01 2.02e-04 6.75e-01 -11.0 4.65e-04    -  1.00e+00 1.00e+00h  1
+  96  8.2842219e-01 7.81e-03 4.07e+00 -11.0 3.96e-03    -  1.00e+00 1.00e+00f  1
+  97  8.9153965e-01 2.35e-05 6.19e+00 -11.0 4.22e-03    -  1.00e+00 1.00e+00H  1
+  98  8.1677670e-01 6.85e-03 2.65e+00 -11.0 4.01e-03    -  1.00e+00 1.00e+00f  1
+  99  9.1390143e-01 3.79e-03 6.85e+00 -11.0 3.26e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 100  8.0744829e-01 3.96e-03 1.21e+00 -11.0 2.70e-03    -  1.00e+00 1.00e+00f  1
+ 101  8.0751231e-01 2.16e-04 1.34e+00 -11.0 5.73e-04    -  1.00e+00 1.00e+00h  1
+ 102  8.0566636e-01 2.05e-05 2.91e-01 -11.0 3.83e-04    -  1.00e+00 1.00e+00h  1
+ 103  8.0486249e-01 1.21e-05 2.22e-01 -11.0 2.20e-04    -  1.00e+00 1.00e+00h  1
+ 104  8.0247092e-01 5.55e-04 5.64e-01 -11.0 1.40e-03    -  1.00e+00 1.00e+00h  1
+ 105  1.2031228e+00 9.19e-06 2.40e+01 -11.0 2.12e-02    -  1.00e+00 1.00e+00H  1
+ 106  8.0346605e-01 1.02e-01 2.27e+00 -11.0 1.70e-02    -  1.00e+00 1.00e+00f  1
+ 107  1.0962425e+00 9.23e-03 2.11e+01 -11.0 6.90e-03    -  1.00e+00 1.00e+00h  1
+ 108  7.9851635e-01 9.22e-03 6.25e-01 -11.0 6.34e-03    -  1.00e+00 1.00e+00f  1
+ 109  7.9831748e-01 5.45e-05 7.40e-01 -11.0 4.33e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 110  7.9738535e-01 3.12e-06 2.18e-01 -11.0 1.92e-04    -  1.00e+00 1.00e+00h  1
+ 111  7.9710616e-01 1.16e-05 1.17e-01 -11.0 1.54e-04    -  1.00e+00 1.00e+00h  1
+ 112  7.9858800e-01 6.97e-07 2.30e+00 -11.0 2.09e-03    -  1.00e+00 1.00e+00H  1
+ 113  7.9636324e-01 1.93e-04 1.66e+00 -11.0 1.96e-03    -  1.00e+00 5.00e-01f  2
+ 114  8.0950891e-01 6.21e-07 4.16e+00 -11.0 1.65e-03    -  1.00e+00 1.00e+00H  1
+ 115  7.9406498e-01 2.79e-04 9.18e-01 -11.0 1.08e-03    -  1.00e+00 1.00e+00f  1
+ 116  7.9331728e-01 1.02e-04 4.63e-01 -11.0 5.88e-04    -  1.00e+00 1.00e+00h  1
+ 117  7.9274914e-01 2.21e-04 6.77e-01 -11.0 1.14e-03    -  1.00e+00 1.00e+00h  1
+ 118  7.9225221e-01 4.33e-04 9.81e-01 -11.0 4.92e-02    -  1.00e+00 3.12e-02h  6
+ 119  1.2043691e+00 6.30e-05 1.53e+01 -11.0 9.37e-03    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 120  7.9470913e-01 1.24e-02 1.39e+00 -11.0 7.82e-03    -  1.00e+00 1.00e+00f  1
+ 121  9.0254538e-01 2.13e-03 9.11e+00 -11.0 3.05e-03    -  1.00e+00 1.00e+00h  1
+ 122  7.9130810e-01 1.80e-03 1.47e-01 -11.0 2.72e-03    -  1.00e+00 1.00e+00f  1
+ 123  7.9113903e-01 2.41e-05 9.74e-02 -11.0 2.26e-04    -  1.00e+00 1.00e+00h  1
+ 124  7.9029202e-01 6.90e-04 7.20e-01 -11.0 2.25e-02    -  1.00e+00 6.25e-02f  5
+ 125  1.1883191e+00 4.98e-06 1.60e+01 -11.0 1.34e-02    -  1.00e+00 1.00e+00H  1
+ 126  8.1376888e-01 3.49e-02 4.40e+00 -11.0 6.96e-03    -  1.00e+00 1.00e+00f  1
+ 127  9.3900538e-01 5.39e-05 1.16e+01 -11.0 8.03e-03    -  1.00e+00 1.00e+00H  1
+ 128  9.0953578e-01 5.65e-03 1.13e+01 -11.0 5.14e-03    -  1.00e+00 1.00e+00f  1
+ 129  7.9048670e-01 5.22e-03 2.13e+00 -11.0 4.31e-03    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 130  8.1524547e-01 7.00e-04 7.23e+00 -11.0 2.49e-03    -  1.00e+00 1.00e+00h  1
+ 131  7.8630693e-01 5.95e-04 1.59e-01 -11.0 2.10e-03    -  1.00e+00 1.00e+00f  1
+ 132  7.8608740e-01 2.29e-06 1.26e-01 -11.0 7.33e-05    -  1.00e+00 1.00e+00h  1
+ 133  7.8423689e-01 8.34e-04 9.59e-01 -11.0 3.68e-03    -  1.00e+00 5.00e-01f  2
+ 134  1.1764387e+00 3.25e-05 1.75e+01 -11.0 3.49e-02    -  1.00e+00 1.00e+00H  1
+ 135  1.1457113e+00 6.60e-03 1.66e+01 -11.0 1.17e-01    -  1.00e+00 6.25e-02f  5
+ 136  2.0831614e+01 7.23e-04 1.12e+02 -11.0 4.93e-02    -  1.00e+00 1.00e+00H  1
+ 137  8.4729276e-01 7.63e-01 8.83e+00 -11.0 4.76e-02    -  1.00e+00 1.00e+00f  1
+ 138  8.9686053e-01 3.76e-01 1.13e+01 -11.0 9.26e-03    -  1.00e+00 5.00e-01h  2
+ 139  8.1049113e-01 1.13e-03 6.33e+00 -11.0 5.36e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 140  7.7812464e-01 8.20e-04 1.38e+00 -11.0 2.40e-03    -  1.00e+00 1.00e+00f  1
+ 141  8.1189727e-01 1.17e-03 5.08e+00 -11.0 1.96e-03    -  1.00e+00 1.00e+00h  1
+ 142  7.7721099e-01 4.14e-04 6.62e-01 -11.0 1.56e-03    -  1.00e+00 1.00e+00f  1
+ 143  7.7685695e-01 7.21e-06 1.91e-01 -11.0 1.56e-04    -  1.00e+00 1.00e+00h  1
+ 144  7.7636342e-01 1.46e-05 1.82e-01 -11.0 1.55e-04    -  1.00e+00 1.00e+00h  1
+ 145  7.7667734e-01 3.07e-07 1.68e+00 -11.0 1.36e-03    -  1.00e+00 1.00e+00H  1
+ 146  7.7636368e-01 8.36e-06 1.33e+00 -11.0 5.13e-03    -  1.00e+00 6.25e-02f  5
+ 147  7.7591907e-01 7.70e-05 1.07e+00 -11.0 1.24e-03    -  1.00e+00 5.00e-01h  2
+ 148  8.0239960e-01 5.23e-06 4.66e+00 -11.0 2.09e-03    -  1.00e+00 1.00e+00H  1
+ 149  7.9602305e-01 1.37e-03 5.39e+00 -11.0 3.49e-03    -  1.00e+00 5.00e-01f  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 150  7.7435624e-01 1.11e-03 1.19e+00 -11.0 2.10e-03    -  1.00e+00 1.00e+00f  1
+ 151  9.5111586e-01 5.09e-06 1.98e+01 -11.0 6.23e-03    -  1.00e+00 1.00e+00H  1
+ 152  7.7121129e-01 4.49e-03 2.85e-01 -11.0 5.80e-03    -  1.00e+00 1.00e+00f  1
+ 153  7.7127637e-01 6.11e-06 4.31e-01 -11.0 1.62e-04    -  1.00e+00 1.00e+00h  1
+ 154  7.7078464e-01 5.86e-04 1.49e+00 -11.0 3.54e-03    -  1.00e+00 5.00e-01f  2
+ 155  7.6917520e-01 9.38e-04 1.03e+00 -11.0 2.82e-01    -  1.00e+00 7.81e-03f  8
+ 156  7.6865398e-01 9.75e-04 6.62e-01 -11.0 1.64e-01    -  1.00e+00 3.91e-03h  9
+ 157  1.6347837e+00 9.23e-04 2.37e+01 -11.0 2.15e-02    -  1.00e+00 1.00e+00H  1
+ 158  4.8995971e+00 1.23e-04 7.62e+01 -11.0 4.39e-02    -  1.00e+00 1.00e+00H  1
+ 159  4.7360900e+00 8.38e-04 7.48e+01 -11.0 2.53e-01    -  8.40e-01 5.84e-03f  8
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 160  1.1835896e+01 3.09e-04 7.63e+01 -11.0 7.65e-02    -  1.00e+00 1.00e+00H  1
+ 161  1.1720827e+01 3.33e-04 7.61e+01 -11.0 7.45e-01    -  3.09e-01 1.09e-03f  9
+ 162  1.1553460e+01 3.91e-04 7.57e+01 -11.0 4.08e-01    -  5.37e-01 2.39e-03f  9
+ 163  1.1448493e+01 4.44e-04 7.50e+01 -11.0 4.86e-01    -  6.63e-01 1.44e-03f 10
+ 164  1.1326561e+01 4.58e-04 7.48e+01 -11.0 3.90e-01    -  4.67e-01 1.17e-03f 10
+ 165  3.0975305e+01 1.16e-04 1.90e+02 -11.0 8.28e-02    -  1.00e+00 1.00e+00H  1
+ 166  2.2965242e+00 3.94e-04 3.23e+01 -11.0 6.26e-02    -  1.00e+00 1.00e+00F  1
+ 167  3.7653696e+00 1.93e-05 5.18e+01 -11.0 2.51e-02    -  1.00e+00 1.00e+00H  1
+ 168  3.5382096e+00 8.44e-05 4.93e+01 -11.0 2.90e-02    -  1.00e+00 3.12e-02f  6
+ 169  9.9541674e-01 3.31e-02 1.52e+01 -11.0 1.97e-02    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 170  1.1072179e+00 2.27e-02 1.90e+01 -11.0 9.65e-03    -  1.00e+00 1.00e+00h  1
+ 171  2.4117135e+00 1.81e-04 3.10e+01 -11.0 9.88e-03    -  1.00e+00 1.00e+00H  1
+ 172  1.0426494e+00 3.58e-02 1.52e+01 -11.0 1.02e-02    -  1.00e+00 1.00e+00f  1
+ 173  1.0429099e+00 1.09e-02 1.60e+01 -11.0 8.47e-03    -  1.00e+00 1.00e+00h  1
+ 174  7.9333742e-01 1.95e-03 4.38e+00 -11.0 4.96e-03    -  1.00e+00 1.00e+00f  1
+ 175  8.0103745e-01 5.50e-04 6.50e+00 -11.0 2.60e-03    -  1.00e+00 1.00e+00h  1
+ 176  7.6846186e-01 1.20e-04 1.26e+00 -11.0 1.92e-03    -  1.00e+00 1.00e+00f  1
+ 177  7.6859660e-01 3.38e-05 1.10e+00 -11.0 6.71e-04    -  1.00e+00 1.00e+00h  1
+ 178  7.6706441e-01 4.47e-05 5.67e-01 -11.0 3.22e-04    -  1.00e+00 1.00e+00h  1
+ 179  7.6585537e-01 2.21e-04 2.09e+00 -11.0 6.57e-03    -  1.00e+00 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 180  8.5318520e-01 1.05e-05 9.96e+00 -11.0 3.68e-03    -  1.00e+00 1.00e+00H  1
+ 181  7.8300723e-01 2.73e-03 5.83e+00 -11.0 3.34e-03    -  1.00e+00 1.00e+00f  1
+ 182  7.7434197e-01 1.42e-03 4.26e+00 -11.0 2.21e-03    -  1.00e+00 1.00e+00f  1
+ 183  7.6275498e-01 2.62e-04 1.93e+00 -11.0 1.39e-03    -  1.00e+00 1.00e+00h  1
+ 184  7.6167052e-01 2.26e-04 2.33e+00 -11.0 1.06e-03    -  1.00e+00 1.00e+00h  1
+ 185  7.5892264e-01 7.34e-05 1.02e+00 -11.0 9.41e-04    -  1.00e+00 1.00e+00h  1
+ 186  7.5898403e-01 1.88e-08 7.63e-01 -11.0 4.24e-04    -  1.00e+00 1.00e+00H  1
+ 187  7.5815075e-01 2.58e-05 6.80e-01 -11.0 4.96e-04    -  1.00e+00 5.00e-01f  2
+ 188  7.5754040e-01 2.58e-05 4.64e-01 -11.0 1.92e-03    -  1.00e+00 1.25e-01h  4
+ 189  8.0417950e-01 5.14e-06 7.04e+00 -11.0 2.31e-03    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 190  7.8558926e-01 1.02e-03 8.05e+00 -11.0 2.70e-03    -  1.00e+00 1.00e+00f  1
+ 191  8.7021220e-01 8.33e-06 1.04e+01 -11.0 5.20e-03    -  1.00e+00 1.00e+00H  1
+ 192  7.8129825e-01 1.52e-03 5.44e+00 -11.0 3.03e-03    -  1.00e+00 1.00e+00f  1
+ 193  1.2286460e+00 1.74e-05 3.33e+01 -11.0 1.14e-02    -  1.00e+00 1.00e+00H  1
+ 194  7.8982203e-01 9.97e-06 7.29e+00 -11.0 1.02e-02    -  1.00e+00 1.00e+00F  1
+ 195  7.5886134e-01 2.45e-04 2.55e+00 -11.0 1.12e-02    -  1.00e+00 2.50e-01f  3
+ 196  7.5500253e-01 5.72e-05 7.86e-01 -11.0 7.79e-04    -  1.00e+00 1.00e+00h  1
+ 197  7.5587815e-01 2.13e-05 8.60e-01 -11.0 4.34e-04    -  1.00e+00 1.00e+00h  1
+ 198  7.5468598e-01 6.20e-06 2.88e-01 -11.0 2.88e-04    -  1.00e+00 1.00e+00h  1
+ 199  7.5446200e-01 4.22e-06 1.60e-01 -11.0 1.13e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 200  7.5423063e-01 3.51e-06 1.35e-01 -11.0 8.07e-05    -  1.00e+00 1.00e+00h  1
+ 201  7.5406618e-01 6.31e-05 5.02e-01 -11.0 1.21e-02    -  1.00e+00 3.12e-02f  6
+ 202  7.5396071e-01 9.10e-05 7.06e-01 -11.0 1.03e-02    -  1.00e+00 3.12e-02h  6
+ 203  7.5346162e-01 2.56e-04 7.36e-01 -11.0 1.29e-02    -  1.00e+00 6.25e-02h  5
+ 204  7.5161632e-01 6.41e-04 8.74e-01 -11.0 2.52e-01    -  1.00e+00 7.81e-03f  8
+ 205  7.5139751e-01 1.90e-03 2.09e+00 -11.0 4.76e-01    -  1.00e+00 7.81e-03f  8
+ 206  7.5069612e-01 1.93e-03 1.88e+00 -11.0 2.26e-01    -  1.00e+00 3.91e-03h  9
+ 207  4.1914115e+01 9.45e-04 1.83e+02 -11.0 1.69e-01    -  1.00e+00 1.00e+00H  1
+ 208  1.9586239e+01 1.64e+00 1.45e+02 -11.0 7.76e-02    -  1.00e+00 1.00e+00f  1
+ 209  7.6323056e+00 2.67e+00 6.12e+01 -11.0 1.03e+00    -  4.41e-01 7.18e-02f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 210  7.0478182e+00 2.66e+00 6.12e+01 -11.0 1.47e+00    -  3.70e-01 2.02e-02f  5
+ 211  9.0554986e+00 2.33e+00 7.12e+01 -11.0 8.71e-01    -  5.33e-01 6.52e-02h  3
+ 212  8.2653625e+00 2.24e+00 7.10e+01 -11.0 1.04e+00    -  4.11e-01 1.59e-02f  4
+ 213  1.5776678e+01 1.61e+00 1.11e+02 -11.0 3.19e-01    -  4.65e-01 1.60e-01h  3
+ 214  1.6684265e+01 1.21e-01 9.14e+01 -11.0 1.09e-01    -  5.50e-01 1.00e+00H  1
+ 215  1.2220546e+01 2.49e-01 8.92e+01 -11.0 2.20e+00    -  1.16e-01 1.93e-02f  4
+ 216  1.1693848e+01 3.19e-01 1.06e+02 -11.0 1.20e+00    -  2.21e-01 2.74e-02f  4
+ 217  1.0771052e+01 3.99e-01 9.63e+01 -11.0 4.44e-01    -  6.93e-01 5.94e-02f  4
+ 218  2.3581990e+01 2.01e-01 1.09e+02 -11.0 1.22e-01    -  1.00e+00 1.00e+00H  1
+ 219  1.9748797e+01 1.99e-01 9.04e+01 -11.0 1.67e+00    -  2.16e-01 1.64e-02f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 220  1.7584597e+01 3.25e-01 9.65e+01 -11.0 1.21e+00    -  1.31e-01 1.55e-02f  4
+ 221  1.5743061e+01 6.12e-01 7.92e+01 -11.0 4.02e-01    -  6.52e-01 4.50e-02f  5
+ 222  1.4224377e+02 5.33e-02 2.55e+02 -11.0 1.84e-01    -  4.42e-01 1.00e+00H  1
+ 223  2.6705965e+02 4.63e-02 4.61e+02 -11.0 1.86e-01    -  8.35e-01 1.00e+00H  1
+ 224  1.3762166e+01 8.38e-01 1.60e+02 -11.0 1.90e-01    -  2.49e-01 1.00e+00F  1
+ 225  2.4512674e+01 3.41e-02 1.85e+02 -11.0 9.34e-02    -  1.00e+00 1.00e+00H  1
+ 226  1.6413546e+00 3.15e-01 1.91e+01 -11.0 4.77e-02    -  1.00e+00 1.00e+00f  1
+ 227  1.4197764e+00 8.60e-03 9.92e+00 -11.0 6.96e-03    -  1.00e+00 1.00e+00f  1
+ 228  1.2871218e+00 4.01e-04 2.58e+00 -11.0 2.91e-03    -  1.00e+00 1.00e+00f  1
+ 229  1.2269734e+00 1.52e-03 2.19e+00 -11.0 1.68e-03    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 230  1.6612399e+00 3.29e-05 3.43e+01 -11.0 1.67e-02    -  1.00e+00 1.00e+00H  1
+ 231  1.5437001e+00 8.09e-04 3.03e+01 -11.0 2.01e-02    -  1.00e+00 6.25e-02f  5
+ 232  3.9558811e+00 1.47e-05 4.71e+01 -11.0 1.76e-02    -  1.00e+00 1.00e+00H  1
+ 233  9.4750617e-01 8.07e-02 2.98e+00 -11.0 1.47e-02    -  1.00e+00 1.00e+00f  1
+ 234  9.3773076e-01 4.94e-04 2.09e+00 -11.0 1.45e-03    -  1.00e+00 1.00e+00h  1
+ 235  9.2830960e-01 4.83e-05 1.31e+00 -11.0 6.60e-04    -  1.00e+00 1.00e+00h  1
+ 236  9.1934152e-01 4.89e-04 1.27e+00 -11.0 1.92e-03    -  1.00e+00 1.00e+00h  1
+ 237  9.5026994e-01 2.95e-06 8.50e+00 -11.0 1.60e-02    -  1.00e+00 1.00e+00H  1
+ 238  8.9754313e-01 9.05e-02 7.54e+00 -11.0 5.92e-02    -  1.00e+00 5.00e-01f  2
+ 239  8.8030708e-01 9.21e-02 4.12e+00 -11.0 2.03e-01    -  1.00e+00 3.12e-02h  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 240  8.9143332e-01 1.47e-02 8.56e+00 -11.0 8.81e-03    -  1.00e+00 1.00e+00h  1
+ 241  1.0053401e+00 2.04e-06 1.54e+01 -11.0 1.66e-02    -  1.00e+00 1.00e+00H  1
+ 242  9.0261679e-01 4.87e-04 8.05e+00 -11.0 1.84e-02    -  1.00e+00 1.00e+00F  1
+ 243  1.2970818e+00 1.86e-05 2.62e+01 -11.0 3.05e-02    -  1.00e+00 1.00e+00H  1
+ 244  9.9193521e-01 1.40e-06 1.53e+01 -11.0 1.61e-02    -  1.00e+00 1.00e+00F  1
+ 245  8.6315747e-01 1.09e-02 4.94e+00 -11.0 1.97e-02    -  1.00e+00 5.00e-01f  2
+ 246  8.7020297e-01 1.04e-03 5.65e+00 -11.0 3.05e-03    -  1.00e+00 1.00e+00h  1
+ 247  8.1875916e-01 4.27e-03 9.36e-01 -11.0 4.31e-03    -  1.00e+00 1.00e+00f  1
+ 248  8.1857735e-01 2.28e-04 1.48e+00 -11.0 7.51e-04    -  1.00e+00 1.00e+00h  1
+ 249  8.1630602e-01 7.33e-05 4.07e-01 -11.0 4.40e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 250  8.1587360e-01 8.42e-06 4.00e-01 -11.0 4.89e-04    -  1.00e+00 1.00e+00h  1
+ 251  8.1578274e-01 9.40e-04 2.64e+00 -11.0 2.29e-02    -  1.00e+00 2.50e-01f  3
+ 252  8.2407568e-01 3.58e-05 5.11e+00 -11.0 1.36e-02    -  1.00e+00 1.00e+00H  1
+ 253  8.2141681e-01 2.31e-05 4.71e+00 -11.0 2.48e-02    -  1.00e+00 3.12e-02f  6
+ 254  8.1013866e-01 5.86e-04 3.31e+00 -11.0 3.25e-03    -  1.00e+00 5.00e-01f  2
+ 255  7.9930241e-01 5.63e-04 1.89e+00 -11.0 1.71e-03    -  1.00e+00 1.00e+00h  1
+ 256  7.9622711e-01 5.67e-04 1.11e+00 -11.0 2.59e-03    -  1.00e+00 1.00e+00h  1
+ 257  8.0341357e-01 3.62e-06 2.61e+00 -11.0 6.89e-03    -  1.00e+00 1.00e+00H  1
+ 258  7.9791174e-01 2.42e-04 2.63e+00 -11.0 1.19e-02    -  1.00e+00 2.50e-01f  3
+ 259  7.9576026e-01 3.39e-04 2.28e+00 -11.0 7.07e-03    -  1.00e+00 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 260  7.9327247e-01 1.40e-04 1.14e+00 -11.0 1.44e-03    -  1.00e+00 1.00e+00h  1
+ 261  7.9126361e-01 5.25e-05 9.25e-01 -11.0 4.78e-04    -  1.00e+00 1.00e+00h  1
+ 262  7.9098824e-01 1.87e-05 1.50e-01 -11.0 4.41e-04    -  1.00e+00 1.00e+00h  1
+ 263  7.9083666e-01 4.81e-05 2.59e-01 -11.0 4.28e-04    -  1.00e+00 1.00e+00h  1
+ 264  7.9321673e-01 1.07e-06 1.43e+00 -11.0 2.84e-03    -  1.00e+00 1.00e+00H  1
+ 265  7.9286542e-01 6.61e-06 1.31e+00 -11.0 6.47e-03    -  1.00e+00 3.12e-02f  6
+ 266  7.9249765e-01 3.56e-06 2.37e+00 -11.0 6.11e-03    -  1.00e+00 1.00e+00F  1
+ 267  7.9025444e-01 1.34e-04 1.52e+00 -11.0 2.53e-02    -  1.00e+00 6.25e-02f  5
+ 268  7.8982175e-01 7.21e-05 1.32e+00 -11.0 1.48e-03    -  1.00e+00 2.50e-01h  3
+ 269  7.8675589e-01 4.99e-04 3.77e-01 -11.0 2.11e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 270  7.8889623e-01 2.51e-04 1.18e+00 -11.0 1.25e-03    -  1.00e+00 1.00e+00h  1
+ 271  7.8609348e-01 3.92e-04 5.30e-01 -11.0 1.50e-03    -  1.00e+00 1.00e+00h  1
+ 272  9.0758236e-01 1.27e-07 7.71e+00 -11.0 8.21e-03    -  1.00e+00 1.00e+00H  1
+ 273  7.8580229e-01 7.69e-03 1.35e+00 -11.0 7.13e-03    -  1.00e+00 1.00e+00f  1
+ 274  7.8306623e-01 5.82e-03 2.96e-01 -11.0 3.14e-03    -  1.00e+00 2.50e-01h  3
+ 275  7.8270442e-01 1.23e-04 6.93e-01 -11.0 1.02e-03    -  1.00e+00 1.00e+00h  1
+ 276  7.9360011e-01 3.94e-07 3.63e+00 -11.0 9.81e-03    -  1.00e+00 1.00e+00H  1
+ 277  7.9324449e-01 2.46e-05 3.66e+00 -11.0 9.34e-02    -  1.00e+00 3.91e-03f  9
+ 278  7.9305874e-01 2.67e-05 3.63e+00 -11.0 1.24e-01    -  1.00e+00 9.77e-04f 11
+ 279  7.9285456e-01 2.73e-05 3.62e+00 -11.0 4.24e-02    -  1.00e+00 1.95e-03h 10
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 280  7.9257796e-01 2.80e-05 3.61e+00 -11.0 1.90e-02    -  1.00e+00 3.91e-03h  9
+ 281  7.8483204e-01 3.20e-03 2.83e+00 -11.0 3.79e-02    -  1.00e+00 1.25e-01f  4
+ 282  7.8047704e-01 7.46e-03 1.95e+00 -11.0 1.07e-01    -  1.00e+00 6.25e-02h  5
+ 283  7.7837419e-01 7.73e-03 2.53e+00 -11.0 9.05e-02    -  1.00e+00 3.12e-02h  6
+ 284  8.2461526e-01 4.37e-08 9.04e+00 -11.0 8.72e-03    -  1.00e+00 1.00e+00H  1
+ 285  8.2338476e-01 1.82e-05 8.91e+00 -11.0 4.86e-02    -  1.00e+00 7.81e-03f  8
+ 286  8.2315672e-01 1.83e-05 8.90e+00 -11.0 2.68e-01    -  1.00e+00 1.22e-04f 14
+ 287  8.2263772e-01 1.86e-05 8.88e+00 -11.0 1.61e-02    -  1.00e+00 1.95e-03f 10
+ 288  7.8978031e-01 4.18e-03 3.71e+00 -11.0 7.17e-03    -  1.00e+00 5.00e-01f  2
+ 289  9.0447987e-01 2.26e-06 8.30e+00 -11.0 1.48e-02    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 290  8.9975131e-01 9.84e-06 8.16e+00 -11.0 1.50e-02    -  1.00e+00 1.56e-02f  7
+ 291  8.9432381e-01 1.27e-05 7.99e+00 -11.0 1.94e-02    -  1.00e+00 7.81e-03f  8
+ 292  8.7419999e-01 3.56e-06 1.07e+01 -11.0 1.58e-02    -  1.00e+00 1.00e+00F  1
+ 293  8.7117699e-01 7.67e-06 1.06e+01 -11.0 4.50e-02    -  1.00e+00 3.91e-03f  9
+ 294  8.3946230e-01 4.65e-03 5.45e+00 -11.0 8.58e-03    -  1.00e+00 5.00e-01f  2
+ 295  7.7800991e-01 2.30e-03 2.88e+00 -11.0 2.46e-03    -  1.00e+00 1.00e+00f  1
+ 296  7.6786104e-01 7.57e-05 1.34e+00 -11.0 8.72e-04    -  1.00e+00 1.00e+00h  1
+ 297  7.6654706e-01 3.47e-05 4.16e-01 -11.0 3.53e-04    -  1.00e+00 1.00e+00h  1
+ 298  7.6640046e-01 1.00e-05 1.13e-01 -11.0 1.84e-04    -  1.00e+00 1.00e+00h  1
+ 299  7.6671101e-01 2.92e-08 5.03e-01 -11.0 8.30e-04    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 300  7.6632056e-01 2.25e-04 6.67e-01 -11.0 1.27e-02    -  1.00e+00 1.25e-01f  4
+ 301  7.6548041e-01 2.13e-03 1.31e+00 -11.0 2.59e-01    -  1.00e+00 1.56e-02f  7
+ 302  7.6535761e-01 6.03e-03 2.08e+00 -11.0 8.61e-01    -  1.00e+00 7.81e-03h  8
+ 303  7.6515119e-01 6.60e-03 2.15e+00 -11.0 3.18e-01    -  1.00e+00 7.81e-03h  8
+ 304  7.6459838e-01 7.40e-03 1.71e+00 -11.0 1.78e-01    -  1.00e+00 1.56e-02h  7
+ 305  7.6445621e-01 7.37e-03 2.29e+00 -11.0 1.49e-01    -  1.00e+00 7.81e-03h  8
+ 306  9.3894921e-01 3.83e-07 7.94e+00 -11.0 2.86e-02    -  1.00e+00 1.00e+00H  1
+ 307  9.3879011e-01 4.93e-06 7.94e+00 -11.0 2.03e+00    -  3.20e-01 1.14e-04f 13
+ 308  9.3875703e-01 5.29e-06 7.94e+00 -11.0 2.27e+00    -  1.00e+00 2.56e-05f 15
+ 309  9.3860520e-01 5.52e-06 7.94e+00 -11.0 4.98e-01    -  1.00e+00 1.22e-04f 14
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 310  9.3841998e-01 5.61e-06 7.93e+00 -11.0 2.47e-01    -  1.00e+00 1.22e-04f 14
+ 311  9.1073083e-01 2.93e-03 7.50e+00 -11.0 1.14e-01    -  1.00e+00 3.12e-02f  6
+ 312  1.0374990e+00 1.07e-03 1.42e+01 -11.0 2.18e-02    -  1.00e+00 1.00e+00H  1
+ 313  4.2731773e+00 9.68e-04 6.38e+01 -11.0 5.22e-02    -  1.00e+00 1.00e+00H  1
+ 314  1.5348215e+00 3.97e-04 2.84e+01 -11.0 3.86e-02    -  1.00e+00 1.00e+00F  1
+ 315  7.5185154e+00 1.86e-04 8.41e+01 -11.0 1.20e-01    -  1.00e+00 1.00e+00H  1
+ 316  7.4516275e+00 1.87e-04 8.37e+01 -11.0 1.47e-01    -  1.00e+00 3.91e-03f  9
+ 317  2.6018963e+01 3.43e-04 1.49e+02 -11.0 7.80e-02    -  1.00e+00 1.00e+00H  1
+ 318  4.1653864e+00 1.89e-05 6.16e+01 -11.0 5.00e-02    -  1.00e+00 1.00e+00F  1
+ 319  3.9489851e+00 1.25e-04 5.97e+01 -11.0 5.37e-02    -  1.00e+00 1.56e-02f  7
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 320  9.9872911e-01 2.13e-03 1.40e+01 -11.0 2.12e-02    -  1.00e+00 1.00e+00F  1
+ 321  1.2351618e+00 1.16e-04 2.27e+01 -11.0 9.76e-03    -  1.00e+00 1.00e+00H  1
+ 322  7.6582303e-01 1.34e-03 1.07e+00 -11.0 6.60e-03    -  1.00e+00 1.00e+00f  1
+ 323  7.6394604e-01 2.13e-04 4.26e-01 -11.0 1.24e-03    -  1.00e+00 1.00e+00h  1
+ 324  7.6119761e-01 5.93e-03 1.63e+00 -11.0 2.16e-01    -  1.00e+00 3.12e-02f  6
+ 325  7.6074034e-01 6.93e-03 1.88e+00 -11.0 2.48e-01    -  1.00e+00 1.56e-02h  7
+ 326  1.7462697e+00 4.43e-05 2.28e+01 -11.0 3.96e-02    -  1.00e+00 1.00e+00H  1
+ 327  1.0075336e+00 2.22e-04 1.12e+01 -11.0 1.29e-02    -  1.00e+00 1.00e+00F  1
+ 328  9.4325779e-01 4.60e-04 9.97e+00 -11.0 2.22e-02    -  1.00e+00 6.25e-02f  5
+ 329  1.6266298e+00 5.32e-05 3.10e+01 -11.0 2.40e-02    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 330  1.3816042e+00 4.25e-04 2.44e+01 -11.0 1.76e-02    -  1.00e+00 1.25e-01f  4
+ 331  7.6262533e-01 9.91e-05 2.74e+00 -11.0 8.56e-03    -  1.00e+00 1.00e+00F  1
+ 332  7.5864708e-01 7.14e-04 3.50e+00 -11.0 3.12e-03    -  1.00e+00 5.00e-01f  2
+ 333  7.5297809e-01 3.23e-04 1.04e+00 -11.0 1.03e-03    -  1.00e+00 1.00e+00h  1
+ 334  7.5899992e-01 1.43e-04 3.10e+00 -11.0 1.19e-03    -  1.00e+00 1.00e+00h  1
+ 335  7.5212558e-01 1.05e-04 1.82e-01 -11.0 9.23e-04    -  1.00e+00 1.00e+00h  1
+ 336  7.5196471e-01 1.14e-06 1.18e-01 -11.0 6.75e-05    -  1.00e+00 1.00e+00h  1
+ 337  7.5184495e-01 7.78e-05 6.44e-01 -11.0 4.82e-04    -  1.00e+00 1.00e+00h  1
+ 338  7.8257210e-01 9.55e-07 5.49e+00 -11.0 1.91e-03    -  1.00e+00 1.00e+00H  1
+ 339  7.5374085e-01 5.28e-04 1.57e+00 -11.0 1.48e-03    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 340  7.5413184e-01 2.90e-04 2.30e+00 -11.0 1.03e-03    -  1.00e+00 1.00e+00h  1
+ 341  7.5215128e-01 6.37e-05 1.29e+00 -11.0 7.83e-04    -  1.00e+00 1.00e+00h  1
+ 342  7.5317746e-01 1.14e-04 1.65e+00 -11.0 8.06e-04    -  1.00e+00 1.00e+00h  1
+ 343  7.5057538e-01 7.55e-05 6.71e-01 -11.0 5.03e-04    -  1.00e+00 1.00e+00h  1
+ 344  7.5026197e-01 7.23e-06 2.56e-01 -11.0 2.59e-04    -  1.00e+00 1.00e+00h  1
+ 345  7.5018444e-01 2.46e-06 2.11e-01 -11.0 8.77e-05    -  1.00e+00 1.00e+00h  1
+ 346  7.5006633e-01 3.86e-05 8.73e-01 -11.0 3.28e-03    -  1.00e+00 2.50e-01f  3
+ 347  7.4982684e-01 1.55e-04 1.09e+00 -11.0 7.53e-02    -  1.00e+00 1.56e-02f  7
+ 348  7.4917359e-01 1.77e-04 1.43e+00 -11.0 9.71e-02    -  1.00e+00 7.81e-03h  8
+ 349  7.4880923e-01 2.61e-04 1.97e+00 -11.0 5.08e-02    -  1.00e+00 3.12e-02h  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 350  9.9206512e+00 4.14e-04 9.16e+01 -11.0 1.24e-01    -  1.00e+00 1.00e+00H  1
+ 351  7.8703513e+00 6.40e-02 8.62e+01 -11.0 8.31e-02    -  1.00e+00 2.50e-01f  3
+ 352  2.0465284e+00 8.70e-01 4.40e+01 -11.0 1.17e-01    -  1.00e+00 1.00e+00f  1
+ 353  6.9858523e+00 8.73e-01 8.41e+01 -11.0 1.54e+00    -  1.29e-01 1.64e-02h  4
+ 354  4.4005305e+00 6.88e-02 5.14e+01 -11.0 3.85e-02    -  1.00e+00 1.00e+00f  1
+ 355  8.2469373e-01 1.41e-01 1.13e+01 -11.0 1.78e-02    -  1.00e+00 1.00e+00f  1
+ 356  2.1991474e+01 2.38e-02 1.41e+02 -11.0 6.57e-02    -  1.00e+00 1.00e+00H  1
+ 357  1.1554586e+01 2.98e-02 8.26e+01 -11.0 7.06e-02    -  1.00e+00 1.00e+00F  1
+ 358  7.0972646e+00 9.21e-02 5.75e+01 -11.0 9.33e-01    -  2.28e-01 1.83e-02f  5
+ 359  5.9777374e+00 9.49e-02 5.43e+01 -11.0 8.53e-01    -  4.83e-01 2.00e-02f  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 360  5.6516191e+00 9.05e-02 5.74e+01 -11.0 1.53e+00    -  4.50e-01 6.18e-03f  7
+ 361  5.5366851e+00 9.00e-02 5.73e+01 -11.0 3.16e+00    -  2.40e-01 1.12e-03f  8
+ 362  5.4834206e+00 1.54e-01 5.25e+01 -11.0 2.19e+00    -  2.33e-01 1.68e-02f  5
+ 363  5.1646183e+00 2.47e-01 4.67e+01 -11.0 4.07e+00    -  1.91e-01 9.77e-03f  5
+ 364  4.8876167e+00 4.30e-01 3.51e+01 -11.0 4.68e+00    -  1.74e-01 1.04e-02f  5
+ 365  4.2796401e+00 5.14e-01 3.16e+01 -11.0 4.83e+00    -  1.38e-01 7.72e-03f  5
+ 366  2.7287188e+00 6.12e-01 3.97e+01 -11.0 2.55e+01    -  3.24e-02 1.92e-03f  5
+ 367  1.9316177e+00 6.08e-01 3.64e+01 -11.0 3.85e+00    -  6.61e-02 4.39e-03f  5
+ 368  2.7772614e+02 3.32e-01 3.86e+02 -11.0 2.40e-01    -  9.12e-01 1.00e+00H  1
+ 369  2.3036281e+00 2.16e-01 3.14e+01 -11.0 2.16e-01    -  2.38e-02 1.00e+00F  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 370  1.1568602e+01 1.72e-01 8.68e+01 -11.0 3.55e-02    -  1.00e+00 1.00e+00h  1
+ 371  2.1189951e+00 4.09e-02 5.13e+01 -11.0 3.86e-02    -  1.00e+00 1.00e+00f  1
+ 372  3.4070559e+00 6.60e-02 7.08e+01 -11.0 3.34e-02    -  1.00e+00 1.00e+00h  1
+ 373  8.0298259e-01 1.14e-02 1.00e+01 -11.0 2.04e-02    -  1.00e+00 1.00e+00f  1
+ 374  7.4777202e-01 7.42e-04 3.27e+00 -11.0 2.80e-03    -  1.00e+00 1.00e+00h  1
+ 375  8.6309742e-01 1.32e-03 1.06e+01 -11.0 3.47e-03    -  1.00e+00 1.00e+00h  1
+ 376  7.4163184e-01 5.05e-04 2.91e-01 -11.0 2.99e-03    -  1.00e+00 1.00e+00f  1
+ 377  7.4098901e-01 5.61e-06 1.69e-01 -11.0 1.80e-04    -  1.00e+00 1.00e+00h  1
+ 378  7.4057434e-01 8.20e-05 6.59e-01 -11.0 1.66e-03    -  1.00e+00 5.00e-01h  2
+ 379  7.3919766e-01 4.65e-05 6.25e-01 -11.0 3.72e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 380  7.3915303e-01 5.98e-06 8.95e-01 -11.0 4.14e-04    -  1.00e+00 1.00e+00h  1
+ 381  7.3902600e-01 1.85e-06 2.27e-01 -11.0 2.26e-04    -  1.00e+00 1.00e+00h  1
+ 382  7.3878755e-01 6.08e-06 1.56e-01 -11.0 1.36e-04    -  1.00e+00 1.00e+00h  1
+ 383  7.3959362e-01 3.11e-07 1.09e+00 -11.0 1.49e-03    -  1.00e+00 1.00e+00H  1
+ 384  7.3951829e-01 1.07e-04 8.88e-01 -11.0 2.21e-03    -  1.00e+00 2.50e-01f  3
+ 385  7.4876352e-01 5.45e-07 3.15e+00 -11.0 2.39e-03    -  1.00e+00 1.00e+00H  1
+ 386  7.3972943e-01 1.13e-06 1.15e+00 -11.0 1.30e-03    -  1.00e+00 1.00e+00F  1
+ 387  7.3909898e-01 2.36e-04 1.02e+00 -11.0 1.53e-03    -  1.00e+00 5.00e-01f  2
+ 388  7.3781044e-01 6.99e-05 5.65e-01 -11.0 4.42e-04    -  1.00e+00 1.00e+00h  1
+ 389  7.3863178e-01 9.49e-05 8.17e-01 -11.0 4.16e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 390  7.3747726e-01 3.44e-05 3.65e-01 -11.0 2.27e-04    -  1.00e+00 1.00e+00h  1
+ 391  7.3771722e-01 2.10e-05 4.37e-01 -11.0 2.46e-04    -  1.00e+00 1.00e+00h  1
+ 392  7.3742190e-01 1.11e-05 1.67e-01 -11.0 1.55e-04    -  1.00e+00 1.00e+00h  1
+ 393  7.3730955e-01 4.28e-05 6.04e-01 -11.0 2.70e-04    -  1.00e+00 1.00e+00h  1
+ 394  7.3738755e-01 5.01e-09 6.00e-01 -11.0 4.78e-04    -  1.00e+00 1.00e+00H  1
+ 395  7.3731391e-01 3.54e-05 4.94e-01 -11.0 3.29e-03    -  1.00e+00 1.25e-01f  4
+ 396  7.6319391e-01 6.56e-07 5.22e+00 -11.0 2.54e-03    -  1.00e+00 1.00e+00H  1
+ 397  7.3890080e-01 5.97e-07 1.47e+00 -11.0 1.73e-03    -  1.00e+00 1.00e+00F  1
+ 398  7.3776287e-01 6.31e-06 6.18e-01 -11.0 2.03e-03    -  1.00e+00 1.25e-01f  4
+ 399  7.3725116e-01 1.29e-05 3.48e-01 -11.0 2.51e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 400  7.3815541e-01 8.58e-09 1.16e+00 -11.0 5.50e-04    -  1.00e+00 1.00e+00H  1
+ 401  7.3803190e-01 1.28e-05 7.84e-01 -11.0 8.25e-04    -  1.00e+00 2.50e-01f  3
+ 402  7.3721973e-01 1.03e-04 4.51e-01 -11.0 2.64e-03    -  1.00e+00 2.50e-01f  3
+ 403  7.5268940e-01 3.04e-07 3.70e+00 -11.0 1.48e-03    -  1.00e+00 1.00e+00H  1
+ 404  7.3792024e-01 2.15e-04 7.55e-01 -11.0 9.53e-04    -  1.00e+00 1.00e+00f  1
+ 405  7.3769443e-01 4.96e-05 8.79e-01 -11.0 4.30e-04    -  1.00e+00 1.00e+00h  1
+ 406  7.3724178e-01 2.33e-05 4.40e-01 -11.0 3.31e-04    -  1.00e+00 1.00e+00h  1
+ 407  7.4412388e-01 1.48e-07 1.92e+00 -11.0 1.29e-03    -  1.00e+00 1.00e+00H  1
+ 408  7.3928573e-01 6.02e-05 1.75e+00 -11.0 6.22e-04    -  1.00e+00 1.00e+00f  1
+ 409  7.3723624e-01 4.49e-06 4.93e-01 -11.0 6.04e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 410  7.3705411e-01 4.29e-06 9.30e-02 -11.0 1.97e-04    -  1.00e+00 1.00e+00h  1
+ 411  7.6226425e-01 2.60e-06 6.36e+00 -11.0 4.29e-03    -  1.00e+00 1.00e+00H  1
+ 412  7.5303213e-01 1.90e-03 4.21e+00 -11.0 6.76e-03    -  1.00e+00 5.00e-01f  2
+ 413  8.4456117e+00 1.66e-05 8.82e+01 -11.0 2.69e-02    -  1.00e+00 1.00e+00H  1
+ 414  7.3949562e-01 1.44e-01 1.56e+00 -11.0 2.65e-02    -  1.00e+00 1.00e+00f  1
+ 415  7.4552026e-01 9.19e-04 2.79e+00 -11.0 1.33e-03    -  1.00e+00 1.00e+00h  1
+ 416  7.4026320e-01 7.77e-05 2.28e+00 -11.0 1.04e-03    -  1.00e+00 1.00e+00h  1
+ 417  7.3596212e-01 9.99e-05 3.33e-01 -11.0 4.95e-04    -  1.00e+00 1.00e+00h  1
+ 418  7.3662047e-01 4.38e-05 1.68e+00 -11.0 5.79e-04    -  1.00e+00 1.00e+00h  1
+ 419  7.3579572e-01 1.53e-05 2.88e-01 -11.0 3.56e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 420  7.3586265e-01 1.00e-05 4.62e-01 -11.0 2.03e-04    -  1.00e+00 1.00e+00h  1
+ 421  7.3550283e-01 1.76e-05 3.93e-01 -11.0 2.39e-04    -  1.00e+00 1.00e+00h  1
+ 422  7.3521512e-01 1.95e-05 4.25e-01 -11.0 2.27e-04    -  1.00e+00 1.00e+00h  1
+ 423  7.3541964e-01 8.48e-06 4.17e-01 -11.0 1.60e-04    -  1.00e+00 1.00e+00h  1
+ 424  7.3492669e-01 1.01e-05 2.40e-01 -11.0 2.41e-04    -  1.00e+00 1.00e+00h  1
+ 425  7.3480222e-01 7.44e-05 1.10e+00 -11.0 6.11e-04    -  1.00e+00 1.00e+00h  1
+ 426  7.3398959e-01 4.49e-05 5.97e-01 -11.0 5.68e-04    -  1.00e+00 1.00e+00h  1
+ 427  7.3772509e-01 1.90e-07 2.15e+00 -11.0 9.46e-04    -  1.00e+00 1.00e+00H  1
+ 428  7.3319935e-01 2.56e-05 5.54e-01 -11.0 7.43e-04    -  1.00e+00 1.00e+00f  1
+ 429  7.3251918e-01 1.95e-05 7.18e-01 -11.0 4.42e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 430  7.3188560e-01 3.76e-05 7.47e-01 -11.0 6.47e-04    -  1.00e+00 1.00e+00h  1
+ 431  7.4451032e-01 2.14e-06 4.52e+00 -11.0 4.45e-03    -  1.00e+00 1.00e+00H  1
+ 432  7.4431678e-01 2.86e-04 3.82e+00 -11.0 1.20e-02    -  1.00e+00 1.25e-01f  4
+ 433  7.7520856e-01 1.65e-05 5.93e+00 -11.0 5.95e-03    -  1.00e+00 1.00e+00H  1
+ 434  7.6083576e-01 3.73e-04 4.66e+00 -11.0 8.25e-03    -  1.00e+00 1.25e-01f  4
+ 435  7.4377725e-01 3.85e-04 4.37e+00 -11.0 4.09e-03    -  1.00e+00 2.50e-01f  3
+ 436  7.4511863e-01 4.92e-06 4.67e+00 -11.0 4.20e-03    -  1.00e+00 1.00e+00H  1
+ 437  7.4036770e-01 6.46e-05 4.08e+00 -11.0 3.65e-03    -  1.00e+00 2.50e-01f  3
+ 438  7.2842663e-01 5.80e-04 3.79e-01 -11.0 2.09e-03    -  1.00e+00 1.00e+00f  1
+ 439  7.4799453e-01 1.91e-04 5.05e+00 -11.0 1.59e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 440  7.2824834e-01 1.44e-04 7.18e-02 -11.0 1.48e-03    -  1.00e+00 1.00e+00f  1
+ 441  7.2820861e-01 4.23e-07 6.96e-02 -11.0 5.53e-05    -  1.00e+00 1.00e+00h  1
+ 442  7.2816656e-01 6.77e-05 1.99e-01 -11.0 9.64e-04    -  1.00e+00 1.00e+00h  1
+ 443  7.2816525e-01 6.78e-05 1.77e-01 -11.0 3.20e-02    -  1.00e+00 1.95e-03h 10
+ 444  7.4155120e-01 3.07e-06 3.04e+00 -11.0 4.10e-03    -  1.00e+00 1.00e+00H  1
+ 445  7.3675840e-01 7.42e-07 2.62e+00 -11.0 2.08e-03    -  1.00e+00 1.00e+00F  1
+ 446  7.3264781e-01 7.33e-05 2.30e+00 -11.0 1.15e-02    -  1.00e+00 3.12e-02f  6
+ 447  7.2919168e-01 6.32e-07 1.52e+00 -11.0 2.06e-03    -  1.00e+00 1.00e+00F  1
+ 448  7.2758114e-01 1.23e-04 1.62e+00 -11.0 5.81e-03    -  1.00e+00 2.50e-01f  3
+ 449  7.3263763e-01 1.53e-07 2.15e+00 -11.0 1.14e-03    -  1.00e+00 1.00e+00H  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 450  7.2981792e-01 1.36e-04 1.14e+00 -11.0 2.48e-03    -  1.00e+00 5.00e-01f  2
+ 451  7.7643810e-01 2.29e-07 7.82e+00 -11.0 2.53e-03    -  1.00e+00 1.00e+00H  1
+ 452  7.2610525e-01 1.30e-03 1.60e-01 -11.0 2.31e-03    -  1.00e+00 1.00e+00f  1
+ 453  7.2612374e-01 1.62e-06 1.67e-01 -11.0 9.57e-05    -  1.00e+00 1.00e+00h  1
+ 454  7.2621997e-01 1.29e-10 1.84e-01 -11.0 9.37e-05    -  1.00e+00 1.00e+00H  1
+ 455  7.2597643e-01 3.04e-05 4.87e-01 -11.0 7.48e-04    -  1.00e+00 5.00e-01f  2
+ 456  7.3295512e-01 3.25e-07 2.98e+00 -11.0 1.24e-03    -  1.00e+00 1.00e+00H  1
+ 457  7.3278997e-01 9.36e-05 3.00e+00 -11.0 2.31e-03    -  1.00e+00 2.50e-01f  3
+ 458  7.2712538e-01 3.32e-04 1.17e+00 -11.0 5.29e-03    -  1.00e+00 2.50e-01f  3
+ 459  7.2962678e-01 1.27e-04 2.32e+00 -11.0 8.57e-04    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 460  7.2500759e-01 7.72e-05 2.38e-01 -11.0 6.77e-04    -  1.00e+00 1.00e+00h  1
+ 461  7.2513707e-01 3.33e-05 8.69e-01 -11.0 4.82e-04    -  1.00e+00 1.00e+00h  1
+ 462  7.2418997e-01 5.37e-04 1.00e+00 -11.0 1.39e-02    -  1.00e+00 1.25e-01h  4
+ 463  7.2404338e-01 9.75e-04 9.50e-01 -11.0 2.07e-01    -  1.00e+00 7.81e-03h  8
+ 464  7.2360431e-01 1.24e-03 4.41e-01 -11.0 1.70e-01    -  1.00e+00 7.81e-03h  8
+ 465  7.2349758e-01 1.25e-03 4.20e-01 -11.0 2.23e-01    -  1.00e+00 1.95e-03h 10
+ 466  4.8456245e+00 3.51e-04 5.64e+01 -11.0 6.12e-02    -  1.00e+00 1.00e+00H  1
+ 467  3.5729263e+00 1.66e-01 3.93e+01 -11.0 2.25e-02    -  1.00e+00 1.00e+00f  1
+ 468  1.6107402e+02 1.02e-01 3.20e+02 -11.0 2.01e-01    -  9.29e-01 1.00e+00H  1
+ 469  1.3851918e+02 1.05e-01 2.88e+02 -11.0 2.55e-01    -  6.85e-01 7.61e-02f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 470  1.0438009e+02 1.13e-01 2.59e+02 -11.0 7.99e-01    -  5.92e-02 2.75e-02f  5
+ 471  2.5143237e+01 3.23e-02 1.83e+02 -11.0 1.84e-01    -  8.36e-01 1.00e+00F  1
+ 472  1.4075334e+01 7.99e-02 1.63e+02 -11.0 1.24e+00    -  1.25e-01 2.47e-02f  4
+ 473  6.9872524e+01 4.97e-02 2.65e+02 -11.0 9.82e-02    -  1.00e+00 1.00e+00H  1
+ 474  1.1870668e+00 9.96e-01 1.63e+01 -11.0 8.14e-02    -  1.00e+00 1.00e+00f  1
+ 475  1.3760725e+00 2.39e-02 1.83e+01 -11.0 8.75e-03    -  1.00e+00 1.00e+00h  1
+ 476  9.2605057e-01 9.83e-03 2.57e+00 -11.0 5.04e-03    -  1.00e+00 1.00e+00f  1
+ 477  8.9784075e-01 4.36e-04 2.34e+00 -11.0 1.12e-03    -  1.00e+00 1.00e+00h  1
+ 478  4.0605340e+00 9.20e-05 4.40e+01 -11.0 4.97e-02    -  1.00e+00 1.00e+00H  1
+ 479  3.9974479e+00 2.11e-04 5.72e+01 -11.0 2.16e-02    -  1.00e+00 1.00e+00F  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 480  8.6122654e-01 4.67e-01 1.15e+01 -11.0 2.88e-02    -  1.00e+00 1.00e+00f  1
+ 481  8.2894598e-01 3.58e-01 1.09e+01 -11.0 2.30e-02    -  1.00e+00 2.50e-01f  3
+ 482  7.4873981e-01 7.27e-03 4.86e+00 -11.0 2.80e-03    -  1.00e+00 1.00e+00h  1
+ 483  7.3824123e-01 7.79e-04 2.97e+00 -11.0 2.10e-03    -  1.00e+00 1.00e+00h  1
+ 484  7.2967843e-01 1.29e-04 4.24e-01 -11.0 7.30e-04    -  1.00e+00 1.00e+00h  1
+ 485  7.2826409e-01 3.64e-05 4.13e-01 -11.0 3.89e-04    -  1.00e+00 1.00e+00h  1
+ 486  7.2559847e-01 6.56e-03 2.23e+00 -11.0 5.15e-03    -  1.00e+00 1.00e+00f  1
+ 487  1.0165818e+00 3.85e-06 1.26e+01 -11.0 1.62e-02    -  1.00e+00 1.00e+00H  1
+ 488  7.3924410e-01 1.48e-06 4.46e+00 -11.0 1.02e-02    -  1.00e+00 1.00e+00F  1
+ 489  7.1993045e-01 1.29e-03 2.16e+00 -11.0 7.62e-03    -  1.00e+00 2.50e-01f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 490  7.1560602e-01 1.21e-04 1.97e+00 -11.0 1.17e-03    -  1.00e+00 1.00e+00h  1
+ 491  7.1377747e-01 4.84e-05 5.48e-01 -11.0 5.26e-04    -  1.00e+00 1.00e+00h  1
+ 492  7.1343354e-01 2.80e-05 3.28e-01 -11.0 2.80e-04    -  1.00e+00 1.00e+00h  1
+ 493  7.1296874e-01 8.91e-06 3.10e-01 -11.0 7.78e-04    -  1.00e+00 1.00e+00h  1
+ 494  7.1332430e-01 3.20e-07 9.55e-01 -11.0 3.97e-03    -  1.00e+00 1.00e+00H  1
+ 495  7.1298819e-01 1.06e-04 7.68e-01 -11.0 9.45e-03    -  1.00e+00 1.25e-01f  4
+ 496  7.1291270e-01 2.71e-04 8.35e-01 -11.0 1.12e-02    -  1.00e+00 1.25e-01h  4
+ 497  7.3592300e-01 8.32e-06 4.13e+00 -11.0 6.18e-03    -  1.00e+00 1.00e+00H  1
+ 498  7.1968217e-01 1.19e-03 2.79e+00 -11.0 2.09e-03    -  1.00e+00 1.00e+00f  1
+ 499  7.1297459e-01 9.27e-04 1.36e+00 -11.0 2.43e-03    -  1.00e+00 1.00e+00h  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 500  7.1410957e-01 3.95e-05 1.81e+00 -11.0 8.80e-04    -  1.00e+00 1.00e+00h  1
+
+Number of Iterations....: 500
+
+                                   (scaled)                 (unscaled)
+Objective...............:   7.1410957416214038e-01    7.1410957416214038e-01
+Dual infeasibility......:   1.8105939713726928e+00    1.8105939713726928e+00
+Constraint violation....:   2.9636721514809256e-05    3.9508636482443737e-05
+Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
+Complementarity.........:   1.0000000000000003e-11    1.0000000000000003e-11
+Overall NLP error.......:   1.8105939713726928e+00    1.8105939713726928e+00
+
+
+Number of objective function evaluations             = 1826
+Number of objective gradient evaluations             = 501
+Number of equality constraint evaluations            = 1826
+Number of inequality constraint evaluations          = 0
+Number of equality constraint Jacobian evaluations   = 501
+Number of inequality constraint Jacobian evaluations = 0
+Number of Lagrangian Hessian evaluations             = 0
+Total seconds in IPOPT                               = 445.393
+
+EXIT: Maximum Number of Iterations Exceeded.
+Recovering state with best loss: iteration 496 with 0.712913
+Saving 150 results
+Number of results: 150
+Completing bilevel fit result using IK on the timesteps between our sampled indices...
+Skipping adjusting marker C7 because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker CLAV because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LACR because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LAJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LASH with 0 observations
+Skipping adjusting marker LASI because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LCAL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LEJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LFAradius because we are not adjusting anatomical markers after the main optimization
+Adjusting marker LFAsuperior: [-0.0340351,-0.0786485,-0.0364027] = original [0.00460453,-0.0800579,-0.0453196] + offset [-0.0386397,0.00140937,0.00891687]
+Skipping adjusting marker LFAulna because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LHJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LKJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LLEL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LLFC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LLMAL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LMEL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LMFC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LMMAL because we are not adjusting anatomical markers after the main optimization
+Adjusting marker LMT5: [0.142005,-0.00563777,-0.0602252] = original [0.125912,0.0075,-0.0662639] + offset [0.016093,-0.0131378,0.00603873]
+Adjusting marker LPSH: [-0.0738886,0.374329,-0.1623] = original [-0.058,0.3715,-0.17] + offset [-0.0158886,0.00282891,0.0077004]
+Skipping adjusting marker LPSI because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker LSJC because we are not adjusting anatomical markers after the main optimization
+Adjusting marker LTB1: [0.0294311,-0.112584,-0.00415558] = original [-0.00166178,-0.156488,-0.0492394] + offset [0.0310929,0.043904,0.0450838]
+Adjusting marker LTB2: [-0.0331464,-0.208708,-0.0523611] = original [0.0369643,-0.230107,0.00391699] + offset [-0.0701107,0.0213987,-0.0562781]
+Adjusting marker LTB3: [0.0224806,-0.291924,-0.0133615] = original [0.0113793,-0.295236,-0.0553541] + offset [0.0111013,0.0033118,0.0419926]
+Adjusting marker LTH1: [-0.00537384,-0.121365,-0.0639703] = original [0.018,-0.15,-0.064] + offset [-0.0233738,0.0286346,2.97268e-05]
+Adjusting marker LTH2: [0.0479913,-0.220862,-0.0363549] = original [0.08,-0.23,-0.0047] + offset [-0.0320087,0.00913826,-0.0316549]
+Adjusting marker LTH3: [-0.00478914,-0.300397,-0.0352236] = original [0.01,-0.3,-0.06] + offset [-0.0147891,-0.000397398,0.0247764]
+Adjusting marker LTOE: [0.190992,-0.00653194,0.0170926] = original [0.189956,0.0278768,0.0420476] + offset [0.00103566,-0.0344088,-0.024955]
+Adjusting marker LUA1: [-0.0347302,-0.100008,-0.0212413] = original [0,-0.05,-0.02] + offset [-0.0347302,-0.0500075,-0.00124135]
+Adjusting marker LUA2: [-0.0466933,-0.178255,0.0176031] = original [0,-0.2,-0.02] + offset [-0.0466933,0.0217451,0.0376031]
+Adjusting marker LUA3: [-0.01754,-0.218617,-0.0287557] = original [0.03,-0.13,-0.02] + offset [-0.04754,-0.0886175,-0.00875571]
+Skipping adjusting marker RACR because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RAJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RASH with 0 observations
+Skipping adjusting marker RASI because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RCAL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker REJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RFAradius because we are not adjusting anatomical markers after the main optimization
+Adjusting marker RFAsuperior: [-0.0289885,-0.0591132,0.0447593] = original [0.00460453,-0.0800579,0.0453196] + offset [-0.0335931,0.0209447,-0.000560315]
+Skipping adjusting marker RFAulna because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RHJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RKJC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RLEL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RLFC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RLMAL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RMEL because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RMFC because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RMMAL because we are not adjusting anatomical markers after the main optimization
+Adjusting marker RMT5: [0.142955,-0.0228096,0.0447949] = original [0.125912,0.0075,0.0637361] + offset [0.0170435,-0.0303096,-0.0189412]
+Skipping adjusting marker RPSH with 0 observations
+Skipping adjusting marker RPSI because we are not adjusting anatomical markers after the main optimization
+Skipping adjusting marker RSJC because we are not adjusting anatomical markers after the main optimization
+Adjusting marker RTB1: [0.0349668,-0.129241,0.00924622] = original [-0.00166178,-0.156488,0.0492394] + offset [0.0366286,0.0272469,-0.0399932]
+Adjusting marker RTB2: [0.00163613,-0.181389,0.0548707] = original [0.0369643,-0.230107,-0.00391699] + offset [-0.0353282,0.0487177,0.0587877]
+Adjusting marker RTB3: [0.0252991,-0.299642,0.0210024] = original [0.0113793,-0.295236,0.0553541] + offset [0.0139198,-0.00440604,-0.0343516]
+Adjusting marker RTH1: [-0.00306972,-0.158028,0.0717404] = original [0.018,-0.15,0.064] + offset [-0.0210697,-0.0080276,0.00774043]
+Adjusting marker RTH2: [0.0551888,-0.222201,0.0419852] = original [0.08,-0.23,0.0047] + offset [-0.0248112,0.00779896,0.0372852]
+Adjusting marker RTH3: [-0.00958448,-0.303835,0.0453215] = original [0.01,-0.3,0.06] + offset [-0.0195845,-0.00383496,-0.0146785]
+Adjusting marker RTOE: [0.200195,0.00112752,-0.0339251] = original [0.188505,0.029424,-0.0440152] + offset [0.0116896,-0.0282965,0.0100901]
+Adjusting marker RUA1: [-0.00108994,-0.116578,0.0295827] = original [0,-0.05,0.02] + offset [-0.00108994,-0.0665783,0.0095827]
+Adjusting marker RUA2: [-0.0445733,-0.18114,-0.00502415] = original [0,-0.2,0.02] + offset [-0.0445733,0.01886,-0.0250242]
+Adjusting marker RUA3: [-0.0194504,-0.231362,0.0239558] = original [0.03,-0.13,0.02] + offset [-0.0494504,-0.101362,0.00395583]
+Done completing bilevel fit!
+Running final smoothing IK
+Smoothing trial poses for trial 0/1
+Recovering output from kinematics pipeline
+Unscaled skeleton mass: 75.16460000000001
+Mass scale factor: 0.8514646522432101
+Checking for marker swaps...
+Fitting dynamics...
+Interpreting force plate 0 in trial 0 as having centers-of-pressure that are calculated so that remaining moment is VERTICAL.
+Interpreting force plate 1 in trial 0 as having centers-of-pressure that are calculated so that remaining moment is VERTICAL.
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Detected ground height: 0
+Contact body 0 radii: [0.0897104,0.110291,
+Contact body 1 radii: [0.0838665,0.110373,
+Initial mass: 63.99999999999999 kg
+What we'd expect average ~GRF to be (Mass * 9.8): 627.1999999999999 N
+Avg Force: 660.8092741535249 N
+Avg Torque: 2.0365415911602223 Nm
+Smoothing jitter in joint accelerations for trial 0/1
+All jitter in joint accelerations smoothed!
+Zeroing linear residuals in the COM trajectory
+Constructing COM (linear) trajectory linear system for trial 0/1
+Assembling the unified linear COM trajectory map across 1 included trials (of 1 total)
+Solving unified linear COM trajectory map: size = 1099 x 14
+Solved!
+Found skeleton mass: 65.5406kg
+Trial 0 GRF scaled by: -2.96346e-11%
+Trial 0 force plate rotations (in degrees): 
+  Force Plate 0: (0.0981019,0.00175978,-0.111431)
+  Force Plate 1: (0.0980176,-0.000826166,-0.1097)
+Trial 0 moved COM by an average of 0.00866895m to achieve linear physical consistency.
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Finished zeroing linear residuals.
+Done with initial zeroLinearResidualsOnCOMTrajectory()
+Links [ toes_r toes_l ] out of bounds. Got -0.859824, which is within boundPush=0.01 of [0.0001, 100]
+Got some out-of-bounds link masses after solve. Increasing regularization for those links and solving again. Max coeff = 10
+Links [ talus_r talus_l ] out of bounds. Got -0.0108599, which is within boundPush=0.01 of [0.0001, 100]
+Got some out-of-bounds link masses after solve. Increasing regularization for those links and solving again. Max coeff = 10
+New mass: 65.5605
+Offset percentage sum: -3.46945e-18
+Offset percentage squared sum: 0.00134035
+Percentage sum: 1
+Avg root diff: 0.00734408m
+Running zeroLinearResidualsAndOptimizeAngular() iteration 0 of 1 for trial 0 of 1 with useReactionWheels=1
+Attempting to zero linear and minimize angular. Initial avg. residuals: 54.3361
+Trial pos/angle changed by acceptable amount (pos change=1.9692e-08 [threshold = 0.2], angle change=0.0997406 [threshold = 0.2], detect torques = 0)
+CoP for force plate 0 moved by an average of 1.40537e-06m
+CoP for force plate 1 moved by an average of 1.55527e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Trial 0 adjusted force plate location (correcting for calibration error) by 4.2781e-07m X, 0.000228806m Z
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Detected missing/bad GRF data on 0/364 frames
+Created 19 blocks: [
+  trial[0] steps [0 to 20]
+  trial[0] steps [20 to 40]
+  trial[0] steps [40 to 60]
+  trial[0] steps [60 to 80]
+  trial[0] steps [80 to 100]
+  trial[0] steps [100 to 120]
+  trial[0] steps [120 to 140]
+  trial[0] steps [140 to 160]
+  trial[0] steps [160 to 180]
+  trial[0] steps [180 to 200]
+  trial[0] steps [200 to 220]
+  trial[0] steps [220 to 240]
+  trial[0] steps [240 to 260]
+  trial[0] steps [260 to 280]
+  trial[0] steps [280 to 300]
+  trial[0] steps [300 to 320]
+  trial[0] steps [320 to 340]
+  trial[0] steps [340 to 360]
+  trial[0] steps [360 to 364]
+]
+Getting initial loss:
+[massR=0,comR=0,inR=0,dnsR=0,scR=0,mkrR=7.43043e-09,accR=0,jntRMS=0.00597631,axisRMS=0.0349873,qR=5.23526e-10,fRMS=1.08672,linF=0,mkRMS=0.632632]
+Got initial loss:1.76032
+BEGINNING OPTIMIZATION WITH LOSS: 1.76032
+This is Ipopt version 3.14.5, running with linear solver MUMPS 5.4.1.
+
+Number of nonzeros in equality constraint Jacobian...:    23778
+Number of nonzeros in inequality constraint Jacobian.:        0
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:    11820
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:      713
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:     1332
+Total number of inequality constraints...............:        0
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  1.8757831e+00 1.96e-01 2.06e+00   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  2.3012813e+00 1.80e-01 1.83e+02  -0.4 3.71e-01    -  9.95e-01 8.24e-02f  1
+   2  3.4332518e+00 1.36e-01 5.30e+02   0.6 1.86e+00    -  8.33e-02 2.46e-01f  1
+   3  1.6249164e+01 6.22e-06 4.34e+02  -0.1 6.20e-01    -  2.57e-01 1.00e+00f  1
+   4  1.4121030e+01 3.81e-06 3.47e+00  -1.5 4.25e-01    -  9.37e-01 1.00e+00f  1
+   5  8.5525925e+00 1.71e-08 3.59e+00  -1.8 5.56e-01    -  9.50e-01 1.00e+00f  1
+   6  7.5743801e+00 1.24e-08 3.16e+00  -2.0 4.90e-01    -  8.99e-01 2.50e-01f  3
+   7  5.4526924e+00 1.38e-08 3.21e+00  -1.4 3.21e-01    -  8.41e-01 1.00e+00f  1
+   8  4.0595650e+00 6.59e-09 3.17e+00  -2.6 1.36e-01    -  9.98e-01 5.00e-01f  2
+   9  3.8789656e+00 9.11e-09 2.59e+00  -3.7 3.28e-01    -  1.00e+00 8.92e-01f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  3.5142833e+00 7.92e-09 3.02e+00  -1.7 1.85e+00    -  8.81e-01 1.49e-01f  2
+  11  2.4313415e+00 3.99e-09 1.57e+00  -2.7 2.06e-01    -  8.43e-01 4.30e-01f  2
+  12  2.2073326e+00 3.69e-09 1.63e+00  -3.3 8.48e-02    -  1.00e+00 2.50e-01f  3
+  13  2.1112220e+00 4.18e-09 1.78e+00  -3.8 9.93e-02    -  1.00e+00 1.00e+00f  1
+  14  2.0122921e+00 1.31e-09 9.60e-01  -3.5 5.90e-02    -  1.00e+00 5.00e-01f  2
+  15  1.9845329e+00 4.74e-10 9.72e-01  -4.3 3.83e-02    -  1.00e+00 5.00e-01f  2
+  16  1.9420361e+00 9.63e-10 7.19e-01  -4.8 5.04e-02    -  1.00e+00 1.00e+00f  1
+  17  1.9113514e+00 5.99e-10 6.61e-01  -5.3 8.16e-02    -  1.00e+00 1.00e+00f  1
+  18  1.8935913e+00 4.30e-10 7.09e-01  -6.3 1.07e-01    -  1.00e+00 2.50e-01f  3
+  19  1.8579995e+00 3.21e-10 6.38e-01  -6.0 1.10e-01    -  1.00e+00 2.33e-01f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  1.8280562e+00 2.48e-10 5.05e-01  -6.1 1.98e-01    -  1.00e+00 1.62e-01f  2
+  21  1.8015539e+00 1.88e-10 4.60e-01  -7.0 2.27e-01    -  1.00e+00 1.87e-01f  1
+  22  1.7959195e+00 1.85e-10 6.99e-01  -6.3 2.26e-01    -  1.00e+00 2.57e-02f  2
+  23  1.7885872e+00 2.19e-10 9.57e-01  -7.4 2.31e-02    -  1.00e+00 1.00e+00f  1
+  24  1.7867330e+00 2.15e-10 9.08e-01  -8.6 6.82e-02    -  1.00e+00 2.12e-02f  1
+  25  1.7745216e+00 7.43e-11 8.05e-01  -6.5 2.62e-02    -  8.95e-01 1.00e+00f  1
+  26  1.7740596e+00 7.45e-11 7.91e-01  -7.8 1.04e-02    -  1.00e+00 1.15e-02f  1
+  27  1.7616242e+00 3.97e-11 3.45e-01  -9.1 2.35e-02    -  1.00e+00 1.00e+00f  1
+  28  1.7545315e+00 1.45e-11 1.59e-01 -10.1 1.12e-02    -  1.00e+00 8.99e-01f  1
+  29  1.7523138e+00 3.53e-12 1.02e-01 -11.0 3.02e-03    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  30  1.7489675e+00 1.78e-12 2.64e-01 -11.0 1.24e-02    -  1.00e+00 1.00e+00f  1
+  31  1.7457616e+00 1.81e-12 3.68e-01 -11.0 7.69e-02    -  1.00e+00 1.25e-01f  4
+  32  1.7440620e+00 3.24e-12 2.93e-01 -11.0 4.87e-02    -  1.00e+00 2.50e-01f  3
+  33  1.7429911e+00 3.56e-12 3.04e-01 -11.0 1.96e-02    -  1.00e+00 1.25e-01f  4
+  34  1.7394606e+00 7.05e-12 1.81e-01 -11.0 5.18e-03    -  1.00e+00 1.00e+00f  1
+  35  1.7391059e+00 5.85e-12 1.82e-01 -11.0 8.37e-03    -  1.00e+00 1.25e-01f  4
+  36  1.7380955e+00 2.84e-12 1.35e-01 -11.0 4.18e-03    -  1.00e+00 1.00e+00f  1
+  37  1.7371999e+00 2.34e-12 1.89e-01 -11.0 1.16e-02    -  1.00e+00 5.00e-01f  2
+  38  1.7367970e+00 2.36e-12 1.47e-01 -11.0 4.11e-02    -  1.00e+00 1.25e-01f  4
+  39  1.7365454e+00 2.16e-12 1.92e-01 -11.0 1.61e-02    -  1.00e+00 5.00e-01f  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  40  1.7359765e+00 2.42e-12 3.05e-01 -11.0 1.93e-02    -  1.00e+00 5.00e-01f  2
+  41  1.7333930e+00 4.55e-12 1.62e-01 -11.0 8.61e-03    -  1.00e+00 1.00e+00f  1
+  42  1.7329093e+00 4.31e-12 1.09e-01 -11.0 1.71e-02    -  1.00e+00 5.28e-02f  5
+  43  1.7317282e+00 2.98e-12 5.80e-02 -11.0 4.40e-03    -  1.00e+00 1.00e+00f  1
+  44  1.7315059e+00 2.94e-12 7.80e-02 -10.7 1.38e-01    -  1.00e+00 1.56e-02f  7
+  45  1.7312970e+00 2.37e-12 1.32e-01 -11.0 1.59e-02    -  1.00e+00 2.50e-01f  3
+  46  1.7302409e+00 1.65e-12 1.77e-01 -11.0 1.69e-02    -  1.00e+00 5.00e-01f  2
+  47  1.7290764e+00 1.48e-12 1.56e-01 -11.0 1.77e-01    -  1.00e+00 7.41e-02f  4
+  48  1.7289451e+00 1.48e-12 2.84e-01 -11.0 1.19e-01    -  1.00e+00 1.25e-01f  4
+  49  1.7283554e+00 1.54e-12 3.55e-01 -11.0 3.48e-02    -  1.00e+00 2.50e-01f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  50  1.7279461e+00 2.06e-12 5.13e-01 -11.0 9.17e-02    -  1.00e+00 1.25e-01f  4
+  51  1.7277077e+00 2.91e-12 4.60e-01 -11.0 4.51e-02    -  1.00e+00 1.25e-01f  4
+  52  1.7252625e+00 4.13e-12 2.56e-01 -11.0 4.45e-02    -  1.00e+00 2.50e-01f  3
+  53  1.7223210e+00 4.27e-12 1.54e-01 -11.0 5.46e-02    -  1.00e+00 1.25e-01f  4
+  54  1.7209854e+00 3.41e-12 2.17e-01 -11.0 1.21e-02    -  1.00e+00 5.00e-01f  2
+  55  1.7206083e+00 3.18e-12 3.09e-01 -11.0 3.25e-02    -  1.00e+00 1.25e-01f  4
+  56  1.7191658e+00 2.74e-12 1.76e-01 -11.0 2.28e-02    -  1.00e+00 5.00e-01f  2
+  57  1.7189171e+00 2.71e-12 1.25e-01 -11.0 1.56e-01    -  1.00e+00 8.56e-03f  7
+  58  1.7182977e+00 2.35e-12 1.14e-01 -11.0 2.05e-02    -  1.00e+00 1.25e-01f  4
+  59  1.7180463e+00 2.34e-12 1.57e-01 -11.0 3.59e-02    -  1.00e+00 6.25e-02f  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  60  1.7170050e+00 2.23e-12 1.60e-01 -11.0 1.76e-02    -  1.00e+00 5.00e-01f  2
+  61  1.7165324e+00 2.47e-12 1.76e-01 -11.0 3.83e-02    -  1.00e+00 1.25e-01f  4
+  62  1.7163442e+00 2.56e-12 1.79e-01 -11.0 6.37e-02    -  1.00e+00 2.50e-01f  3
+  63  1.7155055e+00 2.24e-12 1.49e-01 -11.0 7.89e-02    -  1.00e+00 1.06e-01f  4
+  64  1.7150621e+00 2.05e-12 2.00e-01 -11.0 2.69e-02    -  1.00e+00 6.25e-02f  5
+  65  1.7142955e+00 1.74e-12 1.46e-01 -11.0 9.23e-03    -  1.00e+00 5.00e-01f  2
+  66  1.7138274e+00 1.74e-12 1.93e-01 -10.7 1.43e-01    -  1.00e+00 4.29e-02f  4
+  67  1.7132782e+00 1.69e-12 2.26e-01 -11.0 7.49e-02    -  1.00e+00 6.25e-02f  4
+  68  1.7124341e+00 1.64e-12 1.89e-01 -11.0 2.93e-02    -  1.00e+00 6.09e-02f  5
+  69  1.7112397e+00 1.40e-12 1.56e-01 -11.0 1.16e-02    -  1.00e+00 5.00e-01f  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  70  1.7105931e+00 1.29e-12 2.15e-01 -11.0 9.72e-02    -  1.00e+00 7.03e-02f  4
+  71  1.7102561e+00 1.54e-12 1.68e-01 -11.0 3.19e-02    -  1.00e+00 2.50e-01f  3
+  72  1.7083273e+00 1.50e-12 1.40e-01 -11.0 4.00e-02    -  1.00e+00 1.91e-01f  3
+  73  1.7071539e+00 1.40e-12 1.45e-01 -10.7 2.07e-01    -  1.00e+00 2.93e-02f  4
+  74  1.7065841e+00 1.29e-12 1.78e-01 -11.0 4.33e-02    -  1.00e+00 5.69e-02f  4
+  75  1.7056087e+00 1.27e-12 1.60e-01 -10.8 3.76e-02    -  1.00e+00 1.84e-01f  2
+  76  1.7034643e+00 1.29e-12 1.29e-01 -10.9 1.55e-01    -  1.00e+00 5.88e-02f  1
+  77  1.7033915e+00 1.29e-12 1.28e-01 -10.6 1.09e-01    -  1.00e+00 1.82e-03f  1
+  78  1.7023818e+00 1.35e-12 2.56e-01 -10.7 1.29e-01    -  1.00e+00 9.67e-02f  2
+  79  1.7014997e+00 1.33e-12 1.85e-01  -8.4 2.00e-01    -  8.90e-01 6.25e-02f  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  80  1.7008024e+00 1.35e-12 1.63e-01  -9.1 6.60e-02    -  1.00e+00 4.52e-02f  1
+  81  1.6997774e+00 1.59e-12 1.76e-01  -9.6 2.30e-01    -  1.00e+00 3.12e-02f  6
+  82  1.6984298e+00 3.97e-12 2.49e-01 -10.4 6.87e-02    -  1.00e+00 2.50e-01f  3
+  83  1.6975777e+00 4.05e-12 2.45e-01 -10.7 1.69e-01    -  1.00e+00 3.12e-02f  6
+  84  1.6962473e+00 3.69e-12 1.59e-01 -11.0 3.03e-02    -  1.00e+00 2.50e-01f  3
+  85  1.6960741e+00 3.63e-12 1.84e-01 -11.0 1.83e-02    -  1.00e+00 1.25e-01f  4
+  86  1.6958430e+00 3.64e-12 1.78e-01 -11.0 2.10e-02    -  1.00e+00 2.50e-01f  3
+  87  1.6952623e+00 3.59e-12 1.61e-01 -11.0 1.67e-02    -  1.00e+00 1.25e-01f  4
+  88  1.6950026e+00 3.59e-12 1.68e-01 -11.0 3.55e-02    -  1.00e+00 1.25e-01f  4
+  89  1.6941635e+00 3.22e-12 2.10e-01 -11.0 1.72e-02    -  1.00e+00 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  90  1.6938205e+00 3.14e-12 1.98e-01 -11.0 2.18e-02    -  1.00e+00 6.11e-02f  5
+  91  1.6932889e+00 2.89e-12 2.48e-01 -11.0 1.99e-02    -  1.00e+00 5.00e-01f  2
+  92  1.6929801e+00 2.65e-12 2.15e-01 -11.0 9.28e-02    -  1.00e+00 6.25e-02f  5
+  93  1.6924135e+00 2.59e-12 1.81e-01 -11.0 3.48e-02    -  1.00e+00 1.25e-01f  4
+  94  1.6917610e+00 2.55e-12 1.67e-01 -11.0 4.08e-02    -  1.00e+00 6.25e-02f  5
+  95  1.6914798e+00 2.32e-12 3.27e-01 -11.0 2.10e-02    -  1.00e+00 1.25e-01f  4
+  96  1.6904826e+00 2.30e-12 1.86e-01 -11.0 4.52e-02    -  1.00e+00 6.25e-02f  5
+  97  1.6900269e+00 2.32e-12 1.84e-01 -11.0 7.56e-02    -  1.00e+00 6.25e-02f  5
+  98  1.6894362e+00 2.23e-12 1.98e-01 -11.0 3.20e-02    -  1.00e+00 2.50e-01f  3
+  99  1.6886398e+00 2.22e-12 1.39e-01 -11.0 1.62e-01    -  1.00e+00 2.58e-02f  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 100  1.6874993e+00 2.20e-12 1.55e-01 -11.0 1.68e-01    -  1.00e+00 7.09e-02f  4
+ 101  1.6873367e+00 2.17e-12 1.78e-01 -11.0 2.99e-01    -  1.00e+00 1.88e-02f  5
+ 102  1.6864129e+00 1.77e-12 2.26e-01 -11.0 3.38e-02    -  1.00e+00 1.25e-01f  4
+ 103  1.6857348e+00 1.74e-12 1.65e-01 -10.7 3.04e-01    -  1.00e+00 1.09e-02f  6
+ 104  1.6850483e+00 1.65e-12 1.74e-01 -11.0 1.17e-01    -  1.00e+00 3.31e-02f  5
+ 105  1.6841377e+00 1.61e-12 1.82e-01 -10.7 2.11e-01    -  1.00e+00 3.12e-02f  6
+ 106  1.6821578e+00 1.55e-12 1.77e-01 -10.0 2.79e-01    -  1.00e+00 6.25e-02f  5
+ 107  1.6814116e+00 1.56e-12 1.51e-01  -9.5 2.65e+00    -  1.16e-01 1.71e-03f  9
+ 108  1.6810074e+00 1.62e-12 1.78e-01 -10.7 4.16e-01    -  1.00e+00 1.56e-02f  7
+ 109  1.6805809e+00 1.67e-12 2.08e-01 -11.0 1.66e-01    -  1.00e+00 3.12e-02f  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 110  1.6804334e+00 1.68e-12 1.48e-01 -11.0 6.15e-01    -  1.00e+00 1.02e-02f  6
+ 111  1.6797873e+00 1.67e-12 1.67e-01 -10.3 1.36e-01    -  1.00e+00 6.25e-02f  5
+ 112  1.6794553e+00 1.67e-12 1.87e-01 -11.0 2.42e-01    -  1.00e+00 1.89e-02f  6
+ 113  1.6789592e+00 1.65e-12 2.63e-01 -11.0 1.81e-01    -  1.00e+00 2.42e-02f  6
+ 114  1.6784494e+00 1.58e-12 2.53e-01 -11.0 1.77e-01    -  1.00e+00 2.25e-02f  6
+ 115  1.6767572e+00 1.63e-12 2.53e-01 -11.0 2.36e-01    -  1.00e+00 1.02e-01f  3
+ 116  1.6759975e+00 1.64e-12 2.43e-01 -10.5 7.47e-01    -  1.00e+00 1.27e-02f  3
+ 117  1.6756393e+00 1.64e-12 2.62e-01 -10.5 1.10e+00    -  1.00e+00 3.89e-03f  4
+ 118  1.6753566e+00 1.61e-12 2.14e-01 -11.0 1.70e-01    -  1.00e+00 3.66e-02f  3
+ 119  1.6745013e+00 1.61e-12 1.83e-01 -11.0 9.28e-01    -  1.00e+00 1.98e-02f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 120  1.6741443e+00 1.60e-12 1.95e-01 -11.0 6.33e-01    -  1.00e+00 1.38e-02f  4
+ 121  1.6739204e+00 1.59e-12 1.59e-01 -11.0 1.43e-01    -  1.00e+00 1.19e-02f  5
+ 122  1.6737892e+00 1.32e-12 1.88e-01 -11.0 7.86e-02    -  1.00e+00 8.81e-02f  4
+ 123  1.6732576e+00 1.30e-12 1.86e-01 -11.0 4.95e-01    -  1.00e+00 1.54e-02f  3
+ 124  1.6730780e+00 1.29e-12 2.01e-01  -6.4 2.20e-01    -  3.53e-01 7.81e-03f  8
+ 125  1.6723655e+00 3.17e-11 1.90e-01  -7.9 1.70e-02    -  4.85e-01 5.00e-01f  2
+ 126  1.6717011e+00 3.12e-11 9.25e-02  -6.7 5.05e-01    -  8.23e-02 1.56e-02f  7
+ 127  1.6711609e+00 3.12e-11 1.44e-01  -7.1 3.27e-01    -  2.97e-01 1.56e-02f  7
+ 128  1.6707170e+00 2.90e-11 1.34e-01  -7.5 2.79e-02    -  7.80e-01 1.25e-01f  4
+ 129  1.6703459e+00 2.87e-11 1.46e-01  -8.2 1.19e-01    -  1.00e+00 1.56e-02f  7
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 130  1.6692207e+00 1.75e-11 1.50e-01  -8.3 1.68e-02    -  1.00e+00 5.00e-01f  2
+ 131  1.6689705e+00 1.72e-11 1.91e-01  -9.1 3.02e-01    -  1.00e+00 1.01e-02f  5
+ 132  1.6688524e+00 1.58e-11 1.70e-01 -10.1 3.00e-01    -  1.00e+00 5.56e-02f  3
+ 133  1.6681835e+00 1.54e-11 2.16e-01  -7.4 6.76e-01    -  6.31e-02 1.69e-02f  3
+ 134  1.6677948e+00 1.45e-11 2.07e-01  -8.3 1.61e-01    -  1.00e+00 2.23e-02f  6
+ 135  1.6666670e+00 1.32e-11 2.00e-01  -9.6 6.56e-02    -  1.00e+00 8.92e-02f  3
+ 136  1.6653682e+00 1.29e-11 2.19e-01 -10.1 5.17e-01    -  1.00e+00 1.27e-02f  2
+ 137  1.6651223e+00 1.28e-11 3.22e-01 -10.6 5.76e-01    -  1.00e+00 1.51e-02f  1
+ 138  1.6650587e+00 1.27e-11 2.61e-01  -7.3 1.99e-01    -  2.56e-01 1.24e-02f  3
+ 139  1.6629832e+00 1.47e-11 2.99e-01  -6.8 5.92e-02    -  9.90e-01 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 140  1.6619739e+00 2.43e-11 2.56e-01  -5.6 2.02e-01    -  2.37e-02 3.12e-02f  6
+ 141  1.6609655e+00 1.81e-11 3.32e-01  -5.5 4.82e-01    -  7.27e-02 3.12e-02f  6
+ 142  1.6589247e+00 2.28e-11 1.68e-01  -5.7 1.80e-01    -  1.80e-01 6.25e-02f  5
+ 143  1.6586534e+00 2.18e-11 1.83e-01  -5.8 2.35e-01    -  3.84e-01 1.46e-02f  4
+ 144  1.6562304e+00 4.45e-11 2.12e-01  -7.7 1.44e-02    -  1.00e+00 5.00e-01f  2
+ 145  1.6554985e+00 4.38e-11 2.16e-01  -8.5 3.95e-01    -  1.00e+00 1.41e-02f  2
+ 146  1.6548973e+00 4.33e-11 1.84e-01  -7.9 1.40e-01    -  1.00e+00 1.65e-02f  5
+ 147  1.6544602e+00 4.16e-11 1.82e-01  -9.0 9.94e-02    -  1.00e+00 8.38e-02f  3
+ 148  1.6542187e+00 4.13e-11 1.57e-01 -10.0 1.95e-01    -  1.00e+00 9.11e-03f  5
+ 149  1.6541333e+00 3.88e-11 1.68e-01  -6.1 4.85e-02    -  4.43e-01 6.25e-02f  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 150  1.6538401e+00 3.32e-11 2.18e-01  -7.3 1.49e-02    -  1.00e+00 2.50e-01f  3
+ 151  1.6537769e+00 3.07e-11 2.03e-01  -7.4 1.54e-01    -  1.00e+00 1.02e-01f  3
+ 152  1.6533423e+00 3.07e-11 2.32e-01  -6.7 9.20e-01    -  1.00e+00 2.56e-03f  9
+ 153  1.6531835e+00 2.92e-11 1.95e-01  -6.4 9.65e-02    -  1.00e+00 6.29e-02f  3
+ 154  1.6528522e+00 2.49e-11 1.99e-01  -7.4 7.23e-02    -  1.00e+00 1.25e-01f  4
+ 155  1.6517569e+00 2.42e-11 2.04e-01  -8.2 3.82e-01    -  1.00e+00 3.23e-02f  4
+ 156  1.6516978e+00 2.40e-11 1.91e-01  -8.7 3.50e-01    -  1.00e+00 1.05e-02f  5
+ 157  1.6516375e+00 2.18e-11 2.73e-01  -9.8 3.79e-02    -  1.00e+00 1.25e-01f  4
+ 158  1.6513059e+00 1.83e-11 2.95e-01 -11.0 3.15e-02    -  1.00e+00 1.87e-01f  3
+ 159  1.6507110e+00 1.77e-11 2.27e-01  -6.1 4.15e-02    -  7.14e-01 3.12e-02f  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 160  1.6501589e+00 1.67e-11 2.12e-01  -7.0 9.78e-03    -  1.00e+00 2.50e-01f  3
+ 161  1.6483427e+00 1.47e-11 1.31e-01  -8.2 1.23e-02    -  1.00e+00 2.05e-01f  1
+ 162  1.6483075e+00 1.47e-11 1.32e-01  -8.3 2.18e-02    -  1.00e+00 2.16e-03f  1
+ 163  1.6472436e+00 1.35e-11 1.15e-01  -9.3 3.12e-02    -  1.00e+00 1.36e-01f  2
+ 164  1.6464443e+00 1.03e-11 9.80e-02  -6.6 1.37e-02    -  4.92e-01 2.50e-01f  3
+ 165  1.6464036e+00 1.02e-11 9.38e-02  -8.1 1.59e-02    -  1.00e+00 5.77e-03f  1
+ 166  1.6459757e+00 9.25e-12 1.10e-01  -9.6 1.60e-02    -  1.00e+00 1.23e-01f  4
+ 167  1.6454664e+00 8.75e-12 1.60e-01 -10.2 5.42e-02    -  1.00e+00 6.74e-02f  4
+ 168  1.6454020e+00 8.65e-12 1.03e-01 -10.5 1.65e-01    -  1.00e+00 1.01e-02f  7
+ 169  1.6453521e+00 5.02e-12 1.29e-01  -6.5 2.11e-02    -  4.22e-01 5.00e-01f  2
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 170  1.6451762e+00 5.01e-12 1.17e-01  -6.3 1.19e-01    -  1.00e+00 3.36e-03f  1
+ 171  1.6496846e+00 1.06e-11 3.48e-01  -4.3 4.79e-02    -  7.02e-01 2.50e-01f  3
+ 172  1.6490790e+00 1.32e-11 3.12e-01  -4.5 1.06e-01    -  7.83e-01 3.12e-02f  6
+ 173  1.6486171e+00 1.26e-11 3.20e-01  -4.5 7.60e-02    -  7.90e-01 3.12e-02f  6
+ 174  1.6479046e+00 1.57e-11 3.30e-01  -4.5 3.82e-02    -  1.00e+00 4.50e-02f  3
+ 175  1.6463598e+00 3.70e-11 2.78e-01  -4.5 1.78e-02    -  1.00e+00 1.07e-01f  4
+ 176  1.6456322e+00 8.76e-11 2.04e-01  -4.5 8.77e-03    -  1.00e+00 5.00e-01f  2
+ 177  1.6444024e+00 6.10e-11 2.19e-01  -4.5 9.53e-03    -  1.00e+00 5.00e-01f  2
+ 178  1.6429876e+00 6.02e-11 1.37e-01  -5.2 9.39e-03    -  1.00e+00 2.67e-01f  2
+ 179  1.6423297e+00 3.96e-11 2.17e-01  -6.5 1.25e-02    -  1.00e+00 2.50e-01f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 180  1.6419274e+00 3.74e-11 1.33e-01  -5.0 4.17e-02    -  1.00e+00 6.93e-02f  4
+ 181  1.6416744e+00 3.70e-11 9.50e-02  -5.6 3.45e-02    -  1.00e+00 3.12e-02f  6
+ 182  1.6416448e+00 2.79e-11 1.46e-01  -6.9 9.65e-03    -  1.00e+00 2.50e-01f  3
+ 183  1.6406027e+00 2.14e-11 1.05e-01  -8.6 9.50e-03    -  1.00e+00 5.00e-01f  2
+ 184  1.6404122e+00 2.00e-11 1.52e-01  -9.6 4.20e-02    -  1.00e+00 6.17e-02f  1
+ 185  1.6403802e+00 2.00e-11 1.48e-01  -9.3 2.54e-02    -  1.00e+00 2.21e-03f  1
+ 186  1.6400909e+00 1.53e-11 1.81e-01  -8.9 1.93e-02    -  1.00e+00 2.50e-01f  3
+ 187  1.6395159e+00 1.50e-11 1.06e-01  -8.8 1.42e-01    -  1.00e+00 2.29e-02f  2
+ 188  1.6391614e+00 1.42e-11 1.22e-01  -8.3 3.28e-02    -  1.00e+00 5.02e-02f  2
+ 189  1.6389540e+00 1.31e-11 1.33e-01  -8.5 2.14e-02    -  1.00e+00 7.77e-02f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 190  1.6384456e+00 1.21e-11 2.09e-01  -8.0 4.09e-02    -  1.00e+00 9.98e-02f  4
+ 191  1.6384734e+00 1.15e-11 1.65e-01  -5.3 1.31e-01    -  5.64e-01 6.25e-02f  5
+ 192  1.6381073e+00 1.16e-11 2.02e-01  -5.6 1.23e-01    -  9.85e-01 3.12e-02f  6
+ 193  1.6480700e+00 1.17e-11 3.51e-01  -3.6 7.46e-02    -  5.90e-01 1.25e-01f  4
+ 194  1.6476796e+00 2.01e-11 2.68e-01  -3.9 3.73e-02    -  1.00e+00 1.25e-01f  4
+ 195  1.6462883e+00 1.27e-10 4.84e-01  -3.9 3.38e-02    -  6.88e-01 5.00e-01f  2
+ 196  1.6442588e+00 1.19e-10 2.47e-01  -3.9 2.23e-01    -  1.00e+00 1.55e-02f  7
+ 197  1.6427176e+00 1.06e-10 2.49e-01  -3.9 4.66e-02    -  1.00e+00 1.25e-01f  4
+ 198  1.6419652e+00 1.06e-10 2.93e-01  -3.9 7.03e-02    -  1.00e+00 2.69e-02f  6
+ 199  1.6391373e+00 9.76e-11 1.90e-01  -3.9 2.26e-02    -  1.00e+00 4.46e-01f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 200  1.6374301e+00 8.39e-11 3.01e-01  -3.9 1.89e-02    -  1.00e+00 2.50e-01f  3
+
+Number of Iterations....: 200
+
+                                   (scaled)                 (unscaled)
+Objective...............:   1.6374301005533498e+00    1.6374301005533498e+00
+Dual infeasibility......:   3.0123236782236762e-01    3.0123236782236762e-01
+Constraint violation....:   8.3876988687947573e-11    8.3876988687947573e-11
+Variable bound violation:   0.0000000000000000e+00    0.0000000000000000e+00
+Complementarity.........:   1.1888696294619884e-04    1.1888696294619884e-04
+Overall NLP error.......:   3.0123236782236762e-01    3.0123236782236762e-01
+
+
+Number of objective function evaluations             = 1053
+Number of objective gradient evaluations             = 201
+Number of equality constraint evaluations            = 1053
+Number of inequality constraint evaluations          = 0
+Number of equality constraint Jacobian evaluations   = 1
+Number of inequality constraint Jacobian evaluations = 0
+Number of Lagrangian Hessian evaluations             = 0
+Total seconds in IPOPT                               = 107.474
+
+EXIT: Maximum Number of Iterations Exceeded.
+Recovering state with best loss: iteration 200 with 1.63743
+Restoring the position values to their pre-optimization values, because we sub-sampled just parts of trials during this optimization.
+Created 19 blocks: [
+  trial[0] steps [0 to 20]
+  trial[0] steps [20 to 40]
+  trial[0] steps [40 to 60]
+  trial[0] steps [60 to 80]
+  trial[0] steps [80 to 100]
+  trial[0] steps [100 to 120]
+  trial[0] steps [120 to 140]
+  trial[0] steps [140 to 160]
+  trial[0] steps [160 to 180]
+  trial[0] steps [180 to 200]
+  trial[0] steps [200 to 220]
+  trial[0] steps [220 to 240]
+  trial[0] steps [240 to 260]
+  trial[0] steps [260 to 280]
+  trial[0] steps [280 to 300]
+  trial[0] steps [300 to 320]
+  trial[0] steps [320 to 340]
+  trial[0] steps [340 to 360]
+  trial[0] steps [360 to 364]
+]
+Getting initial loss:
+[massR=0.0129394,comR=0,inR=0,dnsR=0,scR=0,mkrR=7.43043e-09,accR=0,jntRMS=0.00597631,axisRMS=0.0349873,qR=5.23526e-10,fRMS=1.11696,linF=0,mkRMS=0.632632]
+Got initial loss:1.8035
+BEGINNING OPTIMIZATION WITH LOSS: 1.8035
+This is Ipopt version 3.14.5, running with linear solver MUMPS 5.4.1.
+
+Number of nonzeros in equality constraint Jacobian...:    23778
+Number of nonzeros in inequality constraint Jacobian.:        0
+Number of nonzeros in Lagrangian Hessian.............:        0
+
+Total number of variables............................:    11810
+                     variables with only lower bounds:        0
+                variables with lower and upper bounds:      703
+                     variables with only upper bounds:        0
+Total number of equality constraints.................:     1332
+Total number of inequality constraints...............:        0
+        inequality constraints with only lower bounds:        0
+   inequality constraints with lower and upper bounds:        0
+        inequality constraints with only upper bounds:        0
+
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+   0  1.8888606e+00 1.96e-01 2.08e+00   0.0 0.00e+00    -  0.00e+00 0.00e+00   0
+   1  2.4439838e+00 1.75e-01 1.71e+02  -0.4 3.59e-01    -  1.00e+00 1.06e-01f  1
+   2  1.9321282e+00 1.58e-03 2.05e+03  -6.4 1.75e-01    -  8.47e-02 9.91e-01h  1
+   3  6.6749342e+00 4.53e-07 2.09e+01  -6.4 1.54e-01    -  7.29e-01 1.00e+00h  1
+   4  2.6054652e+00 7.36e-09 3.29e+00  -7.0 1.03e-01    -  9.73e-01 1.00e+00f  1
+   5  2.0992551e+00 6.90e-09 2.07e+00  -8.6 8.94e-01    -  8.75e-01 6.25e-02f  5
+   6  1.9006521e+00 6.86e-11 1.43e+00  -9.5 2.21e-02    -  4.98e-01 1.00e+00f  1
+   7  1.8395530e+00 3.47e-11 1.15e+00  -5.2 1.19e-02    -  1.00e+00 5.00e-01f  2
+   8  1.8219263e+00 2.38e-10 5.61e-01  -4.9 9.33e-03    -  1.00e+00 5.00e-01f  2
+   9  1.8206297e+00 2.73e-10 4.25e-01  -6.0 2.11e-03    -  1.00e+00 1.00e+00f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  10  1.8159682e+00 6.24e-11 1.29e-01  -6.9 1.72e-03    -  1.00e+00 1.00e+00f  1
+  11  1.8136944e+00 2.62e-11 1.05e-01  -7.3 1.62e-03    -  1.00e+00 1.00e+00f  1
+  12  1.8067431e+00 3.02e-11 6.68e-01  -6.5 3.55e-02    -  1.00e+00 5.00e-01f  2
+  13  1.8037982e+00 2.90e-11 8.57e-01  -5.0 1.69e-01    -  1.00e+00 6.12e-02f  2
+  14  1.7980429e+00 8.28e-11 5.94e-01  -4.5 4.23e-02    -  1.00e+00 2.47e-01f  1
+  15  1.7936746e+00 1.27e-10 4.37e-01  -4.6 1.64e-02    -  1.00e+00 5.00e-01f  2
+  16  1.7910249e+00 2.16e-10 5.43e-01  -4.6 6.52e-03    -  1.00e+00 1.00e+00f  1
+  17  1.7807926e+00 3.35e-10 2.27e-01  -6.3 2.44e-03    -  1.00e+00 1.00e+00f  1
+  18  1.7793335e+00 1.69e-10 9.78e-02  -7.1 2.60e-03    -  1.00e+00 1.00e+00f  1
+  19  1.7789789e+00 1.61e-10 7.26e-02  -8.1 1.64e-02    -  1.00e+00 3.14e-02f  1
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  20  1.7764681e+00 9.58e-11 4.50e-01  -8.9 2.38e-02    -  1.00e+00 3.95e-01f  2
+  21  1.7759364e+00 5.68e-11 4.81e-01  -9.3 2.02e-02    -  1.00e+00 3.88e-01f  2
+  22  1.7734870e+00 2.07e-11 2.87e-01  -9.8 1.75e-02    -  1.00e+00 6.82e-01f  1
+  23  1.7683682e+00 9.32e-12 2.71e-01 -11.0 6.74e-03    -  1.00e+00 5.00e-01f  2
+  24  1.7682967e+00 7.24e-12 3.73e-01 -11.0 1.07e-02    -  1.00e+00 1.79e-01f  3
+  25  1.7653826e+00 4.77e-12 5.93e-02 -11.0 1.53e-03    -  1.00e+00 1.00e+00f  1
+  26  1.7646258e+00 2.10e-12 5.39e-02 -11.0 2.58e-03    -  1.00e+00 1.00e+00f  1
+  27  1.7634276e+00 1.16e-12 1.77e-01 -10.7 6.51e-02    -  1.00e+00 2.50e-01f  3
+  28  1.7628434e+00 1.13e-12 3.11e-01 -11.0 8.20e-02    -  1.00e+00 3.12e-02f  6
+  29  1.7617980e+00 1.06e-12 2.58e-01 -11.0 7.89e-02    -  1.00e+00 6.25e-02f  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  30  1.7593816e+00 1.55e-12 2.36e-01 -11.0 3.65e-02    -  1.00e+00 2.50e-01f  3
+  31  1.7582335e+00 1.55e-12 3.62e-01 -11.0 3.37e-02    -  1.00e+00 1.25e-01f  4
+  32  1.7578489e+00 1.71e-12 2.94e-01 -11.0 4.83e-02    -  1.00e+00 6.25e-02f  5
+  33  1.7555525e+00 2.79e-12 3.41e-01 -11.0 3.98e-02    -  1.00e+00 2.50e-01f  3
+  34  1.7548431e+00 2.83e-12 2.49e-01 -10.7 2.05e-01    -  1.00e+00 1.30e-02f  6
+  35  1.7541388e+00 2.85e-12 2.67e-01 -11.0 2.04e-02    -  1.00e+00 1.25e-01f  4
+  36  1.7501348e+00 4.19e-12 1.35e-01 -11.0 8.40e-03    -  9.83e-01 1.00e+00f  1
+  37  1.7499972e+00 4.20e-12 1.37e-01 -11.0 3.45e-02    -  1.00e+00 7.73e-03f  1
+  38  1.7486919e+00 4.28e-12 2.24e-01 -11.0 7.01e-02    -  1.00e+00 6.25e-02f  5
+  39  1.7460430e+00 3.64e-12 1.91e-01 -11.0 6.18e-02    -  1.31e-01 2.50e-01f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  40  1.7442362e+00 3.60e-12 2.11e-01 -10.6 1.11e+00    -  1.87e-01 1.16e-02f  3
+  41  1.7437827e+00 3.65e-12 3.44e-01 -11.0 4.15e-01    -  7.62e-01 9.41e-02f  1
+  42  1.7436630e+00 3.65e-12 3.39e-01 -10.4 1.46e+00    -  2.28e-01 2.68e-04f  1
+  43  1.7435817e+00 3.65e-12 3.40e-01 -11.0 3.78e-02    -  6.54e-01 2.22e-03f  1
+  44  1.7392686e+00 6.03e-12 3.75e-01 -11.0 1.66e-02    -  9.20e-01 5.00e-01f  2
+  45  1.7372630e+00 4.39e-12 1.76e-01 -11.0 1.89e-02    -  1.00e+00 2.75e-01f  1
+  46  1.7334864e+00 4.57e-12 1.40e-01 -11.0 5.77e-03    -  1.00e+00 1.00e+00f  1
+  47  1.7331481e+00 3.43e-12 7.76e-02 -11.0 6.53e-03    -  1.00e+00 2.50e-01f  3
+  48  1.7322615e+00 1.46e-12 1.34e-01 -11.0 7.27e-03    -  1.00e+00 5.00e-01f  2
+  49  1.7318950e+00 1.40e-12 8.50e-02 -11.0 1.52e-01    -  1.00e+00 1.38e-02f  7
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  50  1.7317517e+00 1.36e-12 8.74e-02 -11.0 2.62e-02    -  1.00e+00 1.56e-02f  7
+  51  1.7312489e+00 1.62e-12 7.95e-02 -11.0 3.01e-03    -  1.00e+00 5.00e-01f  2
+  52  1.7295724e+00 1.14e-12 1.32e-01 -11.0 9.86e-03    -  1.00e+00 5.00e-01f  2
+  53  1.7294027e+00 1.15e-12 1.28e-01 -11.0 5.06e-02    -  1.00e+00 1.56e-02f  7
+  54  1.7266571e+00 2.40e-12 1.88e-01 -11.0 8.77e-03    -  1.00e+00 1.00e+00f  1
+  55  1.7224174e+00 2.17e-12 3.98e-01 -11.0 2.37e-01    -  1.00e+00 5.88e-02f  5
+  56  1.7220776e+00 2.13e-12 4.82e-01 -11.0 2.18e-01    -  1.00e+00 7.81e-03f  8
+  57  1.7208398e+00 3.46e-12 3.22e-01 -11.0 1.49e-02    -  1.00e+00 5.00e-01f  2
+  58  1.7173334e+00 3.41e-12 3.65e-01 -11.0 2.34e-01    -  1.00e+00 6.25e-02f  5
+  59  1.7165534e+00 3.37e-12 3.77e-01 -11.0 2.40e-01    -  1.00e+00 3.12e-02f  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  60  1.7157179e+00 3.41e-12 3.48e-01 -11.0 1.65e-01    -  1.00e+00 3.12e-02f  6
+  61  1.7125270e+00 3.40e-12 3.43e-01 -11.0 6.87e-02    -  1.00e+00 1.25e-01f  4
+  62  1.7113492e+00 3.42e-12 3.07e-01 -11.0 1.34e-01    -  1.00e+00 1.56e-02f  7
+  63  1.7112144e+00 4.41e-12 3.06e-01 -11.0 3.61e-02    -  1.00e+00 2.50e-01f  3
+  64  1.7098411e+00 4.36e-12 3.95e-01 -11.0 1.03e-01    -  1.00e+00 1.25e-01f  4
+  65  1.7087045e+00 5.15e-12 4.35e-01 -11.0 5.84e-02    -  1.00e+00 1.25e-01f  4
+  66  1.7052376e+00 4.58e-12 4.44e-01 -11.0 4.03e-02    -  1.00e+00 2.50e-01f  3
+  67  1.7019974e+00 4.91e-12 3.85e-01 -11.0 4.15e-02    -  1.00e+00 1.25e-01f  4
+  68  1.7018663e+00 4.91e-12 4.61e-01 -11.0 3.38e-02    -  1.00e+00 1.25e-01f  4
+  69  1.6993395e+00 4.73e-12 3.98e-01 -11.0 6.94e-02    -  1.00e+00 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  70  1.6984760e+00 4.70e-12 3.46e-01 -11.0 1.00e-01    -  1.00e+00 1.56e-02f  7
+  71  1.6963583e+00 4.44e-12 3.06e-01 -11.0 1.69e-02    -  1.00e+00 1.25e-01f  4
+  72  1.6954564e+00 4.29e-12 2.76e-01 -11.0 4.38e-02    -  1.00e+00 6.25e-02f  5
+  73  1.6933825e+00 5.07e-12 1.71e-01 -11.0 1.62e-02    -  1.00e+00 5.00e-01f  2
+  74  1.6930617e+00 4.87e-12 1.61e-01 -11.0 5.48e-02    -  1.00e+00 6.25e-02f  5
+  75  1.6920412e+00 4.83e-12 1.39e-01 -11.0 1.58e-01    -  1.00e+00 3.12e-02f  6
+  76  1.6915795e+00 4.63e-12 9.33e-02 -11.0 5.73e-02    -  1.00e+00 3.12e-02f  6
+  77  1.6915562e+00 2.18e-12 1.51e-01 -11.0 1.09e-02    -  1.00e+00 5.00e-01f  2
+  78  1.6912450e+00 2.21e-12 2.00e-01 -11.0 1.06e-01    -  1.00e+00 6.25e-02f  5
+  79  1.6904360e+00 2.15e-12 1.25e-01 -11.0 3.63e-01    -  1.00e+00 1.82e-02f  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  80  1.6895304e+00 2.04e-12 1.63e-01 -11.0 1.29e-01    -  1.00e+00 6.25e-02f  5
+  81  1.6891617e+00 2.04e-12 1.57e-01 -11.0 3.20e-01    -  1.00e+00 7.81e-03f  8
+  82  1.6885070e+00 1.89e-12 1.98e-01 -11.0 5.22e-02    -  1.00e+00 6.25e-02f  5
+  83  1.6876968e+00 1.89e-12 2.02e-01 -11.0 9.19e-02    -  1.00e+00 3.12e-02f  6
+  84  1.6866779e+00 1.77e-12 1.81e-01 -11.0 5.31e-02    -  1.00e+00 6.25e-02f  5
+  85  1.6855443e+00 1.76e-12 1.45e-01 -11.0 1.46e-01    -  1.00e+00 3.12e-02f  6
+  86  1.6854326e+00 1.81e-12 3.48e-01 -11.0 8.07e-02    -  1.00e+00 6.25e-02f  5
+  87  1.6838221e+00 1.89e-12 1.57e-01 -11.0 9.88e-02    -  1.00e+00 6.25e-02f  5
+  88  1.6827443e+00 1.99e-12 1.98e-01 -11.0 4.48e-02    -  1.00e+00 1.25e-01f  4
+  89  1.6815570e+00 1.44e-12 2.61e-01 -11.0 1.74e-02    -  1.00e+00 2.50e-01f  3
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+  90  1.6811583e+00 1.30e-12 2.73e-01 -11.0 1.72e-02    -  1.00e+00 6.25e-02f  5
+  91  1.6797452e+00 1.80e-12 2.70e-01 -11.0 6.00e-03    -  1.00e+00 5.00e-01f  2
+  92  1.6786195e+00 1.81e-12 1.73e-01 -11.0 1.54e-01    -  1.00e+00 3.12e-02f  6
+  93  1.6783672e+00 1.81e-12 1.56e-01 -11.0 7.55e-02    -  1.00e+00 1.56e-02f  7
+  94  1.6774780e+00 1.89e-12 1.41e-01 -11.0 5.75e-03    -  1.00e+00 5.00e-01f  2
+  95  1.6772161e+00 1.83e-12 1.22e-01 -11.0 2.48e-02    -  1.00e+00 6.25e-02f  5
+  96  1.6768890e+00 1.86e-12 1.13e-01 -11.0 1.03e-01    -  1.00e+00 3.12e-02f  6
+  97  1.6767896e+00 1.90e-12 1.31e-01 -11.0 1.22e-01    -  1.00e+00 6.25e-02f  5
+  98  1.6763405e+00 1.92e-12 1.74e-01 -11.0 5.97e-02    -  1.00e+00 3.12e-02f  6
+  99  1.6758459e+00 1.96e-12 2.28e-01 -11.0 1.91e-02    -  1.00e+00 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 100  1.6751343e+00 1.97e-12 2.40e-01 -11.0 2.42e-01    -  1.00e+00 3.12e-02f  6
+ 101  1.6746753e+00 1.94e-12 2.14e-01 -11.0 2.16e-01    -  1.00e+00 1.56e-02f  7
+ 102  1.6742859e+00 2.20e-12 2.16e-01 -11.0 4.44e-02    -  1.00e+00 6.25e-02f  5
+ 103  1.6728253e+00 2.54e-12 2.04e-01 -11.0 3.64e-02    -  1.00e+00 1.25e-01f  4
+ 104  1.6726586e+00 2.62e-12 2.35e-01 -11.0 1.03e-01    -  1.00e+00 6.25e-02f  5
+ 105  1.6720213e+00 2.62e-12 2.39e-01 -11.0 1.91e-01    -  1.00e+00 3.12e-02f  6
+ 106  1.6718987e+00 2.68e-12 2.69e-01 -11.0 1.05e-01    -  1.00e+00 3.12e-02f  6
+ 107  1.6703508e+00 2.98e-12 2.88e-01 -11.0 5.71e-02    -  1.00e+00 1.25e-01f  4
+ 108  1.6699660e+00 3.00e-12 2.97e-01 -11.0 4.38e-01    -  1.00e+00 1.32e-02f  7
+ 109  1.6696803e+00 3.34e-12 2.43e-01 -11.0 1.75e-01    -  1.00e+00 6.25e-02f  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 110  1.6678313e+00 3.57e-12 2.26e-01 -11.0 5.70e-02    -  1.00e+00 1.25e-01f  4
+ 111  1.6666915e+00 3.93e-12 2.30e-01 -11.0 5.22e-02    -  1.00e+00 1.25e-01f  4
+ 112  1.6661926e+00 3.98e-12 2.91e-01 -11.0 1.58e-01    -  1.00e+00 3.12e-02f  6
+ 113  1.6655868e+00 3.93e-12 2.52e-01 -11.0 2.25e-02    -  1.00e+00 6.25e-02f  5
+ 114  1.6639843e+00 4.58e-12 2.28e-01 -11.0 3.89e-02    -  1.00e+00 2.50e-01f  3
+ 115  1.6638384e+00 4.57e-12 1.69e-01 -11.0 1.05e-01    -  1.00e+00 1.56e-02f  7
+ 116  1.6620487e+00 4.24e-12 2.15e-01 -11.0 2.09e-02    -  1.00e+00 2.50e-01f  3
+ 117  1.6613023e+00 4.12e-12 1.96e-01 -11.0 6.35e-02    -  1.00e+00 3.12e-02f  6
+ 118  1.6598566e+00 4.34e-12 1.23e-01 -11.0 1.60e-02    -  1.00e+00 5.00e-01f  2
+ 119  1.6588523e+00 4.05e-12 1.34e-01 -11.0 2.25e-02    -  1.00e+00 6.25e-02f  5
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 120  1.6577290e+00 2.22e-12 1.25e-01 -11.0 8.05e-03    -  1.00e+00 5.00e-01f  2
+ 121  1.6564139e+00 2.19e-12 1.31e-01 -11.0 1.14e-01    -  1.00e+00 3.12e-02f  6
+ 122  1.6562850e+00 2.06e-12 1.06e-01 -11.0 4.19e-02    -  1.00e+00 3.12e-02f  6
+ 123  1.6558076e+00 1.56e-12 9.63e-02 -11.0 6.17e-03    -  1.00e+00 2.50e-01f  3
+ 124  1.6550147e+00 1.16e-12 1.18e-01 -11.0 2.71e-02    -  1.00e+00 1.25e-01f  4
+ 125  1.6541253e+00 1.12e-12 2.61e-01 -11.0 1.59e-01    -  1.00e+00 3.12e-02f  6
+ 126  1.6537057e+00 1.08e-12 3.05e-01 -11.0 6.88e-02    -  1.00e+00 3.12e-02f  6
+ 127  1.6531581e+00 1.05e-12 4.10e-01 -11.0 6.19e-02    -  1.00e+00 6.25e-02f  5
+ 128  1.6525284e+00 1.00e-12 4.25e-01 -11.0 1.31e-01    -  1.00e+00 3.12e-02f  6
+ 129  1.6523088e+00 1.05e-12 3.86e-01 -11.0 2.99e-01    -  1.00e+00 1.56e-02f  7
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 130  1.6520557e+00 1.09e-12 4.26e-01 -11.0 1.94e-01    -  1.00e+00 1.56e-02f  7
+ 131  1.6516018e+00 1.19e-12 4.25e-01 -11.0 1.72e-01    -  1.00e+00 3.12e-02f  6
+ 132  1.6512360e+00 1.25e-12 3.67e-01 -11.0 4.28e-01    -  1.00e+00 1.56e-02f  7
+ 133  1.6511550e+00 1.28e-12 3.35e-01 -11.0 9.68e-01    -  1.00e+00 7.42e-03f  8
+ 134  1.6509912e+00 1.30e-12 3.08e-01 -11.0 2.56e-01    -  1.00e+00 7.81e-03f  8
+ 135  1.6505570e+00 1.34e-12 3.27e-01 -11.0 3.41e-01    -  1.00e+00 1.56e-02f  7
+ 136  1.6504897e+00 1.43e-12 3.93e-01 -11.0 1.25e-01    -  1.00e+00 3.12e-02f  6
+ 137  1.6503325e+00 1.54e-12 3.24e-01 -11.0 2.91e-01    -  1.00e+00 3.12e-02f  6
+ 138  1.6500162e+00 1.61e-12 3.23e-01 -11.0 6.57e-02    -  1.00e+00 1.56e-02f  7
+ 139  1.6493300e+00 2.05e-12 2.52e-01 -11.0 3.68e-02    -  1.00e+00 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 140  1.6490123e+00 2.43e-12 2.07e-01 -11.0 3.30e-02    -  1.00e+00 1.25e-01f  4
+ 141  1.6481941e+00 3.01e-12 1.91e-01 -11.0 3.23e-02    -  1.00e+00 2.50e-01f  3
+ 142  1.6480992e+00 3.01e-12 2.32e-01 -11.0 1.34e-01    -  1.00e+00 1.56e-02f  7
+ 143  1.6476435e+00 3.23e-12 1.36e-01 -11.0 3.68e-02    -  1.00e+00 6.25e-02f  5
+ 144  1.6471354e+00 3.18e-12 1.88e-01 -11.0 3.18e-02    -  1.00e+00 1.25e-01f  4
+ 145  1.6465728e+00 3.12e-12 1.24e-01 -11.0 1.70e-02    -  1.00e+00 1.25e-01f  4
+ 146  1.6460613e+00 2.98e-12 1.20e-01 -11.0 4.11e-02    -  1.00e+00 6.25e-02f  5
+ 147  1.6457978e+00 2.98e-12 1.20e-01 -11.0 6.05e-02    -  1.00e+00 6.25e-02f  5
+ 148  1.6454905e+00 2.93e-12 1.72e-01 -11.0 9.75e-02    -  1.00e+00 6.25e-02f  5
+ 149  1.6453825e+00 2.91e-12 2.06e-01 -11.0 1.95e-01    -  1.00e+00 1.56e-02f  7
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 150  1.6453334e+00 2.45e-12 1.62e-01 -11.0 2.52e-02    -  1.00e+00 2.50e-01f  3
+ 151  1.6451183e+00 2.41e-12 1.45e-01 -11.0 7.04e-02    -  1.00e+00 1.56e-02f  7
+ 152  1.6443850e+00 2.18e-12 1.16e-01 -11.0 6.26e-02    -  1.00e+00 1.25e-01f  4
+ 153  1.6440261e+00 2.15e-12 1.87e-01 -11.0 5.60e-01    -  1.00e+00 1.56e-02f  7
+ 154  1.6436693e+00 2.15e-12 1.58e-01 -11.0 1.11e+00    -  1.00e+00 3.91e-03f  9
+ 155  1.6434420e+00 2.16e-12 1.74e-01 -11.0 2.51e-01    -  1.00e+00 1.56e-02f  7
+ 156  1.6431110e+00 2.17e-12 1.39e-01 -11.0 6.60e-01    -  1.00e+00 7.81e-03f  8
+ 157  1.6431073e+00 2.19e-12 1.76e-01 -11.0 1.26e-01    -  1.00e+00 1.56e-02f  7
+ 158  1.6429392e+00 2.25e-12 2.21e-01 -11.0 5.83e-02    -  1.00e+00 6.25e-02f  5
+ 159  1.6425479e+00 2.21e-12 1.43e-01 -11.0 5.29e-02    -  1.00e+00 3.12e-02f  6
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 160  1.6420882e+00 2.08e-12 1.82e-01 -11.0 2.55e-02    -  1.00e+00 1.25e-01f  4
+ 161  1.6414830e+00 2.13e-12 1.40e-01 -11.0 9.95e-02    -  1.00e+00 3.12e-02f  6
+ 162  1.6406021e+00 2.04e-12 1.59e-01 -11.0 3.31e-02    -  1.00e+00 1.25e-01f  4
+ 163  1.6405325e+00 2.01e-12 1.48e-01 -11.0 9.58e-02    -  1.00e+00 3.12e-02f  6
+ 164  1.6402841e+00 1.92e-12 1.26e-01 -11.0 1.41e-02    -  1.00e+00 5.00e-01f  2
+ 165  1.6397895e+00 1.86e-12 1.26e-01 -11.0 6.35e-02    -  1.00e+00 3.12e-02f  6
+ 166  1.6392755e+00 1.79e-12 1.26e-01 -11.0 2.22e-02    -  1.00e+00 6.25e-02f  5
+ 167  1.6389154e+00 1.63e-12 1.36e-01 -11.0 4.95e-02    -  1.00e+00 6.25e-02f  5
+ 168  1.6387299e+00 1.56e-12 1.67e-01 -11.0 2.42e-01    -  1.00e+00 3.12e-02f  6
+ 169  1.6383105e+00 1.54e-12 1.27e-01 -11.0 4.75e-01    -  1.00e+00 7.81e-03f  8
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 170  1.6382892e+00 1.50e-12 1.51e-01 -11.0 4.00e-01    -  1.00e+00 1.56e-02f  7
+ 171  1.6378409e+00 1.44e-12 1.51e-01 -11.0 2.09e-01    -  1.00e+00 3.12e-02f  6
+ 172  1.6377676e+00 1.42e-12 1.45e-01 -11.0 1.01e-01    -  1.00e+00 7.81e-03f  8
+ 173  1.6373929e+00 1.14e-12 1.13e-01 -11.0 4.65e-02    -  1.00e+00 1.25e-01f  4
+ 174  1.6369920e+00 1.12e-12 1.18e-01 -11.0 9.09e-01    -  1.00e+00 7.81e-03f  8
+ 175  1.6368619e+00 1.12e-12 1.05e-01 -11.0 1.06e+00    -  1.00e+00 3.91e-03f  9
+ 176  1.6367106e+00 1.10e-12 1.06e-01 -11.0 1.94e-01    -  1.00e+00 1.56e-02f  7
+ 177  1.6365481e+00 1.09e-12 1.02e-01 -11.0 2.75e-01    -  1.00e+00 7.81e-03f  8
+ 178  1.6363895e+00 1.09e-12 9.72e-02 -11.0 9.44e-02    -  1.00e+00 1.56e-02f  7
+ 179  1.6361479e+00 1.07e-12 1.11e-01 -11.0 1.18e-01    -  1.00e+00 1.56e-02f  7
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 180  1.6360529e+00 1.01e-12 1.07e-01 -11.0 4.62e-02    -  1.00e+00 3.12e-02f  6
+ 181  1.6360008e+00 1.02e-12 1.75e-01 -11.0 3.39e-02    -  1.00e+00 1.25e-01f  4
+ 182  1.6358751e+00 9.91e-13 1.15e-01 -11.0 1.94e-01    -  1.00e+00 1.56e-02f  7
+ 183  1.6352980e+00 8.47e-13 1.39e-01 -11.0 3.36e-02    -  1.00e+00 1.25e-01f  4
+ 184  1.6349516e+00 8.63e-13 1.32e-01 -11.0 1.62e-01    -  1.00e+00 3.12e-02f  6
+ 185  1.6339766e+00 8.85e-13 1.55e-01 -11.0 6.99e-01    -  1.00e+00 1.56e-02f  7
+ 186  1.6337517e+00 8.81e-13 1.73e-01 -11.0 4.53e-01    -  1.00e+00 3.91e-03f  9
+ 187  1.6335466e+00 1.17e-12 2.14e-01 -11.0 2.12e-02    -  1.00e+00 6.25e-02f  5
+ 188  1.6330109e+00 1.37e-12 1.96e-01 -11.0 2.50e-02    -  1.00e+00 1.25e-01f  4
+ 189  1.6323254e+00 1.42e-12 1.81e-01 -11.0 5.28e-01    -  1.00e+00 1.56e-02f  7
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 190  1.6317921e+00 1.46e-12 2.03e-01 -11.0 4.26e-01    -  1.00e+00 1.56e-02f  7
+ 191  1.6311907e+00 1.49e-12 2.11e-01 -11.0 5.92e-01    -  1.00e+00 7.81e-03f  8
+ 192  1.6306905e+00 1.52e-12 1.88e-01 -11.0 1.27e-01    -  1.00e+00 1.56e-02f  7
+ 193  1.6305926e+00 1.77e-12 2.51e-01 -11.0 1.58e-02    -  1.00e+00 6.25e-02f  5
+ 194  1.6298936e+00 2.00e-12 1.31e-01 -11.0 1.51e-02    -  1.00e+00 2.50e-01f  3
+ 195  1.6295363e+00 2.03e-12 1.45e-01 -11.0 8.44e-02    -  1.00e+00 1.56e-02f  7
+ 196  1.6293956e+00 2.12e-12 1.28e-01 -11.0 3.46e-02    -  1.00e+00 6.25e-02f  5
+ 197  1.6291541e+00 2.19e-12 1.29e-01 -11.0 3.38e-02    -  1.00e+00 6.25e-02f  5
+ 198  1.6288377e+00 2.20e-12 1.85e-01 -11.0 9.19e-02    -  1.00e+00 1.56e-02f  7
+ 199  1.6281201e+00 2.28e-12 1.36e-01 -11.0 4.27e-02    -  1.00e+00 1.25e-01f  4
+iter    objective    inf_pr   inf_du lg(mu)  ||d||  lg(rg) alpha_du alpha_pr  ls
+ 200  1.6277394e+00 2.28e-12 1.09e-01 -11.0 6.72e-01    -  1.00e+00 3.91e-03f  9
+
+Number of Iterations....: 200
+
+                                   (scaled)                 (unscaled)
+Objective...............:   1.6277393756980227e+00    1.6277393756980227e+00
+Dual infeasibility......:   1.0933134686497853e-01    1.0933134686497853e-01
+Constraint violation....:   2.2754020889692583e-12    2.2754020889692583e-12
+Variable bound violation:   8.5644357994407727e-09    8.5644357994407727e-09
+Complementarity.........:   1.2754013651926736e-11    1.2754013651926736e-11
+Overall NLP error.......:   1.0933134686497853e-01    1.0933134686497853e-01
+
+
+Number of objective function evaluations             = 1513
+Number of objective gradient evaluations             = 201
+Number of equality constraint evaluations            = 1513
+Number of inequality constraint evaluations          = 0
+Number of equality constraint Jacobian evaluations   = 1
+Number of inequality constraint Jacobian evaluations = 0
+Number of Lagrangian Hessian evaluations             = 0
+Total seconds in IPOPT                               = 110.494
+
+EXIT: Maximum Number of Iterations Exceeded.
+Recovering state with best loss: iteration 200 with 1.62774
+Attempting to zero linear and minimize angular. Initial avg. residuals: 47.1272
+Trial pos/angle changed by acceptable amount (pos change=0.00908857 [threshold = 0.08], angle change=0.0754691 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.24161e-06m
+CoP for force plate 1 moved by an average of 1.37904e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.48785e-10 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.01945e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.32446e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.053e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=1.28806e-15 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=8.08918e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.67834e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.15836e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.08397e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.81885e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.20492e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.83662e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.24188e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.78367e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.59668e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=2.84443e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=2.75789e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.06719e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.49419e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.04809e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.52662e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.79742e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.1424e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.25081e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.25143e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.78582e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.49004e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.679e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.45817e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.09771e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.76227e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.64457e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.71119e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.53882e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.90027e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.57987e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.39391e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.02337e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.96989e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.31582e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=8.40393e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.70089e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.31725e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.38181e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.32284e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.92695e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.62238e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=8.79898e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.85126e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.06111e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=9.07456e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.23725e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=2.91406e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.14751e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.00444e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.99312e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.56666e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.2917e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.89275e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.66769e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.82977e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.76502e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.34821e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=2.9678e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.72426e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.62019e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=2.36961e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.25159e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.40125e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.45271e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=1.10779e-15 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.5316e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.69979e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.82878e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.07953e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.6399e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=9.34102e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=1.15614e-15 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.02491e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=7.55901e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=8.7668e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=6.36191e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.34645e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.84556e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.2937e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.67258e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=2.59422e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.03508e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=4.29027e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.58802e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.86467e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.06837e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=8.37396e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=5.22775e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.62669e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.1191e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=2.72726e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.38767e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Attempting to zero linear and minimize angular. Initial avg. residuals: 45.7318
+Trial pos/angle changed by acceptable amount (pos change=3.83699e-16 [threshold = 0.08], angle change=0.0755141 [threshold = 0.15], detect torques = 1)
+CoP for force plate 0 moved by an average of 1.2669e-06m
+CoP for force plate 1 moved by an average of 1.40301e-06m
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Trial 0 adjusted force plate location (correcting for calibration error) by 0.000489049m X, -0.000497016m Z
+Assigning force plate 0 to foot 0 on trial 0
+Assigning force plate 1 to foot 1 on trial 0
+Physical consistency verified!
+Avg Marker RMSE: 1.650285312378133cm
+Avg Residual Force: 2.0441563214231504e-10 N (3.093413487638544e-11% of original 660.8092741535249 N)
+Avg Residual Torque: 45.73180026890635 Nm (2245.561812604713% of original 2.0365415911602223 Nm)
+Avg CoP movement in 'perfect' GRFs: 0.09035216382300193 m
+Avg force change in 'perfect' GRFs: 1.624691145507562e-10 N
+Writing the result files...
+Adjusting marker locations on scaled OpenSim file
+Scaling OpenSim files: cd /tmp/tmppcz0f35q/results && opensim-cmd run-tool /tmp/tmppcz0f35q/results/Models/rescaling_setup.xml
+[info] Preparing to run ScaleTool.
+[info] Processing subject optimized_scale_and_markers...
+[info] Step 1: Loading generic model
+[info] Loaded model 3DGaitModelwithSimpleArms from file /tmp/tmppcz0f35q/results/Models/unscaled_but_with_optimized_markers.osim
+[warning] Couldn't find file 'sacrum.vtp'.
+[warning] Couldn't find file 'pelvis.vtp'.
+[warning] Couldn't find file 'l_pelvis.vtp'.
+[warning] Couldn't find file 'femur_r.vtp'.
+[warning] Couldn't find file 'tibia_r.vtp'.
+[warning] Couldn't find file 'fibula_r.vtp'.
+[warning] Couldn't find file 'talus_rv.vtp'.
+[warning] Couldn't find file 'foot.vtp'.
+[warning] Couldn't find file 'bofoot.vtp'.
+[warning] Couldn't find file 'femur_l.vtp'.
+[warning] Couldn't find file 'tibia_l.vtp'.
+[warning] Couldn't find file 'fibula_l.vtp'.
+[warning] Couldn't find file 'talus_lv.vtp'.
+[warning] Couldn't find file 'l_foot.vtp'.
+[warning] Couldn't find file 'l_bofoot.vtp'.
+[warning] Couldn't find file 'hat_spine.vtp'.
+[warning] Couldn't find file 'hat_jaw.vtp'.
+[warning] Couldn't find file 'hat_skull.vtp'.
+[warning] Couldn't find file 'hat_ribs_scap.vtp'.
+[warning] Couldn't find file 'humerus_rv.vtp'.
+[warning] Couldn't find file 'ulna_rv.vtp'.
+[warning] Couldn't find file 'radius_rv.vtp'.
+[warning] Couldn't find file 'pisiform_rvs.vtp'.
+[warning] Couldn't find file 'lunate_rvs.vtp'.
+[warning] Couldn't find file 'scaphoid_rvs.vtp'.
+[warning] Couldn't find file 'triquetrum_rvs.vtp'.
+[warning] Couldn't find file 'hamate_rvs.vtp'.
+[warning] Couldn't find file 'capitate_rvs.vtp'.
+[warning] Couldn't find file 'trapezoid_rvs.vtp'.
+[warning] Couldn't find file 'trapezium_rvs.vtp'.
+[warning] Couldn't find file 'metacarpal2_rvs.vtp'.
+[warning] Couldn't find file 'index_proximal_rvs.vtp'.
+[warning] Couldn't find file 'index_medial_rvs.vtp'.
+[warning] Couldn't find file 'index_distal_rvs.vtp'.
+[warning] Couldn't find file 'metacarpal3_rvs.vtp'.
+[warning] Couldn't find file 'middle_proximal_rvs.vtp'.
+[warning] Couldn't find file 'middle_medial_rvs.vtp'.
+[warning] Couldn't find file 'middle_distal_rvs.vtp'.
+[warning] Couldn't find file 'metacarpal4_rvs.vtp'.
+[warning] Couldn't find file 'ring_proximal_rvs.vtp'.
+[warning] Couldn't find file 'ring_medial_rvs.vtp'.
+[warning] Couldn't find file 'ring_distal_rvs.vtp'.
+[warning] Couldn't find file 'metacarpal5_rvs.vtp'.
+[warning] Couldn't find file 'little_proximal_rvs.vtp'.
+[warning] Couldn't find file 'little_medial_rvs.vtp'.
+[warning] Couldn't find file 'little_distal_rvs.vtp'.
+[warning] Couldn't find file 'metacarpal1_rvs.vtp'.
+[warning] Couldn't find file 'thumb_proximal_rvs.vtp'.
+[warning] Couldn't find file 'thumb_distal_rvs.vtp'.
+[warning] Couldn't find file 'humerus_lv.vtp'.
+[warning] Couldn't find file 'ulna_lv.vtp'.
+[warning] Couldn't find file 'radius_lv.vtp'.
+[warning] Couldn't find file 'pisiform_lvs.vtp'.
+[warning] Couldn't find file 'lunate_lvs.vtp'.
+[warning] Couldn't find file 'scaphoid_lvs.vtp'.
+[warning] Couldn't find file 'triquetrum_lvs.vtp'.
+[warning] Couldn't find file 'hamate_lvs.vtp'.
+[warning] Couldn't find file 'capitate_lvs.vtp'.
+[warning] Couldn't find file 'trapezoid_lvs.vtp'.
+[warning] Couldn't find file 'trapezium_lvs.vtp'.
+[warning] Couldn't find file 'metacarpal2_lvs.vtp'.
+[warning] Couldn't find file 'index_proximal_lvs.vtp'.
+[warning] Couldn't find file 'index_medial_lvs.vtp'.
+[warning] Couldn't find file 'index_distal_lvs.vtp'.
+[warning] Couldn't find file 'metacarpal3_lvs.vtp'.
+[warning] Couldn't find file 'middle_proximal_lvs.vtp'.
+[warning] Couldn't find file 'middle_medial_lvs.vtp'.
+[warning] Couldn't find file 'middle_distal_lvs.vtp'.
+[warning] Couldn't find file 'metacarpal4_lvs.vtp'.
+[warning] Couldn't find file 'ring_proximal_lvs.vtp'.
+[warning] Couldn't find file 'ring_medial_lvs.vtp'.
+[warning] Couldn't find file 'ring_distal_lvs.vtp'.
+[warning] Couldn't find file 'metacarpal5_lvs.vtp'.
+[warning] Couldn't find file 'little_proximal_lvs.vtp'.
+[warning] Couldn't find file 'little_medial_lvs.vtp'.
+[warning] Couldn't find file 'little_distal_lvs.vtp'.
+[warning] Couldn't find file 'metacarpal1_lvs.vtp'.
+[warning] Couldn't find file 'thumb_proximal_lvs.vtp'.
+[warning] Couldn't find file 'thumb_distal_lvs.vtp'.
+[info] Step 2: Scaling generic model
+[info] Wrote model file 'Models/optimized_scale_and_markers.osim' from model.
+Saving trial Run_5 results
+auto scaled average RMSE m: 0.01921692794336713
+auto scaled average max m: 0.05046874650529025
+Writing JSON result to /tmp/tmppcz0f35q/trials/Run_5/_results.json
+Writing OpenSim /tmp/tmppcz0f35q//results/IK/Run_5_ik.mot file, shape=(37, 364)
+Trial Run_5 detected GRF data present on ranges: [(1, 362)]
+Saving trajectory, markers, and dynamics to a GUI log /tmp/tmppcz0f35q/trials/Run_5/preview.bin
+FPS: 100
+Residual norm: 2607.04
+Saving GUI Recording to file "/tmp/tmppcz0f35q/trials/Run_5/preview.bin"...
+> Writing frame 0/364
+> Writing frame 50/364
+> Writing frame 100/364
+> Writing frame 150/364
+> Writing frame 200/364
+> Writing frame 250/364
+> Writing frame 300/364
+> Writing frame 350/364
+Finished saving GUI Recording to file "/tmp/tmppcz0f35q/trials/Run_5/preview.bin"!
+Zipping up /tmp/tmppcz0f35q/trials/Run_5/preview.bin
+Finished zipping up /tmp/tmppcz0f35q/trials/Run_5/preview.bin.zip
+Computing details about joint limit hits for the README
+Finished computing details about joint limit hits for the README.
+Plotting results for trial Run_5
+Success! Done with Run_5.
+Generating README file...
+Zipping up OpenSim files...
+Finished outputting OpenSim files.
+Writing the _results.json file...
+Generated a final zip file at /tmp/tmppcz0f35q/subject03.zip.
+Done!
+exit: 0
