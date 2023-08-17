@@ -6,7 +6,43 @@ Automatic processing reduced the residual loads needed for dynamic
 consistency to the following magnitudes, averaged over all frames of
 this trial:
 
-  - Avg. Residual Force   = 0.00 N
-  - Avg. Residual Torque  = 45.73 N-m
+  - Avg. Residual Force   = 2.45 N
+  - Avg. Residual Torque  = 44.45 N-m
 
 
+Ground reaction force inconsistencies
+=====================================
+Ground reaction force inconsistencies were detected in 219 out of 364
+frames in this trial. See below for a breakdown of why these "bad"
+frames were detected.
+
+1. "Unmeasured external torque."
+   -----------------------------
+   After optimizing the center-of-mass kinematics to match the observed
+   ground reaction data, an unmeasured external torque was still detected
+   in the following frames:
+     - frames 1-4 (times = 0.090-0.120 s)
+     - frames 8-15 (times = 0.160-0.230 s)
+     - frames 25-37 (times = 0.330-0.450 s)
+     - frames 40-43 (times = 0.480-0.510 s)
+     - frame 46 (time = 0.540 s)
+     - frames 54-66 (times = 0.620-0.740 s)
+     - frames 68-74 (times = 0.760-0.820 s)
+     - frames 84-97 (times = 0.920-1.050 s)
+     - frames 99-103 (times = 1.070-1.110 s)
+     - frames 118-127 (times = 1.260-1.350 s)
+     - frames 129-137 (times = 1.370-1.450 s)
+     - frames 147-159 (times = 1.550-1.670 s)
+     - frames 162-166 (times = 1.700-1.740 s)
+     - frames 178-199 (times = 1.860-2.070 s)
+     - frames 208-214 (times = 2.160-2.220 s)
+     - frames 216-221 (times = 2.240-2.290 s)
+     - frames 226-228 (times = 2.340-2.360 s)
+     - frames 243-262 (times = 2.510-2.700 s)
+     - frames 272-277 (times = 2.800-2.850 s)
+     - frames 279-284 (times = 2.870-2.920 s)
+     - frames 287-291 (times = 2.950-2.990 s)
+     - frames 301-322 (times = 3.090-3.300 s)
+     - frames 332-337 (times = 3.400-3.450 s)
+     - frames 339-342 (times = 3.470-3.500 s)
+     - frames 346-351 (times = 3.540-3.590 s)

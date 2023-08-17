@@ -6,7 +6,68 @@ Automatic processing reduced the residual loads needed for dynamic
 consistency to the following magnitudes, averaged over all frames of
 this trial:
 
-  - Avg. Residual Force   = 0.00 N
-  - Avg. Residual Torque  = 53.91 N-m
+  - Avg. Residual Force   = 1.21 N
+  - Avg. Residual Torque  = 45.68 N-m
 
 
+Ground reaction force inconsistencies
+=====================================
+Ground reaction force inconsistencies were detected in 167 out of 656
+frames in this trial. See below for a breakdown of why these "bad"
+frames were detected.
+
+1. "Unmeasured external torque."
+   -----------------------------
+   After optimizing the center-of-mass kinematics to match the observed
+   ground reaction data, an unmeasured external torque was still detected
+   in the following frames:
+     - frames 1-3 (times = 0.033-0.050 s)
+     - frames 8-9 (times = 0.092-0.100 s)
+     - frames 23-28 (times = 0.217-0.258 s)
+     - frames 31-35 (times = 0.283-0.317 s)
+     - frame 41 (time = 0.367 s)
+     - frames 45-46 (times = 0.400-0.408 s)
+     - frame 60 (time = 0.525 s)
+     - frames 65-67 (times = 0.567-0.583 s)
+     - frames 84-85 (times = 0.725-0.733 s)
+     - frames 101-105 (times = 0.867-0.900 s)
+     - frames 109-110 (times = 0.933-0.942 s)
+     - frames 113-114 (times = 0.967-0.975 s)
+     - frame 145 (time = 1.233 s)
+     - frame 164 (time = 1.392 s)
+     - frames 177-182 (times = 1.500-1.542 s)
+     - frames 189-193 (times = 1.600-1.633 s)
+     - frames 197-199 (times = 1.667-1.683 s)
+     - frame 202 (time = 1.708 s)
+     - frames 215-222 (times = 1.817-1.875 s)
+     - frame 240 (time = 2.025 s)
+     - frames 254-258 (times = 2.142-2.175 s)
+     - frames 262-265 (times = 2.208-2.233 s)
+     - frames 297-300 (times = 2.500-2.525 s)
+     - frames 313-316 (times = 2.633-2.658 s)
+     - frames 330-334 (times = 2.775-2.808 s)
+     - frames 339-341 (times = 2.850-2.867 s)
+     - frames 346-353 (times = 2.908-2.967 s)
+     - frames 366-378 (times = 3.075-3.175 s)
+     - frame 391 (time = 3.283 s)
+     - frames 408-410 (times = 3.425-3.442 s)
+     - frames 419-420 (times = 3.517-3.525 s)
+     - frame 425 (time = 3.567 s)
+     - frames 430-431 (times = 3.608-3.617 s)
+     - frames 443-446 (times = 3.717-3.742 s)
+     - frames 449-450 (times = 3.767-3.775 s)
+     - frame 470 (time = 3.942 s)
+     - frames 486-489 (times = 4.075-4.100 s)
+     - frames 497-499 (times = 4.167-4.183 s)
+     - frame 504 (time = 4.225 s)
+     - frame 509 (time = 4.267 s)
+     - frames 522-528 (times = 4.375-4.425 s)
+     - frame 547 (time = 4.583 s)
+     - frames 563-566 (times = 4.717-4.742 s)
+     - frames 574-577 (times = 4.808-4.833 s)
+     - frames 585-586 (times = 4.900-4.908 s)
+     - frames 599-606 (times = 5.017-5.075 s)
+     - frame 625 (time = 5.233 s)
+     - frames 639-643 (times = 5.350-5.383 s)
+     - frames 647-648 (times = 5.417-5.425 s)
+     - frames 653-654 (times = 5.467-5.475 s)

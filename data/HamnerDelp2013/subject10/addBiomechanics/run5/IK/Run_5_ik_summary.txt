@@ -5,53 +5,8 @@ Trial 'Run_5': Inverse Kinematics Summary
 Automatic processing achieved the following marker errors, averaged
 over all frames of this trial:
 
-  - Avg. Marker RMSE      = 6.15 cm
-  - Avg. Marker Max Error = 8.53 cm
-
-Markers with large root-mean-square error:
-
-  - WARNING: Marker LMT5 has RMSE = 7.55 cm!
-  - WARNING: Marker LTOE has RMSE = 7.55 cm!
-  - WARNING: Marker RTOE has RMSE = 7.53 cm!
-  - WARNING: Marker RMT5 has RMSE = 7.50 cm!
-  - WARNING: Marker CLAV has RMSE = 7.15 cm!
-  - WARNING: Marker RACR has RMSE = 7.12 cm!
-  - WARNING: Marker RMEL has RMSE = 7.08 cm!
-  - WARNING: Marker LACR has RMSE = 7.07 cm!
-  - WARNING: Marker LCAL has RMSE = 7.04 cm!
-  - WARNING: Marker RLEL has RMSE = 7.02 cm!
-  - WARNING: Marker RCAL has RMSE = 6.98 cm!
-  - WARNING: Marker LMEL has RMSE = 6.98 cm!
-  - WARNING: Marker C7 has RMSE = 6.97 cm!
-  - WARNING: Marker LUA2 has RMSE = 6.92 cm!
-  - WARNING: Marker RUA2 has RMSE = 6.87 cm!
-  - WARNING: Marker LPSI has RMSE = 6.87 cm!
-  - WARNING: Marker LUA1 has RMSE = 6.86 cm!
-  - WARNING: Marker LTH2 has RMSE = 6.86 cm!
-  - WARNING: Marker LLEL has RMSE = 6.85 cm!
-  - WARNING: Marker LASI has RMSE = 6.84 cm!
-  - WARNING: Marker LTB2 has RMSE = 6.84 cm!
-  - WARNING: Marker RUA1 has RMSE = 6.83 cm!
-  - WARNING: Marker RUA3 has RMSE = 6.82 cm!
-  - WARNING: Marker LTB1 has RMSE = 6.82 cm!
-  - WARNING: Marker LFAradius has RMSE = 6.80 cm!
-  - WARNING: Marker LTH3 has RMSE = 6.80 cm!
-  - WARNING: Marker LTH1 has RMSE = 6.80 cm!
-  - WARNING: Marker RTH2 has RMSE = 6.80 cm!
-  - WARNING: Marker LTB3 has RMSE = 6.79 cm!
-  - WARNING: Marker LUA3 has RMSE = 6.78 cm!
-  - WARNING: Marker RTB2 has RMSE = 6.77 cm!
-  - WARNING: Marker RTH1 has RMSE = 6.77 cm!
-  - WARNING: Marker RPSI has RMSE = 6.76 cm!
-  - WARNING: Marker LFAulna has RMSE = 6.75 cm!
-  - WARNING: Marker RTB3 has RMSE = 6.74 cm!
-  - WARNING: Marker RTB1 has RMSE = 6.74 cm!
-  - WARNING: Marker LFAsuperior has RMSE = 6.73 cm!
-  - WARNING: Marker RFAsuperior has RMSE = 6.72 cm!
-  - WARNING: Marker RTH3 has RMSE = 6.71 cm!
-  - WARNING: Marker RFAradius has RMSE = 6.70 cm!
-  - WARNING: Marker RASI has RMSE = 6.68 cm!
-  - WARNING: Marker RFAulna has RMSE = 6.67 cm!
+  - Avg. Marker RMSE      = 1.58 cm
+  - Avg. Marker Max Error = 3.84 cm
 
 The input data for the following markers were modified to enable
 automatic processing:

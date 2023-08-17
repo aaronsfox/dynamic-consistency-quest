@@ -21,102 +21,102 @@
             <ScaleSet>
                 <objects>
                     <Scale>
-                        <scales> 0.9752525782 0.9292136379 0.9231207425</scales>
+                        <scales> 0.9768521435 0.9356824527 0.9274354105</scales>
                         <segment>pelvis</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.1586489917 1.1547447790 1.1579633333</scales>
+                        <scales> 1.1565652379 1.1541163117 1.1561844740</scales>
                         <segment>femur_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0909654802 1.0851635083 1.0915938335</scales>
+                        <scales> 1.0933651029 1.0881812045 1.0938021370</scales>
                         <segment>tibia_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.1248803049 1.1284453429 1.1257355466</scales>
+                        <scales> 1.1181393582 1.1230050515 1.1201548431</scales>
                         <segment>talus_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0933632598 1.0872257524 1.0880879169</scales>
+                        <scales> 1.0922620197 1.0849956087 1.0866066199</scales>
                         <segment>calcn_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0823555605 1.0821848413 1.0822062595</scales>
+                        <scales> 1.0811128044 1.0809136993 1.0809591346</scales>
                         <segment>toes_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.1586489917 1.1547447790 1.1579633333</scales>
+                        <scales> 1.1565652379 1.1541163117 1.1561844740</scales>
                         <segment>femur_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0909654802 1.0851635083 1.0915938335</scales>
+                        <scales> 1.0933651029 1.0881812045 1.0938021370</scales>
                         <segment>tibia_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.1248803049 1.1284453429 1.1257355466</scales>
+                        <scales> 1.1181393582 1.1230050515 1.1201548431</scales>
                         <segment>talus_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0933632598 1.0872257524 1.0880879169</scales>
+                        <scales> 1.0922620197 1.0849956087 1.0866066199</scales>
                         <segment>calcn_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0823555605 1.0821848413 1.0822062595</scales>
+                        <scales> 1.0811128044 1.0809136993 1.0809591346</scales>
                         <segment>toes_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.1651217173 1.0193530920 1.0869420744</scales>
+                        <scales> 1.1650946031 1.0202981984 1.0909921935</scales>
                         <segment>torso</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.1033193800 1.1067337690 1.0984822785</scales>
+                        <scales> 1.1055957837 1.1089416834 1.0994744796</scales>
                         <segment>humerus_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0378156634 1.0344919967 1.0284205948</scales>
+                        <scales> 1.0376684739 1.0373534743 1.0353150080</scales>
                         <segment>ulna_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0378156634 1.0344919967 1.0284205948</scales>
+                        <scales> 1.0376684739 1.0373534743 1.0353150080</scales>
                         <segment>radius_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0825265233 1.0825265233 1.0825265233</scales>
+                        <scales> 1.0822140810 1.0822140810 1.0822140810</scales>
                         <segment>hand_r</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.1033193800 1.1067337690 1.0984822785</scales>
+                        <scales> 1.1055957837 1.1089416834 1.0994744796</scales>
                         <segment>humerus_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0378156634 1.0344919967 1.0284205948</scales>
+                        <scales> 1.0376684739 1.0373534743 1.0353150080</scales>
                         <segment>ulna_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0378156634 1.0344919967 1.0284205948</scales>
+                        <scales> 1.0376684739 1.0373534743 1.0353150080</scales>
                         <segment>radius_l</segment>
                         <apply>true</apply>
                     </Scale>
                     <Scale>
-                        <scales> 1.0825265233 1.0825265233 1.0825265233</scales>
+                        <scales> 1.0822140810 1.0822140810 1.0822140810</scales>
                         <segment>hand_l</segment>
                         <apply>true</apply>
                     </Scale>

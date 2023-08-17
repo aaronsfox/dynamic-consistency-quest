@@ -6,13 +6,13 @@ Automatic processing reduced the residual loads needed for dynamic
 consistency to the following magnitudes, averaged over all frames of
 this trial:
 
-  - Avg. Residual Force   = 4.87 N
-  - Avg. Residual Torque  = 34.96 N-m
+  - Avg. Residual Force   = 6.14 N
+  - Avg. Residual Torque  = 34.00 N-m
 
 
 Ground reaction force inconsistencies
 =====================================
-Ground reaction force inconsistencies were detected in 201 out of 393
+Ground reaction force inconsistencies were detected in 196 out of 393
 frames in this trial. See below for a breakdown of why these "bad"
 frames were detected.
 
@@ -24,12 +24,12 @@ frames were detected.
      - frames 8-9 (times = 0.250-0.260 s)
      - frames 11-13 (times = 0.280-0.300 s)
      - frame 19 (time = 0.360 s)
-     - frames 23-30 (times = 0.400-0.470 s)
+     - frames 24-30 (times = 0.410-0.470 s)
      - frames 40-44 (times = 0.570-0.610 s)
      - frames 46-48 (times = 0.630-0.650 s)
      - frames 55-61 (times = 0.720-0.780 s)
      - frames 67-73 (times = 0.840-0.900 s)
-     - frames 84-90 (times = 1.010-1.070 s)
+     - frames 85-90 (times = 1.020-1.070 s)
      - frames 98-104 (times = 1.150-1.210 s)
      - frames 107-112 (times = 1.240-1.290 s)
      - frames 116-118 (times = 1.330-1.350 s)
@@ -38,7 +38,7 @@ frames were detected.
      - frames 138-139 (times = 1.550-1.560 s)
      - frames 147-153 (times = 1.640-1.700 s)
      - frames 161-167 (times = 1.780-1.840 s)
-     - frames 169-174 (times = 1.860-1.910 s)
+     - frames 170-174 (times = 1.870-1.910 s)
      - frames 177-179 (times = 1.940-1.960 s)
      - frames 182-183 (times = 1.990-2.000 s)
      - frames 191-193 (times = 2.080-2.100 s)
@@ -55,14 +55,14 @@ frames were detected.
      - frames 272-279 (times = 2.890-2.960 s)
      - frames 288-294 (times = 3.050-3.110 s)
      - frames 296-300 (times = 3.130-3.170 s)
-     - frames 305-310 (times = 3.220-3.270 s)
+     - frames 305-307 (times = 3.220-3.240 s)
+     - frames 309-311 (times = 3.260-3.280 s)
      - frames 318-324 (times = 3.350-3.410 s)
      - frame 326 (time = 3.430 s)
      - frames 331-332 (times = 3.480-3.490 s)
      - frames 335-341 (times = 3.520-3.580 s)
      - frames 350-356 (times = 3.670-3.730 s)
-     - frames 360-363 (times = 3.770-3.800 s)
-     - frames 367-369 (times = 3.840-3.860 s)
-     - frames 371-372 (times = 3.880-3.890 s)
+     - frame 361 (time = 3.780 s)
+     - frames 367-372 (times = 3.840-3.890 s)
      - frames 380-386 (times = 3.970-4.030 s)
      - frames 390-391 (times = 4.070-4.080 s)

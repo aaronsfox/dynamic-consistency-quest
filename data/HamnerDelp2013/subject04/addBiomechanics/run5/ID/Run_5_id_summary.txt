@@ -6,13 +6,13 @@ Automatic processing reduced the residual loads needed for dynamic
 consistency to the following magnitudes, averaged over all frames of
 this trial:
 
-  - Avg. Residual Force   = 182.60 N
-  - Avg. Residual Torque  = 75.11 N-m
+  - Avg. Residual Force   = 178.58 N
+  - Avg. Residual Torque  = 64.15 N-m
 
 
 Ground reaction force inconsistencies
 =====================================
-Ground reaction force inconsistencies were detected in 398 out of 539
+Ground reaction force inconsistencies were detected in 440 out of 539
 frames in this trial. See below for a breakdown of why these "bad"
 frames were detected.
 
@@ -26,10 +26,10 @@ frames were detected.
      - frames 135-137 (times = 1.430-1.450 s)
      - frames 198-199 (times = 2.060-2.070 s)
      - frames 260-261 (times = 2.680-2.690 s)
-     - frames 323-324 (times = 3.310-3.320 s)
+     - frames 322-324 (times = 3.300-3.320 s)
      - frames 385-386 (times = 3.930-3.940 s)
      - frames 448-449 (times = 4.560-4.570 s)
-     - frames 512-513 (times = 5.200-5.210 s)
+     - frames 511-513 (times = 5.190-5.210 s)
 
 2. "Missing ground reaction force 'blip' detected."
    ------------------------------------------------
@@ -38,8 +38,8 @@ frames were detected.
    these 'blips' in the data were removed:
      - frames 13-72 (times = 0.210-0.800 s)
      - frames 74-113 (times = 0.820-1.210 s)
-     - frames 138-177 (times = 1.460-1.850 s)
-     - frames 200-239 (times = 2.080-2.470 s)
+     - frames 138-197 (times = 1.460-2.050 s)
+     - frames 200-259 (times = 2.080-2.670 s)
      - frames 262-301 (times = 2.700-3.090 s)
      - frames 325-384 (times = 3.330-3.920 s)
      - frames 387-426 (times = 3.950-4.340 s)

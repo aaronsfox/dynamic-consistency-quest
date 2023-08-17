@@ -2,7 +2,7 @@
     <InverseDynamicsTool name="Run_5">
         <model_file>../Models/final.osim</model_file>
         <forces_to_exclude>Muscles</forces_to_exclude>
-        <time_range> 2.725000 3.283333</time_range>
+        <time_range> 2.433333 2.691667</time_range>
         <external_loads_file>Run_5_external_forces.xml</external_loads_file>
         <coordinates_file>../IK/Run_5_ik.mot</coordinates_file>
         <output_gen_force_file>Run_5_osim_segment_4_id.sto</output_gen_force_file>

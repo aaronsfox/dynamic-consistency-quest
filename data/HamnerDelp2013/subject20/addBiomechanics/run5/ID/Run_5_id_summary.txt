@@ -7,12 +7,12 @@ consistency to the following magnitudes, averaged over all frames of
 this trial:
 
   - Avg. Residual Force   = 0.00 N
-  - Avg. Residual Torque  = 50.27 N-m
+  - Avg. Residual Torque  = 48.88 N-m
 
 
 Ground reaction force inconsistencies
 =====================================
-Ground reaction force inconsistencies were detected in 26 out of 647
+Ground reaction force inconsistencies were detected in 27 out of 647
 frames in this trial. See below for a breakdown of why these "bad"
 frames were detected.
 
@@ -24,11 +24,12 @@ frames were detected.
      - frame 38 (time = 0.325 s)
      - frames 180-182 (times = 1.508-1.525 s)
      - frames 253-255 (times = 2.117-2.133 s)
+     - frame 289 (time = 2.417 s)
      - frames 323-324 (times = 2.700-2.708 s)
      - frames 394-395 (times = 3.292-3.300 s)
      - frames 464-465 (times = 3.875-3.883 s)
      - frames 534-535 (times = 4.458-4.467 s)
      - frames 550-551 (times = 4.592-4.600 s)
-     - frames 603-605 (times = 5.033-5.050 s)
-     - frames 622-623 (times = 5.192-5.200 s)
+     - frames 604-605 (times = 5.042-5.050 s)
+     - frames 621-623 (times = 5.183-5.200 s)
      - frames 641-644 (times = 5.350-5.375 s)

@@ -5,8 +5,8 @@ Trial 'Run_5': Inverse Kinematics Summary
 Automatic processing achieved the following marker errors, averaged
 over all frames of this trial:
 
-  - Avg. Marker RMSE      = 1.68 cm
-  - Avg. Marker Max Error = 4.51 cm
+  - Avg. Marker RMSE      = 1.70 cm
+  - Avg. Marker Max Error = 3.65 cm
 
 The input data for the following markers were modified to enable
 automatic processing:

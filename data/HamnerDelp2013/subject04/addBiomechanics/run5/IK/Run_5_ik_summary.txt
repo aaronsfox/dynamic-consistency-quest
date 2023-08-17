@@ -5,8 +5,8 @@ Trial 'Run_5': Inverse Kinematics Summary
 Automatic processing achieved the following marker errors, averaged
 over all frames of this trial:
 
-  - Avg. Marker RMSE      = 1.19 cm
-  - Avg. Marker Max Error = 2.64 cm
+  - Avg. Marker RMSE      = 1.29 cm
+  - Avg. Marker Max Error = 2.96 cm
 
 The input data for the following markers were modified to enable
 automatic processing:
@@ -17,28 +17,88 @@ automatic processing:
 The following model coordinates that hit joint limits during inverse
 kinematics:
 
-  - WARNING: subtalar_angle_r hit upper bound on frame 0.
-  - WARNING: subtalar_angle_r hit upper bound on frames 8-61.
-  - WARNING: subtalar_angle_r hit upper bound on frames 70-126.
-  - WARNING: subtalar_angle_r hit upper bound on frames 132-184.
-  - WARNING: subtalar_angle_r hit upper bound on frames 195-251.
-  - WARNING: subtalar_angle_r hit upper bound on frames 257-299.
-  - WARNING: subtalar_angle_r hit upper bound on frames 308-313.
-  - WARNING: subtalar_angle_r hit upper bound on frames 321-364.
-  - WARNING: subtalar_angle_r hit upper bound on frames 382-437.
-  - WARNING: subtalar_angle_r hit upper bound on frames 445-502.
-  - WARNING: subtalar_angle_l hit upper bound on frames 0-18.
-  - WARNING: subtalar_angle_l hit upper bound on frames 39-93.
-  - WARNING: subtalar_angle_l hit upper bound on frames 103-147.
-  - WARNING: subtalar_angle_l hit upper bound on frames 153-155.
-  - WARNING: subtalar_angle_l hit upper bound on frames 164-208.
-  - WARNING: subtalar_angle_l hit upper bound on frames 213-217.
-  - WARNING: subtalar_angle_l hit upper bound on frames 227-282.
-  - WARNING: subtalar_angle_l hit upper bound on frames 289-343.
-  - WARNING: subtalar_angle_l hit upper bound on frames 353-393.
-  - WARNING: subtalar_angle_l hit upper bound on frames 401-404.
-  - WARNING: subtalar_angle_l hit upper bound on frames 414-469.
-  - WARNING: subtalar_angle_l hit upper bound on frames 477-523.
+  - WARNING: subtalar_angle_r hit upper bound on frames 10-56.
+  - WARNING: subtalar_angle_r hit upper bound on frames 72-118.
+  - WARNING: subtalar_angle_r hit upper bound on frames 136-179.
+  - WARNING: subtalar_angle_r hit upper bound on frames 198-240.
+  - WARNING: subtalar_angle_r hit upper bound on frames 260-297.
+  - WARNING: subtalar_angle_r hit upper bound on frames 324-361.
+  - WARNING: subtalar_angle_r hit upper bound on frames 384-430.
+  - WARNING: subtalar_angle_r hit upper bound on frames 448-492.
+  - WARNING: subtalar_angle_l hit upper bound on frames 0-13.
+  - WARNING: subtalar_angle_l hit upper bound on frame 21.
+  - WARNING: subtalar_angle_l hit upper bound on frame 22.
+  - WARNING: subtalar_angle_l hit upper bound on frame 23.
+  - WARNING: subtalar_angle_l hit upper bound on frame 32.
+  - WARNING: subtalar_angle_l hit upper bound on frame 33.
+  - WARNING: subtalar_angle_l hit upper bound on frame 34.
+  - WARNING: subtalar_angle_l hit upper bound on frame 35.
+  - WARNING: subtalar_angle_l hit upper bound on frame 36.
+  - WARNING: subtalar_angle_l hit upper bound on frame 37.
+  - WARNING: subtalar_angle_l hit upper bound on frame 38.
+  - WARNING: subtalar_angle_l hit upper bound on frames 45-74.
+  - WARNING: subtalar_angle_l hit upper bound on frames 80-82.
+  - WARNING: subtalar_angle_l hit upper bound on frame 95.
+  - WARNING: subtalar_angle_l hit upper bound on frame 96.
+  - WARNING: subtalar_angle_l hit upper bound on frame 97.
+  - WARNING: subtalar_angle_l hit upper bound on frame 98.
+  - WARNING: subtalar_angle_l hit upper bound on frame 99.
+  - WARNING: subtalar_angle_l hit upper bound on frame 100.
+  - WARNING: subtalar_angle_l hit upper bound on frame 101.
+  - WARNING: subtalar_angle_l hit upper bound on frame 102.
+  - WARNING: subtalar_angle_l hit upper bound on frame 103.
+  - WARNING: subtalar_angle_l hit upper bound on frames 111-134.
+  - WARNING: subtalar_angle_l hit upper bound on frames 136-144.
+  - WARNING: subtalar_angle_l hit upper bound on frame 158.
+  - WARNING: subtalar_angle_l hit upper bound on frame 159.
+  - WARNING: subtalar_angle_l hit upper bound on frame 160.
+  - WARNING: subtalar_angle_l hit upper bound on frame 161.
+  - WARNING: subtalar_angle_l hit upper bound on frame 162.
+  - WARNING: subtalar_angle_l hit upper bound on frame 163.
+  - WARNING: subtalar_angle_l hit upper bound on frame 164.
+  - WARNING: subtalar_angle_l hit upper bound on frames 172-203.
+  - WARNING: subtalar_angle_l hit upper bound on frame 220.
+  - WARNING: subtalar_angle_l hit upper bound on frame 221.
+  - WARNING: subtalar_angle_l hit upper bound on frame 222.
+  - WARNING: subtalar_angle_l hit upper bound on frame 223.
+  - WARNING: subtalar_angle_l hit upper bound on frame 224.
+  - WARNING: subtalar_angle_l hit upper bound on frame 225.
+  - WARNING: subtalar_angle_l hit upper bound on frame 226.
+  - WARNING: subtalar_angle_l hit upper bound on frames 240-259.
+  - WARNING: subtalar_angle_l hit upper bound on frames 262-269.
+  - WARNING: subtalar_angle_l hit upper bound on frame 284.
+  - WARNING: subtalar_angle_l hit upper bound on frame 285.
+  - WARNING: subtalar_angle_l hit upper bound on frame 286.
+  - WARNING: subtalar_angle_l hit upper bound on frame 287.
+  - WARNING: subtalar_angle_l hit upper bound on frame 288.
+  - WARNING: subtalar_angle_l hit upper bound on frames 295-337.
+  - WARNING: subtalar_angle_l hit upper bound on frame 346.
+  - WARNING: subtalar_angle_l hit upper bound on frame 347.
+  - WARNING: subtalar_angle_l hit upper bound on frame 348.
+  - WARNING: subtalar_angle_l hit upper bound on frame 349.
+  - WARNING: subtalar_angle_l hit upper bound on frame 350.
+  - WARNING: subtalar_angle_l hit upper bound on frame 351.
+  - WARNING: subtalar_angle_l hit upper bound on frame 352.
+  - WARNING: subtalar_angle_l hit upper bound on frame 353.
+  - WARNING: subtalar_angle_l hit upper bound on frames 359-387.
+  - WARNING: subtalar_angle_l hit upper bound on frame 407.
+  - WARNING: subtalar_angle_l hit upper bound on frame 408.
+  - WARNING: subtalar_angle_l hit upper bound on frame 409.
+  - WARNING: subtalar_angle_l hit upper bound on frame 410.
+  - WARNING: subtalar_angle_l hit upper bound on frame 411.
+  - WARNING: subtalar_angle_l hit upper bound on frame 412.
+  - WARNING: subtalar_angle_l hit upper bound on frame 413.
+  - WARNING: subtalar_angle_l hit upper bound on frames 428-454.
+  - WARNING: subtalar_angle_l hit upper bound on frame 472.
+  - WARNING: subtalar_angle_l hit upper bound on frame 473.
+  - WARNING: subtalar_angle_l hit upper bound on frame 474.
+  - WARNING: subtalar_angle_l hit upper bound on frame 475.
+  - WARNING: subtalar_angle_l hit upper bound on frame 476.
+  - WARNING: subtalar_angle_l hit upper bound on frames 492-509.
+  - WARNING: subtalar_angle_l hit upper bound on frames 514-520.
+  - WARNING: subtalar_angle_l hit upper bound on frame 535.
+  - WARNING: subtalar_angle_l hit upper bound on frame 536.
+  - WARNING: subtalar_angle_l hit upper bound on frame 537.
 
 Additional information:
 

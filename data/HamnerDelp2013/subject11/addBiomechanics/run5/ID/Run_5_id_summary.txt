@@ -7,6 +7,6 @@ consistency to the following magnitudes, averaged over all frames of
 this trial:
 
   - Avg. Residual Force   = 0.00 N
-  - Avg. Residual Torque  = 48.19 N-m
+  - Avg. Residual Torque  = 46.30 N-m
 
 

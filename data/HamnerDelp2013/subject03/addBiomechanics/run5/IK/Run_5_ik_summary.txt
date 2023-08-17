@@ -5,13 +5,13 @@ Trial 'Run_5': Inverse Kinematics Summary
 Automatic processing achieved the following marker errors, averaged
 over all frames of this trial:
 
-  - Avg. Marker RMSE      = 1.92 cm
-  - Avg. Marker Max Error = 5.05 cm
+  - Avg. Marker RMSE      = 1.69 cm
+  - Avg. Marker Max Error = 4.96 cm
 
 Markers with large root-mean-square error:
 
-  - WARNING: Marker RTOE has RMSE = 4.20 cm!
-  - WARNING: Marker LTOE has RMSE = 4.10 cm!
+  - WARNING: Marker LTOE has RMSE = 4.17 cm!
+  - WARNING: Marker RTOE has RMSE = 4.07 cm!
 
 The input data for the following markers were modified to enable
 automatic processing:

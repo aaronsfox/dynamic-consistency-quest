@@ -5,19 +5,8 @@ Trial 'Run_5': Inverse Kinematics Summary
 Automatic processing achieved the following marker errors, averaged
 over all frames of this trial:
 
-  - Avg. Marker RMSE      = 3.50 cm
-  - Avg. Marker Max Error = 6.38 cm
-
-Markers with large root-mean-square error:
-
-  - WARNING: Marker RTOE has RMSE = 5.41 cm!
-  - WARNING: Marker RMT5 has RMSE = 5.13 cm!
-  - WARNING: Marker LTOE has RMSE = 4.59 cm!
-  - WARNING: Marker LMT5 has RMSE = 4.51 cm!
-  - WARNING: Marker RPSI has RMSE = 4.41 cm!
-  - WARNING: Marker LPSI has RMSE = 4.40 cm!
-  - WARNING: Marker RCAL has RMSE = 4.09 cm!
-  - WARNING: Marker LLEL has RMSE = 4.03 cm!
+  - Avg. Marker RMSE      = 2.13 cm
+  - Avg. Marker Max Error = 4.12 cm
 
 The input data for the following markers were modified to enable
 automatic processing:

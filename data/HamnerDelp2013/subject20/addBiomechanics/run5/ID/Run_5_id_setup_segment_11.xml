@@ -2,11 +2,11 @@
     <InverseDynamicsTool name="Run_5">
         <model_file>../Models/final.osim</model_file>
         <forces_to_exclude>Muscles</forces_to_exclude>
-        <time_range> 5.430000 5.450000</time_range>
+        <time_range> 5.216667 5.341667</time_range>
         <external_loads_file>Run_5_external_forces.xml</external_loads_file>
         <coordinates_file>../IK/Run_5_ik.mot</coordinates_file>
-        <output_gen_force_file>Run_5_osim_segment_7_id.sto</output_gen_force_file>
+        <output_gen_force_file>Run_5_osim_segment_11_id.sto</output_gen_force_file>
         <joints_to_report_body_forces/>
-        <output_body_forces_file>Run_5_osim_segment_7_id_body_forces.sto</output_body_forces_file>
+        <output_body_forces_file>Run_5_osim_segment_11_id_body_forces.sto</output_body_forces_file>
     </InverseDynamicsTool>
 </OpenSimDocument>

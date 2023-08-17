@@ -4,55 +4,55 @@ AddBiomechanics was written by Keenon Werling.
 Automatic processing achieved the following marker errors (averaged
 over all frames of all trials):
 
-- Avg. Marker RMSE      = 1.19 cm
-- Avg. Max Marker Error = 2.64 cm
+- Avg. Marker RMSE      = 1.29 cm
+- Avg. Max Marker Error = 2.96 cm
 
 Automatic processing reduced the residual loads needed for dynamic
 consistency to the following magnitudes (averaged over all frames of
 all trials):
 
-- Avg. Residual Force  = 182.60 N
-- Avg. Residual Torque = 75.11 N-m
+- Avg. Residual Force  = 178.58 N
+- Avg. Residual Torque = 64.15 N-m
 
 Automatic processing found a new model mass to achieve dynamic
 consistency:
 
-  - Total mass = 79.38 kg (-0.78% change from original 80.0 kg)
+  - Total mass = 79.35 kg (-0.81% change from original 80.0 kg)
 
 Individual body mass changes:
 
-  - pelvis    mass = 12.44 kg (-0.78% change from original 12.53 kg)
-  - femur_r   mass = 9.82 kg (-0.78% change from original 9.90 kg)
-  - tibia_r   mass = 3.92 kg (-0.78% change from original 3.95 kg)
-  - talus_r   mass = 0.11 kg (-0.78% change from original 0.11 kg)
-  - calcn_r   mass = 1.32 kg (-0.78% change from original 1.33 kg)
-  - toes_r    mass = 0.23 kg (-0.78% change from original 0.23 kg)
-  - femur_l   mass = 9.82 kg (-0.78% change from original 9.90 kg)
-  - tibia_l   mass = 3.92 kg (-0.78% change from original 3.95 kg)
-  - talus_l   mass = 0.11 kg (-0.78% change from original 0.11 kg)
-  - calcn_l   mass = 1.32 kg (-0.78% change from original 1.33 kg)
-  - toes_l    mass = 0.23 kg (-0.78% change from original 0.23 kg)
-  - torso     mass = 28.33 kg (-0.78% change from original 28.55 kg)
-  - humerus_r mass = 2.15 kg (-0.78% change from original 2.16 kg)
-  - ulna_r    mass = 0.64 kg (-0.78% change from original 0.65 kg)
-  - radius_r  mass = 0.64 kg (-0.78% change from original 0.65 kg)
-  - hand_r    mass = 0.48 kg (-0.78% change from original 0.49 kg)
-  - humerus_l mass = 2.15 kg (-0.78% change from original 2.16 kg)
-  - ulna_l    mass = 0.64 kg (-0.78% change from original 0.65 kg)
-  - radius_l  mass = 0.64 kg (-0.78% change from original 0.65 kg)
-  - hand_l    mass = 0.48 kg (-0.78% change from original 0.49 kg)
+  - pelvis    mass = 12.43 kg (-0.81% change from original 12.53 kg)
+  - femur_r   mass = 9.82 kg (-0.81% change from original 9.90 kg)
+  - tibia_r   mass = 3.91 kg (-0.81% change from original 3.95 kg)
+  - talus_r   mass = 0.11 kg (-0.81% change from original 0.11 kg)
+  - calcn_r   mass = 1.32 kg (-0.81% change from original 1.33 kg)
+  - toes_r    mass = 0.23 kg (-0.81% change from original 0.23 kg)
+  - femur_l   mass = 9.82 kg (-0.81% change from original 9.90 kg)
+  - tibia_l   mass = 3.91 kg (-0.81% change from original 3.95 kg)
+  - talus_l   mass = 0.11 kg (-0.81% change from original 0.11 kg)
+  - calcn_l   mass = 1.32 kg (-0.81% change from original 1.33 kg)
+  - toes_l    mass = 0.23 kg (-0.81% change from original 0.23 kg)
+  - torso     mass = 28.32 kg (-0.81% change from original 28.55 kg)
+  - humerus_r mass = 2.15 kg (-0.81% change from original 2.16 kg)
+  - ulna_r    mass = 0.64 kg (-0.81% change from original 0.65 kg)
+  - radius_r  mass = 0.64 kg (-0.81% change from original 0.65 kg)
+  - hand_r    mass = 0.48 kg (-0.81% change from original 0.49 kg)
+  - humerus_l mass = 2.15 kg (-0.81% change from original 2.16 kg)
+  - ulna_l    mass = 0.64 kg (-0.81% change from original 0.65 kg)
+  - radius_l  mass = 0.64 kg (-0.81% change from original 0.65 kg)
+  - hand_l    mass = 0.48 kg (-0.81% change from original 0.49 kg)
 
 The following trials were processed to perform automatic body scaling,
 marker registration, and residual reduction:
 
 trial: Run_5
-  - Avg. Marker RMSE      = 1.19 cm
-  - Avg. Marker Max Error = 2.64 cm
-  - Avg. Residual Force   = 182.60 N
-  - Avg. Residual Torque  = 75.11 N-m
-  - WARNING: 22 joints hit joint limits!
+  - Avg. Marker RMSE      = 1.29 cm
+  - Avg. Marker Max Error = 2.96 cm
+  - Avg. Residual Force   = 178.58 N
+  - Avg. Residual Torque  = 64.15 N-m
+  - WARNING: 82 joints hit joint limits!
   - WARNING: Automatic data processing required modifying TRC data from 2 marker(s)!
-  - WARNING: 398 frame(s) with ground reaction force inconsistencies detected!
+  - WARNING: 440 frame(s) with ground reaction force inconsistencies detected!
   --> See IK/Run_5_ik_summary.txt and ID/Run_5_id_summary.txt for more details.
 
 
@@ -110,17 +110,13 @@ FOLDER, and not including the leading "> "):
  > opensim-cmd run-tool Run_5_id_setup_segment_1.xml
            # This will create results on time range (1.23s to 1.42s) in file ID/Run_5_osim_segment_1_id.sto
  > opensim-cmd run-tool Run_5_id_setup_segment_2.xml
-           # This will create results on time range (1.87s to 2.05s) in file ID/Run_5_osim_segment_2_id.sto
+           # This will create results on time range (3.11s to 3.29s) in file ID/Run_5_osim_segment_2_id.sto
  > opensim-cmd run-tool Run_5_id_setup_segment_3.xml
-           # This will create results on time range (2.49s to 2.67s) in file ID/Run_5_osim_segment_3_id.sto
+           # This will create results on time range (4.36s to 4.55s) in file ID/Run_5_osim_segment_3_id.sto
  > opensim-cmd run-tool Run_5_id_setup_segment_4.xml
-           # This will create results on time range (3.11s to 3.3s) in file ID/Run_5_osim_segment_4_id.sto
+           # This will create results on time range (4.99s to 5.18s) in file ID/Run_5_osim_segment_4_id.sto
  > opensim-cmd run-tool Run_5_id_setup_segment_5.xml
-           # This will create results on time range (4.36s to 4.55s) in file ID/Run_5_osim_segment_5_id.sto
- > opensim-cmd run-tool Run_5_id_setup_segment_6.xml
-           # This will create results on time range (4.99s to 5.19s) in file ID/Run_5_osim_segment_6_id.sto
- > opensim-cmd run-tool Run_5_id_setup_segment_7.xml
-           # This will create results on time range (5.43s to 5.45s) in file ID/Run_5_osim_segment_7_id.sto
+           # This will create results on time range (5.43s to 5.45s) in file ID/Run_5_osim_segment_5_id.sto
 
 
 The original unscaled model file is present in:
