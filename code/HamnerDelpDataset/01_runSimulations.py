@@ -1128,6 +1128,10 @@ for subject in subList:
             else:
                 genModel.updMarkerSet().get(markerInd).set_fixed(False)
                 
+        #Pronation-supination coordinate limits need to expand to work properly
+        genModel.updCoordinateSet().get('pro_sup_r').setRangeMax(np.deg2rad(180))
+        genModel.updCoordinateSet().get('pro_sup_l').setRangeMax(np.deg2rad(180))
+                
         #Finalize model connections
         genModel.finalizeConnections()
         
