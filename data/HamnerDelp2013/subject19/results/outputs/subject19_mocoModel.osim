@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="40000">
-	<Model name="subject19_MOCO">
+	<Model name="subject19_Moco">
 		<defaults>
 			<ControlLinear name="default">
 				<is_model_control>true</is_model_control>
@@ -192,7 +192,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>sacrum.vtp</mesh_file>
@@ -207,7 +207,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>pelvis.vtp</mesh_file>
@@ -222,7 +222,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>l_pelvis.vtp</mesh_file>
@@ -260,7 +260,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>femur_r.vtp</mesh_file>
@@ -298,7 +298,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>tibia_r.vtp</mesh_file>
@@ -313,7 +313,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>fibula_r.vtp</mesh_file>
@@ -351,7 +351,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>talus_rv.vtp</mesh_file>
@@ -389,7 +389,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>foot.vtp</mesh_file>
@@ -427,7 +427,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>bofoot.vtp</mesh_file>
@@ -465,7 +465,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>femur_l.vtp</mesh_file>
@@ -503,7 +503,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>tibia_l.vtp</mesh_file>
@@ -518,7 +518,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>fibula_l.vtp</mesh_file>
@@ -556,7 +556,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>talus_lv.vtp</mesh_file>
@@ -594,7 +594,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>l_foot.vtp</mesh_file>
@@ -632,7 +632,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>l_bofoot.vtp</mesh_file>
@@ -670,7 +670,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>hat_spine.vtp</mesh_file>
@@ -685,7 +685,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>hat_jaw.vtp</mesh_file>
@@ -700,7 +700,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>hat_skull.vtp</mesh_file>
@@ -715,7 +715,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>hat_ribs_scap.vtp</mesh_file>
@@ -753,7 +753,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>humerus_rv.vtp</mesh_file>
@@ -791,7 +791,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ulna_rv.vtp</mesh_file>
@@ -829,7 +829,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>radius_rv.vtp</mesh_file>
@@ -867,7 +867,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>pisiform_rvs.vtp</mesh_file>
@@ -882,7 +882,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>lunate_rvs.vtp</mesh_file>
@@ -897,7 +897,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>scaphoid_rvs.vtp</mesh_file>
@@ -912,7 +912,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>triquetrum_rvs.vtp</mesh_file>
@@ -927,7 +927,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>hamate_rvs.vtp</mesh_file>
@@ -942,7 +942,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>capitate_rvs.vtp</mesh_file>
@@ -957,7 +957,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>trapezoid_rvs.vtp</mesh_file>
@@ -972,7 +972,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>trapezium_rvs.vtp</mesh_file>
@@ -987,7 +987,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal2_rvs.vtp</mesh_file>
@@ -1002,7 +1002,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>index_proximal_rvs.vtp</mesh_file>
@@ -1017,7 +1017,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>index_medial_rvs.vtp</mesh_file>
@@ -1032,7 +1032,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>index_distal_rvs.vtp</mesh_file>
@@ -1047,7 +1047,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal3_rvs.vtp</mesh_file>
@@ -1062,7 +1062,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>middle_proximal_rvs.vtp</mesh_file>
@@ -1077,7 +1077,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>middle_medial_rvs.vtp</mesh_file>
@@ -1092,7 +1092,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>middle_distal_rvs.vtp</mesh_file>
@@ -1107,7 +1107,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal4_rvs.vtp</mesh_file>
@@ -1122,7 +1122,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ring_proximal_rvs.vtp</mesh_file>
@@ -1137,7 +1137,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ring_medial_rvs.vtp</mesh_file>
@@ -1152,7 +1152,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ring_distal_rvs.vtp</mesh_file>
@@ -1167,7 +1167,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal5_rvs.vtp</mesh_file>
@@ -1182,7 +1182,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>little_proximal_rvs.vtp</mesh_file>
@@ -1197,7 +1197,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>little_medial_rvs.vtp</mesh_file>
@@ -1212,7 +1212,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>little_distal_rvs.vtp</mesh_file>
@@ -1227,7 +1227,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal1_rvs.vtp</mesh_file>
@@ -1242,7 +1242,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>thumb_proximal_rvs.vtp</mesh_file>
@@ -1257,7 +1257,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>thumb_distal_rvs.vtp</mesh_file>
@@ -1295,7 +1295,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>humerus_lv.vtp</mesh_file>
@@ -1333,7 +1333,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ulna_lv.vtp</mesh_file>
@@ -1371,7 +1371,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>radius_lv.vtp</mesh_file>
@@ -1409,7 +1409,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>pisiform_lvs.vtp</mesh_file>
@@ -1424,7 +1424,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>lunate_lvs.vtp</mesh_file>
@@ -1439,7 +1439,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>scaphoid_lvs.vtp</mesh_file>
@@ -1454,7 +1454,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>triquetrum_lvs.vtp</mesh_file>
@@ -1469,7 +1469,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>hamate_lvs.vtp</mesh_file>
@@ -1484,7 +1484,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>capitate_lvs.vtp</mesh_file>
@@ -1499,7 +1499,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>trapezoid_lvs.vtp</mesh_file>
@@ -1514,7 +1514,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>trapezium_lvs.vtp</mesh_file>
@@ -1529,7 +1529,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal2_lvs.vtp</mesh_file>
@@ -1544,7 +1544,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>index_proximal_lvs.vtp</mesh_file>
@@ -1559,7 +1559,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>index_medial_lvs.vtp</mesh_file>
@@ -1574,7 +1574,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>index_distal_lvs.vtp</mesh_file>
@@ -1589,7 +1589,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal3_lvs.vtp</mesh_file>
@@ -1604,7 +1604,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>middle_proximal_lvs.vtp</mesh_file>
@@ -1619,7 +1619,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>middle_medial_lvs.vtp</mesh_file>
@@ -1634,7 +1634,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>middle_distal_lvs.vtp</mesh_file>
@@ -1649,7 +1649,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal4_lvs.vtp</mesh_file>
@@ -1664,7 +1664,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ring_proximal_lvs.vtp</mesh_file>
@@ -1679,7 +1679,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ring_medial_lvs.vtp</mesh_file>
@@ -1694,7 +1694,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>ring_distal_lvs.vtp</mesh_file>
@@ -1709,7 +1709,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal5_lvs.vtp</mesh_file>
@@ -1724,7 +1724,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>little_proximal_lvs.vtp</mesh_file>
@@ -1739,7 +1739,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>little_medial_lvs.vtp</mesh_file>
@@ -1754,7 +1754,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>little_distal_lvs.vtp</mesh_file>
@@ -1769,7 +1769,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>metacarpal1_lvs.vtp</mesh_file>
@@ -1784,7 +1784,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>thumb_proximal_lvs.vtp</mesh_file>
@@ -1799,7 +1799,7 @@
 								<!--The opacity used to display the geometry between 0:transparent, 1:opaque.-->
 								<opacity>0.40000000000000002</opacity>
 								<!--The color, (red, green, blue), [0, 1], used to display the geometry. -->
-								<color>1 0 0</color>
+								<color>0.28235294117647058 0.52156862745098043 0.92941176470588238</color>
 							</Appearance>
 							<!--Name of geometry file.-->
 							<mesh_file>thumb_distal_lvs.vtp</mesh_file>
