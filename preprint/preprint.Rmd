@@ -1,0 +1,299 @@
+---
+title             : "The Quest for Dynamic Consistency: A Comparison of OpenSim Tools for Residual Reduction in Simulations of Human Running"
+shorttitle        : "The Quest for Dynamic Consistency"
+
+author: 
+  - name          : "Aaron S. Fox"
+    affiliation   : "1"
+    corresponding : yes    # Define only one corresponding author
+    address       : "75 Pigdons Road, School of Exercise and Nutrition Sciences, Deakin University, Geelong, Australia"
+    email         : "aaron.f@deakin.edu.au"
+    role:       
+      - "Conceptualization"
+      - "Data curation"
+      - "Formal analysis"
+      - "Writing - Original Draft"
+      - "Writing - Review & Editing"
+
+affiliation:
+  - id            : "1"
+    institution   : "Centre for Sport Research, School of Exercise and Nutritition Sciences, Deakin University, Australia"
+
+abstract: |
+  Add abstract...
+  
+keywords          : "keywords"
+wordcount         : "X"
+
+bibliography      : "r-references.bib"
+csl               : elsevier-vancouver.csl
+
+floatsintext      : no
+linenumbers       : yes
+draft             : no
+mask              : no
+
+figurelist        : no
+tablelist         : no
+footnotelist      : no
+
+classoption       : "man"
+output            : papaja::apa6_docx
+---
+
+```{r setup, include = FALSE, echo = FALSE}
+
+#Read in libraries
+library(papaja)
+library(dplyr)
+library(here)
+
+```
+
+```{r analysis-preferences, include = FALSE, echo = FALSE}
+
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+
+```
+
+# Introduction
+
+Biomechanical data (i.e. kinematics and kinetics) are commonly collected and used alongside musculoskeletal models to understand human running performance or injury risk. Kinematic data is typically collected via marker-based optical motion capture systems, with kinetic data synchronously collected via in-ground force plates or instrumented treadmills. The independent measurement and associated error (i.e. noise) of kinematic and kinetic data in gait experiments typically leads to dynamic inconsistencies in modelled data [@Hicks2015]. Residual forces and moments at the 'root' segment (i.e. the segment connected to the 'ground' in a model --- typically the pelvis) subsequently remain to ensure dynamic consistency between the motion and external forces. The presence of dynamic inconsistencies can lead to implausible conclusions in subsequent gait simulation outputs (e.g. joint moments, muscle forces) given that not all of the forces are accounted for by realistic aspects of the model. It is therefore common practice for biomechanical researchers to employ strategies that minimise or eliminate residual forces and moments [@Hicks2015].
+
+Adjusting model parameters (e.g. segment masses) and/or motion (e.g. joint kinematics) is a common approach used minimise residual forces and moments in gait simulations [@Hicks2015, @Werling2023]. OpenSim offers the Residual Reduction Algorithm (RRA) as its main tool for minimising dynamic inconsistencies between modelled motions and external forces during gait [@Delp2007]. RRA employs a forward dynamics simulation to adjust model kinematics and the mass centre of a selected body (typically the torso), while also providing recommendations for adjusting the mass of individual segments as a means to reduce residual forces and moments [@NCSRR2017]. RRA can be effective in reducing residuals within recommended thresholds [@Hicks2015], however the process is dependent on selecting tracking weights for joint coordinates which may be difficult to objectively determine [@Samaan2016, @Sturdy2022]. Further, RRA has been employed as both a singular [@Hamner2013] and iterative [@Rajagopal2016] process --- yet there are no specific recommendations on which of these approaches or how many iterations are optimal.
+
+The expansion of OpenSim's toolkit in recent years offers potential alternatives for generating dynamically consistent gait simulations. OpenSim Moco [@Dembia2020] provides an option to leverage direct collocation in an effort to achieve dynamic consistency --- using the *MocoTrack* class to generate torque-driven simulations that track and adjust model kinematics, while minimising residual forces and moments. The recently released *AddBiomechanics* online application [@Werling2023] aims to automate typical modelling processes (i.e. model scaling, inverse kinematics, inverse dynamics), and includes an optimisation step that updates model segment masses and joint kinematics to minimise dynamic inconsistencies in the final simulation results. A detailed comparison of available tools and their capacity to achieve dynamically consistent simulations of human running can provide researchers with information on which may be the most suitable approach(es). The purpose, nay quest, of this study was to compare the: (i) computational time; (ii) resultant residual forces and moments; and (iii) output joint kinematics and kinetics of various OpenSim tools for residual reduction in simulations of human running.
+
+# Methods
+
+***TODO: All analysis code etc. at SimTK page...***
+
+## Dataset
+
+This study used the human running dataset provided by Hamner and Delp [@Hamner2013], which includes ten male participants (age = 29 ± 5 y; height = 1.77 ± 0.04 m; mass = 70.9 ± 7.0 kg) running on a treadmill at three speeds (3.0 m·s^-1^, 4.0 m·s^-1^, 5.0 m·s^-1^). Only the data from participants running at 5.0 m·s^-1^ was used in the present study, given the fastest speed would likely include data with the highest forces and accelerations — and hence the greatest potential for residual forces and moments to be present in the experimental measurements. Data extracted from the original study [@Hamner2013] included the: (i) generic and participant-specific scaled full-body musculoskeletal models (12 segment, 29 degree-of-freedom musculoskeletal model [@Hamner2010]); (ii) experimental marker and ground reaction force (GRF) data (i.e. *.trc* and *.mot* files); and (iii) full body joint coordinates from three gait cycles calculated via inverse kinematics (IK). All or parts of the extracted data were used in the subsequent residual reduction approaches tested (see *Data Analysis* section).
+
+## Data Analysis
+
+The following sections outline the various residual reduction approaches tested on the running dataset. All analyses were conducted in OpenSim 4.3 via Python 3.8 on a single CPU (11^th^ Gen Intel® Core^TM^ i7-1185G7 processor; 16GB RAM with four cores), with the exception of the *AddBiomechanics* approach which were uploaded and processed in the web application [@AddBiomechanics2023].
+
+***TODO: Details on analytical comparisons...? i.e. computational time in minutes, average and peak residual forces and moments extracted , kinematic root mean square deviations (or just explain that these were visualised for comparison)...for comparison outcome metrics...explain X, Y and Z axes***
+
+### Residual Reduction Algorithm (RRA)
+
+A single iteration of OpenSim's RRA using standardised practices was implemented on the three gait cycles extracted for each participant. The inputs to the procedure were the scaled musculoskeletal model and experimental outputs (i.e. joint coordinates from IK and external GRFs), alongside the RRA settings files (i.e. joint coordinate tracking weights and model joint torque actuators) provided from the original study [@Hamner2013]. No adjustment to RRA settings on what were originally used by Hamner and Delp [@Hamner2013] were made avoid introducing any further subjectivity to the process. A single iteration of the RRA was run on each gait cycle, providing the outputs of an adjusted musculoskeletal model (i.e. altered segment masses and torso centre of mass position) and joint coordinates. The residual forces and moments about the pelvis were determined from these outputs, alongside the computational time taken to complete the RRA iteration --- and averaged across each participants three gait cycles.
+
+### Iterative Residual Reduction Algorithm (RRA3)
+
+An iterative RRA approach was also conducted, whereby three consecutive iterations of the RRA were conducted on the three gait cycles extracted for each participant [@Rajagopal2016]. The same inputs outlined in the previous section were used in the first RRA iteration. Each further iteration of the RRA, however, used the adjusted musculoskeletal model and joint coordinates from the previous iteration alongside the original experimental GRFs and RRA settings files. The residual forces and moments about the pelvis from each gait cycle were determined from the final (i.e. third) RRA iteration musculoskeletal model and joint coordinate outputs, alongside the summed computational time taken to complete the three RRA iterations — and averaged across each participants three gait cycles.
+
+### Moco Track
+
+Simulations of each participants three gait cycles were conducted using OpenSim's *MocoTrack* class [@Dembia2020]. The optimal control simulations used a weighted (\$w\$) objective function with convergence and constraint tolerances of $1e{-2}$ that minimised: (i) the joint coordinate tracking error with respect to the experimental IK input data (global $w = 1$); and (ii) the sum of squared torque actuator controls acting at each joint (global $w = 1e^{-3}$), while also applying the experimental external GRFs. Settings which could be practically replicated across both the *MocoTrack* and RRA approaches were used in an attempt to ensure parity across approaches. This included using identical tracking weights for individual joint coordinates and optimal forces for torque actuators within the overall tracking and control goals, respectively. Replicating the time step of the RRA approach (i.e. 0.0001s) in the *MocoTrack* problem resulted in an extremely fine mesh interval which would have taken an impractically long duration to solve. The number of collocation nodes used in the *MocoTrack* problem was therefore determined using a mesh interval of 0.01s. While Moco problems have an ability to include parameter optimisation which could be applied to segment masses of the musculoskeletal model --- this was not considered in the present study. The residual forces and moments about the pelvis from each gait cycle were determined from the converged *MocoTrack* simulations, alongside the computational time taken for the problem to solve --- and averaged across each participants three gait cycles.
+
+### AddBiomechanics
+
+*AddBiomechnics* [@Werling2013] is an online application which provides automated processing of experimental marker and GRF data. It includes an initial model scaling and inverse kinematics step to produce joint coordinates of the input motion that minimise marker error, but also includes a second optimisation alongside the inverse dynamics step which aims to refine body segment masses and joint coordinates to produce a dynamically consistent motion. The outputs from this second optimisation are therefore of the most interest to the present study. The entire *AddBiomechanics* pipeline is outlined in Werling et al. [@Werling2013], and hence the specific details are not provided here.
+
+The input data for the *AddBiomechanics* approach differed to those previously outlined, where: (i) the unprocessed experimental marker and GRF data were used; and (ii) the entire running trial was used rather than being separated into gait cycles. On the latter point --- the *AddBiomechanics* application suggests movement trials where a large range of movement is performed is optimal, and will subsequently prompt users with a warning when minimal frames of data (e.g. from a single gait cycle) are provided. The experimental marker and GRF data for each participant were uploaded to the *AddBiomechanics* application for processing. The option to use a custom musculoskeletal model and markerset were selected to ensure consistency with the previous approaches, while all other settings (e.g. the weight of residuals in the main optimisation) were kept as their default. The option to run an additional optimisation to try and drive residuals to exactly zero at the cost of more marker error was selected, however the *AddBiomechanics* application notes that this optimisation is not always successful --- and if this occurs the outputs are returned as if this option was not enabled. After processing was completed, the output musculoskeletal models and results (i.e. inverse kinematics and dynamics --- including the residual forces and moments about the pelvis) were downloaded from the application. Data were extracted for the same three gait cycles used in previous approaches and averaged across each participant for comparability. The computational time in the *AddBiomechanics* approach was calculated by reviewing the processing logs for each participant and summing the time in the two optimisations. Scaling of the computational time for the entire running trial was necessary for an accurate comparison to the other approaches where single gait cycles were processed. Therefore, the entire *AddBiomechanics* computational time was scaled by the relative duration of the entire running trial to the average duration of the three gait cycles for each participant.
+
+***TODO: any other methods...?***
+
+# Results
+
+```{r readResults, include = FALSE, echo = FALSE}
+
+#Set list of approach names
+approachNames <- c("RRA", "RRA3", "Moco", "AddBiomechanics")
+
+#Set list of force and moment axes
+forceAxes <- c("FX", "FY", "FZ")
+momentAxes <- c("MX", "MY", "MZ")
+
+# %% Solution times
+
+#Read in solution times data
+solutionTimes_df <- read.csv(paste0(here(),"\\results\\HamnerDelpDataset\\outputs\\solutionTimes_summary.csv"))
+
+#Create summary data of solution times
+solutionTimesSummary <- solutionTimes_df |>
+  group_by(Solver) |>
+  summarise(meanTime = mean(Time),
+            sdTime = sd(Time))
+
+#Store mean and SD values in easy to use variables for text
+#Create list to store data in
+meanSolutionTimes <- list()
+sdSolutionTimes <- list()
+#Loop through to calculate values
+for(approach in approachNames) {
+  meanSolutionTimes[[approach]] <- solutionTimesSummary |> filter(Solver == approach) |> pull(meanTime)
+  sdSolutionTimes[[approach]] <- solutionTimesSummary |> filter(Solver == approach) |> pull(sdTime)
+}
+
+# %% Residual forces and moments
+
+#Read in residual forces and moments data
+avgResidualForces_df <- read.csv(paste0(here(),"\\results\\HamnerDelpDataset\\outputs\\avgResidualForces.csv"))
+avgResidualMoments_df <- read.csv(paste0(here(),"\\results\\HamnerDelpDataset\\outputs\\avgResidualMoments.csv"))
+peakResidualForces_df <- read.csv(paste0(here(),"\\results\\HamnerDelpDataset\\outputs\\peakResidualForces.csv"))
+peakResidualMoments_df <- read.csv(paste0(here(),"\\results\\HamnerDelpDataset\\outputs\\peakResidualMoments.csv"))
+
+#Create summary data of residuals
+#Forces
+#Average
+avgResidualForcesSummary <- avgResidualForces_df |>
+  group_by(Solver, Axis) |>
+  summarise(meanResidual = mean(Average.Residual.Force),
+            sdResidual = sd(Average.Residual.Force))
+#Peak
+peakResidualForcesSummary <- peakResidualForces_df |>
+  group_by(Solver, Axis) |>
+  summarise(meanResidual = mean(Peak.Residual.Force),
+            sdResidual = sd(Peak.Residual.Force))
+#Moments
+#Average
+avgResidualMomentsSummary <- avgResidualMoments_df |>
+  group_by(Solver, Axis) |>
+  summarise(meanResidual = mean(Average.Residual.Moment),
+            sdResidual = sd(Average.Residual.Moment))
+#Peak
+peakResidualMomentsSummary <- peakResidualMoments_df |>
+  group_by(Solver, Axis) |>
+  summarise(meanResidual = mean(Peak.Residual.Moment),
+            sdResidual = sd(Peak.Residual.Moment))
+
+#Store mean and SD values in easy to use variables for text
+#Create list to store data in
+meanAvgResidualForces <- list()
+sdAvgResidualForces <- list()
+meanPeakResidualForces <- list()
+sdPeakResidualForces <- list()
+meanAvgResidualMoments <- list()
+sdAvgResidualMoments <- list()
+meanPeakResidualMoments <- list()
+sdPeakResidualMoments <- list()
+#Loop through to calculate values
+for(approach in approachNames) {
+  #Loop through axes
+  for(axes in forceAxes) {
+    #Average residual forces
+    meanAvgResidualForces[[approach]][[axes]] <- avgResidualForcesSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(meanResidual)
+    sdAvgResidualForces[[approach]][[axes]] <- avgResidualForcesSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(sdResidual)
+    #Peak residual forces
+    meanPeakResidualForces[[approach]][[axes]] <- peakResidualForcesSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(meanResidual)
+    sdPeakResidualForces[[approach]][[axes]] <- peakResidualForcesSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(sdResidual)
+  }
+}
+#Moments
+for(approach in approachNames) {
+  #Loop through axes
+  for(axes in momentAxes) {
+    #Average residual forces
+    meanAvgResidualMoments[[approach]][[axes]] <- avgResidualMomentsSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(meanResidual)
+    sdAvgResidualMoments[[approach]][[axes]] <- avgResidualMomentsSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(sdResidual)
+    #Peak residual forces
+    meanPeakResidualMoments[[approach]][[axes]] <- peakResidualMomentsSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(meanResidual)
+    sdPeakResidualMoments[[approach]][[axes]] <- peakResidualMomentsSummary |>
+      filter(Solver == approach) |> filter(Axis == axes) |> pull(sdResidual)
+  }
+}
+
+```
+
+## Computational Time
+
+The mean (± standard deviation [SD]) computational times (in minutes) were `r format(round(meanSolutionTimes[["RRA"]], 2), nsmall = 2)` (± `r format(round(sdSolutionTimes[["RRA"]], 2), nsmall = 2)`), `r format(round(meanSolutionTimes[["RRA3"]], 2), nsmall = 2)` (± `r format(round(sdSolutionTimes[["RRA3"]], 2), nsmall = 2)`), `r format(round(meanSolutionTimes[["Moco"]], 2), nsmall = 2)` (± `r format(round(sdSolutionTimes[["Moco"]], 2), nsmall = 2)`) and `r format(round(meanSolutionTimes[["AddBiomechanics"]], 2), nsmall = 2)` (± `r format(round(sdSolutionTimes[["AddBiomechanics"]], 2), nsmall = 2)`) for RRA, RRA3, *MocoTrack* and *AddBiomechanics*, respectively (see Figure \ref{fig:computationalTimes}). The RRA and RRA3 approaches were the fastest, followed by *AddBiomechanics*, with *MocoTrack* taking approximately `r format(round(sort(solutionTimesSummary$meanTime)[3] / sort(solutionTimesSummary$meanTime)[1]), nsmall = 0)`-`r format(round(sort(solutionTimesSummary$meanTime)[4] / sort(solutionTimesSummary$meanTime)[1]), nsmall = 0)` times longer than all other approaches.
+
+```{r computationalTimes, fig.cap = "Solution times (in minutes) for processing a gait cycle using the Residual Reduction Algorithm (RRA — Purple), Iterative Residual Reduction Algorithm  (RRA3 — Pink), MocoTracking (Moco — Blue), and AddBiomechanics (Gold) approaches. Horizontal lines within boxes equate to the median value, boxes indicate the 25$^{th}$ to 75$^{th}$ percentile, and whiskers indicate the range. Average solution times for each participants three gait cycles are displayed as points.", fig.align = 'center', out.width = '50%'}
+
+#Create figure from image
+knitr::include_graphics(paste0(here(),"\\results\\HamnerDelpDataset\\figures\\averageSolutionTimes.png"))
+
+```
+
+## Residual Forces and Moments
+
+Average and peak residual forces (see Figure \ref{fig:residualForces})) were, on average, highest in the RRA approach (mean ± SD average residuals of `r format(round(meanAvgResidualForces[["RRA"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["RRA"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualForces[["RRA"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["RRA"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualForces[["RRA"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["RRA"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively; mean ± SD peak residuals of `r format(round(meanPeakResidualForces[["RRA"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["RRA"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualForces[["RRA"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["RRA"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualForces[["RRA"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["RRA"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively) followed by the RRA3 (average residuals of `r format(round(meanAvgResidualForces[["RRA3"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["RRA3"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualForces[["RRA3"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["RRA3"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualForces[["RRA3"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["RRA3"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively; peak residuals of `r format(round(meanPeakResidualForces[["RRA3"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["RRA3"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualForces[["RRA3"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["RRA3"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualForces[["RRA3"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["RRA3"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively) and *AddBiomechanics* (average residuals of `r format(round(meanAvgResidualForces[["AddBiomechanics"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["AddBiomechanics"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualForces[["AddBiomechanics"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["AddBiomechanics"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualForces[["AddBiomechanics"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["AddBiomechanics"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively; peak residuals of `r format(round(meanPeakResidualForces[["AddBiomechanics"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["AddBiomechanics"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualForces[["AddBiomechanics"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["AddBiomechanics"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualForces[["AddBiomechanics"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["AddBiomechanics"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively) approaches. In almost all cases, the *MocoTrack* approach recorded the lowest average and peak residual forces (average residuals of `r format(round(meanAvgResidualForces[["Moco"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["Moco"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualForces[["Moco"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["Moco"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualForces[["Moco"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualForces[["Moco"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively; peak residuals of `r format(round(meanPeakResidualForces[["Moco"]][["FX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["Moco"]][["FX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualForces[["Moco"]][["FY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["Moco"]][["FY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualForces[["Moco"]][["FZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualForces[["Moco"]][["FZ"]], 2), nsmall = 2)` for FX, FY and FZ, respectively). The RRA, RRA3 and *MocoTrack* approaches were able to achieve acceptable average and peak residual forces according to the threshold proposed by Hicks et al. [@Hicks2015] on average across all participants gait cycles. The *AddBiomechanics* approach subceeded this threshold for the majority of participants, with the exception of one or two outlier cases.
+
+```{r residualForces, fig.cap = "Average (left panel) and peak (right panel) residual forces (in Newtons [N]) for gait cycles processed using the Residual Reduction Algorithm (RRA — Purple), Iterative Residual Reduction Algorithm  (RRA3 — Pink), MocoTracking (Moco — Blue), and AddBiomechanics (Gold) approaches. Horizontal lines within boxes equate to the median value, boxes indicate the 25$^{th}$ to 75$^{th}$ percentile, and whiskers indicate the range. Average residual forces for each participants three gait cycles are displayed as points. The black dashed line represents the proposed acceptable threshold for residual forces.", fig.align = 'center', out.width = '75%'}
+
+#Create figure from image
+knitr::include_graphics(paste0(here(),"\\results\\HamnerDelpDataset\\figures\\residualForces.png"))
+
+```
+
+Average and peak residual moments (see Figure \ref{fig:residualMoments})) were typically highest in the RRA approach (mean ± SD average residuals of `r format(round(meanAvgResidualMoments[["RRA"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["RRA"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualMoments[["RRA"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["RRA"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualMoments[["RRA"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["RRA"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively; mean ± SD peak residuals of `r format(round(meanPeakResidualMoments[["RRA"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["RRA"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualMoments[["RRA"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["RRA"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualMoments[["RRA"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["RRA"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively) and *AddBiomechanics* (average residuals of `r format(round(meanAvgResidualMoments[["AddBiomechanics"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["AddBiomechanics"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualMoments[["AddBiomechanics"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["AddBiomechanics"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualMoments[["AddBiomechanics"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["AddBiomechanics"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively; peak residuals of `r format(round(meanPeakResidualMoments[["AddBiomechanics"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["AddBiomechanics"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualMoments[["AddBiomechanics"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["AddBiomechanics"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualMoments[["AddBiomechanics"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["AddBiomechanics"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively) approaches, followed by the RRA3 approach (average residuals of `r format(round(meanAvgResidualMoments[["RRA3"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["RRA3"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualMoments[["RRA3"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["RRA3"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualMoments[["RRA3"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["RRA3"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively; peak residuals of `r format(round(meanPeakResidualMoments[["RRA3"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["RRA3"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualMoments[["RRA3"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["RRA3"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualMoments[["RRA3"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["RRA3"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively). The *MocoTrack* approach recorded the lowest average and peak residual moments (average residuals of `r format(round(meanAvgResidualMoments[["Moco"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["Moco"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanAvgResidualMoments[["Moco"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["Moco"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanAvgResidualMoments[["Moco"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdAvgResidualMoments[["Moco"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively; peak residuals of `r format(round(meanPeakResidualMoments[["Moco"]][["MX"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["Moco"]][["MX"]], 2), nsmall = 2)`, `r format(round(meanPeakResidualMoments[["Moco"]][["MY"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["Moco"]][["MY"]], 2), nsmall = 2)` and `r format(round(meanPeakResidualMoments[["Moco"]][["MZ"]], 2), nsmall = 2)` ± `r format(round(sdPeakResidualMoments[["Moco"]][["MZ"]], 2), nsmall = 2)` for MX, MY and MZ, respectively) in all participants. Only the *MocoTrack* approach was able to consistently achieve acceptable average and peak residual moments according to the threshold proposed by Hicks et al. [@Hicks2015] on average across all participants gait cycles. Averge residual moments from the RRA, RRA3 and *AddBiomechanics* approaches rarely subceeded, while the peak residual moments were always above this threshold.
+
+```{r residualMoments, fig.cap = "Average (left panel) and peak (right panel) residual moments (in Newton-Metres [Nm]) for gait cycles processed using the Residual Reduction Algorithm (RRA — Purple), Iterative Residual Reduction Algorithm  (RRA3 — Pink), MocoTracking (Moco — Blue), and AddBiomechanics (Gold) approaches. Horizontal lines within boxes equate to the median value, boxes indicate the 25$^{th}$ to 75$^{th}$ percentile, and whiskers indicate the range. Average residual moments for each participants three gait cycles are displayed as points. The black dashed line represents the proposed acceptable threshold for residual moments.", fig.align = 'center', out.width = '100%'}
+
+#Create figure from image
+knitr::include_graphics(paste0(here(),"\\results\\HamnerDelpDataset\\figures\\residualForces.png"))
+
+```
+
+## Joint Kinematics and Kinetics
+
+Average joint kinematics were qualitatively similar across approaches for the majority of joint coordinates (see Figure \ref{fig:jointKinematics})). The greatest kinematic variations appeared for pelvic tilt, and hip adduction/abduction and internal/external rotation between *AddBiomechanics* versus other approaches; and for upper body kinematics (i.e. shoulder and elbow joint angles) between *MocoTrack* versus other approaches.
+
+```{r jointKinematics, fig.cap = "Mean (solid lines) ± standard deviation (shaded areas) of joint kinematics (in degrees) for gait cycles processed using the Residual Reduction Algorithm (RRA — Purple), Iterative Residual Reduction Algorithm  (RRA3 — Pink), MocoTracking (Moco — Blue), and AddBiomechanics (Gold) approaches. The joint angles estimated from inverse kinematics in the original experimental study are also shown in black. Post./Ant. — Posterior/Anterior; Rot. — Rotation; Flex./Ext. — Flexion/Extension; Add./Abd. — Adduction/Abduction; Int. Rot./Ext. Rot. — Internal/External Rotation; Pro. - Pronation.", fig.align = 'center', out.width = '100%'}
+
+#Create figure from image
+knitr::include_graphics(paste0(here(),"\\results\\HamnerDelpDataset\\figures\\meanKinematics.png"))
+
+```
+
+Average joint kinetics were also qualitatively similar across approaches for all joint moments, with the exception of significant noise appearing in the *MocoTrack* signals (see Figure \ref{fig:jointKinetics})). 
+
+```{r jointKinetics, fig.cap = "Mean (solid lines) ± standard deviation (shaded areas) of joint moments (in Newton-Metres [Nm]) for gait cycles processed using the Residual Reduction Algorithm (RRA — Purple), Iterative Residual Reduction Algorithm  (RRA3 — Pink), MocoTracking (Moco — Blue), and AddBiomechanics (Gold) approaches. The joint angles estimated from inverse kinematics in the original experimental study are also shown in black. Post./Ant. — Posterior/Anterior; Rot. — Rotation; Flex./Ext. — Flexion/Extension; Add./Abd. — Adduction/Abduction; Int. Rot./Ext. Rot. — Internal/External Rotation; Pro. - Pronation.", fig.align = 'center', out.width = '100%'}
+
+#Create figure from image
+knitr::include_graphics(paste0(here(),"\\results\\HamnerDelpDataset\\figures\\meanKinematics.png"))
+
+```
+
+# Discussion
+
+Dynamic inconsistencies in simulations of human running can lead to unrealistic results in common musculoskeletal model outputs (e.g. joint moments, muscle forces). Minimising residual forces and moments present at a models root segment is subsequently a recommended step within modelling and simulation pipelines [@Delp2007, @Hicks2015]. Various residual reduction approaches are available to OpenSim users, yet these have never undergone a comprehensive comparison. This study aimed to compare the computational times, resultant residual forces and moments, and output joint kinematics and kinetics of various residual reduction approaches — or in lay terms, completing a quest for dynamic consistency in simulations of human running. A clear computational cost to residual reduction trade-off was identified, whereby approaches more effective at minimising residual forces and moments required longer computational times. **TODO: finish off summary paragraph...**
+
+
+*NOTES BELOW:*
+
+*There is a clear trade-off between computational time and residual forces and moments remaining in the solution...this could also be considered a complexity trade-off too with respect to setting up the problem...i.e. Moco is not accessible through the GUI interface like RRA is, or via a web application like AddBiomechanics...*
+
+For the sake of honesty, very little effort went into the selection or optimisation of the input parameters and settings used in the various approaches. Where possible, the parameters used in the original work of Hamner and Delp [@Hamner2013] where used (e.g. tracking task weights and torque actuator settings in RRA) and replicated to other approaches (e.g. RRA3 and *MocoTrack*). Selection of such parameters has been demonstrated as subjective and having an impact on simulation outputs [@ref], hence the replication of the original studies [@Hamner2013] approach aimed to eliminate any additional subjectivity to the approach. Similarly, the default parameters in the *AddBiomechanics* application (e.g. the weight of residuals in the main optimisation) were not altered in any way to avoid adding subjectivity to this approach. The results from the present study should therefore be considered with respect to the settings and parameters used within each approach. Past work has shown that optimising the settings within residual reduction approaches can improve the dynamic consistency of the simulation, typically at the cost of additional computational time required to identify the optimised settings [@Samaan2016, @Sturdy2022]. Therefore, there may be room for improvement within the residual forces and moments achieved in the present study — yet users must consider the added computational time to achieve these. Further, the time-frames (i.e. ***TODO: add times***) and residuals (i.e. ***TODO: add times***) reported in previous work optimising the RRA approach [@Samaan2016, @Sturdy2022] still exceed those of the most effective method identified in the present study (i.e. ~20 minutes for near zero residuals with *MocoTrack*). **TODO: is it a more efficient method then...?**
+
+*It is difficult up ascertain which approach achieved the most accurate kinematics given the lack of a gold standard comparison to evaluate against. IK and AddBiomechanics provide marker errors relative to the experimental data, however these are unlikely to be appropriate for comparison in RRA and Moco approaches. Both RRA and Moco in this study were driven by joint coordinates calculated in IK, and therefore any initial marker errors would likely propogate to these solutions. A marker tracking approach is achievable in Moco, and such an approach may be worthwhile evaluating.*
+
+*A difference in the approaches in the present study was the time step used in analyses. In particular, a shorter interval was set for Moco relative to RRA; and the time interval for AddBiomechanics is automatically determined (what is it?). A shorter time step has the potential to generate smoother joint torques (are Moco torques noisy? Refer to them if they are), but at the cost of increased computational time. This is particularly evident in the Moco approach, where a test case of a gait cycle using the same time interval as RRA required X minutes to solve (an X fold increase on the reported solution time for this gait cycle). Leveraging processes that speed up direct collocation approaches, such as algorithmic differentiation (ref) may provide balance to this cost benefit trade-off. However, did AddBiomechanics use a larger time-step and avoid noise? There is also a potential shift in where the noise is present across these data. The residual forces and moments were substantially smaller with Moco, but also much smoother than the larger ones present in the other approaches. The noisiness of the residual signals perhaps allowed for smoother joint torques, and the lingering noise in each solution is perhaps to do with the rigid body modelling conventions used. Rigid bodies are a simplified version of what truly happens in human movement, where additional wobbling mass is present on each segment. Is there evidence that adding wobbling mass on segments does something to joint moments?*
+
+*AddBiomechanics generated much lower relative force vs. moment residuals compared to the other approaches assessed. It is unclear what drove this difference, or if this is characteristic of the AddBiomechanics approach or a specific quirk of the dataset(s) used...it could be characteristic of the AddBiomechanics approach given how it starts with the COM fitting which works well for linear forces, and then progresses to angular dynamics and moments...*
+
+*AddBiomechanics seems to have greater variability in residuals. This may have been driven by the success (or lack of) in certain trials of the secondary optimisation to minimise residuals to a greater extent.*
+
+*While AddBiomechanics did not achieve the same residual reduction as Moco (probably), there are other benefits unique to this approach. No static trial is required for model scaling, and an exact mass input is also not required (only an estimate for where to initialise the optimisation from). Instead, the scaling and mass properties of the model are included as variables in the overall optimisation. The accuracy of this approach vs. traditional model scaling is yet to be determined...*
+
+*Computational time - the time taken to upload data, for queuing, and downloading data was not considered with the AddBiomechanics approach. AddBiomechanics may be an underestimate due to not including the upload and cluster wait times, but this might be offset by the fact that you don't need to write the code to analyse the data...*
+
+# Conclusions
+
+This paper ... quest for dynamic consistency in simulations of human running.
+
+\newpage
+
+# Acknowledgements
+
+\newpage
+
+# References
+
+::: {#refs custom-style="Bibliography"}
+:::
