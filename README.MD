@@ -4,6 +4,19 @@ This repository holds the data related to the work:
 
 ***[TODO: add paper details]***
 
+## code
+
+The `code` folder contains the Python scripts used to process and analyse the experimental data through the various processes tested. It is separated into folders based on the dataset analysed.
+
+### HamnerDelpDataset
+
+The code in the `HamnerDelpDataset` folder relates to analysis of the data in `HamnerDelp2013` data folder (see comments in above section). The code is separated into scripts associated with different steps which are sequentially ordered:
+
+- **01_runSimulations.py:** Loops through subjects included in the experimental dataset and runs their data through the various processes examined. 
+- **02_collateSimulations.py:** Collates each individual subjects results from the various processes examined into a compiled dataset that can be used in subsequent analysis scripts.
+- **03_analyseSimulations.py:** Groups all subject data form the various processes examined together to generate summary statistics.
+- **osimFunctions:** Contains assistive 'helper' functions used regularly throughout the abovementioned scripts.
+
 ## data
 
 The `data` folder holds the original experimental data used in this work. It is separated into folders based on the original dataset.
@@ -27,16 +40,6 @@ Each subject from the original dataset has their own folder, which contains the 
 - **rra:** The outputs from the residual reduction algorithm (RRA) processes run on the experimental data. This contains the residual forces and moments that were generated from a single iteration of the RRA approach.
 - **rra3:** The outputs from the residual reduction algorithm (RRA) processes run on the experimental data. This contains the residual forces and moments that were generated from three iterations of the RRA approach.
 
-## code
+## results
 
-The `code` folder contains the Python scripts used to process and analyse the experimental data through the various processes tested. It is separated into folders based on the dataset analysed.
-
-### HamnerDelpDataset
-
-The code in the `HamnerDelpDataset` folder relates to analysis of the data in `HamnerDelp2013` data folder (see comments in above section). The code is separated into scripts associated with different steps which are sequentially ordered:
-
-- **01_runSimulations.py:** Loops through subjects included in the experimental dataset and runs their data through the various processes examined. 
-- **02_collateSimulations.py:** Collates each individual subjects results from the various processes examined into a compiled dataset that can be used in subsequent analysis scripts.
-- **03_analyseSimulations.py:** Groups all subject data form the various processes examined together to generate summary statistics.
-- **osimFunctions:** Contains assistive 'helper' functions used regularly throughout the abovementioned scripts.
-
+The `results` folder holds the summary group results relative to the dataset examined. `figures` and `outputs` subfolders are included to hold the different summary formats.
