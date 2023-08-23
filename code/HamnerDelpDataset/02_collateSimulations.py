@@ -12,14 +12,6 @@ Created on Fri Feb 24 15:51:22 2023
     AddBiomechanics simulations run on the Hamner & Delp 2013 data. Specifically
     we load in results from each subject to compare the various data and store
     these data in easy to load in formats for subsequent analyses.
-    
-    TODO: 
-        > Incorporate AddBiomechanics results
-            >> Are pro_sup limits allowed to be exceeded in AddBiomechanics?
-                >>> If expanding limits helps pro_sup accuracy, then need to adapt
-                    how model is created, and re-run AddBiomechanics processing
-                >>> It does --- need to re-run...
-        > Incorporate review of joint torques
 
 """
 
