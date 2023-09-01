@@ -2,7 +2,9 @@
 
 This repository holds the data related to the work:
 
-***[TODO: add paper details]***
+Fox A (2023). The Quest for Dynamic Consistency: A Comparison of OpenSim Tools for Residual Reduction in Simulations of Human Running. *BioRxiv*.
+
+Please cite the above work accordingly if using data or code from this repository.
 
 ## code
 
@@ -40,6 +42,15 @@ Each subject from the original dataset has their own folder, which contains the 
 - **rra:** The outputs from the residual reduction algorithm (RRA) processes run on the experimental data. This contains the residual forces and moments that were generated from a single iteration of the RRA approach.
 - **rra3:** The outputs from the residual reduction algorithm (RRA) processes run on the experimental data. This contains the residual forces and moments that were generated from three iterations of the RRA approach.
 
+## preprint
+
+The `preprint` folder contains the associated *BioRxiv* preprint associated with this work. Please cite this accordingly if using data or code from this repository.
+
 ## results
 
 The `results` folder holds the summary group results relative to the dataset examined. `figures` and `outputs` subfolders are included to hold the different summary formats.
+
+## tools
+
+The `tools` folder contains any additional miscellaneous resources required for the code in this repository to work.
+
