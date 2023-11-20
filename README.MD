@@ -8,16 +8,17 @@ Please cite the above work accordingly if using data or code from this repositor
 
 ## code
 
-The `code` folder contains the Python scripts used to process and analyse the experimental data through the various processes tested. It is separated into folders based on the dataset analysed.
+The `code` folder contains the Python scripts used to process and analyse the experimental data through the various processes tested. It is separated into folders based on the dataset analysed. In the below described Python scripts, the OpenSim install Geometry paths are assumed to be at `C:/OpenSim 4.3/Geometry` and hence if installed at a different location this aspect of the scripts should be edited.
 
 ### HamnerDelpDataset
 
-The code in the `HamnerDelpDataset` folder relates to analysis of the data in `HamnerDelp2013` data folder (see comments in above section). The code is separated into scripts associated with different steps which are sequentially ordered:
+The `runSimulations.py` script in the `HamnerDelpDataset` folder contains all of the necessary code to process and analyse the simulations for this dataset. It contains a series of options depending on what parts of the code wish to be re-run:
 
-- **01_runSimulations.py:** Loops through subjects included in the experimental dataset and runs their data through the various processes examined. 
-- **02_collateSimulations.py:** Collates each individual subjects results from the various processes examined into a compiled dataset that can be used in subsequent analysis scripts.
-- **03_analyseSimulations.py:** Groups all subject data form the various processes examined together to generate summary statistics.
-- **osimFunctions:** Contains assistive 'helper' functions used regularly throughout the abovementioned scripts.
+- **runRRA** / **runRRA3** / **runMoco** / **runAddBiomech**: Each of these variables can be set to `True` which results in the simulations using the named tool to be re-run. When set to `False`, the existing data in the repository can still be used for subsequent steps.
+- **compileData**: When set to `True`, the data from each of the tools processed simulations is compiled and saved to file for easier use later in the script or for creating new scripts using these data. *NOTE:* this flag should be set to `True` if any of the simulations are re-run, so that accurate up-to-date data is used in the script. Within this compiling data section, there is an option for which data to read in and check (by creating relevant figures) by setting the flag associated with that data type to `True` — those being `readAndCheckKinematics`, `readAndCheckKinetics`, and `readAndCheckResiduals`.
+- **analyseData**: When set to `True`, the collated data from each individual subject will be used to generate group descriptive data and the figures associated with these data. *NOTE:* this flag should be set to `True` if any of the simulations are re-run, so that accurate up-to-date data is used in the script and in generating figures.
+
+The `osimFunctions.py` script contains assistive 'helper' functions used regularly in the main script for running simulations.
 
 ## data
 
