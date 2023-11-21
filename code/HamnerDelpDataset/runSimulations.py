@@ -47,7 +47,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import warnings
-warnings.simplefilter(action='ignore', category=FutureWarning)
+warnings.simplefilter(action = 'ignore', category = FutureWarning)
 
 # %% Set-up
 
@@ -385,7 +385,7 @@ for subject in subList:
         mocoRunTimeData = {run: {cyc: {'mocoRunTime': [], 'nIters': [], 'solved': []} for cyc in cycleList} for run in runList}
     
     #Load in the subjects gait timing data
-    with open(os.path.join('..','..','data','HamnerDelp2014',subject,'expData','gaitTimes.pkl'), 'rb') as openFile:
+    with open(os.path.join('..','..','data','HamnerDelp2013',subject,'expData','gaitTimes.pkl'), 'rb') as openFile:
         gaitTimings = pickle.load(openFile)
         
     #Create an RRA directory in the subjects folder
@@ -2200,7 +2200,7 @@ if compileData:
                          alpha = 1.0, zorder = 3)
                 
                 #Plot AddBiomechanics mean
-                plt.plot(np.linspace(0,100,101), addBiomechResiduals[runLabel][var],
+                plt.plot(np.linspace(0,100,101), addBiomechMeanResiduals[runLabel][var],
                          ls = '--', lw = 1, c = addBiomechCol,
                          marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
                          alpha = 1.0, zorder = 3)
@@ -2270,7 +2270,7 @@ if compileData:
                     plt.gca().set_xticklabels([])
             
             #Add figure title
-            fig.suptitle(f'{subject} Residuals Comparison (RRA = Purple, RRA3 = Pink, Moco = Blue, AddBiomechanics = Gold)',
+            fig.suptitle(f'{subject} Residuals Comparison (RRA = Purple-Circles, RRA3 = Pink-Hexagons, Moco = Blue-Squares, AddBiomechanics = Gold-Diamonds)',
                          fontsize = 10, fontweight = 'bold', y = 0.99)
             
             #Save figure

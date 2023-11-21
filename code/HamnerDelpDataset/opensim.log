@@ -162,3 +162,94 @@
 [2023-11-21 14:46:11.492] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
 [2023-11-21 14:46:11.658] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
 [2023-11-21 14:46:11.814] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:06:24.978] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:12:37.701] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:12:42.953] [info] Loaded model subject02_scaled from file ..\..\data\HamnerDelp2013\subject02\model\subject02_adjusted_scaled.osim
+[2023-11-21 15:12:47.539] [info] Loaded model subject03_scaled from file ..\..\data\HamnerDelp2013\subject03\model\subject03_adjusted_scaled.osim
+[2023-11-21 15:12:52.072] [info] Loaded model subject04_scaled from file ..\..\data\HamnerDelp2013\subject04\model\subject04_adjusted_scaled.osim
+[2023-11-21 15:12:56.121] [info] Loaded model subject08_scaled from file ..\..\data\HamnerDelp2013\subject08\model\subject08_adjusted_scaled.osim
+[2023-11-21 15:13:00.363] [info] Loaded model subject10_scaled from file ..\..\data\HamnerDelp2013\subject10\model\subject10_adjusted_scaled.osim
+[2023-11-21 15:13:04.819] [info] Loaded model subject11_scaled from file ..\..\data\HamnerDelp2013\subject11\model\subject11_adjusted_scaled.osim
+[2023-11-21 15:13:09.312] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
+[2023-11-21 15:13:13.502] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
+[2023-11-21 15:13:17.744] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:13:48.534] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:13:48.642] [info] Loaded model subject02_scaled from file ..\..\data\HamnerDelp2013\subject02\model\subject02_adjusted_scaled.osim
+[2023-11-21 15:13:48.783] [info] Loaded model subject03_scaled from file ..\..\data\HamnerDelp2013\subject03\model\subject03_adjusted_scaled.osim
+[2023-11-21 15:13:48.937] [info] Loaded model subject04_scaled from file ..\..\data\HamnerDelp2013\subject04\model\subject04_adjusted_scaled.osim
+[2023-11-21 15:13:49.063] [info] Loaded model subject08_scaled from file ..\..\data\HamnerDelp2013\subject08\model\subject08_adjusted_scaled.osim
+[2023-11-21 15:13:49.195] [info] Loaded model subject10_scaled from file ..\..\data\HamnerDelp2013\subject10\model\subject10_adjusted_scaled.osim
+[2023-11-21 15:13:49.313] [info] Loaded model subject11_scaled from file ..\..\data\HamnerDelp2013\subject11\model\subject11_adjusted_scaled.osim
+[2023-11-21 15:13:49.434] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
+[2023-11-21 15:13:49.558] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
+[2023-11-21 15:13:49.689] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:13:55.181] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:13:55.235] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:13:55.299] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:13:55.351] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:13:55.402] [info] Loaded model subject01_scaled from file ..\..\data\HamnerDelp2013\subject01\model\subject01_adjusted_scaled.osim
+[2023-11-21 15:13:55.704] [info] Loaded model subject02_scaled from file ..\..\data\HamnerDelp2013\subject02\model\subject02_adjusted_scaled.osim
+[2023-11-21 15:13:55.759] [info] Loaded model subject02_scaled from file ..\..\data\HamnerDelp2013\subject02\model\subject02_adjusted_scaled.osim
+[2023-11-21 15:13:55.822] [info] Loaded model subject02_scaled from file ..\..\data\HamnerDelp2013\subject02\model\subject02_adjusted_scaled.osim
+[2023-11-21 15:13:55.877] [info] Loaded model subject02_scaled from file ..\..\data\HamnerDelp2013\subject02\model\subject02_adjusted_scaled.osim
+[2023-11-21 15:13:55.931] [info] Loaded model subject02_scaled from file ..\..\data\HamnerDelp2013\subject02\model\subject02_adjusted_scaled.osim
+[2023-11-21 15:13:56.164] [info] Loaded model subject03_scaled from file ..\..\data\HamnerDelp2013\subject03\model\subject03_adjusted_scaled.osim
+[2023-11-21 15:13:56.212] [info] Loaded model subject03_scaled from file ..\..\data\HamnerDelp2013\subject03\model\subject03_adjusted_scaled.osim
+[2023-11-21 15:13:56.263] [info] Loaded model subject03_scaled from file ..\..\data\HamnerDelp2013\subject03\model\subject03_adjusted_scaled.osim
+[2023-11-21 15:13:56.312] [info] Loaded model subject03_scaled from file ..\..\data\HamnerDelp2013\subject03\model\subject03_adjusted_scaled.osim
+[2023-11-21 15:13:56.362] [info] Loaded model subject03_scaled from file ..\..\data\HamnerDelp2013\subject03\model\subject03_adjusted_scaled.osim
+[2023-11-21 15:13:56.604] [info] Loaded model subject04_scaled from file ..\..\data\HamnerDelp2013\subject04\model\subject04_adjusted_scaled.osim
+[2023-11-21 15:13:56.653] [info] Loaded model subject04_scaled from file ..\..\data\HamnerDelp2013\subject04\model\subject04_adjusted_scaled.osim
+[2023-11-21 15:13:56.701] [info] Loaded model subject04_scaled from file ..\..\data\HamnerDelp2013\subject04\model\subject04_adjusted_scaled.osim
+[2023-11-21 15:13:56.754] [info] Loaded model subject04_scaled from file ..\..\data\HamnerDelp2013\subject04\model\subject04_adjusted_scaled.osim
+[2023-11-21 15:13:56.806] [info] Loaded model subject04_scaled from file ..\..\data\HamnerDelp2013\subject04\model\subject04_adjusted_scaled.osim
+[2023-11-21 15:13:57.039] [info] Loaded model subject08_scaled from file ..\..\data\HamnerDelp2013\subject08\model\subject08_adjusted_scaled.osim
+[2023-11-21 15:13:57.089] [info] Loaded model subject08_scaled from file ..\..\data\HamnerDelp2013\subject08\model\subject08_adjusted_scaled.osim
+[2023-11-21 15:13:57.138] [info] Loaded model subject08_scaled from file ..\..\data\HamnerDelp2013\subject08\model\subject08_adjusted_scaled.osim
+[2023-11-21 15:13:57.189] [info] Loaded model subject08_scaled from file ..\..\data\HamnerDelp2013\subject08\model\subject08_adjusted_scaled.osim
+[2023-11-21 15:13:57.240] [info] Loaded model subject08_scaled from file ..\..\data\HamnerDelp2013\subject08\model\subject08_adjusted_scaled.osim
+[2023-11-21 15:13:57.467] [info] Loaded model subject10_scaled from file ..\..\data\HamnerDelp2013\subject10\model\subject10_adjusted_scaled.osim
+[2023-11-21 15:13:57.512] [info] Loaded model subject10_scaled from file ..\..\data\HamnerDelp2013\subject10\model\subject10_adjusted_scaled.osim
+[2023-11-21 15:13:57.560] [info] Loaded model subject10_scaled from file ..\..\data\HamnerDelp2013\subject10\model\subject10_adjusted_scaled.osim
+[2023-11-21 15:13:57.610] [info] Loaded model subject10_scaled from file ..\..\data\HamnerDelp2013\subject10\model\subject10_adjusted_scaled.osim
+[2023-11-21 15:13:57.662] [info] Loaded model subject10_scaled from file ..\..\data\HamnerDelp2013\subject10\model\subject10_adjusted_scaled.osim
+[2023-11-21 15:13:57.898] [info] Loaded model subject11_scaled from file ..\..\data\HamnerDelp2013\subject11\model\subject11_adjusted_scaled.osim
+[2023-11-21 15:13:57.947] [info] Loaded model subject11_scaled from file ..\..\data\HamnerDelp2013\subject11\model\subject11_adjusted_scaled.osim
+[2023-11-21 15:13:57.997] [info] Loaded model subject11_scaled from file ..\..\data\HamnerDelp2013\subject11\model\subject11_adjusted_scaled.osim
+[2023-11-21 15:13:58.048] [info] Loaded model subject11_scaled from file ..\..\data\HamnerDelp2013\subject11\model\subject11_adjusted_scaled.osim
+[2023-11-21 15:13:58.098] [info] Loaded model subject11_scaled from file ..\..\data\HamnerDelp2013\subject11\model\subject11_adjusted_scaled.osim
+[2023-11-21 15:13:58.333] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
+[2023-11-21 15:13:58.379] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
+[2023-11-21 15:13:58.426] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
+[2023-11-21 15:13:58.475] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
+[2023-11-21 15:13:58.525] [info] Loaded model subject17_scaled from file ..\..\data\HamnerDelp2013\subject17\model\subject17_adjusted_scaled.osim
+[2023-11-21 15:13:58.753] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
+[2023-11-21 15:13:58.802] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
+[2023-11-21 15:13:58.851] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
+[2023-11-21 15:13:58.901] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
+[2023-11-21 15:13:58.954] [info] Loaded model subject19_scaled from file ..\..\data\HamnerDelp2013\subject19\model\subject19_adjusted_scaled.osim
+[2023-11-21 15:13:59.188] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:13:59.236] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:13:59.289] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:13:59.341] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:13:59.394] [info] Loaded model subject20_scaled from file ..\..\data\HamnerDelp2013\subject20\model\subject20_adjusted_scaled.osim
+[2023-11-21 15:13:59.575] [info] Updating Model file from 20001 to latest format...
+[2023-11-21 15:13:59.576] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-11-21 15:13:59.576] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-11-21 15:13:59.623] [info] Loaded model 3DGaitModelwithSimpleArms from file ..\..\data\HamnerDelp2013\subject01\model\genericModel.osim
+[2023-11-21 15:13:59.652] [info] Updating Model file from 20001 to latest format...
+[2023-11-21 15:13:59.653] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-11-21 15:13:59.653] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-11-21 15:13:59.701] [info] Loaded model 3DGaitModelwithSimpleArms from file ..\..\data\HamnerDelp2013\subject01\model\genericModel.osim
+[2023-11-21 15:13:59.731] [info] Updating Model file from 20001 to latest format...
+[2023-11-21 15:13:59.731] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-11-21 15:13:59.731] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-11-21 15:13:59.781] [info] Loaded model 3DGaitModelwithSimpleArms from file ..\..\data\HamnerDelp2013\subject01\model\genericModel.osim
+[2023-11-21 15:13:59.813] [info] Updating Model file from 20001 to latest format...
+[2023-11-21 15:13:59.813] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-11-21 15:13:59.813] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-11-21 15:13:59.872] [info] Loaded model 3DGaitModelwithSimpleArms from file ..\..\data\HamnerDelp2013\subject01\model\genericModel.osim
+[2023-11-21 15:13:59.903] [info] Updating Model file from 20001 to latest format...
+[2023-11-21 15:13:59.903] [warning] Model name '3D Gait Model with Simple Arms' contains whitespace.
+[2023-11-21 15:13:59.903] [warning] It was renamed to '3DGaitModelwithSimpleArms'.
+[2023-11-21 15:13:59.958] [info] Loaded model 3DGaitModelwithSimpleArms from file ..\..\data\HamnerDelp2013\subject01\model\genericModel.osim
