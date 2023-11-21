@@ -14,11 +14,22 @@ The `code` folder contains the Python scripts used to process and analyse the ex
 
 The `runSimulations.py` script in the `HamnerDelpDataset` folder contains all of the necessary code to process and analyse the simulations for this dataset. It contains a series of options depending on what parts of the code wish to be re-run:
 
-- **runRRA** / **runRRA3** / **runMoco** / **runAddBiomech**: Each of these variables can be set to `True` which results in the simulations using the named tool to be re-run. When set to `False`, the existing data in the repository can still be used for subsequent steps.
-- **compileData**: When set to `True`, the data from each of the tools processed simulations is compiled and saved to file for easier use later in the script or for creating new scripts using these data. *NOTE:* this flag should be set to `True` if any of the simulations are re-run, so that accurate up-to-date data is used in the script. Within this compiling data section, there is an option for which data to read in and check (by creating relevant figures) by setting the flag associated with that data type to `True` — those being `readAndCheckKinematics`, `readAndCheckKinetics`, and `readAndCheckResiduals`.
-- **analyseData**: When set to `True`, the collated data from each individual subject will be used to generate group descriptive data and the figures associated with these data. *NOTE:* this flag should be set to `True` if any of the simulations are re-run, so that accurate up-to-date data is used in the script and in generating figures.
+- **runRRA** / **runRRA3** / **runMoco** / **runAddBiomech**: Each of these variables can be set to `True` which results in the simulations using the named tool to be re-run. When set to `False`, the existing data in the repository can still be used for subsequent steps. These parameters are set to `False` if you have made no changes to the script.
+- **compileData**: When set to `True`, the data from each of the tools processed simulations is compiled and saved to file for easier use later in the script or for creating new scripts using these data. *NOTE:* this flag should be set to `True` if any of the simulations are re-run, so that accurate up-to-date data is used in the script. Within this compiling data section, there is an option for which data to read in and check (by creating relevant figures) by setting the flag associated with that data type to `True` — those being `readAndCheckKinematics`, `readAndCheckKinetics`, and `readAndCheckResiduals`. The **compileData** parameter is set to `False`, while the **readAndCheck...** parameters are set to `True` if you have made no changes to the script.
+- **analyseData**: When set to `True`, the collated data from each individual subject will be used to generate group descriptive data and the figures associated with these data. *NOTE:* this flag should be set to `True` if any of the simulations are re-run, so that accurate up-to-date data is used in the script and in generating figures. The **analyseData** parameter is set to `False` if you have made no changes to the script.
 
 The `osimFunctions.py` script contains assistive 'helper' functions used regularly in the main script for running simulations.
+
+#### Dependencies
+
+The above code has been tested with the following dependencies on a **Windows** operating system (*NOTE:* it is feasible that the code will work on other operating systems but this has not been tested) with **Python 3.8**:
+
+- OpenSim (v 4.3)
+- matplotlib (v 3.8.0)
+- numpy (v 1.23.5)
+- pandas (v 2.1.2)
+- scipy (v 1.11.3)
+- seaborn (v 0.12.0)
 
 ## data
 
