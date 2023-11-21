@@ -366,15 +366,6 @@ rra3ColRGB = osim.Vec3(1,0.40784313725490196,0.4627450980392157) #RRA3 = pink
 mocoColRGB = osim.Vec3(0.2823529411764706,0.5215686274509804,0.9294117647058824) #Moco = blue
 addBiomechColRGB = osim.Vec3(1,0.6509803921568628,0) #AddBiomechanics = gold
 
-#### TODO: get the line-styles right - don't look great right now...
-
-#Set line-style for plots
-ikLineStyle = 'solid' #IK = solid
-rraLineStyle = 'dashed' #RRA = dashed
-rra3LineStyle = 'dashdot' #RRA3 = dash-dot
-mocoLineStyle = ':' #Moco = dotted
-addBiomechLineStyle = (0, (3,5,1,5,1,5)) #AddBiomechanics = dash dot dotted
-
 # %% Loop through subject list
 
 for subject in subList:
@@ -1507,23 +1498,23 @@ if compileData:
                     
                     #Plot RRA data
                     plt.plot(np.linspace(0,100,101), rraKinematics[runLabel][cycle][var],
-                             linestyle = rraLineStyle, lw = 0.5, c = rraCol, alpha = 0.4, zorder = 2)
+                             linestyle = '-', lw = 0.5, c = rraCol, alpha = 0.4, zorder = 2)
                     
                     #Plot RRA3 data
                     plt.plot(np.linspace(0,100,101), rra3Kinematics[runLabel][cycle][var],
-                             ls = rra3LineStyle, lw = 0.5, c = rra3Col, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = rra3Col, alpha = 0.4, zorder = 2)
                     
                     #Plot Moco data
                     plt.plot(np.linspace(0,100,101), mocoKinematics[runLabel][cycle][var],
-                             ls = mocoLineStyle, lw = 0.5, c = mocoCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = mocoCol, alpha = 0.4, zorder = 2)
                     
                     #Plot AddBiomechanics data
                     plt.plot(np.linspace(0,100,101), addBiomechKinematics[runLabel][cycle][var],
-                             ls = (0, (1,10)), lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
                     
                     #Plot IK data
                     plt.plot(np.linspace(0,100,101), ikKinematics[runLabel][cycle][var],
-                             ls = ikLineStyle, lw = 0.5, c = ikCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = ikCol, alpha = 0.4, zorder = 2)
                     
                 #Plot mean curves
                 
@@ -1563,23 +1554,31 @@ if compileData:
                 
                 #Plot RRA mean
                 plt.plot(np.linspace(0,100,101), rraMeanKinematics[runLabel][var],
-                         ls = rraLineStyle, lw = 1.5, c = rraCol, alpha = 1.0, zorder = 3)
+                         ls = '-', lw = 1, c = rraCol,
+                         marker = markerDict['rra'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot RRA3 mean
                 plt.plot(np.linspace(0,100,101), rra3MeanKinematics[runLabel][var],
-                         ls = rra3LineStyle, lw = 1.5, c = rra3Col, alpha = 1.0, zorder = 3)
+                         ls = ':', lw = 1, c = rra3Col,
+                         marker = markerDict['rra3'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot Moco mean
                 plt.plot(np.linspace(0,100,101), mocoMeanKinematics[runLabel][var],
-                         ls = mocoLineStyle, lw = 1.5, c = mocoCol, alpha = 1.0, zorder = 3)
+                         ls = '--', lw = 1, c = mocoCol,
+                         marker = markerDict['moco'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot AddBiomechanics mean
                 plt.plot(np.linspace(0,100,101), addBiomechMeanKinematics[runLabel][var],
-                         ls = addBiomechLineStyle, lw = 1.5, c = addBiomechCol, alpha = 1.0, zorder = 3)
+                         ls = '--', lw = 1, c = addBiomechCol,
+                         marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot Ik mean
                 plt.plot(np.linspace(0,100,101), ikMeanKinematics[runLabel][var],
-                         ls = ikLineStyle, lw = 1.5, c = ikCol, alpha = 1.0, zorder = 3)
+                         ls = '-', lw = 1, c = ikCol, alpha = 1.0, zorder = 3)
     
                 #Clean up axis properties
                 
@@ -1869,19 +1868,19 @@ if compileData:
                     
                     #Plot RRA data
                     plt.plot(np.linspace(0,100,101), rraKinetics[runLabel][cycle][var],
-                             ls = rraLineStyle, lw = 0.5, c = rraCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = rraCol, alpha = 0.4, zorder = 2)
                     
                     #Plot RRA3 data
                     plt.plot(np.linspace(0,100,101), rra3Kinetics[runLabel][cycle][var],
-                             ls = rra3LineStyle, lw = 0.5, c = rra3Col, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = rra3Col, alpha = 0.4, zorder = 2)
                     
                     #Plot Moco data
                     plt.plot(np.linspace(0,100,101), mocoKinetics[runLabel][cycle][var],
-                             ls = mocoLineStyle, lw = 0.5, c = mocoCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = mocoCol, alpha = 0.4, zorder = 2)
                     
                     #Plot AddBiomechanics data
                     plt.plot(np.linspace(0,100,101), addBiomechKinetics[runLabel][cycle][var],
-                             ls = addBiomechLineStyle, lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
                     
                 #Plot mean curves
                 
@@ -1915,19 +1914,27 @@ if compileData:
                 
                 #Plot RRA mean
                 plt.plot(np.linspace(0,100,101), rraMeanKinetics[runLabel][var],
-                         ls = rraLineStyle, lw = 1.5, c = rraCol, alpha = 1.0, zorder = 3)
+                         ls = '-', lw = 1, c = rraCol,
+                         marker = markerDict['rra'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot RRA3 mean
                 plt.plot(np.linspace(0,100,101), rra3MeanKinetics[runLabel][var],
-                         ls = rra3LineStyle, lw = 1.5, c = rra3Col, alpha = 1.0, zorder = 3)
+                         ls = ':', lw = 1, c = rra3Col,
+                         marker = markerDict['rra3'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot Moco mean
                 plt.plot(np.linspace(0,100,101), mocoMeanKinetics[runLabel][var],
-                         ls = mocoLineStyle, lw = 1.5, c = mocoCol, alpha = 1.0, zorder = 3)
+                         ls = '--', lw = 1, c = mocoCol,
+                         marker = markerDict['moco'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot AddBiomechanics mean
                 plt.plot(np.linspace(0,100,101), addBiomechMeanKinetics[runLabel][var],
-                         ls = addBiomechLineStyle, lw = 1.5, c = addBiomechCol, alpha = 1.0, zorder = 3)
+                         ls = '--', lw = 1, c = addBiomechCol,
+                         marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
     
                 #Clean up axis properties
                 
@@ -2130,19 +2137,19 @@ if compileData:
                     
                     #Plot RRA data
                     plt.plot(np.linspace(0,100,101), rraResiduals[runLabel][cycle][var],
-                             ls = rraLineStyle, lw = 0.5, c = rraCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = rraCol, alpha = 0.4, zorder = 2)
                     
                     #Plot RRA3 data
                     plt.plot(np.linspace(0,100,101), rra3Residuals[runLabel][cycle][var],
-                             ls = rra3LineStyle, lw = 0.5, c = rra3Col, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = rra3Col, alpha = 0.4, zorder = 2)
                     
                     #Plot Moco data
                     plt.plot(np.linspace(0,100,101), mocoResiduals[runLabel][cycle][var],
-                             ls = mocoLineStyle, lw = 0.5, c = mocoCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = mocoCol, alpha = 0.4, zorder = 2)
                     
                     #Plot AddBiomechanics data
                     plt.plot(np.linspace(0,100,101), addBiomechResiduals[runLabel][cycle][var],
-                             ls = addBiomechLineStyle, lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
+                             ls = '-', lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
                     
                 #Plot mean curves
                 
@@ -2176,19 +2183,27 @@ if compileData:
                 
                 #Plot RRA mean
                 plt.plot(np.linspace(0,100,101), rraMeanResiduals[runLabel][var],
-                         ls = rraLineStyle, lw = 1.5, c = rraCol, alpha = 1.0, zorder = 3)
+                         ls = '-', lw = 1, c = rraCol,
+                         marker = markerDict['rra'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot RRA3 mean
                 plt.plot(np.linspace(0,100,101), rra3MeanResiduals[runLabel][var],
-                         ls = rra3LineStyle, lw = 1.5, c = rra3Col, alpha = 1.0, zorder = 3)
+                         ls = ':', lw = 1, c = rra3Col,
+                         marker = markerDict['rra3'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot Moco mean
                 plt.plot(np.linspace(0,100,101), mocoMeanResiduals[runLabel][var],
-                         ls = mocoLineStyle, lw = 1.5, c = mocoCol, alpha = 1.0, zorder = 3)
+                         ls = '--', lw = 1, c = mocoCol,
+                         marker = markerDict['moco'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
                 
                 #Plot AddBiomechanics mean
-                plt.plot(np.linspace(0,100,101), addBiomechMeanResiduals[runLabel][var],
-                         ls = addBiomechLineStyle, lw = 1.5, c = addBiomechCol, alpha = 1.0, zorder = 3)
+                plt.plot(np.linspace(0,100,101), addBiomechResiduals[runLabel][var],
+                         ls = '--', lw = 1, c = addBiomechCol,
+                         marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
     
                 #Clean up axis properties
                 
@@ -2454,7 +2469,7 @@ if analyseData:
         
     #Export summary data to csv file
     solutionTimes_df.to_csv(os.path.join('..','..','results','HamnerDelpDataset','outputs','solutionTimes_summary.csv'),
-                            index = False)    
+                            index = False)
     
     # %% Extract average and peak residual forces/moments
     
@@ -3115,7 +3130,7 @@ if analyseData:
     #Note that generic kinematic variables are used here and right side values are presented
     
     #Create the figure
-    fig, ax = plt.subplots(nrows = 4, ncols = 6, figsize = (14,8), sharex = True)
+    fig, ax = plt.subplots(nrows = 4, ncols = 6, figsize = (14,8))
     
     #Adjust subplots
     plt.subplots_adjust(left = 0.075, right = 0.95, bottom = 0.05, top = 0.95,
@@ -3138,48 +3153,56 @@ if analyseData:
         
         #IK mean
         plt.plot(np.linspace(0,100,101), meanKinematics['ik'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = ikCol, alpha = 1.0, zorder = 3)
-        #IK sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinematics['ik'][plotVar].mean(axis = 0) + meanKinematics['ik'][plotVar].std(axis = 0),
-                         meanKinematics['ik'][plotVar].mean(axis = 0) - meanKinematics['ik'][plotVar].std(axis = 0),
-                         color = ikCol, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = '-', lw = 1, c = ikCol, alpha = 1.0, zorder = 3)
+        # #IK sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinematics['ik'][plotVar].mean(axis = 0) + meanKinematics['ik'][plotVar].std(axis = 0),
+        #                  meanKinematics['ik'][plotVar].mean(axis = 0) - meanKinematics['ik'][plotVar].std(axis = 0),
+        #                  color = ikCol, alpha = 0.1, zorder = 2, lw = 0)
         
         #RRA mean
         plt.plot(np.linspace(0,100,101), meanKinematics['rra'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = rraCol, alpha = 1.0, zorder = 3)
-        #RRA sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinematics['rra'][plotVar].mean(axis = 0) + meanKinematics['rra'][plotVar].std(axis = 0),
-                         meanKinematics['rra'][plotVar].mean(axis = 0) - meanKinematics['rra'][plotVar].std(axis = 0),
-                         color = rraCol, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = '-', lw = 1, c = rraCol,
+                 marker = markerDict['rra'], markevery = 5, markersize = 3,
+                 alpha = 1.0, zorder = 3)
+        # #RRA sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinematics['rra'][plotVar].mean(axis = 0) + meanKinematics['rra'][plotVar].std(axis = 0),
+        #                  meanKinematics['rra'][plotVar].mean(axis = 0) - meanKinematics['rra'][plotVar].std(axis = 0),
+        #                  color = rraCol, alpha = 0.1, zorder = 2, lw = 0)
         
         #RRA3 mean
         plt.plot(np.linspace(0,100,101), meanKinematics['rra3'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = rra3Col, alpha = 1.0, zorder = 3)
-        #RRA3 sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinematics['rra3'][plotVar].mean(axis = 0) + meanKinematics['rra3'][plotVar].std(axis = 0),
-                         meanKinematics['rra3'][plotVar].mean(axis = 0) - meanKinematics['rra3'][plotVar].std(axis = 0),
-                         color = rra3Col, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = ':', lw = 1, c = rra3Col, 
+                 marker = markerDict['rra3'], markevery = 5, markersize = 3,
+                 alpha = 1.0, zorder = 3)
+        # #RRA3 sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinematics['rra3'][plotVar].mean(axis = 0) + meanKinematics['rra3'][plotVar].std(axis = 0),
+        #                  meanKinematics['rra3'][plotVar].mean(axis = 0) - meanKinematics['rra3'][plotVar].std(axis = 0),
+        #                  color = rra3Col, alpha = 0.1, zorder = 2, lw = 0)
         
         #Moco mean
         plt.plot(np.linspace(0,100,101), meanKinematics['moco'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = mocoCol, alpha = 1.0, zorder = 3)
-        #Moco sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinematics['moco'][plotVar].mean(axis = 0) + meanKinematics['moco'][plotVar].std(axis = 0),
-                         meanKinematics['moco'][plotVar].mean(axis = 0) - meanKinematics['moco'][plotVar].std(axis = 0),
-                         color = mocoCol, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = '--', lw = 1, c = mocoCol,
+                 marker = markerDict['moco'], markevery = 5, markersize = 3,
+                 alpha = 1.0, zorder = 3)
+        # #Moco sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinematics['moco'][plotVar].mean(axis = 0) + meanKinematics['moco'][plotVar].std(axis = 0),
+        #                  meanKinematics['moco'][plotVar].mean(axis = 0) - meanKinematics['moco'][plotVar].std(axis = 0),
+        #                  color = mocoCol, alpha = 0.1, zorder = 2, lw = 0)
         
         #AddBiomechanics mean
         plt.plot(np.linspace(0,100,101), meanKinematics['addBiomech'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = addBiomechCol, alpha = 1.0, zorder = 3)
-        #AddBiomechanics sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinematics['addBiomech'][plotVar].mean(axis = 0) + meanKinematics['addBiomech'][plotVar].std(axis = 0),
-                         meanKinematics['addBiomech'][plotVar].mean(axis = 0) - meanKinematics['addBiomech'][plotVar].std(axis = 0),
-                         color = addBiomechCol, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = '--', lw = 1, c = addBiomechCol,
+                 marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                 alpha = 1.0, zorder = 3)
+        # #AddBiomechanics sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinematics['addBiomech'][plotVar].mean(axis = 0) + meanKinematics['addBiomech'][plotVar].std(axis = 0),
+        #                  meanKinematics['addBiomech'][plotVar].mean(axis = 0) - meanKinematics['addBiomech'][plotVar].std(axis = 0),
+        #                  color = addBiomechCol, alpha = 0.1, zorder = 2, lw = 0)
         
         #Clean up axis properties
         
@@ -3216,12 +3239,58 @@ if analyseData:
         #Set x-ticks at 0, 50 and 100
         plt.gca().set_xticks([0,50,100])
         
+        #Remove x-tick labels if not bottom row
+        if kinematicVarsPlot[var][0] != 3:
+            plt.gca().set_xticklabels([])
+        
     #Turn off un-used axes
     ax[1,5].axis('off')
     ax[2,3].axis('off')
     ax[2,4].axis('off')
     ax[2,5].axis('off')
-    ax[3,5].axis('off')
+    
+    #Create legend on dummy axis in bottom right
+    plt.sca(ax[3,5])
+    
+    #Plot dummy data
+    #IK
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'IK',
+             ls = '-', lw = 1, c = ikCol, alpha = 1.0, zorder = 3)
+    #RRA
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'RRA',
+             ls = '-', lw = 1, c = rraCol,
+             marker = markerDict['rra'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    #RRA3
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'RRA3',
+             ls = ':', lw = 1, c = rra3Col, 
+             marker = markerDict['rra3'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    #Moco
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'Moco',
+             ls = '--', lw = 1, c = mocoCol,
+             marker = markerDict['moco'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    #AddBiomechanics
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'AddBiomechanics',
+             ls = '--', lw = 1, c = addBiomechCol,
+             marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    
+    #Add legend
+    plt.legend()
+    
+    #Remove all axis properties
+    #Spines
+    plt.gca().spines['top'].set_visible(False)
+    plt.gca().spines['right'].set_visible(False)
+    plt.gca().spines['bottom'].set_visible(False)
+    plt.gca().spines['left'].set_visible(False)
+    #Ticks
+    plt.gca().set_xticks([])
+    plt.gca().set_yticks([])
+    #Axis limits to avoid data
+    plt.gca().set_ylim([50,100])
     
     #Set tight layout
     plt.tight_layout()
@@ -3275,7 +3344,7 @@ if analyseData:
     #Note that generic kinetic variablea are used here and right side values are presented
     
     #Create the figure
-    fig, ax = plt.subplots(nrows = 5, ncols = 3, figsize = (8,10), sharex = True)
+    fig, ax = plt.subplots(nrows = 5, ncols = 3, figsize = (8,10))
     
     #Adjust subplots
     plt.subplots_adjust(left = 0.075, right = 0.95, bottom = 0.05, top = 0.95,
@@ -3297,39 +3366,47 @@ if analyseData:
         
         #RRA mean
         plt.plot(np.linspace(0,100,101), meanKinetics['rra'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = rraCol, alpha = 1.0, zorder = 3)
-        #RRA sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinetics['rra'][plotVar].mean(axis = 0) + meanKinetics['rra'][plotVar].std(axis = 0),
-                         meanKinetics['rra'][plotVar].mean(axis = 0) - meanKinetics['rra'][plotVar].std(axis = 0),
-                         color = rraCol, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = '-', lw = 1, c = rraCol,
+                 marker = markerDict['rra'], markevery = 5, markersize = 3,
+                 alpha = 1.0, zorder = 3)
+        # #RRA sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinetics['rra'][plotVar].mean(axis = 0) + meanKinetics['rra'][plotVar].std(axis = 0),
+        #                  meanKinetics['rra'][plotVar].mean(axis = 0) - meanKinetics['rra'][plotVar].std(axis = 0),
+        #                  color = rraCol, alpha = 0.1, zorder = 2, lw = 0)
         
         #RRA3 mean
         plt.plot(np.linspace(0,100,101), meanKinetics['rra3'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = rra3Col, alpha = 1.0, zorder = 3)
-        #RRA3 sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinetics['rra3'][plotVar].mean(axis = 0) + meanKinetics['rra3'][plotVar].std(axis = 0),
-                         meanKinetics['rra3'][plotVar].mean(axis = 0) - meanKinetics['rra3'][plotVar].std(axis = 0),
-                         color = rra3Col, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = ':', lw = 1, c = rra3Col,
+                 marker = markerDict['rra3'], markevery = 5, markersize = 3,
+                 alpha = 1.0, zorder = 3)
+        # #RRA3 sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinetics['rra3'][plotVar].mean(axis = 0) + meanKinetics['rra3'][plotVar].std(axis = 0),
+        #                  meanKinetics['rra3'][plotVar].mean(axis = 0) - meanKinetics['rra3'][plotVar].std(axis = 0),
+        #                  color = rra3Col, alpha = 0.1, zorder = 2, lw = 0)
         
         #Moco mean
         plt.plot(np.linspace(0,100,101), meanKinetics['moco'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = mocoCol, alpha = 1.0, zorder = 3)
-        #Moco sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinetics['moco'][plotVar].mean(axis = 0) + meanKinetics['moco'][plotVar].std(axis = 0),
-                         meanKinetics['moco'][plotVar].mean(axis = 0) - meanKinetics['moco'][plotVar].std(axis = 0),
-                         color = mocoCol, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = '--', lw = 1, c = mocoCol,
+                 marker = markerDict['moco'], markevery = 2, markersize = 3, ### different mark every used due to noisyness
+                 alpha = 1.0, zorder = 3)
+        # #Moco sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinetics['moco'][plotVar].mean(axis = 0) + meanKinetics['moco'][plotVar].std(axis = 0),
+        #                  meanKinetics['moco'][plotVar].mean(axis = 0) - meanKinetics['moco'][plotVar].std(axis = 0),
+        #                  color = mocoCol, alpha = 0.1, zorder = 2, lw = 0)
         
         #AddBiomechanics mean
         plt.plot(np.linspace(0,100,101), meanKinetics['addBiomech'][plotVar].mean(axis = 0),
-                 ls = '-', lw = 1.5, c = addBiomechCol, alpha = 1.0, zorder = 3)
-        #AddBiomechanics sd
-        plt.fill_between(np.linspace(0,100,101),
-                         meanKinetics['addBiomech'][plotVar].mean(axis = 0) + meanKinetics['addBiomech'][plotVar].std(axis = 0),
-                         meanKinetics['addBiomech'][plotVar].mean(axis = 0) - meanKinetics['addBiomech'][plotVar].std(axis = 0),
-                         color = addBiomechCol, alpha = 0.1, zorder = 2, lw = 0)
+                 ls = '--', lw = 1.5, c = addBiomechCol,
+                 marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                 alpha = 1.0, zorder = 3)
+        # #AddBiomechanics sd
+        # plt.fill_between(np.linspace(0,100,101),
+        #                  meanKinetics['addBiomech'][plotVar].mean(axis = 0) + meanKinetics['addBiomech'][plotVar].std(axis = 0),
+        #                  meanKinetics['addBiomech'][plotVar].mean(axis = 0) - meanKinetics['addBiomech'][plotVar].std(axis = 0),
+        #                  color = addBiomechCol, alpha = 0.1, zorder = 2, lw = 0)
         
         #Clean up axis properties
         
@@ -3339,7 +3416,7 @@ if analyseData:
         #Add labels
         
         #X-axis (if bottom row)
-        if list(kinematicVarsPlot.keys()).index(var) >= 14:
+        if kineticVarsPlot[var][0] == 4:
             plt.gca().set_xlabel('0-100% Gait Cycle', fontsize = 10, fontweight = 'bold')
             
         #Y-axis
@@ -3363,9 +3440,52 @@ if analyseData:
         #Set x-ticks at 0, 50 and 100
         plt.gca().set_xticks([0,50,100])
         
+        #Remove x-tick labels if not bottom row
+        if kineticVarsPlot[var][0] != 4:
+            plt.gca().set_xticklabels([])
+        
     #Turn off un-used axes
     ax[1,2].axis('off')
-    ax[4,2].axis('off')
+    
+    #Create legend on dummy axis in bottom right
+    plt.sca(ax[4,2])
+    
+    #Plot dummy data
+    #RRA
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'RRA',
+             ls = '-', lw = 1, c = rraCol,
+             marker = markerDict['rra'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    #RRA3
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'RRA3',
+             ls = ':', lw = 1, c = rra3Col, 
+             marker = markerDict['rra3'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    #Moco
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'Moco',
+             ls = '--', lw = 1, c = mocoCol,
+             marker = markerDict['moco'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    #AddBiomechanics
+    plt.plot(np.linspace(0,100,101), np.arange(0,1,1/101), label = 'AddBiomechanics',
+             ls = '--', lw = 1, c = addBiomechCol,
+             marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+             alpha = 1.0, zorder = 3)
+    
+    #Add legend
+    plt.legend()
+    
+    #Remove all axis properties
+    #Spines
+    plt.gca().spines['top'].set_visible(False)
+    plt.gca().spines['right'].set_visible(False)
+    plt.gca().spines['bottom'].set_visible(False)
+    plt.gca().spines['left'].set_visible(False)
+    #Ticks
+    plt.gca().set_xticks([])
+    plt.gca().set_yticks([])
+    #Axis limits to avoid data
+    plt.gca().set_ylim([50,100])
         
     #Save figure
     fig.savefig(os.path.join('..','..','results','HamnerDelpDataset','figures','meanKinetics.png'),
