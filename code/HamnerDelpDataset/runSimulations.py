@@ -1065,7 +1065,7 @@ for subject in subList:
     
         # %% Set-up for Moco approach
             
-        #Change to rra directory for ease of use with tools
+        #Change to Moco directory for ease of use with tools
         os.chdir(os.path.join('..','..','data','HamnerDelp2013',subject,'moco',runLabel))
 
         #Add in opensim logger
