@@ -86,6 +86,7 @@ if runAddBiomech:
     print('***** Instead, the data is set-up in the subjects AddBiomechanics folder. *****')
     print('***** To re-run these analyses, you can re-upload the data files to the AddBiomechanics server. *****')
     print('***** If you do re-run these analyses, you need to update the processingLogs.txt files with the updated AddBiomechanics logs. *****')
+    print('***** If these instructions are unclear please contact the code authors for details. *****')
 
 ##### SETTINGS FOR COMPILING THE DATA TO FILE #####
 
@@ -1141,9 +1142,10 @@ for subject in subList:
         #Provide the setting to ignore unused columns in kinematic data
         mocoTrack.set_allow_unused_references(True)
         
-        #Set Moco to not track the speed derivatives from kinematic data
-        #This isn't done in RRA so we don't do it here
-        mocoTrack.set_track_reference_position_derivatives(False)
+        #Set Moco to track the speed derivatives from kinematic data
+        #This is probably a fair comparison to RRA given that it tracks accelerations
+        #The case study test of this looked like it would help with smoothness as well
+        mocoTrack.set_track_reference_position_derivatives(True)
         
         #Set tracking mesh interval time
         mocoTrack.set_mesh_interval(0.01) #### note that this is likely a different time step to RRA
@@ -1152,6 +1154,9 @@ for subject in subList:
     
         #Create weight set for state tracking
         stateWeights = osim.MocoWeightSet()
+        
+        #Set a scaling factor for tracking the speeds
+        speedsTrackingScale = 0.01
         
         #Loop through coordinates to apply weights
         for coordInd in range(mocoModel.updCoordinateSet().getSize()):
@@ -1168,7 +1173,7 @@ for subject in subList:
                                                             rraTasks[coordName]))
                 #Don't track the Coordinate speed
                 stateWeights.cloneAndAppend(osim.MocoWeight(f'{coordPath}/speed',
-                                                            0))
+                                                            rraTasks[coordName] * speedsTrackingScale))
                 
         #Add state weights to the tracking tool
         mocoTrack.set_states_weight_set(stateWeights)
