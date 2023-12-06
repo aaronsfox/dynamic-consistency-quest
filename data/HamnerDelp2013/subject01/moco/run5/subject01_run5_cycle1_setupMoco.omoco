@@ -5070,7 +5070,7 @@
 				<state_infos>
 					<MocoVariableInfo name="/jointset/ground_pelvis/pelvis_tilt/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.50101240307666284 0.013869700294740772</bounds>
+						<bounds>-0.50101240519943291 0.013869705199432952</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5078,7 +5078,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/ground_pelvis/pelvis_list/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.29591381187385296 0.32078947500493171</bounds>
+						<bounds>-0.29591381519943294 0.32078947519943296</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5086,7 +5086,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/ground_pelvis/pelvis_rotation/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.45048098776815948 0.31325846846890093</bounds>
+						<bounds>-0.45048098519943292 0.31325846519943296</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5118,7 +5118,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/hip_r/hip_flexion_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.39060196091563815 1.2763524612367363</bounds>
+						<bounds>-0.39060196519943291 1.2763524651994329</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5126,7 +5126,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/hip_r/hip_adduction_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.25862583642162634 0.41044942506856669</bounds>
+						<bounds>-0.2586258325997165 0.41044942259971651</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5134,7 +5134,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/hip_r/hip_rotation_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.26497165374167836 0.24555135613064866</bounds>
+						<bounds>-0.2649716525997165 0.2455513525997165</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5142,7 +5142,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/knee_r/knee_angle_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-2.4454479380633591 0.078004919000700806</bounds>
+						<bounds>-2.4454479377991496 0.07800491779914942</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5150,7 +5150,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/ankle_r/ankle_angle_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.66133790136057335 0.65546343359243442</bounds>
+						<bounds>-0.66133790519943292 0.65546343519943295</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5158,7 +5158,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/hip_l/hip_flexion_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.44047298971187898 1.3045442178325461</bounds>
+						<bounds>-0.4404729851994329 1.3045442151994329</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5166,7 +5166,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/hip_l/hip_adduction_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.28103630558553433 0.37445726373442967</bounds>
+						<bounds>-0.28103630259971646 0.37445726259971651</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5174,7 +5174,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/hip_l/hip_rotation_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.30254550417700488 0.37954560955113043</bounds>
+						<bounds>-0.30254550259971646 0.37954561259971648</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5182,7 +5182,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/knee_l/knee_angle_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-2.4272722233972863 0.23802803462838024</bounds>
+						<bounds>-2.4272722277991496 0.23802803779914941</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5190,7 +5190,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/ankle_l/ankle_angle_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.74481343377580034 0.64133437248392544</bounds>
+						<bounds>-0.74481343519943299 0.64133437519943293</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5198,7 +5198,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/back/lumbar_extension/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.22325452430714049 0.34432863672786551</bounds>
+						<bounds>-0.22325452519943295 0.34432863519943291</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5206,7 +5206,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/back/lumbar_bending/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.26459349901223533 0.29352129184593884</bounds>
+						<bounds>-0.26459350259971648 0.29352129259971649</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5214,7 +5214,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/back/lumbar_rotation/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.29255274581215412 0.41404649036293001</bounds>
+						<bounds>-0.29255274259971648 0.41404649259971649</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5222,7 +5222,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/acromial_r/arm_flex_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-1.1384042703373469 -0.11953729329114331</bounds>
+						<bounds>-1.1384042725997163 -0.11953729740028353</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5230,7 +5230,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/acromial_r/arm_add_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.58125022249493785 -0.21529856989175605</bounds>
+						<bounds>-0.58125022259971648 -0.21529856740028352</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5238,7 +5238,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/acromial_r/arm_rot_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.52899509069563344 0.058581854170142028</bounds>
+						<bounds>-0.52899509259971644 0.058581852599716475</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5246,7 +5246,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/elbow_r/elbow_flex_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>1.2834712681273359 2.6386727962306549</bounds>
+						<bounds>1.2834712648005671 2.6386727951994327</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5254,7 +5254,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/radioulnar_r/pro_sup_r/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>1.3515461382686773 2.3646239838497216</bounds>
+						<bounds>1.3515461374002837 2.3646239825997162</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5262,7 +5262,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/acromial_l/arm_flex_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-1.2141417697985277 -0.30502791738804297</bounds>
+						<bounds>-1.2141417725997163 -0.30502791740028351</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5270,7 +5270,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/acromial_l/arm_add_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.52308482081401542 -0.0483838693453333</bounds>
+						<bounds>-0.52308482259971645 -0.048383867400283539</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5278,7 +5278,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/acromial_l/arm_rot_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>-0.47192303883091685 0.064457020069981802</bounds>
+						<bounds>-0.47192304259971651 0.064457022599716474</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5286,7 +5286,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/elbow_l/elbow_flex_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>1.5086335741407195 2.7164433747596122</bounds>
+						<bounds>1.508633574800567 2.7164433751994328</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5294,7 +5294,7 @@
 					</MocoVariableInfo>
 					<MocoVariableInfo name="/jointset/radioulnar_l/pro_sup_l/value">
 						<!--1 value: required value over all time. 2 values: lower, upper bounds on value over all time.-->
-						<bounds>1.5643453453588974 2.204881907072318</bounds>
+						<bounds>1.5643453474002835 2.2048819025997162</bounds>
 						<!--1 value: required initial value. 2 values: lower, upper bounds on initial value.-->
 						<initial_bounds></initial_bounds>
 						<!--1 value: required final value. 2 values: lower, upper bounds on final value.-->
@@ -5317,47 +5317,95 @@
 									<!--Weight (default: 1)-->
 									<weight>750</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_tilt/speed">
+									<!--Weight (default: 1)-->
+									<weight>7.5</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/ground_pelvis/pelvis_list/value">
 									<!--Weight (default: 1)-->
 									<weight>250</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_list/speed">
+									<!--Weight (default: 1)-->
+									<weight>2.5</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/ground_pelvis/pelvis_rotation/value">
 									<!--Weight (default: 1)-->
 									<weight>50</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_rotation/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.5</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/ground_pelvis/pelvis_tx/value">
 									<!--Weight (default: 1)-->
 									<weight>25</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_tx/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.25</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/ground_pelvis/pelvis_ty/value">
 									<!--Weight (default: 1)-->
 									<weight>100</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_ty/speed">
+									<!--Weight (default: 1)-->
+									<weight>1</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/ground_pelvis/pelvis_tz/value">
 									<!--Weight (default: 1)-->
 									<weight>25</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/ground_pelvis/pelvis_tz/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.25</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/hip_r/hip_flexion_r/value">
 									<!--Weight (default: 1)-->
 									<weight>75</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/hip_r/hip_flexion_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.75</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/hip_r/hip_adduction_r/value">
 									<!--Weight (default: 1)-->
 									<weight>50</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/hip_r/hip_adduction_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.5</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/hip_r/hip_rotation_r/value">
 									<!--Weight (default: 1)-->
 									<weight>10</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/hip_r/hip_rotation_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.10000000000000001</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/knee_r/knee_angle_r/value">
 									<!--Weight (default: 1)-->
 									<weight>10</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/knee_r/knee_angle_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.10000000000000001</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/ankle_r/ankle_angle_r/value">
 									<!--Weight (default: 1)-->
 									<weight>10</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/ankle_r/ankle_angle_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.10000000000000001</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/subtalar_r/subtalar_angle_r/value">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/subtalar_r/subtalar_angle_r/speed">
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
@@ -5365,27 +5413,55 @@
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/mtp_r/mtp_angle_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/hip_l/hip_flexion_l/value">
 									<!--Weight (default: 1)-->
 									<weight>75</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/hip_l/hip_flexion_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.75</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/hip_l/hip_adduction_l/value">
 									<!--Weight (default: 1)-->
 									<weight>50</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/hip_l/hip_adduction_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.5</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/hip_l/hip_rotation_l/value">
 									<!--Weight (default: 1)-->
 									<weight>10</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/hip_l/hip_rotation_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.10000000000000001</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/knee_l/knee_angle_l/value">
 									<!--Weight (default: 1)-->
 									<weight>10</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/knee_l/knee_angle_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.10000000000000001</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/ankle_l/ankle_angle_l/value">
 									<!--Weight (default: 1)-->
 									<weight>10</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/ankle_l/ankle_angle_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.10000000000000001</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/subtalar_l/subtalar_angle_l/value">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/subtalar_l/subtalar_angle_l/speed">
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
@@ -5393,39 +5469,79 @@
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/mtp_l/mtp_angle_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/back/lumbar_extension/value">
 									<!--Weight (default: 1)-->
 									<weight>75</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/back/lumbar_extension/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.75</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/back/lumbar_bending/value">
 									<!--Weight (default: 1)-->
 									<weight>50</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/back/lumbar_bending/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.5</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/back/lumbar_rotation/value">
 									<!--Weight (default: 1)-->
 									<weight>25</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/back/lumbar_rotation/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.25</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/acromial_r/arm_flex_r/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/acromial_r/arm_flex_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/acromial_r/arm_add_r/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/acromial_r/arm_add_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/acromial_r/arm_rot_r/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/acromial_r/arm_rot_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/elbow_r/elbow_flex_r/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/elbow_r/elbow_flex_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/radioulnar_r/pro_sup_r/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/radioulnar_r/pro_sup_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/radius_hand_r/wrist_flex_r/value">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/radius_hand_r/wrist_flex_r/speed">
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
@@ -5433,31 +5549,63 @@
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/radius_hand_r/wrist_dev_r/speed">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/acromial_l/arm_flex_l/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/acromial_l/arm_flex_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/acromial_l/arm_add_l/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/acromial_l/arm_add_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/acromial_l/arm_rot_l/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/acromial_l/arm_rot_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/elbow_l/elbow_flex_l/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/elbow_l/elbow_flex_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/radioulnar_l/pro_sup_l/value">
 									<!--Weight (default: 1)-->
 									<weight>1</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/radioulnar_l/pro_sup_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0.01</weight>
 								</MocoWeight>
 								<MocoWeight name="/jointset/radius_hand_l/wrist_flex_l/value">
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
+								<MocoWeight name="/jointset/radius_hand_l/wrist_flex_l/speed">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
 								<MocoWeight name="/jointset/radius_hand_l/wrist_dev_l/value">
+									<!--Weight (default: 1)-->
+									<weight>0</weight>
+								</MocoWeight>
+								<MocoWeight name="/jointset/radius_hand_l/wrist_dev_l/speed">
 									<!--Weight (default: 1)-->
 									<weight>0</weight>
 								</MocoWeight>
