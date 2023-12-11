@@ -1280,6 +1280,9 @@ for subject in subList:
         #Save run time and mass adjustment data dictionaries
         with open(f'{subject}_mocoRunTimeData.pkl', 'wb') as writeFile:
             pickle.dump(mocoRunTimeData, writeFile)
+            
+        #Navigate back to home directory for next subject
+        os.chdir(homeDir)
     
     # %% Check for running AddBiomechanics process
     
