@@ -138,13 +138,13 @@ homeDir = os.getcwd()
 subList = ['subject01',
            'subject02',
            'subject03',
-           'subject04', #some noisy kinematics in Moco (arm kinematics)
+           'subject04', 
            'subject08',
-           'subject10', #some noisy kinematics in Moco (arm kinematics)
+           'subject10', 
            'subject11',
-           'subject17', #some noisy kinematics in Moco (arm kinematics)
+           'subject17', 
            'subject19',
-           'subject20'] #some noisy kinematics in Moco (arm kinematics)
+           'subject20']
     
 #Set run names list
 #This is useful if you want to assess further running speeds
@@ -252,13 +252,6 @@ kinematicVarsGen = ['pelvis_tx', 'pelvis_ty', 'pelvis_tz',
                     ]
 
 #Set a dictionary for plotting kinematic vars and their axes
-# kinematicVarsPlot = {'pelvis_tilt': [0,0], 'pelvis_list': [0,1], 'pelvis_rotation': [0,2],
-#                      'hip_flexion': [1,0], 'hip_adduction': [1,1], 'hip_rotation': [1,2],
-#                      'knee_angle': [2,0], 'ankle_angle': [2,1],
-#                      'lumbar_extension': [3,0], 'lumbar_bending': [3,1], 'lumbar_rotation': [3,2],
-#                      'arm_flex': [4,0], 'arm_add': [4,1], 'arm_rot': [4,2],
-#                      'elbow_flex': [5,0], 'pro_sup': [5,1]
-#                      }
 kinematicVarsPlot = {'pelvis_tx': [0,0], 'pelvis_ty': [0,1], 'pelvis_tz': [0,2], 'pelvis_tilt': [0,3], 'pelvis_list': [0,4], 'pelvis_rotation': [0,5],
                      'hip_flexion': [1,0], 'hip_adduction': [1,1], 'hip_rotation': [1,2], 'knee_angle': [1,3], 'ankle_angle': [1,4],
                      'lumbar_extension': [2,0], 'lumbar_bending': [2,1], 'lumbar_rotation': [2,2],
@@ -2710,10 +2703,6 @@ if analyseData:
         solutionTimes['addBiomech'][subList.index(subject)] = addBiomechanicsTimeScaled
         
     #Average and display these results
-    # print(f'Average RRA run time (s): {np.round(solutionTimes["rra"].mean(),2)} +/- {np.round(solutionTimes["rra"].std(),2)}')
-    # print(f'Average RRA3 run time (s): {np.round(solutionTimes["rra3"].mean(),2)} +/- {np.round(solutionTimes["rra3"].std(),2)}')
-    # print(f'Average Moco run time (s): {np.round(solutionTimes["moco"].mean(),2)} +/- {np.round(solutionTimes["moco"].std(),2)}')
-    # print(f'Average AddBiomechanics run time (s): {np.round(solutionTimes["addBiomech"].mean(),2)} +/- {np.round(solutionTimes["addBiomech"].std(),2)}')
     print(f'Average RRA run time (mins): {np.round((solutionTimes["rra"]/60).mean(),2)} +/- {np.round((solutionTimes["rra"]/60).std(),2)}')
     print(f'Average RRA3 run time (mins): {np.round((solutionTimes["rra3"]/60).mean(),2)} +/- {np.round((solutionTimes["rra3"]/60).std(),2)}')
     print(f'Average Moco run time (mins): {np.round((solutionTimes["moco"]/60).mean(),2)} +/- {np.round((solutionTimes["moco"]/60).std(),2)}')
