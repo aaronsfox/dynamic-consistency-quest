@@ -31,6 +31,8 @@ The above code has been tested with the following dependencies on a **Windows** 
 - scipy (v 1.11.3)
 - seaborn (v 0.12.0)
 
+Alongside the OpenSim Python dependency, the main `runSimulations.py` script assumes that OpenSim is installed at *C:\OpenSim 4.3* and that the associated Geometry folder that comes with installation contained within this (i.e. *C:\OpenSim 4.3\Geometry*). Users with this installed to a different location will need to adjust the `geomDir` variable in `runSimulations.py`. The code may still run without doing this, however constant prompt messages acknowledging an inability to find associated model geometry may be repeatedly displayed in the console while the code is running.
+
 ## data
 
 The `data` folder holds the original experimental data used in this work. It is separated into folders based on the original dataset.
