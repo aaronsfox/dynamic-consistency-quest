@@ -98,11 +98,12 @@ compileData = False
 
 #Within the compiling data step, there are options on which data to read and check
 #by creating figures for each of the subjects. These are the joint kinematics, 
-#kinetics and residuals. Note that setting compileData to True is necessary for
-#these flags to have any effect.
+#kinetics, residuals and ground reaction forces (relevant to AddBiomechanics only).
+#Note that setting compileData to True is necessary for these flags to have any effect.
 readAndCheckKinematics = True
 readAndCheckKinetics = True
 readAndCheckResiduals = True
+readAndCheckGroundReactions = True #AddBiomechanics only
 
 ##### SETTINGS FOR ANALYSING THE SIMULATION DATA #####
 
@@ -301,6 +302,11 @@ kineticVarsTitle = ['Hip Ext. (+) / Flex. (-) Mom.', 'Hip Abd. (+) / Add. (-) Mo
                     'Shoulder Ext. (+) / Flex. (-) Mom.', 'Shoulder Abd. (+) / Add. (-) Mom.', 'Shoulder Ext. (+) / Int. (-) Rot Mom.',
                     'Elbow Ext. (+) / Flex. (-) Mom.', 'Forearm Sup. (+) / Pro. Mom.'
                     ]
+
+#Set a list for GRF plot titles
+grfVarsTitle = ['Ground Reaction Force (Ant. / Post.)', 'Ground Reaction Force (Vert.)', 'Ground Reaction Force (Med. / Lat.)',
+                'COP Location (Ant. / Post.)', 'COP Location (Vert.)', 'COP Location (Med. / Lat.)',
+                'Ground Reaction Torque (Ant. Axis)', 'Ground Reaction Torque (Vert. Axis)', 'Ground Reaction Torque (Lat. Axis)']
 
 #Set a list for residual variables
 residualVars = ['FX', 'FY', 'FZ', 'MX', 'MY', 'MZ', 'F', 'M']
@@ -2309,6 +2315,336 @@ if compileData:
                 pickle.dump(addBiomechResiduals, writeFile)
             with open(os.path.join('..','..','data','HamnerDelp2013',subject,'results','outputs',f'{subject}_addBiomechMeanResiduals.pkl'), 'wb') as writeFile:
                 pickle.dump(addBiomechMeanResiduals, writeFile)
+                
+        # %% Read in and compare ground reactions
+        
+        """
+        
+        Note that the AddBiomechanics tool is the only approach that alters ground
+        reaction forces, hence the experimental ground reaction forces and associated
+        data are only compare to this tool here.
+        
+        """
+        
+        #Check whether to evaluate ground reactions
+        if readAndCheckGroundReactions:
+            
+            #Load in experimental GRF files
+            grfData = osim.TimeSeriesTable(os.path.join('..','..','data','HamnerDelp2013',subject,'addBiomechanics',runLabel,'ID',f'{runName}_grf_raw.mot'))
+            grfLoads = osim.ExternalLoads(os.path.join('..','..','data','HamnerDelp2013',subject,'addBiomechanics',runLabel,'ID',f'{runName}_external_forces_raw.xml'), True)
+            grfTime = np.array(grfData.getIndependentColumn())
+            
+            #Load in AddBiomechanics GRF files
+            addBiomechGrf = osim.TimeSeriesTable(os.path.join('..','..','data','HamnerDelp2013',subject,'addBiomechanics',runLabel,'ID',f'{runName}_grf.mot'))
+            addBiomechLoads = osim.ExternalLoads(os.path.join('..','..','data','HamnerDelp2013',subject,'addBiomechanics',runLabel,'ID',f'{runName}_external_forces.xml'), True)
+            addBiomechTime = np.array(addBiomechGrf.getIndependentColumn())
+            
+            #Create the variable labels for the two data formats
+            
+            #Experimental GRF
+            grfForceVars = [x for xx in [[grfLoads.get(ii).get_force_identifier()+ax for ax in ['x','y','z']] for ii in range(grfLoads.getSize())] for x in xx]
+            grfPointVars = [x for xx in [[grfLoads.get(ii).get_point_identifier()+ax for ax in ['x','y','z']] for ii in range(grfLoads.getSize())] for x in xx]
+            grfTorqueVars = [x for xx in [[grfLoads.get(ii).get_torque_identifier()+ax for ax in ['x','y','z']] for ii in range(grfLoads.getSize())] for x in xx]
+            
+            #AddBiomechancs GRF
+            addBiomechForceVars = [x for xx in [[addBiomechLoads.get(ii).get_force_identifier()+ax for ax in ['x','y','z']] for ii in range(grfLoads.getSize())] for x in xx]
+            addBiomechPointVars = [x for xx in [[addBiomechLoads.get(ii).get_point_identifier()+ax for ax in ['x','y','z']] for ii in range(grfLoads.getSize())] for x in xx]
+            addBiomechTorqueVars = [x for xx in [[addBiomechLoads.get(ii).get_torque_identifier()+ax for ax in ['x','y','z']] for ii in range(grfLoads.getSize())] for x in xx]
+            
+            #Create dictionaries to store data from experimental and AddBiomechanics
+            
+            #Individual cycle data
+            expGRFs = {run: {cyc: {var: np.zeros(101) for var in grfForceVars+grfPointVars+grfTorqueVars} for cyc in cycleList} for run in runList}
+            addBiomechGRFs = {run: {cyc: {var: np.zeros(101) for var in addBiomechForceVars+addBiomechPointVars+addBiomechTorqueVars} for cyc in cycleList} for run in runList}
+            
+            #Mean data
+            expMeanGRFs = {run: {var: np.zeros(101) for var in grfForceVars+grfPointVars+grfTorqueVars} for run in runList}
+            addBiomechMeanGRFs = {run: {var: np.zeros(101) for var in addBiomechForceVars+addBiomechPointVars+addBiomechTorqueVars} for run in runList}
+
+            #Loop through cycles, load and normalise gait cycle to 101 points
+            for cycle in cycleList:
+                
+                #Associate start and stop indices to gait timings for this cycle
+                
+                #Get times
+                initialTime = gaitTimings[runLabel][cycle]['initialTime']
+                finalTime = gaitTimings[runLabel][cycle]['finalTime']
+                
+                #Get experimental GRF indices
+                initialInd = np.argmax(grfTime > initialTime)
+                finalInd = np.argmax(grfTime > finalTime) - 1
+                
+                #Get AddBiomechanics indices
+                addBiomechStart = np.argmax(addBiomechTime > initialTime)
+                addBiomechStop = np.argmax(addBiomechTime > finalTime) - 1
+                
+                #Loop through GRF variables to extract
+                
+                #Experimental data
+                for var in grfForceVars+grfPointVars+grfTorqueVars:
+                    
+                    #Extract GRF variable data over time frame
+                    grfDataVar = grfData.getDependentColumn(var).to_numpy()[initialInd:finalInd+1]
+
+                    #Create interpolation function
+                    grfInterpFunc = interp1d(grfTime[initialInd:finalInd+1], grfDataVar)
+                    
+                    #Interpolate data and store in relevant dictionary
+                    expGRFs[runLabel][cycle][var] = grfInterpFunc(np.linspace(grfTime[initialInd], grfTime[finalInd], 101))
+                    
+                #AddBiomechanics GRF data
+                for var in addBiomechForceVars+addBiomechPointVars+addBiomechTorqueVars:
+                    
+                    #Extract GRF variable data over time frame
+                    addBiomechDataVar = addBiomechGrf.getDependentColumn(var).to_numpy()[addBiomechStart:addBiomechStop+1]
+
+                    #Create interpolation function
+                    addBiomechInterpFunc = interp1d(addBiomechTime[addBiomechStart:addBiomechStop+1], addBiomechDataVar)
+                    
+                    #Interpolate data and store in relevant dictionary
+                    addBiomechGRFs[runLabel][cycle][var] = addBiomechInterpFunc(np.linspace(addBiomechTime[addBiomechStart], addBiomechTime[addBiomechStop], 101))
+                    
+            #Create a plot of the GRFs
+            
+            #Note that force data is plotted on the first row, point data on the
+            #second row, and torque data on the bottom row
+    
+            #Create the figure
+            fig, ax = plt.subplots(nrows = 3, ncols = 3, figsize = (10,6))
+            
+            #Adjust subplots
+            plt.subplots_adjust(left = 0.075, right = 0.95, bottom = 0.06, top = 0.93,
+                                hspace = 0.3, wspace = 0.4)
+            
+            #Loop through variables and plot data
+            #Note that each of the GRF variable lists is split across left/right sides
+            #Taking the the current variable Plus 3 in the list equates to the matching
+            #axis data on the other side. The loop is run 3 times for the x, y, z data
+            for ii in range(3):
+                
+                #Set the appropriate axis
+                
+                #Set the GRF variable labels
+                
+                #Experimental data
+                forceLabel1 = grfForceVars[ii]
+                forceLabel2 = grfForceVars[ii+3]
+                pointLabel1 = grfPointVars[ii]
+                pointLabel2 = grfPointVars[ii+3]
+                torqueLabel1 = grfTorqueVars[ii]
+                torqueLabel2 = grfTorqueVars[ii+3]
+                
+                #AddBiomechanics data
+                addBiomechForceLabel1 = addBiomechForceVars[ii]
+                addBiomechForceLabel2 = addBiomechForceVars[ii+3]
+                addBiomechPointLabel1 = addBiomechPointVars[ii]
+                addBiomechPointLabel2 = addBiomechPointVars[ii+3]
+                addBiomechTorqueLabel1 = addBiomechTorqueVars[ii]
+                addBiomechTorqueLabel2 = addBiomechTorqueVars[ii+3]
+                        
+                #Loop through cycles to plot individual curves
+                for cycle in cycleList:
+                    
+                    #Plot force data
+                    plt.sca(ax[0,ii])
+                    #Experimental
+                    plt.plot(np.linspace(0,100,101), expGRFs[runLabel][cycle][forceLabel1] + expGRFs[runLabel][cycle][forceLabel2],
+                             linestyle = '-', lw = 0.5, c = ikCol, alpha = 0.4, zorder = 2)
+                    #AddBiomechanics data
+                    plt.plot(np.linspace(0,100,101), addBiomechGRFs[runLabel][cycle][addBiomechForceLabel1] + addBiomechGRFs[runLabel][cycle][addBiomechForceLabel2],
+                             ls = '-', lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
+                    
+                    #Plot point data
+                    plt.sca(ax[1,ii])
+                    #Experimental
+                    plt.plot(np.linspace(0,100,101), expGRFs[runLabel][cycle][pointLabel1] + expGRFs[runLabel][cycle][pointLabel2],
+                             linestyle = '-', lw = 0.5, c = ikCol, alpha = 0.4, zorder = 2)
+                    #AddBiomechanics data
+                    plt.plot(np.linspace(0,100,101), addBiomechGRFs[runLabel][cycle][addBiomechPointLabel1] + addBiomechGRFs[runLabel][cycle][addBiomechPointLabel2],
+                             ls = '-', lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
+                    
+                    #Plot torque data
+                    plt.sca(ax[2,ii])
+                    #Experimental
+                    plt.plot(np.linspace(0,100,101), expGRFs[runLabel][cycle][torqueLabel1] + expGRFs[runLabel][cycle][torqueLabel1],
+                             linestyle = '-', lw = 0.5, c = ikCol, alpha = 0.4, zorder = 2)
+                    #AddBiomechanics data
+                    plt.plot(np.linspace(0,100,101), addBiomechGRFs[runLabel][cycle][addBiomechTorqueLabel1] + addBiomechGRFs[runLabel][cycle][addBiomechTorqueLabel2],
+                             ls = '-', lw = 0.5, c = addBiomechCol, alpha = 0.4, zorder = 2)
+                    
+                #Plot mean curves
+                
+                #Calculate mean for current GRF variables
+                
+                #Force data
+                
+                #Experimental data
+                expMeanGRFs[runLabel][forceLabel1] = np.mean(np.vstack((expGRFs[runLabel]['cycle1'][forceLabel1],
+                                                                        expGRFs[runLabel]['cycle1'][forceLabel1],
+                                                                        expGRFs[runLabel]['cycle1'][forceLabel1])),
+                                                             axis = 0)
+                expMeanGRFs[runLabel][forceLabel2] = np.mean(np.vstack((expGRFs[runLabel]['cycle1'][forceLabel2],
+                                                                        expGRFs[runLabel]['cycle1'][forceLabel2],
+                                                                        expGRFs[runLabel]['cycle1'][forceLabel2])),
+                                                             axis = 0)
+                
+                #AddBiomechanics data
+                addBiomechMeanGRFs[runLabel][addBiomechForceLabel1] = np.mean(np.vstack((addBiomechGRFs[runLabel]['cycle1'][addBiomechForceLabel1],
+                                                                                         addBiomechGRFs[runLabel]['cycle2'][addBiomechForceLabel1],
+                                                                                         addBiomechGRFs[runLabel]['cycle3'][addBiomechForceLabel1])),
+                                                                              axis = 0)
+                addBiomechMeanGRFs[runLabel][addBiomechForceLabel2] = np.mean(np.vstack((addBiomechGRFs[runLabel]['cycle1'][addBiomechForceLabel2],
+                                                                                         addBiomechGRFs[runLabel]['cycle2'][addBiomechForceLabel2],
+                                                                                         addBiomechGRFs[runLabel]['cycle3'][addBiomechForceLabel2])),
+                                                                              axis = 0)
+                
+                #Point data
+                
+                #Experimental data
+                expMeanGRFs[runLabel][pointLabel1] = np.mean(np.vstack((expGRFs[runLabel]['cycle1'][pointLabel1],
+                                                                        expGRFs[runLabel]['cycle1'][pointLabel1],
+                                                                        expGRFs[runLabel]['cycle1'][pointLabel1])),
+                                                             axis = 0)
+                expMeanGRFs[runLabel][pointLabel2] = np.mean(np.vstack((expGRFs[runLabel]['cycle1'][pointLabel2],
+                                                                        expGRFs[runLabel]['cycle1'][pointLabel2],
+                                                                        expGRFs[runLabel]['cycle1'][pointLabel2])),
+                                                             axis = 0)
+                
+                #AddBiomechanics data
+                addBiomechMeanGRFs[runLabel][addBiomechPointLabel1] = np.mean(np.vstack((addBiomechGRFs[runLabel]['cycle1'][addBiomechPointLabel1],
+                                                                                         addBiomechGRFs[runLabel]['cycle2'][addBiomechPointLabel1],
+                                                                                         addBiomechGRFs[runLabel]['cycle3'][addBiomechPointLabel1])),
+                                                                              axis = 0)
+                addBiomechMeanGRFs[runLabel][addBiomechPointLabel2] = np.mean(np.vstack((addBiomechGRFs[runLabel]['cycle1'][addBiomechPointLabel2],
+                                                                                         addBiomechGRFs[runLabel]['cycle2'][addBiomechPointLabel2],
+                                                                                         addBiomechGRFs[runLabel]['cycle3'][addBiomechPointLabel2])),
+                                                                              axis = 0)
+                
+                #Torque data
+                
+                #Experimental data
+                expMeanGRFs[runLabel][torqueLabel1] = np.mean(np.vstack((expGRFs[runLabel]['cycle1'][torqueLabel1],
+                                                                        expGRFs[runLabel]['cycle1'][torqueLabel1],
+                                                                        expGRFs[runLabel]['cycle1'][torqueLabel1])),
+                                                             axis = 0)
+                expMeanGRFs[runLabel][torqueLabel2] = np.mean(np.vstack((expGRFs[runLabel]['cycle1'][torqueLabel2],
+                                                                         expGRFs[runLabel]['cycle1'][torqueLabel2],
+                                                                         expGRFs[runLabel]['cycle1'][torqueLabel2])),
+                                                              axis = 0)
+                
+                #AddBiomechanics data
+                addBiomechMeanGRFs[runLabel][addBiomechTorqueLabel1] = np.mean(np.vstack((addBiomechGRFs[runLabel]['cycle1'][addBiomechTorqueLabel1],
+                                                                                          addBiomechGRFs[runLabel]['cycle2'][addBiomechTorqueLabel1],
+                                                                                          addBiomechGRFs[runLabel]['cycle3'][addBiomechTorqueLabel1])),
+                                                                              axis = 0)
+                addBiomechMeanGRFs[runLabel][addBiomechTorqueLabel2] = np.mean(np.vstack((addBiomechGRFs[runLabel]['cycle1'][addBiomechTorqueLabel2],
+                                                                                         addBiomechGRFs[runLabel]['cycle2'][addBiomechTorqueLabel2],
+                                                                                         addBiomechGRFs[runLabel]['cycle3'][addBiomechTorqueLabel2])),
+                                                                              axis = 0)
+                
+                #Plot means
+                
+                #Plot force data
+                plt.sca(ax[0,ii])
+                #Experimental means
+                plt.plot(np.linspace(0,100,101), expMeanGRFs[runLabel][forceLabel1] + expMeanGRFs[runLabel][forceLabel2],
+                         linestyle = '-', lw = 1, c = ikCol, zorder = 3)
+                #AddBiomechanics data
+                plt.plot(np.linspace(0,100,101), addBiomechMeanGRFs[runLabel][addBiomechForceLabel1] + addBiomechMeanGRFs[runLabel][addBiomechForceLabel2],
+                         ls = '--', lw = 1, c = addBiomechCol,
+                         marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
+                
+                #Plot point data
+                plt.sca(ax[1,ii])
+                #Experimental means
+                plt.plot(np.linspace(0,100,101), expMeanGRFs[runLabel][pointLabel1] + expMeanGRFs[runLabel][pointLabel2],
+                         linestyle = '-', lw = 1, c = ikCol, zorder = 3)
+                #AddBiomechanics data
+                plt.plot(np.linspace(0,100,101), addBiomechMeanGRFs[runLabel][addBiomechPointLabel1] + addBiomechMeanGRFs[runLabel][addBiomechPointLabel2],
+                         ls = '--', lw = 1, c = addBiomechCol,
+                         marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
+                
+                #Plot torque data
+                plt.sca(ax[2,ii])
+                #Experimental means
+                plt.plot(np.linspace(0,100,101), expMeanGRFs[runLabel][torqueLabel1] + expMeanGRFs[runLabel][torqueLabel2],
+                         linestyle = '-', lw = 1, c = ikCol, zorder = 3)
+                #AddBiomechanics data
+                plt.plot(np.linspace(0,100,101), addBiomechMeanGRFs[runLabel][addBiomechTorqueLabel1] + addBiomechMeanGRFs[runLabel][addBiomechTorqueLabel2],
+                         ls = '--', lw = 1, c = addBiomechCol,
+                         marker = markerDict['addBiomech'], markevery = 5, markersize = 3,
+                         alpha = 1.0, zorder = 3)
+                
+            #Clean up generic axis properties
+            for axInd in range(len(ax.flatten())):
+                
+                #Set current axis
+                plt.sca(ax.flatten()[axInd])
+            
+                #Set x-limits
+                plt.gca().set_xlim([0,100])
+                
+                #Turn off top-right spines
+                plt.gca().spines['top'].set_visible(False)
+                plt.gca().spines['right'].set_visible(False)
+                
+                #Add zero-dash line if necessary
+                if plt.gca().get_ylim()[0] < 0 < plt.gca().get_ylim()[-1]:
+                    plt.gca().axhline(y = 0, color = 'dimgrey', linewidth = 0.5, ls = ':', zorder = 1)
+                    
+                #Set axis ticks in
+                plt.gca().tick_params('both', direction = 'in', length = 3)
+                
+                #Set x-ticks at 0, 50 and 100
+                plt.gca().set_xticks([0,50,100])
+                #Remove labels if not on bottom row
+                if axInd < 6:
+                    plt.gca().set_xticklabels([])
+            
+                #Add labels
+                
+                #X-axis (if bottom row)
+                if axInd >= 6:
+                    plt.gca().set_xlabel('0-100% Gait Cycle', fontsize = 8, fontweight = 'bold')
+                
+                #Y-axis (dependent on GRF variable)
+                if axInd <= 2:
+                    plt.gca().set_ylabel('Force (N)', fontsize = 8, fontweight = 'bold')
+                elif 2 < axInd < 6:
+                    plt.gca().set_ylabel('COP Location (m)', fontsize = 8, fontweight = 'bold')
+                elif axInd >= 6:
+                    plt.gca().set_ylabel('Torque (Nm)', fontsize = 8, fontweight = 'bold')
+    
+                #Set title
+                plt.gca().set_title(grfVarsTitle[axInd], pad = 3, fontsize = 10, fontweight = 'bold')
+                
+            #Turn off un-used axes (i.e. vertical COP is useless)
+            ax[1,1].remove()
+            
+            #Add figure title
+            fig.suptitle(f'{subject} GRF Comparison (Experimental = Black, AddBiomechanics = Gold)',
+                         fontsize = 10, fontweight = 'bold', y = 0.99)
+    
+            #Save figure
+            fig.savefig(os.path.join('..','..','data','HamnerDelp2013',subject,'results','figures',f'{subject}_{runLabel}_grfComparison.png'),
+                        format = 'png', dpi = 300)
+            
+            #Close figure
+            plt.close('all')
+            
+            #Save GRF data dictionaries
+            #Experimental
+            with open(os.path.join('..','..','data','HamnerDelp2013',subject,'results','outputs',f'{subject}_experimentalGRFs.pkl'), 'wb') as writeFile:
+                pickle.dump(expGRFs, writeFile)
+            with open(os.path.join('..','..','data','HamnerDelp2013',subject,'results','outputs',f'{subject}_experimentalMeanGRFs.pkl'), 'wb') as writeFile:
+                pickle.dump(expMeanGRFs, writeFile)
+            #AddBiomechanics data
+            with open(os.path.join('..','..','data','HamnerDelp2013',subject,'results','outputs',f'{subject}_addBiomechGRFs.pkl'), 'wb') as writeFile:
+                pickle.dump(addBiomechGRFs, writeFile)
+            with open(os.path.join('..','..','data','HamnerDelp2013',subject,'results','outputs',f'{subject}_addBiomechMeanGRFs.pkl'), 'wb') as writeFile:
+                pickle.dump(addBiomechMeanGRFs, writeFile)
     
 # %% Analyse data from simulations
 
