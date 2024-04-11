@@ -2,7 +2,7 @@
 
 This repository holds the data related to the work:
 
-Fox A (2023). The Quest for Dynamic Consistency: A Comparison of OpenSim Tools for Residual Reduction in Simulations of Human Running. *BioRxiv*.
+Fox A (2024). The Quest for Dynamic Consistency: A Comparison of OpenSim Tools for Residual Reduction in Simulations of Human Running. *Royal Society Open Science*. doi: [10.1098/rsos.231909](https://doi.org/10.1098/rsos.231909)
 
 Please cite the above work accordingly if using data or code from this repository.
 
