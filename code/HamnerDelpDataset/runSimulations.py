@@ -2980,7 +2980,7 @@ if analyseData:
                                           columns = ['Peak Residual Moment', 'Solver', 'Axis', 'Subject'])
         
     #Create figure for residual forces
-    fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize = (12,5), sharey = True)
+    fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize = (12,5))
     
     #Set colouring order for boxplots
     bpColOrder = [rraCol, rra3Col, mocoCol, addBiomechCol]
@@ -3157,6 +3157,11 @@ if analyseData:
     ax[1].spines['right'].set_visible(False)
     ax[1].spines['top'].set_visible(False)
     
+    #Set average residual ticks to match peak residual ticks
+    ax[0].set_ylim(ax[1].get_ylim())
+    ax[0].set_ticks(ax[1].get_ticks())
+    ax[1].set_yticklabels([])
+    
     #Tight layout
     plt.tight_layout()
     
@@ -3168,7 +3173,7 @@ if analyseData:
     plt.close()
     
     #Create figure for residual moments
-    fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize = (12,5), sharey = True)
+    fig, ax = plt.subplots(nrows = 1, ncols = 2, figsize = (12,5))
     
     #Create position dictionary for variables
     varPosX = {resVar: np.linspace(0.4 + ['MX','MY','MZ'].index(resVar),
@@ -3341,6 +3346,11 @@ if analyseData:
     #Despine top and right axes
     ax[1].spines['right'].set_visible(False)
     ax[1].spines['top'].set_visible(False)
+    
+    #Set average residual ticks to match peak residual ticks
+    ax[0].set_ylim(ax[1].get_ylim())
+    ax[0].set_ticks(ax[1].get_ticks())
+    ax[1].set_yticklabels([])
     
     #Tight layout
     plt.tight_layout()
